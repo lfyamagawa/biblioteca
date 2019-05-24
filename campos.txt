@@ -1,0 +1,25 @@
+Funcionario
+    id  
+    nome    Text
+    senha   Text
+    
+Livro   
+    id
+    titulo  Text
+    autor   Text
+    publicacao  Text
+    descricao   Text
+    assunto Text
+    
+Cliente
+    nome    Text
+    rg      Text
+    cpf     Text
+    endereco    Text
+    telefone    Text
+    
+Emprestimo
+    cliid   ClienteId
+    livid   LivroId
+    data_emp    Date
+    date_dev    Date

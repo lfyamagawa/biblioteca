@@ -1,0 +1,41 @@
+
+==================== FINAL INTERFACE ====================
+2019-05-24 13:30:26.538424 UTC
+
+interface aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX:Handler.Cliente 8002
+  interface hash: 6625ee21556ab999c484537d66f6d7aa
+  ABI hash: 50be3855faf4a9e303fbc529ceb313e1
+  export-list hash: 25d96576db95a7f6a0246e72b260fab3
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: f123df0d0ff34442f243f0943d78ec4c
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+module dependencies:
+package dependencies:
+orphans:
+family instance modules:
+fdb9cb9c12ca156580e99f8a1cd7da33
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Handler.Cliente.$trModule2
+                   Handler.Cliente.$trModule1) -}
+5d80ffe6f8448e3070798ab722db21c8
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Handler.Cliente"#) -}
+7113e0033621418083dd921b80003b0c
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX"#) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

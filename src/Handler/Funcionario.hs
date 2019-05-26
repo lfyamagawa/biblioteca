@@ -73,7 +73,7 @@ getFuncionarioPerfilR funcid = do
         addStylesheet $ StaticR css_bootstrap_css
         [whamlet|
             <h1>
-                Nome #{funcionarioEmail funcionario}
+                Email:  #{funcionarioEmail funcionario}
                 
             <br><br><a href=@{TodosFuncionariosR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Voltar
         |]

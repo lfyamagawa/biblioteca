@@ -33,7 +33,7 @@
             <tr>
                 <td>
                     <a href=@{ClientePerfilR cliid}>
-                    #{show $ fromSqlKey cliid}
+                        #{show $ fromSqlKey cliid}
                 <td>
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     #{clienteNome cliente}

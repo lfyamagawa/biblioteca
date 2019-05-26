@@ -63,7 +63,11 @@ postLogoutR = do
 getAdminR :: Handler Html
 getAdminR = do 
     defaultLayout $ do 
+        addStylesheet $ StaticR css_bootstrap_css
         [whamlet|
-            <h1>
+            <h2>
                 BEM-VINDO ADMIN!!!
+            <br><br>
+            <a href=@{HomeR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Principal
+                
         |]

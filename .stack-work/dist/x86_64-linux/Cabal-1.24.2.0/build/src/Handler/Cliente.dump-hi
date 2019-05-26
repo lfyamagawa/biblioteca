@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2019-05-26 19:02:11.386703 UTC
+2019-05-26 19:07:43.297508 UTC
 
 interface aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX:Handler.Cliente 8002
-  interface hash: bde59f05b970e9fc21dbddc0a83b1c15
-  ABI hash: 9e7b25c884ff3282d1d63089dcc537ed
+  interface hash: 3cc1a082d67d64872d261c09b6c01bbe
+  ABI hash: 1478ca6c7b37e2b018871e826f5afcd2
   export-list hash: 8cd9590747969fa20f499d450ea2a8b8
   orphan hash: d1fa3b71aa3ccfc9c33fb5d0132d5d4e
   flag hash: f123df0d0ff34442f243f0943d78ec4c
@@ -353,7 +353,6 @@ import  -/  Foundation f1f328fe8f0722f2c4bda134ce6c6908
   HomeR a94b11d0a922787e1cdecc9607f97e1e
   StaticR ffa5b215ac18efbaecc31f06ce7bd63c
   TodosClientesR cadcaa08b2dc0105100ff7e07ca25e8f
-  TodosFuncionariosR 164dd328bfe546ec9a8ec268690bdecc
 import  -/  Import ad5d266c79756243cc076fcbfc224999
   exports: 661b664e2f8ef8105b8c193d946f7164
 import  -/  Model b6824be59d44c2a147b41321610273d5
@@ -779,7 +778,7 @@ b4c29ae3a28961ab0d786347ae0dabb9
   getClientePerfilR ::
     Model.ClienteId -> Foundation.Handler Text.Blaze.Html.Html
   {- Arity: 1, Strictness: <L,U> -}
-c82183a702a7d6b3a9ce4c9d13189632
+31b47eb0a1da5b5cec35ee42430bf44b
   getClienteR :: Foundation.Handler Text.Blaze.Html.Html
   {- Arity: 2, Strictness: <L,U><S,U>,
      Unfolding: InlineRule (0, True, True)
@@ -791,7 +790,7 @@ c82183a702a7d6b3a9ce4c9d13189632
                       ->_R Sym (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R))
                      (Sym (Yesod.Core.Types.N:HandlerT[0]
                                <Foundation.App>_N <GHC.Types.IO>_N <Text.Blaze.Html.Html>_N))) -}
-3759ba1105834ef80c666ee83e368a3c
+85eaf2f1369c5c347c51cdca20257504
   getClienteR1 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -1194,7 +1193,7 @@ c82183a702a7d6b3a9ce4c9d13189632
   {- Unfolding: (Yesod.Core.Handler.getUrlRenderParams
                    @ (Yesod.Core.Types.WidgetT Foundation.App GHC.Types.IO)
                    (Handler.Cliente.$s$fMonadHandlerWidgetT @ Foundation.App)) -}
-0cabb90df5f0d4d82c0a924b7e2baa6d
+8c77340ccd708f07f268f794f2ed0577
   getClienteR12 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -1211,7 +1210,7 @@ c82183a702a7d6b3a9ce4c9d13189632
                                Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
                    (eta69 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
                  Handler.Cliente.getClienteR13 eta69) -}
-497bd37fc236a88566e0240c8f416c21
+0a680a1b99475d774274126d0acc38a5
   getClienteR13 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -1272,21 +1271,21 @@ c82183a702a7d6b3a9ce4c9d13189632
                         (Yesod.Routes.Class.Route
                            (Sym (Yesod.Core.Class.Handler.D:R:HandlerSiteWidgetT[0]
                                      <GHC.Types.IO>_N <Foundation.App>_N)))_R)_R) #)) -}
-c2988051394b84a8e4fddc237d76dead
+a55631894994e7446d4271205a0aefe5
   getClienteR14 :: Text.Blaze.Internal.ChoiceString
   {- Strictness: m5,
      Unfolding: (Text.Blaze.Internal.PreEscaped
                    Handler.Cliente.getClienteR15) -}
-21d9ff6686ac70e8ad24aad79389457c
+689d0f895f75d27526ba30256c81e92d
   getClienteR15 :: Text.Blaze.Internal.ChoiceString
   {- Strictness: m3,
      Unfolding: (Text.Blaze.Internal.Text
                    Handler.Cliente.getClienteR16) -}
-d441b0013b0e05275af238074447ad42
+059553ec96023c095cff33c91375e435
   getClienteR16 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    "\" method=\"post\"><h3>Cadastro de Cliente</h3>\n\
-                   \<br>-------------------<br></br>\n"#) -}
+                   \<br><h3>-------------------<br></br>\n"#) -}
 7bc902bff847ad7b4b3696d0881f0912
   getClienteR17 ::
     ()
@@ -2290,7 +2289,7 @@ bf24e889d94b2c168e7de1187c83b995
                    @ ()
                    Handler.Cliente.getClienteR6
                    GHC.Tuple.()) -}
-9489aa6914b6379024083b7ae0c056ea
+112dd5b602684d1068043f6274ad80e6
   getClienteR_eta1 :: Text.Blaze.Html.Html
   {- Strictness: m5,
      Unfolding: (Text.Blaze.Internal.Content

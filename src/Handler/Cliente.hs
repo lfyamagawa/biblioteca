@@ -25,7 +25,7 @@ getClienteR = do
         [whamlet|
             <form action=@{ClienteR} method=post>
                 <h3>Cadastro de Cliente
-                <br>-------------------<br>
+                <br><h3>-------------------<br>
                 ^{widget}
                 <input type="submit" value="cadastrar">
                 <br><br>
@@ -66,7 +66,7 @@ getClientePerfilR cliid = do
                 Endereco: #{clienteEndereco cliente}
             <div>
                 Telefone: #{clienteTelefone cliente}
-            <br><br><a href=@{TodosFuncionariosR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Voltar
+            <br><br><a href=@{TodosClientesR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Voltar
         |]
 
 postClienteApagarR :: ClienteId -> Handler Html
@@ -84,7 +84,7 @@ getClienteAlteraR cliid = do
         [whamlet|
             <form action=@{ClienteAlteraR cliid} method=post>
                 ^{widget}
-                <input type="submit" value="atualiizar">
+                <input type="submit" value="Atualizar">
                 <br><br><a href=@{TodosClientesR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Voltar
         |]
 

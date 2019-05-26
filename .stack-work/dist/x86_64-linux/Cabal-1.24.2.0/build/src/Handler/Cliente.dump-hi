@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2019-05-26 19:09:08.800471 UTC
+2019-05-26 19:12:20.602752 UTC
 
 interface aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX:Handler.Cliente 8002
-  interface hash: 0351d3801861f475fec0818ed86e594c
-  ABI hash: 436b14f3bd5793e424f6ca05f694e4d4
+  interface hash: 01d610c90f48bfe9e665004bd17c8571
+  ABI hash: a8d1322db81d4ff885acde0701259895
   export-list hash: a64c836d57a5ec8006e5e93439f4e0f2
   orphan hash: ffaaeff2d3c8c6db3b03437753903169
   flag hash: f123df0d0ff34442f243f0943d78ec4c
@@ -778,7 +778,7 @@ a30462f5a815dcf03e04fd8875284575
   getClientePerfilR ::
     Model.ClienteId -> Foundation.Handler Text.Blaze.Html.Html
   {- Arity: 1, Strictness: <L,U> -}
-076d2803b4f28d11b4fc6c9cb3f808f6
+3bde329b683fbc790012970f39ddb708
   getClienteR :: Foundation.Handler Text.Blaze.Html.Html
   {- Arity: 2, Strictness: <L,U><S,U>,
      Unfolding: InlineRule (0, True, True)
@@ -790,7 +790,7 @@ a30462f5a815dcf03e04fd8875284575
                       ->_R Sym (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R))
                      (Sym (Yesod.Core.Types.N:HandlerT[0]
                                <Foundation.App>_N <GHC.Types.IO>_N <Text.Blaze.Html.Html>_N))) -}
-a4da3de031226e8db4b2ca47f3d93658
+9d3966fd37fc5e875f23135ae787795f
   getClienteR1 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -1193,7 +1193,7 @@ a4da3de031226e8db4b2ca47f3d93658
   {- Unfolding: (Yesod.Core.Handler.getUrlRenderParams
                    @ (Yesod.Core.Types.WidgetT Foundation.App GHC.Types.IO)
                    (Handler.Cliente.$s$fMonadHandlerWidgetT @ Foundation.App)) -}
-83dbb178991f94868b90c783652fa8e2
+cd6c507bb96cf281686b1d8a34bded27
   getClienteR12 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -1210,7 +1210,7 @@ a4da3de031226e8db4b2ca47f3d93658
                                Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
                    (eta69 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
                  Handler.Cliente.getClienteR13 eta69) -}
-e6ed49d79827b1e357bab174ed679986
+c43a03255807f6b0d6d56eac7df6938c
   getClienteR13 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -1271,21 +1271,21 @@ e6ed49d79827b1e357bab174ed679986
                         (Yesod.Routes.Class.Route
                            (Sym (Yesod.Core.Class.Handler.D:R:HandlerSiteWidgetT[0]
                                      <GHC.Types.IO>_N <Foundation.App>_N)))_R)_R) #)) -}
-a55631894994e7446d4271205a0aefe5
+23eeb0691e943ff91a176b646d1b4f22
   getClienteR14 :: Text.Blaze.Internal.ChoiceString
   {- Strictness: m5,
      Unfolding: (Text.Blaze.Internal.PreEscaped
                    Handler.Cliente.getClienteR15) -}
-689d0f895f75d27526ba30256c81e92d
+79d47ba944220626c1ad54487c1352d6
   getClienteR15 :: Text.Blaze.Internal.ChoiceString
   {- Strictness: m3,
      Unfolding: (Text.Blaze.Internal.Text
                    Handler.Cliente.getClienteR16) -}
-059553ec96023c095cff33c91375e435
+52768080da95e8ba04b8c25d10c706a6
   getClienteR16 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
-                   "\" method=\"post\"><h3>Cadastro de Cliente</h3>\n\
-                   \<br><h3>-------------------<br></br>\n"#) -}
+                   "\" method=\"post\"><h3>Cadastro de Cliente</h3></h3>\n\
+                   \<br><h3>-------------------</h3><br></br>\n"#) -}
 7b8a0fc9a6e5de4dc1350e2810d6e6b6
   getClienteR17 ::
     ()
@@ -2289,7 +2289,7 @@ bf24e889d94b2c168e7de1187c83b995
                    @ ()
                    Handler.Cliente.getClienteR6
                    GHC.Tuple.()) -}
-112dd5b602684d1068043f6274ad80e6
+0a353042e0964e70ef038dfd17d21865
   getClienteR_eta1 :: Text.Blaze.Html.Html
   {- Strictness: m5,
      Unfolding: (Text.Blaze.Internal.Content

@@ -24,8 +24,8 @@ getClienteR = do
         addStylesheet $ StaticR css_bootstrap_css
         [whamlet|
             <form action=@{ClienteR} method=post>
-                <h3>Cadastro de Cliente
-                <br><h3>-------------------<br>
+                <h3>Cadastro de Cliente</h3>
+                <br><h3>-------------------</h3><br>
                 ^{widget}
                 <input type="submit" value="cadastrar">
                 <br><br>

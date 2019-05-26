@@ -7,6 +7,7 @@
 module Handler.Funcionario where
 
 import Import
+import Database.Persist.Sql
 
 -- INCLUIR
 

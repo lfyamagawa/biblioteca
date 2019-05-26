@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2019-05-26 19:12:17.344336 UTC
+2019-05-26 20:53:41.880721 UTC
 
 interface aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX:Import.NoFoundation 8002
-  interface hash: f0351f4993382326ba2893464c89e605
-  ABI hash: d276fea93bd8dbffae6acb356aaf1343
-  export-list hash: 99d3ee4f40b1db2302a1bfb1279ffa53
+  interface hash: 2c881914e226fce5b8d6f055b5cd9b23
+  ABI hash: 8cd61d0bf26f6b3c84cd936e32426e90
+  export-list hash: 4a457dcfff1faa1ff43bebc0feacad73
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 5e6e116e79fd7c2679f3688e577f5394
   sig of: Nothing
@@ -1505,7 +1505,7 @@ exports:
   Model.EmprestimoId
   Model.Funcionario{Model.Funcionario funcionarioEmail funcionarioSenha}
   Model.FuncionarioId
-  Model.Livro{Model.Livro livroAssunto livroAutor livroDescricao livroPublicacao livroStatus livroTitulo}
+  Model.Livro{Model.Livro livroAssunto livroAutor livroDescricao livroEmprestado livroPublicacao livroTitulo}
   Model.LivroId
   Settings.AppSettings{Settings.AppSettings appAnalytics appAuthDummyLogin appCopyright appDatabaseConf appDetailedRequestLogging appHost appIpFromHeader appMutableStatic appPort appReloadTemplates appRoot appShouldLogAll appSkipCombining appStaticDir}
   Control.Arrow.Arrow|{Control.Arrow.&&& Control.Arrow.***}
@@ -1709,7 +1709,7 @@ exports:
   Database.Persist.Class.PersistEntity.BackendSpecificFilter
   Database.Persist.Class.PersistEntity.BackendSpecificUpdate
   Database.Persist.Class.PersistEntity.Entity{Database.Persist.Class.PersistEntity.Entity entityKey entityVal}
-  Database.Persist.Class.PersistEntity.EntityField|{Model.ClienteCpf Model.ClienteEndereco Model.ClienteId Model.ClienteNome Model.ClienteRg Model.ClienteTelefone Model.EmprestimoCliid Model.EmprestimoData_dev Model.EmprestimoData_emp Model.EmprestimoId Model.EmprestimoLivid Model.FuncionarioEmail Model.FuncionarioId Model.FuncionarioSenha Model.LivroAssunto Model.LivroAutor Model.LivroDescricao Model.LivroId Model.LivroPublicacao Model.LivroStatus Model.LivroTitulo}
+  Database.Persist.Class.PersistEntity.EntityField|{Model.ClienteCpf Model.ClienteEndereco Model.ClienteId Model.ClienteNome Model.ClienteRg Model.ClienteTelefone Model.EmprestimoCliid Model.EmprestimoData_dev Model.EmprestimoData_emp Model.EmprestimoId Model.EmprestimoLivid Model.FuncionarioEmail Model.FuncionarioId Model.FuncionarioSenha Model.LivroAssunto Model.LivroAutor Model.LivroDescricao Model.LivroEmprestado Model.LivroId Model.LivroPublicacao Model.LivroTitulo}
   Database.Persist.Class.PersistEntity.Filter{Database.Persist.Class.PersistEntity.BackendFilter Database.Persist.Class.PersistEntity.Filter Database.Persist.Class.PersistEntity.FilterAnd Database.Persist.Class.PersistEntity.FilterOr filterField filterFilter filterValue}
   Database.Persist.Class.PersistEntity.Key|{Model.ClienteKey Model.EmprestimoKey Model.FuncionarioKey Model.LivroKey unClienteKey unEmprestimoKey unFuncionarioKey unLivroKey}
   Database.Persist.Class.PersistEntity.PersistEntity{Database.Persist.Class.PersistEntity.EntityField Database.Persist.Class.PersistEntity.Key Database.Persist.Class.PersistEntity.PersistEntityBackend Database.Persist.Class.PersistEntity.Unique Database.Persist.Class.PersistEntity.entityDef Database.Persist.Class.PersistEntity.fieldLens Database.Persist.Class.PersistEntity.fromPersistValues Database.Persist.Class.PersistEntity.keyFromValues Database.Persist.Class.PersistEntity.keyToValues Database.Persist.Class.PersistEntity.persistFieldDef Database.Persist.Class.PersistEntity.persistIdField Database.Persist.Class.PersistEntity.persistUniqueKeys Database.Persist.Class.PersistEntity.persistUniqueToFieldNames Database.Persist.Class.PersistEntity.persistUniqueToValues Database.Persist.Class.PersistEntity.toPersistFields}
@@ -2212,8 +2212,8 @@ family instance modules: adjunctions-4.3@adjunctions-4.3-A5jfd1yrmaY4DRMJuiquBp:
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.FromJSON f70746c5b1cd1a03ee098f0728e87383
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.Internal f040a64200abf1dfa06f5db9b9e027c1
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.ToJSON d8ae0f04da94d706b89336fd9d0bf43b
-import  -/  Model b6824be59d44c2a147b41321610273d5
-  exports: 01771be26afbe6ef9afdf93da1938c79
+import  -/  Model ca0a41839802f18c4468f82b9104a2ac
+  exports: eeef0e7a168c3b1aea08e991bc7d5974
   Cliente 67af65f0c1143d64e580f793afe4d95d
   Cliente 9adaac9ce26d1fabc444a2184096ae06
   ClienteCpf 913465170d77940c410adc78f69e8f0e
@@ -2224,15 +2224,15 @@ import  -/  Model b6824be59d44c2a147b41321610273d5
   ClienteNome 1a5dc5e17ed6d66d59b968fef905eb31
   ClienteRg c2d3f4276b887db5fef6f57bdc53a3e0
   ClienteTelefone 6fd4aa00cebe89bf5552a53f7cfc29ac
-  Emprestimo 4a5095988199868f9d7d3ba8462b68dd
-  Emprestimo f5bacda6df7205ac37ffaeece1cf04fe
-  EmprestimoCliid 0be099a9fe8fdb7fa14f82f143ab5a0b
-  EmprestimoData_dev 2f7f097282a46d1cce26e332f3eb29ff
-  EmprestimoData_emp 62a0c4517695f7e406de0cafd3a20327
-  EmprestimoId bad509509f1bb438c91793c75d44b957
-  EmprestimoId 6bb383ce66f105fed91e121a9fa42121
-  EmprestimoKey 5fdc404b8f2b2a468ffa4754094b1757
-  EmprestimoLivid 40ce664f20ff06ba7598f2c549c5a4c6
+  Emprestimo f021c8fec3268605d946e50e4e60acbd
+  Emprestimo b16349aef463ea38e3bc2bc521613eba
+  EmprestimoCliid 5cab87fd79264ff68532b9f71577cdc7
+  EmprestimoData_dev f72b4441fda323b0fcc85d3c7c60c94c
+  EmprestimoData_emp 9558266c37cf4a538348cec9f27ecf0c
+  EmprestimoId 5b8226b1f6c4ba2e6472edc426edd6e0
+  EmprestimoId c44576bca740475f1cba8258453085f6
+  EmprestimoKey ab577e63490d7c0d1bf76b8ef01f98d8
+  EmprestimoLivid fc782967661c7c76e37226df9994600c
   Funcionario 7118cd502933ff6ca690202794694aff
   Funcionario 784411d46fe997e0aed3471a9cf9611a
   FuncionarioEmail 30b0808097ddfe2c0f329673bc2b134d
@@ -2240,40 +2240,40 @@ import  -/  Model b6824be59d44c2a147b41321610273d5
   FuncionarioId 438cc7778c47cd631a17e7ac095de822
   FuncionarioKey db58a84c7368132aa1061f4150208569
   FuncionarioSenha d7a74d202c49fe46d58b3360ef96eefc
-  Livro 15df524a909f1267f466a03c22cd455b
-  Livro 28ff3d8f8b32621a64a9cfc9d1054243
-  LivroAssunto b5527fc265db263b9c39640fedd1f724
-  LivroAutor 744743567b71bb144b3481133538980a
-  LivroDescricao d2c25e36dd2ef7d6f6a20d318064b56e
-  LivroId d75928d471725824c84dd1daae560e81
-  LivroId a0bb30b90721d68beab6ef38d34f8a86
-  LivroKey f310ca7b734b5405e438b8099254ed28
-  LivroPublicacao 6bfeecea36aa3d58a6f53b5929637482
-  LivroStatus 4f43dd59c0bb91f1ce95174ad00a3e03
-  LivroTitulo 41141e4ba79d273a18621f336e33e526
+  Livro 220c0af1a0728d096266929578cac047
+  Livro ab4c18d07126571b6c67f9d650d46f2e
+  LivroAssunto 1ab87bba04a7ed770c3821556b870fa8
+  LivroAutor b9811a2eea2da1a4340b28fbd6bcd6bd
+  LivroDescricao ed6d3a5d003f27a5bd00f65473ca8b5e
+  LivroEmprestado c6f4331be51beace9f96172ef2c834ef
+  LivroId 3512c67ab6d04c7f5df33a9d28aa3791
+  LivroId fac869dd482e1eb50437f0ad5481b4f8
+  LivroKey 6e61c63232707704de952e375a80fc7b
+  LivroPublicacao 395fcb82c80564206d8c9ac62f30aaea
+  LivroTitulo 941eb6a9f0c653b01669d0769aa51735
   UniqueRestEmail 24a8dee1abf52efcb45f7f7010d65d23
   clienteCpf 523d0a7c29b40eecd6ca01ccecb2ab04
   clienteEndereco a8d4844ae5e296583b1b0f90de31842b
   clienteNome 3bea657df4638380cf71e84a4bc2e0ee
   clienteRg c1be0e19520b3a6cff89efbaa7311a7e
   clienteTelefone 590b450330547df4d00ff5d24b7440a9
-  emprestimoCliid a3d29ae09da08f3db16a0f434c1197f8
-  emprestimoData_dev 6ee82bad7373e0963057171b08a69c78
-  emprestimoData_emp 23232a13b824dbf48142bfd6048fd6ec
-  emprestimoLivid 45132dc70c2e5a8262b333e213a1200f
+  emprestimoCliid 70ace8d630227898dac5333d73024072
+  emprestimoData_dev c0173ae589815722dd29067d0b2585d6
+  emprestimoData_emp d333f486d248387b775d253f0ac8fd07
+  emprestimoLivid 6d60bfa852d46120fdf2a86c32523319
   funcionarioEmail 090829eac49efc5459fdfed1d4907f8d
   funcionarioSenha d47dede4355b388464f8c9fbc024e18f
-  livroAssunto 525a7bacf651cf58dfb8b70ddc027697
-  livroAutor 4d7e54265f21e5d0480ddca0515afaba
-  livroDescricao ee808404b4499a371170768fde1250d8
-  livroPublicacao ec2d83fd3fe3b8cbf257338a11efe051
-  livroStatus 582d0bfb04dad637c74ea56b0a89a3ec
-  livroTitulo 0688753f54d2fb4f0ad84fb2cf2562d1
+  livroAssunto b9fde7e41aada167d0036123dbead590
+  livroAutor 7861c3a967822856ccd33292c91d5da4
+  livroDescricao f4b5c163dfc7552439c98bec0f04e7b8
+  livroEmprestado fd11c660a1e5d41291919aca007362a9
+  livroPublicacao 2e5899293e2767a9cab55a1d000c8089
+  livroTitulo 9033a9940862d0604b8932b47a5e63e5
   migrateAll b09d2378cf411109bc2d296142c07272
   unClienteKey 9adaac9ce26d1fabc444a2184096ae06
-  unEmprestimoKey f5bacda6df7205ac37ffaeece1cf04fe
+  unEmprestimoKey b16349aef463ea38e3bc2bc521613eba
   unFuncionarioKey 784411d46fe997e0aed3471a9cf9611a
-  unLivroKey 28ff3d8f8b32621a64a9cfc9d1054243
+  unLivroKey ab4c18d07126571b6c67f9d650d46f2e
 import  -/  Settings 0f8bbb6df9df8001dfa1e9ea64b738dc
   exports: 86543d2cf594c4f874c109a10c209959
   AppSettings f00e40cc631ec94d3b2da137bb5fed5e

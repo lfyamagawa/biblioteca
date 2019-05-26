@@ -22,4 +22,10 @@
 /cliente/#ClienteId/apagar ClienteApagarR POST
 /cliente/#ClienteId/alterar ClienteAlteraR GET POST
 
+/livro    LivroR   GET POST
+/livros   TodosLivrosR  GET
+/livro/#LivroId/perfil LivroPerfilR GET
+/livro/#LivroId/apagar LivroApagarR POST
+/livro/#LivroId/alterar LivroAlteraR GET POST
+
 

@@ -11,11 +11,27 @@ import Yesod.Form.Bootstrap3 (BootstrapFormLayout (..), renderBootstrap3)
 
 getHomeR :: Handler Html
 getHomeR = do
+    sess <- lookupSession "_ID"
     defaultLayout $ do
         addStylesheet $ StaticR css_bootstrap_css
         [whamlet|
-            <div class="container">
-                <!-- <div class="alert alert-primary" role="alert"> -->
-                <span class="badge badge-pill badge-success">
-                    Sucesso
-        |]
+            $maybe sessao <- sess
+                Ola #{sessao}
+            $nothing
+                <h2 class>Biblioteca
+            <ul>
+                <li>
+                    <a href=@{FuncionarioR}>
+                        Cadastro de funcionarios
+                <li>
+                    <a href=@{TodosFuncionariosR}>
+                        Listar Funcionarios
+                $maybe _ <- sess
+                    <li>
+                        <form action=@{LogoutR} method=post>
+                            <input type="submit" value="Sair">
+                $nothing
+                    <li>
+                        <a href=@{LoginR}>
+                            Entrar
+        |] 

@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2019-05-26 13:29:39.928517 UTC
+2019-05-26 13:43:02.060033 UTC
 
 interface aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX:Application [orphan module] 8002
-  interface hash: fed9c98f53b89b1831a8f59993907d99
+  interface hash: 49f2b46cf803ff85bf12191cf9800e69
   ABI hash: 0f6f66238f62d0a32529e998d56bce1a
   export-list hash: 0b349f982a6a667b29f97d06e71e50e1
   orphan hash: 83ba1697ad2088959df8ed8603551a7a
@@ -382,9 +382,9 @@ import  -/  Handler.Funcionario d27b562aaaee538a49100bc79a113666
   postFuncionarioAlteraR 0291b99c56c9b0c95ca1112473578ac8
   postFuncionarioApagarR 7ac9c8d7b979644bebc04b015ddd8083
   postFuncionarioR 26f1ba071ddc9ea984fa071b3890ebd6
-import  -/  Handler.Home db0083d7f967a7c9e6bc8558a5e8aadc
-  exports: ec30c6652a4cb4ff12f3dd91822e25f9
-  getHomeR ff34004c11f3e94f9a7b964193b17cfd
+import  -/  Handler.Home 301d0102645d7353b98dda7f3b859f25
+  exports: ccf1fd5d13d8ee912cac09a6c456f703
+  getHomeR a6b8e3ed695944109143a8734ed45426
 import  -/  Handler.Livro f879686f7d3dbe6a52a9c9dd75678a07
   exports: 25d96576db95a7f6a0246e72b260fab3
 import  -/  Handler.Login f2a113447df3dc08f9c1bfe0543bdbb6

@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2019-05-26 12:17:51.504333 UTC
+2019-05-26 12:26:54.68432 UTC
 
 interface aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX:Application [orphan module] 8002
-  interface hash: 0a84986841d4bff0c827964e1430c9cb
+  interface hash: 4d9fc4929b5b3d6c86b8adda69d2fa02
   ABI hash: dee05bd0822d2b02fa5f4e24c379e7a0
   export-list hash: 1f768a801ed412729597740db30932bf
   orphan hash: 3ec1e115ebab9a5cfb179206e2884776
@@ -372,13 +372,13 @@ import  -/  Handler.Common 8179d918a64f43f9a7e1dcf71a43723e
   getRobotsR e241efb8246dbb75aa4d5fcdaee138a9
 import  -/  Handler.Emprestimo 3a4d36df80372c3866f60b29cb4d25de
   exports: 25d96576db95a7f6a0246e72b260fab3
-import  -/  Handler.Funcionario c9f90de0f448657232d8098734c7da35
-  exports: ccb5de27f0779195c02d8b94a856e69b
-  getFuncionarioPerfilR 4cfb304f19517ced684252ced22790e2
-  getFuncionarioR 29cbc8cb14ccc1578917297ade895769
-  getTodosFuncionariosR 7ea183eedb8c0d4cfc24daa1ff5679fb
-  postFuncionarioApagarR 9c1d4e7409b3bc0ac1c239195f180bf4
-  postFuncionarioR 347713e9f95a84e62f3ee2235e00e7bb
+import  -/  Handler.Funcionario 5e002c4081482031d0b1a3b7d25cd6f3
+  exports: f8446ed2168465d8d95aa2647aaf1411
+  getFuncionarioPerfilR 85b843776b21d2e966af85c65a2f275b
+  getFuncionarioR b2a1c40ad434dead19eae6f1f92bfb31
+  getTodosFuncionariosR 8750a51989c00f8dcfd7a301e97342a4
+  postFuncionarioApagarR 015ee2f55a05429ec29b7ba205586b98
+  postFuncionarioR 2ffff2820dbb1ee857364fb3f70f541e
 import  -/  Handler.Home 1ef917747441fd18633ff90c6da2fb9f
   exports: ec30c6652a4cb4ff12f3dd91822e25f9
   getHomeR 6b6fa0641fe4ddb8b9239e8d6a2f47d3

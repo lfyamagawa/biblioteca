@@ -21,11 +21,14 @@
             <tr>
                 <td>
                     <a href=@{FuncionarioPerfilR funcid}>
-                        show $ fromSqlKey idFuncionario                         
+                        #{show $ funcid}
+                        &nbsp;&nbsp;&nbsp;&nbsp
                 <td>
                         #{funcionarioEmail funcionario}
+                        &nbsp;&nbsp;&nbsp;&nbsp
                 <td>
                         #{funcionarioSenha funcionario}
+                        &nbsp;&nbsp;&nbsp;&nbsp
                 <td>
                 <td>
                     <form action=@{FuncionarioApagarR funcid} method=post>

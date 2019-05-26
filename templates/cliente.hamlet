@@ -2,20 +2,33 @@
     <thead>
         <tr>
             <th>
+                Id
+                &nbsp;&bsp;&nbsp;&nbsp
+            <th>
                 Nome
+                &nbsp;&bsp;&nbsp;&nbsp
             <th>
                 RG
+                &nbsp;&bsp;&nbsp;&nbsp
             <th>
                 CPF
+                &nbsp;&bsp;&nbsp;&nbsp
             <th>
                 Endereco
+                &nbsp;&bsp;&nbsp;&nbsp
             <th>    
                 Telefone
+                &nbsp;&bsp;&nbsp;&nbsp
             <th>
             
             <th>
                 
     <tbody>
+        <h2>Lista de Clientes<br><br>
+        <a href=@{HomeR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Principal
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href=@{ClienteR} class="btn btn-primary btn-sm active" role"button" aria-pressed="true">Incluir
+        <br><br>
         $forall (Entity cliid cliente) <- clientes
             <tr>
                 <td>
@@ -36,10 +49,12 @@
                 <td>
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     #{clienteTelefone cliente}
+                    &nbsp;&nbsp;&nbsp;&nbsp;
  
                 <td>
                     <a href=@{ClienteAlteraR cliid}>
                         Editar
+                    &nbsp;&nbsp;&nbsp;&nbsp;
                 <td>
                     <form action=@{ClienteApagarR cliid} method=post>
                         <input type="submit" value="X">

@@ -3,22 +3,22 @@
         <tr>
             <th>
                 Id
-                &nbsp;&bsp;&nbsp;&nbsp
+                &nbsp;&nbsp;&nbsp;&nbsp
             <th>
                 Nome
-                &nbsp;&bsp;&nbsp;&nbsp
+                &nbsp;&nbsp;&nbsp;&nbsp
             <th>
                 RG
-                &nbsp;&bsp;&nbsp;&nbsp
+                &nbsp;&nbsp;&nbsp;&nbsp
             <th>
                 CPF
-                &nbsp;&bsp;&nbsp;&nbsp
+                &nbsp;&nbsp;&nbsp;&nbsp
             <th>
                 Endereco
-                &nbsp;&bsp;&nbsp;&nbsp
+                &nbsp;&nbsp;&nbsp;&nbsp
             <th>    
                 Telefone
-                &nbsp;&bsp;&nbsp;&nbsp
+                &nbsp;&nbsp;&nbsp;&nbsp
             <th>
             
             <th>
@@ -52,7 +52,7 @@
                     &nbsp;&nbsp;&nbsp;&nbsp;
  
                 <td>
-                    <a href=@{ClienteAlteraR cliid}>
+                    <a href=@{ClienteAlteraR cliid} class="btn btn-primary btn-sm active" role"button" aria-pressed="true">
                         Editar
                     &nbsp;&nbsp;&nbsp;&nbsp;
                 <td>

@@ -17,31 +17,32 @@ getHomeR = do
         [whamlet|
             $maybe sessao <- sess
                 <h3>Gestão de bibliotecas
-                <br>
                 Ola #{sessao}
-                <br>
             $nothing
                 <h3>Gestão de bibliotecas
-                <br>
             <ul>
-                    <br>
-                    <h4>------- Funcionário ---------
+                    <br><h4>------- Funcionário ---------</h4>
                 <li>
                     <a href=@{FuncionarioR}>
                         Cadastro de Funcionario
                 <li>
                     <a href=@{TodosFuncionariosR}>
                         Listar Funcionarios
-                    <br>
-                    <h4>------- Clientes ---------
+                    <h4>------- Clientes ---------</h4>
                 <li>
                     <a href=@{ClienteR}>
                         Cadastro de Cliente
                 <li>
                     <a href=@{TodosClientesR}>
                         Listar Clientes
-                    <br>
-                    <h4>------- Login/Logout -------
+                    <h4>------- Livros ---------</h4>
+                <li>
+                    <a href=@{ClienteR}>
+                        Cadastro de Livro
+                <li>
+                    <a href=@{TodosClientesR}>
+                        Listar Livros
+                    <h4>------- Login/Logout -------</h4>
                 $maybe _ <- sess
                     <form action=@{LogoutR} method=post>
                         <input type="submit" value="Sair">

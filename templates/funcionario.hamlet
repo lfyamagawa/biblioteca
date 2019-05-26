@@ -30,8 +30,7 @@
                         #{funcionarioSenha funcionario}
                         &nbsp;&nbsp;&nbsp;&nbsp
                 <td>
-                        <a href=@{FuncionarioAlteraR funcid} class="btn btn-primary btn-sm active" role="button" aria-pressed="false">
-                        Editar
+                        <a href=@{FuncionarioAlteraR funcid} class="btn btn-primary btn-sm active" role="button" aria-pressed="false">Editar
                 <td>
                     <form action=@{FuncionarioApagarR funcid} method=post>
                         <input type="submit" value="X">

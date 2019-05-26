@@ -22,10 +22,17 @@ getHomeR = do
             <ul>
                 <li>
                     <a href=@{FuncionarioR}>
-                        Cadastro de funcionarios
+                        Cadastro de Funcionario
                 <li>
                     <a href=@{TodosFuncionariosR}>
                         Listar Funcionarios
+                <li>
+                    <a href=@{ClienteR}>
+                        Cadastro de Cliente
+                <li>
+                    <a href=@{TodosClientesR}>
+                        Listar Clientes
+ 
                 $maybe _ <- sess
                     <li>
                         <form action=@{LogoutR} method=post>

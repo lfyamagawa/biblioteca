@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2019-05-26 18:06:54.537316 UTC
+2019-05-26 18:09:34.429407 UTC
 
 interface aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX:Handler.Home 8002
-  interface hash: 3659a854ecd069f3a99fc28b189b82c3
+  interface hash: 30f1d0ee3ec4e9f177411c0a8df1ab26
   ABI hash: 8ebe457fe3400612a54a28db57d087ba
   export-list hash: ccf1fd5d13d8ee912cac09a6c456f703
   orphan hash: c615116cd212abc4390675378980b9b9
@@ -337,11 +337,13 @@ family instance modules: adjunctions-4.3@adjunctions-4.3-A5jfd1yrmaY4DRMJuiquBp:
                          yesod-static-1.5.3.1@yesod-static-1.5.3.1-3fPHfGwGXLD6UjosrxUpf7:Yesod.Static
                          zlib-0.6.1.2@zlib-0.6.1.2-7negTfm2ujt1gW4wr40MUp:Codec.Compression.Zlib.Stream
 import  -/  Foundation f1f328fe8f0722f2c4bda134ce6c6908
+  ClienteR 23fa83bdb01adbb27aa9f3299341489e
   FuncionarioR 53f0fc0efcfcce9f2a9586584fb0aefc
   Handler a72d1ae1b7b9309ae9bd58386bc4289f
   LoginR acbcf6b141823f4763c306e923b8f59f
   LogoutR 39e73f3dfcc94bd47754fe1a0eb86ae5
   StaticR ffa5b215ac18efbaecc31f06ce7bd63c
+  TodosClientesR cadcaa08b2dc0105100ff7e07ca25e8f
   TodosFuncionariosR 164dd328bfe546ec9a8ec268690bdecc
 import  -/  Import ad5d266c79756243cc076fcbfc224999
   exports: 661b664e2f8ef8105b8c193d946f7164

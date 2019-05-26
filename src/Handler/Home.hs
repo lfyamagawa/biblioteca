@@ -40,13 +40,12 @@ getHomeR = do
                 <li>
                     <a href=@{TodosClientesR}>
                         Listar Clientes
- 
+                    <br>
+                    <h2>------- Login/Logout -------
                 $maybe _ <- sess
-                    <li>
-                        <form action=@{LogoutR} method=post>
-                            <input type="submit" value="Sair">
+                    <form action=@{LogoutR} method=post>
+                        <input type="submit" value="Sair">
                 $nothing
-                    <li>
-                        <a href=@{LoginR}>
-                            Entrar
+                    <a href=@{LoginR}>
+                        Entrar
         |] 

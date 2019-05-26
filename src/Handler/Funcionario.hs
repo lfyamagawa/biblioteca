@@ -87,9 +87,6 @@ postFuncionarioApagarR funcid = do
     redirect TodosFuncionariosR
 
 -- ALTERAR
---
--- ERRO, ver com professor
---
 
 getFuncionarioAlteraR :: FuncionarioId -> Handler Html
 getFuncionarioAlteraR funcid = do

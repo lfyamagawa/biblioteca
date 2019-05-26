@@ -25,7 +25,7 @@ getHomeR = do
                 <br>
             <ul>
                     <br>
-                    <h3>------- Funcionário ---------
+                    <h4>------- Funcionário ---------
                 <li>
                     <a href=@{FuncionarioR}>
                         Cadastro de Funcionario
@@ -33,7 +33,7 @@ getHomeR = do
                     <a href=@{TodosFuncionariosR}>
                         Listar Funcionarios
                     <br>
-                    <h3>------- Clientes ---------
+                    <h4>------- Clientes ---------
                 <li>
                     <a href=@{ClienteR}>
                         Cadastro de Cliente
@@ -41,7 +41,7 @@ getHomeR = do
                     <a href=@{TodosClientesR}>
                         Listar Clientes
                     <br>
-                    <h2>------- Login/Logout -------
+                    <h4>------- Login/Logout -------
                 $maybe _ <- sess
                     <form action=@{LogoutR} method=post>
                         <input type="submit" value="Sair">

@@ -21,10 +21,17 @@ getClienteR :: Handler Html
 getClienteR = do 
     (widget,enctype) <- generateFormPost (formCliente Nothing)
     defaultLayout $ do
+        addStylesheet $ StaticR css_bootstrap_css
         [whamlet|
             <form action=@{ClienteR} method=post>
+                <h3>Cadastro de Cliente
+                <br>-------------------<br>
                 ^{widget}
                 <input type="submit" value="cadastrar">
+                <br><br>
+                <a href=@{HomeR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Principal
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href=@{TodosClientesR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Lista Todos
         |]
 
 postClienteR :: Handler Html
@@ -38,13 +45,16 @@ postClienteR = do
     
 getTodosClientesR :: Handler Html
 getTodosClientesR = do 
-    clientes <- runDB $ selectList [] [Asc ClienteNome]
-    defaultLayout $(whamletFile "templates/cliente.hamlet")
+    clientes <- runDB $ selectList [] [Asc ClienteId]
+    defaultLayout $ do
+        addStylesheet $ StaticR css_bootstrap_css
+        $(whamletFile "templates/cliente.hamlet")
 
 getClientePerfilR :: ClienteId -> Handler Html
 getClientePerfilR cliid = do 
     cliente <- runDB $ get404 cliid
     defaultLayout $ do 
+        addStylesheet $ StaticR css_bootstrap_css
         [whamlet|
             <h1>
                 Cliente #{clienteNome cliente}
@@ -56,6 +66,7 @@ getClientePerfilR cliid = do
                 Endereco: #{clienteEndereco cliente}
             <div>
                 Telefone: #{clienteTelefone cliente}
+            <br><br><a href=@{TodosFuncionariosR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Voltar
         |]
 
 postClienteApagarR :: ClienteId -> Handler Html
@@ -69,10 +80,12 @@ getClienteAlteraR cliid = do
     cliente <- runDB $ get404 cliid
     (widget,enctype) <- generateFormPost (formCliente $ Just cliente)
     defaultLayout $ do
+        addStylesheet $ StaticR css_bootstrap_css
         [whamlet|
             <form action=@{ClienteAlteraR cliid} method=post>
                 ^{widget}
-                <input type="submit" value="atualizar">
+                <input type="submit" value="atualiizar">
+                <br><br><a href=@{TodosClientesR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Voltar
         |]
 
 postClienteAlteraR :: ClienteId -> Handler Html

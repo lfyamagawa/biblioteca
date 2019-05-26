@@ -1,0 +1,45 @@
+<table>
+    <thead>
+        <tr>
+            <th>
+                Nome
+            <th>
+                RG
+            <th>
+                CPF
+            <th>
+                Endereco
+            <th>    
+                Telefone
+            <th>
+            
+            <th>
+                
+    <tbody>
+        $forall (Entity cliid cliente) <- clientes
+            <tr>
+                <td>
+                    <a href=@{ClientePerfilR cliid}>
+                    #{show $ fromSqlKey cliid}
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    #{clienteNome cliente}
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    #{clienteRg cliente}
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    #{clienteCpf cliente}
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    #{clienteEndereco cliente}
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    #{clienteTelefone cliente}
+ 
+                <td>
+                    <a href=@{ClienteAlteraR cliid}>
+                        Editar
+                <td>
+                    <form action=@{ClienteApagarR cliid} method=post>
+                        <input type="submit" value="X">

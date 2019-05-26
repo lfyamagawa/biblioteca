@@ -10,6 +10,7 @@ Livro
     publicacao  Text
     descricao   Text
     assunto Text
+    status bool
     
 Cliente
     nome    Text

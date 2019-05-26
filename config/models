@@ -9,6 +9,7 @@ Livro
     publicacao  Text
     descricao   Text
     assunto     Text
+    status      Bool
 
 Cliente
     nome        Text

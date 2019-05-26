@@ -15,3 +15,11 @@
 /logout LogoutR POST
 
 /admin  AdminR GET
+
+/cliente    ClienteR   GET POST
+/clientes   TodosClientesR  GET
+/cliente/#ClienteId/perfil ClientePerfilR GET
+/cliente/#ClienteId/apagar ClienteApagarR POST
+/clinte/#ClienteId/alterar ClienteAlteraR GET POST
+
+

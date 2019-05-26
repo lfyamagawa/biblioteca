@@ -9,6 +9,8 @@ module Handler.Funcionario where
 import Import
 import Database.Persist.Sql
 
+
+
 -- INCLUIR
 
 formFuncionario :: Form (Funcionario, Text)
@@ -17,6 +19,11 @@ formFuncionario = renderBootstrap $ (,)
         <$> areq emailField "E-mail:" Nothing
         <*> areq passwordField "Senha:" Nothing)
     <*> areq passwordField "Confirmação:" Nothing
+
+formFuncionarioAlt :: Maybe Funcionario -> Form Funcionario
+formFuncionarioAlt mFuncionario = renderBootstrap $ Funcionario
+    <$> areq emailField "E-mail:" (fmap funcionarioEmail mFuncionario)
+    <*> areq passwordField "Senha:" (fmap funcionarioSenha mFuncionario)
 
 getFuncionarioR :: Handler Html
 getFuncionarioR = do 
@@ -83,11 +90,11 @@ postFuncionarioApagarR funcid = do
 --
 -- ERRO, ver com professor
 --
-{-
+
 getFuncionarioAlteraR :: FuncionarioId -> Handler Html
 getFuncionarioAlteraR funcid = do
     funcionario <- runDB $ get404 funcid
-    (widget,enctype) <- generateFormPost (formFuncionario $ Just funcionario)
+    (widget,enctype) <- generateFormPost (formFuncionarioAlt $ Just funcionario)
     defaultLayout $ do
         addStylesheet $ StaticR css_bootstrap_css
         [whamlet|
@@ -100,10 +107,10 @@ getFuncionarioAlteraR funcid = do
 postFuncionarioAlteraR :: FuncionarioId -> Handler Html
 postFuncionarioAlteraR funcid = do
     funcionario <- runDB $ get404 funcid
-    ((res,_),_) <- runFormPost (formFuncionario $ Just funcionario) 
+    ((res,_),_) <- runFormPost (formFuncionarioAlt $ Just funcionario) 
     case res of
         FormSuccess funcionarioNovo -> do
             runDB $ replace funcid funcionarioNovo
             redirect TodosFuncionariosR
         _ -> redirect HomeR
--}
+

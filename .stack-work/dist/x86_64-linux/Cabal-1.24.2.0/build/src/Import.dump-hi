@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2019-05-26 12:48:45.627584 UTC
+2019-05-26 13:01:17.942965 UTC
 
 interface aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX:Import 8002
-  interface hash: 0840dcc6bbe017b2a932d3fccc1c09d4
-  ABI hash: e2604168ff0725be4881a57695be2b98
-  export-list hash: 3cba34a320ad89a1cc1a01738c559494
+  interface hash: f5a7c74edcc04615e3c769b4b4b15906
+  ABI hash: 06ff819dfb003715bfdbb81e9196e6b1
+  export-list hash: 2bed11b16cb8c2b0457fe51f8da842bc
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: ab396f11155bd696ab63895436e6f1df
   sig of: Nothing
@@ -1855,7 +1855,7 @@ exports:
   Yesod.Core.Widget.ToWidgetMedia{Yesod.Core.Widget.toWidgetMedia}
   Yesod.Routes.Class.ParseRoute{Yesod.Routes.Class.parseRoute}
   Yesod.Routes.Class.RenderRoute{Yesod.Routes.Class.Route Yesod.Routes.Class.renderRoute}
-  Yesod.Routes.Class.Route|{Foundation.AdminR Foundation.FaviconR Foundation.FuncionarioApagarR Foundation.FuncionarioPerfilR Foundation.FuncionarioR Foundation.HomeR Foundation.LoginR Foundation.LogoutR Foundation.RobotsR Foundation.StaticR Foundation.TodosFuncionariosR Yesod.Core.Internal.LiteApp.LiteAppRoute Yesod.Core.Types.WaiSubsiteRoute Yesod.Core.Types.WaiSubsiteWithAuthRoute Yesod.Static.StaticRoute}
+  Yesod.Routes.Class.Route|{Foundation.AdminR Foundation.FaviconR Foundation.FuncionarioAlteraR Foundation.FuncionarioApagarR Foundation.FuncionarioPerfilR Foundation.FuncionarioR Foundation.HomeR Foundation.LoginR Foundation.LogoutR Foundation.RobotsR Foundation.StaticR Foundation.TodosFuncionariosR Yesod.Core.Internal.LiteApp.LiteAppRoute Yesod.Core.Types.WaiSubsiteRoute Yesod.Core.Types.WaiSubsiteWithAuthRoute Yesod.Static.StaticRoute}
   Yesod.Routes.Class.RouteAttrs{Yesod.Routes.Class.routeAttrs}
   Yesod.Form.Fields.AutoFocus
   Yesod.Form.Fields.Option{Yesod.Form.Fields.Option optionDisplay optionExternalValue optionInternalValue}
@@ -2221,32 +2221,33 @@ family instance modules: adjunctions-4.3@adjunctions-4.3-A5jfd1yrmaY4DRMJuiquBp:
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.FromJSON f70746c5b1cd1a03ee098f0728e87383
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.Internal f040a64200abf1dfa06f5db9b9e027c1
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.ToJSON d8ae0f04da94d706b89336fd9d0bf43b
-import  -/  Foundation 95d9f2057540ecac43df05ed8b0e99c7
-  exports: 5db2acaa9666c54f23e9302fa3bcf6e2
-  AdminR 0d5fad5f714d697973ca984a01eef4df
-  App 67bd00faf9f5e6269564bc96185f0929
-  App 3085225503446564737c06896404d9b2
-  FaviconR 97edda7a911c2bd81aaec212fa38a496
-  Form fd888c6996ba2eabb4ae99e0e3fdb50a
-  FuncionarioApagarR 0054f48e69e1126e63be686ee5e161a9
-  FuncionarioPerfilR 9fdfd1c7a0c4c30f49ac14cee303862c
-  FuncionarioR 890f8b43f460412a621cdf5cd7f83f1a
-  Handler 63c95f4a6b8e24c02aa244c076dd8637
-  HomeR 6ded4b851c82d0b908408fcd4538447c
-  LoginR 104a5ff086d56f2c407478b4ae31b6d5
-  LogoutR 4c87a3ba9cdd4427e85f58d2632a7c28
-  RobotsR f2409887084de89a18c689407e817d20
-  StaticR 964753ce9eaa002e5a11b8200b046b09
-  TodosFuncionariosR dd1045be4ad04d3972cd4514b7a42afa
-  Widget 9c96e18f5c75700776b79da27929695e
-  appConnPool 9cc39958a57742c4f0bf8751a7f60def
-  appHttpManager 3085225503446564737c06896404d9b2
-  appLogger bac74b4f54e43c9f8543fa1493bf4777
-  appSettings 0279da89702cb780f0082d9e9bae49ac
-  appStatic 6597f244da5b5dfb61ba6b77bdc595d3
-  isAdmin 386789ac9fa4153f279dac6373672d12
-  isUser 484bd83612664d85ada4bc039ae6cf85
-  resourcesApp 7fa2463e784e0a947d6cfe9d43d77ea1
+import  -/  Foundation a47ff83ce66d83f578fbb993956d32f3
+  exports: d285bc651cee85985e7c6daa6d581b61
+  AdminR 56f4f38edec9205031b7b6a18ef4615d
+  App be275e78b128c3a47f283ef7286afa3a
+  App 79eb4081d8b546c0f6d31b7b3b8d4bab
+  FaviconR b715dd249e1be9b2f573a0bad5adeef2
+  Form e02ec67056dddcdec8cc78ff488e2d75
+  FuncionarioAlteraR da9d0fbe7cfd03738c1c85e633b9fa83
+  FuncionarioApagarR 3b7abf2ab30212ac86f62c3352d7620d
+  FuncionarioPerfilR cb381198b314921e6edd0c22b5a8075b
+  FuncionarioR 1d70a5be0ee7631bc0f979e6dae3a62c
+  Handler 8e7f3609a4eb71ed970a0d355e4f41d6
+  HomeR 203dc4ab8a0fb2f9ac4893ae29f4e128
+  LoginR a5343658cb71043416f2c82b2f170f1c
+  LogoutR e3e9e6ed6a43b44a5ad8f768a2f55b59
+  RobotsR f25b55d82555823c90baff3dfa76439f
+  StaticR b4bdadbac4fdc4c0e231ff6a56ba7ec6
+  TodosFuncionariosR f6ed7dfefbbafc59fdf07c442625dbb3
+  Widget 3be03397e9d91e4726afac47b3551874
+  appConnPool ce36d7dd124fe1656d33ed53855ea07d
+  appHttpManager 79eb4081d8b546c0f6d31b7b3b8d4bab
+  appLogger 1b3bde13d850431ce0ab2c440d600e8f
+  appSettings 9f3a46b3fb4dd6f63393b1cb16df4025
+  appStatic 4eacc67a523359b231889a15b21c6eb9
+  isAdmin 975267548bf8fe8972cb5dc6efc68c27
+  isUser a3dc09ecbd3bf8b5e9789909d085ae89
+  resourcesApp 37b23c0b0d38b8f8e66fc9545c0cf733
 import  -/  Import.NoFoundation 2b4431e33f8f44b8914d056f627513cf
   exports: afba9c46cc8f4f7b548b328684a172f0
 import  -/  Model 0322a236513b611476018acb9209b978

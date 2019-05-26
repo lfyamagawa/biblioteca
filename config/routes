@@ -9,6 +9,7 @@
 /funcionarios   TodosFuncionariosR  GET
 /funcionario/#FuncionarioId/perfil FuncionarioPerfilR GET
 /funcionario/#FuncionarioId/apagar FuncionarioApagarR POST
+/funcionario/#FuncionarioId/alterar FuncionarioAlteraR GET POST
 
 /login  LoginR  GET POST
 /logout LogoutR POST

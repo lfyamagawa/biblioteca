@@ -22,8 +22,8 @@
                 <td>
                     <a href=@{FuncionarioPerfilR funcid}>
                         #{show $ fromSqlKey funcid}
-                        &nbsp;&nbsp;&nbsp;&nbsp
                 <td>
+                        &nbsp;&nbsp;&nbsp;&nbsp
                         #{funcionarioEmail funcionario}
                         &nbsp;&nbsp;&nbsp;&nbsp
                 <td>

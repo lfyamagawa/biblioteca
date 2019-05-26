@@ -37,10 +37,10 @@ getHomeR = do
                         Listar Clientes
                     <h4>------- Livros ---------</h4>
                 <li>
-                    <a href=@{ClienteR}>
+                    <a href=@{LivroR}>
                         Cadastro de Livro
                 <li>
-                    <a href=@{TodosClientesR}>
+                    <a href=@{TodosLivrosR}>
                         Listar Livros
                     <h4>------- Login/Logout -------</h4>
                 $maybe _ <- sess

@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2019-05-26 21:01:59.027605 UTC
+2019-05-26 21:08:09.424177 UTC
 
 interface aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX:Handler.Livro 8002
-  interface hash: 7b3d47de7df85728a310e992aeb6265c
-  ABI hash: 453b5b3d6ea5e19c11c714a2741dcc2b
+  interface hash: ea3967e607f14a4562f0006ac9c49350
+  ABI hash: fb5d32476850b2e77862b9936bf9b001
   export-list hash: a9dceaffac71e0808133cb01a9f46c48
   orphan hash: 4bed69b1fdeaea38fd10f57339763d48
   flag hash: f123df0d0ff34442f243f0943d78ec4c
@@ -777,7 +777,7 @@ fe8592b27bc9200915efe90a1ba3c3ad
   getLivroPerfilR ::
     Model.LivroId -> Foundation.Handler Text.Blaze.Html.Html
   {- Arity: 1, Strictness: <L,U> -}
-5cac3b60989b1d6f9d70d784e698d707
+84de57a17eb51e117bda2988ad89f012
   getLivroR :: Foundation.Handler Text.Blaze.Html.Html
   {- Arity: 2, Strictness: <L,U><S,U>,
      Unfolding: InlineRule (0, True, True)
@@ -789,7 +789,7 @@ fe8592b27bc9200915efe90a1ba3c3ad
                       ->_R Sym (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R))
                      (Sym (Yesod.Core.Types.N:HandlerT[0]
                                <Foundation.App>_N <GHC.Types.IO>_N <Text.Blaze.Html.Html>_N))) -}
-5dfd3505a6e2fe09cf9673821b5b21b9
+01fa5785685a3609863dd1f9b36d5d04
   getLivroR1 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -1192,7 +1192,7 @@ fe8592b27bc9200915efe90a1ba3c3ad
   {- Unfolding: (Yesod.Core.Handler.getUrlRenderParams
                    @ (Yesod.Core.Types.WidgetT Foundation.App GHC.Types.IO)
                    (Handler.Livro.$s$fMonadHandlerWidgetT @ Foundation.App)) -}
-1698cfd6140f93edb37b42f1aec14dfc
+1f015fe5a0b82b0808727658715af177
   getLivroR12 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -1209,7 +1209,7 @@ fe8592b27bc9200915efe90a1ba3c3ad
                                Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
                    (eta73 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
                  Handler.Livro.getLivroR13 eta73) -}
-a392a0b7f6f6a63f7874d0473913e4ce
+ec3a3ecf3445cd00b71ae70007ea4d66
   getLivroR13 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -1270,21 +1270,20 @@ a392a0b7f6f6a63f7874d0473913e4ce
                         (Yesod.Routes.Class.Route
                            (Sym (Yesod.Core.Class.Handler.D:R:HandlerSiteWidgetT[0]
                                      <GHC.Types.IO>_N <Foundation.App>_N)))_R)_R) #)) -}
-7e23d17a666e9dddd8b20e1ebc6f7feb
+8cf9f8b7a6d503b4b710ed5791a5e50d
   getLivroR14 :: Text.Blaze.Internal.ChoiceString
   {- Strictness: m5,
      Unfolding: (Text.Blaze.Internal.PreEscaped
                    Handler.Livro.getLivroR15) -}
-96c0a3c7530492fabfba306bbf56f067
+3bba0951e34a86455820a28da3fd798a
   getLivroR15 :: Text.Blaze.Internal.ChoiceString
   {- Strictness: m3,
      Unfolding: (Text.Blaze.Internal.Text Handler.Livro.getLivroR16) -}
-8557a14352334c4425b7260ac2161f83
+81f2485af9388d54d916a8e38c06f23b
   getLivroR16 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
-                   "\" method=\"post\"><h3>Cadastro de Livro</h3></h3>\n\
-                   \<br><h3>-------------------</h3><br></br>\n"#) -}
-10a4c00dac0717ed6be42f2276305375
+                   "\" method=\"post\"><h3>Cadastro de Livro</h3><br></h3>\n"#) -}
+ba8b742604801814e16af88fc0a1e226
   getLivroR17 ::
     ()
     -> Yesod.Core.Types.HandlerData
@@ -2015,7 +2014,7 @@ bfaca9c1c983af7a260cf372c1360d7b
                                                         <Foundation.App>_N)))_R)_R)_R))
                       (Sym (Yesod.Core.Types.N:WidgetT[0]
                                 <Foundation.App>_N <GHC.Types.IO>_N <()>_N)))) -}
-984e021cedf273de93df8824fb4108af
+4be4c26b97cd38e3d893c426b387e82e
   getLivroR37 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -2032,7 +2031,7 @@ bfaca9c1c983af7a260cf372c1360d7b
                                Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
                    (eta73 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
                  Handler.Livro.getLivroR38 eta73) -}
-f1fff423d8f6d8ce221a5a814680ffdb
+1408ca890d99a106297f0464796d8581
   getLivroR38 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -2093,7 +2092,7 @@ f1fff423d8f6d8ce221a5a814680ffdb
                         (Yesod.Routes.Class.Route
                            (Sym (Yesod.Core.Class.Handler.D:R:HandlerSiteWidgetT[0]
                                      <GHC.Types.IO>_N <Foundation.App>_N)))_R)_R) #)) -}
-8c7bb9c8a58b454b291b6d1e12063619
+4a81ba7aa3da28144249932a59e7b60c
   getLivroR39 :: Text.Blaze.Internal.ChoiceString
   {- Strictness: m5,
      Unfolding: (Text.Blaze.Internal.PreEscaped
@@ -2115,16 +2114,15 @@ f1fff423d8f6d8ce221a5a814680ffdb
                                Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
                    (eta73 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
                  Handler.Livro.getLivroR5 eta73) -}
-76c98f926cf06291800b93cdbd2a1680
+bd02feaa09d2001b3166bee86564550c
   getLivroR40 :: Text.Blaze.Internal.ChoiceString
   {- Strictness: m3,
      Unfolding: (Text.Blaze.Internal.Text Handler.Livro.getLivroR41) -}
-4bccdeb741915b7b3f2ef877ca421896
+484f86bf05ad17315c816d7ca1882f84
   getLivroR41 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    "\n\
                    \<input type=\"submit\" value=\"cadastrar\">\n\
-                   \<br><br></br>\n\
                    \<a class=\"btn btn-primary btn-sm active\" href=\""#) -}
 75240c0c0710ec2ec63d8d0d754a54ff
   getLivroR42 ::
@@ -2281,7 +2279,7 @@ f67df941c4961d3242c9465b3b5ef35a
                    @ ()
                    Handler.Livro.getLivroR6
                    GHC.Tuple.()) -}
-d49acd059841511b86dd61ed5ffc6601
+bfffc975683e3dea9c1742efc158a9cf
   getLivroR_eta1 :: Text.Blaze.Html.Html
   {- Strictness: m5,
      Unfolding: (Text.Blaze.Internal.Content
@@ -2302,7 +2300,7 @@ a2d309b337451de459a6f8e00cc5eaa8
                    @ ()
                    Handler.Livro.getLivroR32
                    GHC.Tuple.()) -}
-fed13457262b245e11023928b26ff0df
+7e229fe7014b03ac4b802a691cce0ad3
   getLivroR_eta4 :: Text.Blaze.Html.Html
   {- Strictness: m5,
      Unfolding: (Text.Blaze.Internal.Content

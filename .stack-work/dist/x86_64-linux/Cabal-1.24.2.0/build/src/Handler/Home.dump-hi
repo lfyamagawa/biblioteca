@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2019-05-26 21:01:58.084738 UTC
+2019-05-26 21:08:08.498169 UTC
 
 interface aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX:Handler.Home 8002
-  interface hash: 3c227895dbd52c1acf85e042412209c2
+  interface hash: cac4e0c2049aa5ea05862e06ed9ad172
   ABI hash: 64fc76fcaaf8b8913d785a7f7eabae88
   export-list hash: ccf1fd5d13d8ee912cac09a6c456f703
   orphan hash: c615116cd212abc4390675378980b9b9
@@ -340,11 +340,13 @@ import  -/  Foundation 50d1e4fc6c413dab030e68285ad1ac08
   ClienteR adadc38f97c16c57f26f255cd43048b1
   FuncionarioR d0be522f2bcbe9ecc3cb5df421d1c9d4
   Handler ffb79c1af07ec69f372d35853b3a127f
+  LivroR ab222a3ffd5b8035d00f1240c28ce38a
   LoginR d09dfb9b6ac7dcb566617b137bb45cb5
   LogoutR e11c3526e2a7eb5eed6ceb654ca147de
   StaticR 61c5c01287a48020d5a25dcb8b497ce6
   TodosClientesR 5b3f8a86d0612f5ea38e039ef7073cda
   TodosFuncionariosR 0fd7c12bf7b20fd2039084c5cd7085e8
+  TodosLivrosR e2fa19035d9ed31bc0168e90c7f6e48a
 import  -/  Import 8ccc34ad955c52553b9a569e30fddbe6
   exports: 0dea0296b8ba971d2c17492174c1efd0
 import  -/  Settings.StaticFiles 3ad9e40099153eabf23a2de0893be5c8

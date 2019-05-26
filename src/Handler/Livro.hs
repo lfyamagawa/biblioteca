@@ -25,11 +25,9 @@ getLivroR = do
         addStylesheet $ StaticR css_bootstrap_css
         [whamlet|
             <form action=@{LivroR} method=post>
-                <h3>Cadastro de Livro</h3>
-                <br><h3>-------------------</h3><br>
+                <h3>Cadastro de Livro</h3><br>
                 ^{widget}
                 <input type="submit" value="cadastrar">
-                <br><br>
                 <a href=@{HomeR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Principal
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <a href=@{TodosLivrosR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Lista Todos

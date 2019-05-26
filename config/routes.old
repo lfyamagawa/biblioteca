@@ -1,0 +1,17 @@
+/static StaticR Static appStatic
+
+/favicon.ico FaviconR GET
+/robots.txt RobotsR GET
+
+/ HomeR GET 
+
+/funcionario    FuncionarioR   GET POST
+/funcionarios   TodosFuncionariosR  GET
+/funcionario/#FuncionarioId/perfil FuncionarioPerfilR GET
+/funcionario/#FuncionarioId/apagar FuncionarioApagarR POST
+/funcionario/#FuncionarioId/alterar FuncionarioAlteraR GET POST
+
+/login  LoginR  GET POST
+/logout LogoutR POST
+
+/admin  AdminR GET

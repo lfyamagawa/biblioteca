@@ -10,18 +10,22 @@ import Import
 
 -- INCLUIR
 
-formFuncionario :: Maybe Funcionario -> Form Funcionario
-formFuncionario mFuncionario = renderBootstrap $ Funcionario 
-    <$> areq textField "Nome: " (fmap funcionarioNome mFuncionario)
-    <*> areq textField "Senha: " (fmap funcionarioSenha mFuncionario)
-
+formFuncionario :: Form (Funcionario, Text)
+formFuncionario = renderBootstrap $ (,)
+    <$> (Funcionario 
+        <$> areq emailField "E-mail:" Nothing
+        <*> areq passwordField "Senha:" Nothing)
+    <*> areq passwordField "Confirmação:" Nothing
 
 getFuncionarioR :: Handler Html
 getFuncionarioR = do 
-    (widget,enctype) <- generateFormPost (formFuncionario Nothing)
+    (widget,enctype) <- generateFormPost formFuncionario
+    msg <- getMessage
     defaultLayout $ do
         addStylesheet $ StaticR css_bootstrap_css
         [whamlet|
+            $maybe mensagem <- msg
+                ^{mensagem}
             <form action=@{FuncionarioR} method=post>
                 ^{widget}
                 <input type="submit" value="cadastrar">
@@ -33,14 +37,17 @@ getFuncionarioR = do
 
 postFuncionarioR :: Handler Html
 postFuncionarioR = do
-    ((res,_),_) <- runFormPost (formFuncionario Nothing)
+    ((res,_),_) <- runFormPost formFuncionario
     case res of
-        FormSuccess funcionario -> do
-            runDB $ insert funcionario
-            redirect FuncionarioR
+        FormSuccess (funcionario,confirmacao) -> do
+            if (funcionarioSenha funcionario) == confirmacao then do
+                runDB $ insert funcionario
+                redirect HomeR
+            else do
+                setMessage [shamlet|<h2> Usuario e senha nao batem|]
+                redirect FuncionarioR
         _ -> redirect HomeR
 
--- LISTAR TODOS    
 
 getTodosFuncionariosR :: Handler Html
 getTodosFuncionariosR = do 
@@ -58,7 +65,7 @@ getFuncionarioPerfilR funcid = do
         addStylesheet $ StaticR css_bootstrap_css
         [whamlet|
             <h1>
-                Nome #{funcionarioNome funcionario}
+                Nome #{funcionarioEmail funcionario}
                 
             <br><br><a href=@{TodosFuncionariosR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Voltar
         |]
@@ -73,6 +80,9 @@ postFuncionarioApagarR funcid = do
 
 -- ALTERAR
 --
+-- ERRO, ver com professor
+--
+{-
 getFuncionarioAlteraR :: FuncionarioId -> Handler Html
 getFuncionarioAlteraR funcid = do
     funcionario <- runDB $ get404 funcid
@@ -95,3 +105,4 @@ postFuncionarioAlteraR funcid = do
             runDB $ replace funcid funcionarioNovo
             redirect TodosFuncionariosR
         _ -> redirect HomeR
+-}

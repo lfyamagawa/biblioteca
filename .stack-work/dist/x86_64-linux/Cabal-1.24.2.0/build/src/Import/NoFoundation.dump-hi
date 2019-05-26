@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2019-05-25 01:47:24.464131 UTC
+2019-05-26 12:08:01.872153 UTC
 
 interface aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX:Import.NoFoundation 8002
-  interface hash: 7d8f7f9c7b0f26da9f0f94af1b664230
-  ABI hash: 7fa990468fdee98dae834fe97f522c9e
-  export-list hash: 3be3288a0327759d6325506ec2e66042
+  interface hash: a3b69b87dffc02ba12aa3e6c425a205f
+  ABI hash: 2b4431e33f8f44b8914d056f627513cf
+  export-list hash: afba9c46cc8f4f7b548b328684a172f0
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 5e6e116e79fd7c2679f3688e577f5394
   sig of: Nothing
@@ -1165,23 +1165,6 @@ exports:
   Yesod.Default.Config2.loadAppSettings
   Yesod.Default.Config2.loadAppSettingsArgs
   Yesod.Default.Config2.makeYesodLogger
-  Yesod.Auth.asHtml
-  Yesod.Auth.clearCreds
-  Yesod.Auth.credsKey
-  Yesod.Auth.defaultLoginHandler
-  Yesod.Auth.defaultMaybeAuthId
-  Yesod.Auth.getAuth
-  Yesod.Auth.loginErrorMessage
-  Yesod.Auth.loginErrorMessageI
-  Yesod.Auth.maybeAuth
-  Yesod.Auth.maybeAuthPair
-  Yesod.Auth.messageJson401
-  Yesod.Auth.provideJsonMessage
-  Yesod.Auth.requireAuth
-  Yesod.Auth.requireAuthId
-  Yesod.Auth.requireAuthPair
-  Yesod.Auth.setCreds
-  Yesod.Auth.setCredsRedirect
   Yesod.Core.defaultLayoutSub
   Yesod.Core.getRouteToParent
   Yesod.Core.maybeAuthorized
@@ -1520,7 +1503,7 @@ exports:
   Model.ClienteId
   Model.Emprestimo{Model.Emprestimo emprestimoCliid emprestimoData_dev emprestimoData_emp emprestimoLivid}
   Model.EmprestimoId
-  Model.Funcionario{Model.Funcionario funcionarioNome funcionarioSenha}
+  Model.Funcionario{Model.Funcionario funcionarioEmail funcionarioSenha}
   Model.FuncionarioId
   Model.Livro{Model.Livro livroAssunto livroAutor livroDescricao livroPublicacao livroTitulo}
   Model.LivroId
@@ -1726,11 +1709,12 @@ exports:
   Database.Persist.Class.PersistEntity.BackendSpecificFilter
   Database.Persist.Class.PersistEntity.BackendSpecificUpdate
   Database.Persist.Class.PersistEntity.Entity{Database.Persist.Class.PersistEntity.Entity entityKey entityVal}
-  Database.Persist.Class.PersistEntity.EntityField|{Model.ClienteCpf Model.ClienteEndereco Model.ClienteId Model.ClienteNome Model.ClienteRg Model.ClienteTelefone Model.EmprestimoCliid Model.EmprestimoData_dev Model.EmprestimoData_emp Model.EmprestimoId Model.EmprestimoLivid Model.FuncionarioId Model.FuncionarioNome Model.FuncionarioSenha Model.LivroAssunto Model.LivroAutor Model.LivroDescricao Model.LivroId Model.LivroPublicacao Model.LivroTitulo}
+  Database.Persist.Class.PersistEntity.EntityField|{Model.ClienteCpf Model.ClienteEndereco Model.ClienteId Model.ClienteNome Model.ClienteRg Model.ClienteTelefone Model.EmprestimoCliid Model.EmprestimoData_dev Model.EmprestimoData_emp Model.EmprestimoId Model.EmprestimoLivid Model.FuncionarioEmail Model.FuncionarioId Model.FuncionarioSenha Model.LivroAssunto Model.LivroAutor Model.LivroDescricao Model.LivroId Model.LivroPublicacao Model.LivroTitulo}
   Database.Persist.Class.PersistEntity.Filter{Database.Persist.Class.PersistEntity.BackendFilter Database.Persist.Class.PersistEntity.Filter Database.Persist.Class.PersistEntity.FilterAnd Database.Persist.Class.PersistEntity.FilterOr filterField filterFilter filterValue}
   Database.Persist.Class.PersistEntity.Key|{Model.ClienteKey Model.EmprestimoKey Model.FuncionarioKey Model.LivroKey unClienteKey unEmprestimoKey unFuncionarioKey unLivroKey}
   Database.Persist.Class.PersistEntity.PersistEntity{Database.Persist.Class.PersistEntity.EntityField Database.Persist.Class.PersistEntity.Key Database.Persist.Class.PersistEntity.PersistEntityBackend Database.Persist.Class.PersistEntity.Unique Database.Persist.Class.PersistEntity.entityDef Database.Persist.Class.PersistEntity.fieldLens Database.Persist.Class.PersistEntity.fromPersistValues Database.Persist.Class.PersistEntity.keyFromValues Database.Persist.Class.PersistEntity.keyToValues Database.Persist.Class.PersistEntity.persistFieldDef Database.Persist.Class.PersistEntity.persistIdField Database.Persist.Class.PersistEntity.persistUniqueKeys Database.Persist.Class.PersistEntity.persistUniqueToFieldNames Database.Persist.Class.PersistEntity.persistUniqueToValues Database.Persist.Class.PersistEntity.toPersistFields}
   Database.Persist.Class.PersistEntity.SelectOpt{Database.Persist.Class.PersistEntity.Asc Database.Persist.Class.PersistEntity.Desc Database.Persist.Class.PersistEntity.LimitTo Database.Persist.Class.PersistEntity.OffsetBy}
+  Database.Persist.Class.PersistEntity.Unique|{Model.UniqueRestEmail}
   Database.Persist.Class.PersistEntity.Update{Database.Persist.Class.PersistEntity.BackendUpdate Database.Persist.Class.PersistEntity.Update updateField updateUpdate updateValue}
   Database.Persist.Class.PersistField.PersistField{Database.Persist.Class.PersistField.fromPersistValue Database.Persist.Class.PersistField.toPersistValue}
   Database.Persist.Class.PersistField.SomePersistField{Database.Persist.Class.PersistField.SomePersistField}
@@ -1814,15 +1798,6 @@ exports:
   Network.Wai.Application
   Data.Yaml.Config.EnvUsage
   Yesod.Default.Config2.MergedValue{Yesod.Default.Config2.MergedValue getMergedValue}
-  Yesod.Auth.AuthException{Yesod.Auth.InvalidFacebookResponse}
-  Yesod.Auth.AuthHandler
-  Yesod.Auth.AuthPlugin{Yesod.Auth.AuthPlugin apDispatch apLogin apName}
-  Yesod.Auth.AuthRoute
-  Yesod.Auth.AuthenticationResult{Yesod.Auth.Authenticated Yesod.Auth.ServerError Yesod.Auth.UserError}
-  Yesod.Auth.Creds{Yesod.Auth.Creds credsExtra credsIdent credsPlugin}
-  Yesod.Auth.YesodAuth{Yesod.Auth.AuthId Yesod.Auth.authHttpManager Yesod.Auth.authLayout Yesod.Auth.authPlugins Yesod.Auth.authenticate Yesod.Auth.getAuthId Yesod.Auth.loginDest Yesod.Auth.loginHandler Yesod.Auth.logoutDest Yesod.Auth.maybeAuthId Yesod.Auth.onErrorHtml Yesod.Auth.onLogin Yesod.Auth.onLogout Yesod.Auth.redirectToReferer Yesod.Auth.renderAuthMessage Yesod.Auth.runHttpRequest}
-  Yesod.Auth.YesodAuthPersist{Yesod.Auth.AuthEntity Yesod.Auth.getAuthEntity}
-  Yesod.Auth.Routes.Auth
   Yesod.Core.Class.Breadcrumbs.YesodBreadcrumbs{Yesod.Core.Class.Breadcrumbs.breadcrumb}
   Yesod.Core.Class.Dispatch.YesodDispatch{Yesod.Core.Class.Dispatch.yesodDispatch}
   Yesod.Core.Class.Dispatch.YesodSubDispatch{Yesod.Core.Class.Dispatch.yesodSubDispatch}
@@ -1873,7 +1848,7 @@ exports:
   Yesod.Core.Widget.ToWidgetMedia{Yesod.Core.Widget.toWidgetMedia}
   Yesod.Routes.Class.ParseRoute{Yesod.Routes.Class.parseRoute}
   Yesod.Routes.Class.RenderRoute{Yesod.Routes.Class.Route Yesod.Routes.Class.renderRoute}
-  Yesod.Routes.Class.Route|{Yesod.Auth.Routes.CheckR Yesod.Auth.Routes.LoginR Yesod.Auth.Routes.LogoutR Yesod.Auth.Routes.PluginR Yesod.Core.Internal.LiteApp.LiteAppRoute Yesod.Core.Types.WaiSubsiteRoute Yesod.Core.Types.WaiSubsiteWithAuthRoute Yesod.Static.StaticRoute}
+  Yesod.Routes.Class.Route|{Yesod.Core.Internal.LiteApp.LiteAppRoute Yesod.Core.Types.WaiSubsiteRoute Yesod.Core.Types.WaiSubsiteWithAuthRoute Yesod.Static.StaticRoute}
   Yesod.Routes.Class.RouteAttrs{Yesod.Routes.Class.routeAttrs}
   Yesod.Form.Fields.AutoFocus
   Yesod.Form.Fields.Option{Yesod.Form.Fields.Option optionDisplay optionExternalValue optionInternalValue}
@@ -2090,7 +2065,6 @@ package dependencies: ReadArgs-1.2.3@ReadArgs-1.2.3-FZlTw1cmwFABXd9Qu17GpK
                       xss-sanitize-0.3.5.7@xss-sanitize-0.3.5.7-2Pr735gWMIKE1KECS4SIv1
                       yaml-0.8.23.3@yaml-0.8.23.3-C6ya2ht5lnU5AAyP9utctL
                       yesod-1.4.5@yesod-1.4.5-GDhOBR6sYcs6xIyNy56Max
-                      yesod-auth-1.4.19@yesod-auth-1.4.19-Lis3qGCnpJgB8Xqabl9Sxo
                       yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V
                       yesod-form-1.4.16@yesod-form-1.4.16-FvSoVGpHA8r2nWU5Chx6PU
                       yesod-newsfeed-1.6@yesod-newsfeed-1.6-FVeGFThDxmyHNMY2ecmTrZ
@@ -2129,7 +2103,6 @@ orphans: attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Att
          vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Fusion.Bundle
          vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
          vector-instances-3.4@vector-instances-3.4-6qKuR7R2wDjElztDeslDO1:Data.Vector.Instances
-         yesod-auth-1.4.19@yesod-auth-1.4.19-Lis3qGCnpJgB8Xqabl9Sxo:Yesod.Auth
 family instance modules: adjunctions-4.3@adjunctions-4.3-A5jfd1yrmaY4DRMJuiquBp:Data.Functor.Rep
                          attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Attoparsec.Internal.Types
                          aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX:Model
@@ -2231,8 +2204,6 @@ family instance modules: adjunctions-4.3@adjunctions-4.3-A5jfd1yrmaY4DRMJuiquBp:
                          vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed.Base
                          vector-instances-3.4@vector-instances-3.4-6qKuR7R2wDjElztDeslDO1:Data.Vector.Instances
                          xml-types-0.3.6@xml-types-0.3.6-BlXpqWNn2ZGFM9gCBPuBeT:Data.XML.Types
-                         yesod-auth-1.4.19@yesod-auth-1.4.19-Lis3qGCnpJgB8Xqabl9Sxo:Yesod.Auth
-                         yesod-auth-1.4.19@yesod-auth-1.4.19-Lis3qGCnpJgB8Xqabl9Sxo:Yesod.Auth.Routes
                          yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Class.Handler
                          yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Internal.LiteApp
                          yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Types
@@ -2241,8 +2212,8 @@ family instance modules: adjunctions-4.3@adjunctions-4.3-A5jfd1yrmaY4DRMJuiquBp:
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.FromJSON f70746c5b1cd1a03ee098f0728e87383
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.Internal f040a64200abf1dfa06f5db9b9e027c1
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.ToJSON d8ae0f04da94d706b89336fd9d0bf43b
-import  -/  Model 29b69353ca0ecff28c55489b491ac60b
-  exports: 3d3bcb3971014449edecd580e4230500
+import  -/  Model 0322a236513b611476018acb9209b978
+  exports: 03f7ac7c9ca5c3f562d1dbfb8d003ad5
   Cliente 67af65f0c1143d64e580f793afe4d95d
   Cliente 9adaac9ce26d1fabc444a2184096ae06
   ClienteCpf 913465170d77940c410adc78f69e8f0e
@@ -2262,13 +2233,13 @@ import  -/  Model 29b69353ca0ecff28c55489b491ac60b
   EmprestimoId fe166303cba5652833a759be78375951
   EmprestimoKey 7d0b09f9a19eb62434c8e11e1664f4ec
   EmprestimoLivid 34942e3478416925cd31852fc5ae402a
-  Funcionario 1296e03519601c70f36183cbc5be6393
-  Funcionario 2070407db13c185e3cb82d66270c7775
-  FuncionarioId f848fe055a00d6c8cdb0c38f16fcadf1
-  FuncionarioId 3ca076a666a9cf4b5cf5725b94a9c452
-  FuncionarioKey 58ecc3049ab9e1346d45ddda5bdc4d83
-  FuncionarioNome 922eac81035596fdc38fae6b5d31578d
-  FuncionarioSenha a4f2b950ad922a773b705a5d5b76516d
+  Funcionario 7118cd502933ff6ca690202794694aff
+  Funcionario 784411d46fe997e0aed3471a9cf9611a
+  FuncionarioEmail 30b0808097ddfe2c0f329673bc2b134d
+  FuncionarioId 310c6ee97f87eae8da6d476d91ef3cc4
+  FuncionarioId 438cc7778c47cd631a17e7ac095de822
+  FuncionarioKey db58a84c7368132aa1061f4150208569
+  FuncionarioSenha d7a74d202c49fe46d58b3360ef96eefc
   Livro e70c541da5b587a79266fc2b0a4260dd
   Livro c3e262a0882d221615712cc438926620
   LivroAssunto 54d2434170d555683bc2936cc9469e41
@@ -2279,6 +2250,7 @@ import  -/  Model 29b69353ca0ecff28c55489b491ac60b
   LivroKey b65037c32072a2ce548de17d5fe5d856
   LivroPublicacao c991ceb37b13e438233d072c36a69931
   LivroTitulo dba134a2b8c23f6b5c8424097709df6b
+  UniqueRestEmail 24a8dee1abf52efcb45f7f7010d65d23
   clienteCpf 523d0a7c29b40eecd6ca01ccecb2ab04
   clienteEndereco a8d4844ae5e296583b1b0f90de31842b
   clienteNome 3bea657df4638380cf71e84a4bc2e0ee
@@ -2288,8 +2260,8 @@ import  -/  Model 29b69353ca0ecff28c55489b491ac60b
   emprestimoData_dev 2e2d9070fdfe0d1b5019f415138c2042
   emprestimoData_emp 7da99546e8ec9d9b0eedc473a23f1e24
   emprestimoLivid 0f2911897e9703046079dccc8546b1e6
-  funcionarioNome 7f8bc3541b7f0ca9163affbe80b9c0a6
-  funcionarioSenha df171ab6b93c8e8ddbb696b25c3e4a5f
+  funcionarioEmail 090829eac49efc5459fdfed1d4907f8d
+  funcionarioSenha d47dede4355b388464f8c9fbc024e18f
   livroAssunto e45ceb80ec724d60d917ec1f46601ca3
   livroAutor 1709c43ac7faa7c93cecaeb0ca4e2506
   livroDescricao 48eac9c02a25d9d992d00be0bf5ce55d
@@ -2298,7 +2270,7 @@ import  -/  Model 29b69353ca0ecff28c55489b491ac60b
   migrateAll b09d2378cf411109bc2d296142c07272
   unClienteKey 9adaac9ce26d1fabc444a2184096ae06
   unEmprestimoKey 58276e9429454230fe42cfc41d049957
-  unFuncionarioKey 2070407db13c185e3cb82d66270c7775
+  unFuncionarioKey 784411d46fe997e0aed3471a9cf9611a
   unLivroKey c3e262a0882d221615712cc438926620
 import  -/  Settings 0f8bbb6df9df8001dfa1e9ea64b738dc
   exports: 86543d2cf594c4f874c109a10c209959
@@ -2428,8 +2400,6 @@ import  -/  vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector 6
 import  -/  vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed.Base 5b746d7e99b6b2dacbd3d043cb3d3d35
 import  -/  yaml-0.8.23.3@yaml-0.8.23.3-C6ya2ht5lnU5AAyP9utctL:Data.Yaml.Config 19127d96481d97d67b75c5250686daed
 import  -/  yesod-1.4.5@yesod-1.4.5-GDhOBR6sYcs6xIyNy56Max:Yesod.Default.Config2 53cd0fa2d4b86e66a1cda1fc656f3008
-import  -/  yesod-auth-1.4.19@yesod-auth-1.4.19-Lis3qGCnpJgB8Xqabl9Sxo:Yesod.Auth 125358ac5253794cc2bb58e574289180
-import  -/  yesod-auth-1.4.19@yesod-auth-1.4.19-Lis3qGCnpJgB8Xqabl9Sxo:Yesod.Auth.Routes dd02cb148a7b0cf07592fa020a9873e8
 import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Class.Handler 5d1f9b8655f751a9604cc00d4dadf70f
 import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Internal.LiteApp d01e2fff882fa984c802427df7212818
 import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Types 0b39941269d824c929136a6524eb02b4

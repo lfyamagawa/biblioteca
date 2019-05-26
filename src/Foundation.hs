@@ -23,6 +23,31 @@ mkYesodData "App" $(parseRoutesFile "config/routes")
 
 instance Yesod App where
     makeLogger = return . appLogger
+-- add
+    authRoute _ = Just $ LoginR
+
+    isAuthorized LoginR _ = return Authorized
+    isAuthorized HomeR _ = return Authorized
+    isAuthorized FuncionarioR _ = return Authorized
+    isAuthorized (StaticR _) _ = return Authorized
+    isAuthorized AdminR _ = isAdmin
+    isAuthorized _ _ = isUser
+
+isAdmin :: Handler AuthResult
+isAdmin = do
+    sess <- lookupSession "_ID"
+    case sess of
+        Just "root" -> return Authorized
+        Just _ -> return $ Unauthorized "Nao eh admin!"
+        Nothing -> return AuthenticationRequired
+
+isUser :: Handler AuthResult
+isUser = do
+    sess <- lookupSession "_ID"
+    case sess of
+        Just _ -> return Authorized
+        Nothing -> return AuthenticationRequired
+
 
 instance YesodPersist App where
     type YesodPersistBackend App = SqlBackend

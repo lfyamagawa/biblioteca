@@ -1,6 +1,7 @@
 Funcionario
-    nome        Text
+    email        Text
     senha       Text
+    UniqueRestEmail email
 
 Livro
     titulo      Text

@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2019-05-25 01:47:32.485385 UTC
+2019-05-26 12:08:05.099964 UTC
 
 interface aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX:Handler.Home 8002
-  interface hash: 8545394d03163a2028668375a96355ba
-  ABI hash: 67d11d9d737f857dd34be7e9760fc7f6
-  export-list hash: a8280e4911cd893e34510ae552ad833e
+  interface hash: f3d98c1d291d00067d5566e25e80c08b
+  ABI hash: 1ef917747441fd18633ff90c6da2fb9f
+  export-list hash: ec30c6652a4cb4ff12f3dd91822e25f9
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: f123df0d0ff34442f243f0943d78ec4c
   sig of: Nothing
@@ -191,7 +191,6 @@ package dependencies: ReadArgs-1.2.3@ReadArgs-1.2.3-FZlTw1cmwFABXd9Qu17GpK
                       xss-sanitize-0.3.5.7@xss-sanitize-0.3.5.7-2Pr735gWMIKE1KECS4SIv1
                       yaml-0.8.23.3@yaml-0.8.23.3-C6ya2ht5lnU5AAyP9utctL
                       yesod-1.4.5@yesod-1.4.5-GDhOBR6sYcs6xIyNy56Max
-                      yesod-auth-1.4.19@yesod-auth-1.4.19-Lis3qGCnpJgB8Xqabl9Sxo
                       yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V
                       yesod-form-1.4.16@yesod-form-1.4.16-FvSoVGpHA8r2nWU5Chx6PU
                       yesod-newsfeed-1.6@yesod-newsfeed-1.6-FVeGFThDxmyHNMY2ecmTrZ
@@ -230,7 +229,6 @@ orphans: attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Att
          vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Fusion.Bundle
          vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
          vector-instances-3.4@vector-instances-3.4-6qKuR7R2wDjElztDeslDO1:Data.Vector.Instances
-         yesod-auth-1.4.19@yesod-auth-1.4.19-Lis3qGCnpJgB8Xqabl9Sxo:Yesod.Auth
 family instance modules: adjunctions-4.3@adjunctions-4.3-A5jfd1yrmaY4DRMJuiquBp:Data.Functor.Rep
                          attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Attoparsec.Internal.Types
                          aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX:Foundation
@@ -333,18 +331,16 @@ family instance modules: adjunctions-4.3@adjunctions-4.3-A5jfd1yrmaY4DRMJuiquBp:
                          vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed.Base
                          vector-instances-3.4@vector-instances-3.4-6qKuR7R2wDjElztDeslDO1:Data.Vector.Instances
                          xml-types-0.3.6@xml-types-0.3.6-BlXpqWNn2ZGFM9gCBPuBeT:Data.XML.Types
-                         yesod-auth-1.4.19@yesod-auth-1.4.19-Lis3qGCnpJgB8Xqabl9Sxo:Yesod.Auth
-                         yesod-auth-1.4.19@yesod-auth-1.4.19-Lis3qGCnpJgB8Xqabl9Sxo:Yesod.Auth.Routes
                          yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Class.Handler
                          yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Internal.LiteApp
                          yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Types
                          yesod-static-1.5.3.1@yesod-static-1.5.3.1-3fPHfGwGXLD6UjosrxUpf7:Yesod.Static
                          zlib-0.6.1.2@zlib-0.6.1.2-7negTfm2ujt1gW4wr40MUp:Codec.Compression.Zlib.Stream
-import  -/  Foundation 43e7e7083745b280d7d16a3a16de3898
-  Handler b8651ad711b044ca2df9b53807829bae
-  StaticR 7692e2afec8d2c73f4cadaed9915e301
-import  -/  Import 96efb5804e5b7832520fa19f7ae5dd9f
-  exports: cc9b3f4d7c9f8747fa48f53a499a5e14
+import  -/  Foundation 95d9f2057540ecac43df05ed8b0e99c7
+  Handler 63c95f4a6b8e24c02aa244c076dd8637
+  StaticR 964753ce9eaa002e5a11b8200b046b09
+import  -/  Import e2604168ff0725be4881a57695be2b98
+  exports: 3cba34a320ad89a1cc1a01738c559494
 import  -/  Settings.StaticFiles 3ad9e40099153eabf23a2de0893be5c8
   css_bootstrap_css 7fb70e8cf207ea213dca2425cf051440
 import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
@@ -369,14 +365,14 @@ f0297d6a37c78c79e4a009ea4d8eb1d4
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    "aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX"#) -}
-7dad7860984d8f220540c8a57184823d
+6b6fa0641fe4ddb8b9239e8d6a2f47d3
   getHomeR :: Foundation.Handler Text.Blaze.Html.Html
   {- Unfolding: (Foundation.$fYesodApp_$cdefaultLayout
                    Handler.Home.getHomeR1
                      `cast`
                    (Sym (Yesod.Core.Types.N:WidgetT[0]
                              <Foundation.App>_N <GHC.Types.IO>_N <()>_N))) -}
-f6dbc8a356a38d16d4abd6e11d44c968
+75b0676c4b9fd23b05b7e8632d979c0c
   getHomeR1 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -424,7 +420,7 @@ f6dbc8a356a38d16d4abd6e11d44c968
                              (Sym (Yesod.Core.Types.N:WidgetT[0]
                                        <Foundation.App>_N <GHC.Types.IO>_N <()>_N)))
                    eta) -}
-4e86052f62a59db34b370d3d56d5fb11
+6747e2ff3bbe32b57953cc2af0c5f2f8
   getHomeR10 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -523,7 +519,7 @@ f6dbc8a356a38d16d4abd6e11d44c968
                                     (Yesod.Core.Class.Handler.HandlerSite
                                        (Yesod.Core.Types.WidgetT
                                           Foundation.App GHC.Types.IO))>_R))) #)) -}
-7aaeb616d2046b79316f01a09a8faab4
+8c3c3f64d480a653c64530debeba5294
   getHomeR2 ::
     ()
     -> Yesod.Core.Types.HandlerData
@@ -541,7 +537,7 @@ f6dbc8a356a38d16d4abd6e11d44c968
                              Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))[OneShot]
                    (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
                  (# eta1, Handler.Home.getHomeR3 #)) -}
-c7e626ceb0f5441ad02e1712b23dbb7f
+01dd364f9678418721b51ffb28a91159
   getHomeR3 ::
     ((),
      Yesod.Core.Types.GWData
@@ -555,7 +551,7 @@ c7e626ceb0f5441ad02e1712b23dbb7f
                      (Yesod.Routes.Class.Route
                         (Sym (Yesod.Core.Class.Handler.D:R:HandlerSiteWidgetT[0]
                                   <GHC.Types.IO>_N <Foundation.App>_N)))_R)_R)) -}
-120c2717060fcdcde3cb15342499d1ea
+806530891313fd454983444e187723e0
   getHomeR4 ::
     Yesod.Core.Types.GWData (Yesod.Routes.Class.Route Foundation.App)
   {- Unfolding: (Yesod.Core.Types.GWData
@@ -597,7 +593,7 @@ c7e626ceb0f5441ad02e1712b23dbb7f
                      `cast`
                    (Sym (Yesod.Core.Types.N:Head[0]
                              <Yesod.Routes.Class.Route Foundation.App>_R))) -}
-7173a0a4d8dda3bb4bb938f09f3bf4b5
+6c689e819051daf9060a669cc24f63de
   getHomeR5 ::
     (Yesod.Routes.Class.Route Foundation.App
      -> [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
@@ -621,7 +617,7 @@ b4f7391aad8fee61f228fcf2c26898c1
                    "<div class=\"container\">\n\
                    \<span class=\"badge badge-pill badge-success\">Sucesso</span>\n\
                    \</div>\n"#) -}
-71cb89c57eef8db1dca29e02714338e2
+2584c5a818a2e7d3de0bc84d34a186c8
   getHomeR9 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)

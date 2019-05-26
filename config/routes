@@ -20,6 +20,6 @@
 /clientes   TodosClientesR  GET
 /cliente/#ClienteId/perfil ClientePerfilR GET
 /cliente/#ClienteId/apagar ClienteApagarR POST
-/clinte/#ClienteId/alterar ClienteAlteraR GET POST
+/cliente/#ClienteId/alterar ClienteAlteraR GET POST
 
 

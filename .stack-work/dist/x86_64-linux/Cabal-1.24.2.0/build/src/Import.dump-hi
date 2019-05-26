@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2019-05-26 19:07:42.511894 UTC
+2019-05-26 19:09:08.001763 UTC
 
 interface aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX:Import 8002
-  interface hash: 1f820bdd4477599a4c11bb0edcb4f5b9
+  interface hash: 15975167a753536f4bae004c938dfd9e
   ABI hash: ad5d266c79756243cc076fcbfc224999
   export-list hash: 661b664e2f8ef8105b8c193d946f7164
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
@@ -2221,38 +2221,38 @@ family instance modules: adjunctions-4.3@adjunctions-4.3-A5jfd1yrmaY4DRMJuiquBp:
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.FromJSON f70746c5b1cd1a03ee098f0728e87383
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.Internal f040a64200abf1dfa06f5db9b9e027c1
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.ToJSON d8ae0f04da94d706b89336fd9d0bf43b
-import  -/  Foundation f1f328fe8f0722f2c4bda134ce6c6908
+import  -/  Foundation 4bdd1d0c1a365569ffb5f4c62dd5eac1
   exports: 8d9701421bc528b3fecaa222a1bccf2c
-  AdminR 5afe71accbf81aa54879af511728d73a
-  App c9f0f8d177e9353ea5feef63453288a8
-  App 228689a5588c91430bf1542c22184f0e
-  ClienteAlteraR 38b24806468585fadc4f9f181a6f52ec
-  ClienteApagarR 14fe45196a2585fa9310775f537610d8
-  ClientePerfilR 8efc3136b4465f218c7c0b73d3ee7a4a
-  ClienteR 23fa83bdb01adbb27aa9f3299341489e
-  FaviconR 55cada3595e0d526cc781b77fa338052
-  Form f310138c6d3914d3c1bf25444d0b28de
-  FuncionarioAlteraR 4393d7e63b7d9aa7a327b525ca6ecfa0
-  FuncionarioApagarR a78014dfa2ac84b8ddc3a7c0508090ca
-  FuncionarioPerfilR 516329d4db078fe7683b55cdd87c1e3a
-  FuncionarioR 53f0fc0efcfcce9f2a9586584fb0aefc
-  Handler a72d1ae1b7b9309ae9bd58386bc4289f
-  HomeR a94b11d0a922787e1cdecc9607f97e1e
-  LoginR acbcf6b141823f4763c306e923b8f59f
-  LogoutR 39e73f3dfcc94bd47754fe1a0eb86ae5
-  RobotsR 13c062dd3a0d54488be7480b6dd8454a
-  StaticR ffa5b215ac18efbaecc31f06ce7bd63c
-  TodosClientesR cadcaa08b2dc0105100ff7e07ca25e8f
-  TodosFuncionariosR 164dd328bfe546ec9a8ec268690bdecc
-  Widget da451fa7c00e4dc7f4549a6d9c7f09da
-  appConnPool e4300adcd36ab8a79a2b7560e581653d
-  appHttpManager 228689a5588c91430bf1542c22184f0e
-  appLogger d2335e55a6504aa4d7024ce6fcb1fdf7
-  appSettings 30e12e50eac107fa48fcf423cf4b9dd3
-  appStatic a95fcee6b8794ad13fe6f7748820c468
-  isAdmin 60d416e27f9c712c8ef060699cd55e5f
-  isUser 873ae0b81052cccf32634af659a29818
-  resourcesApp b99623d4b767b9e64eabfde3d0682989
+  AdminR 52c9768272d38b88ac6a8806e8333aa3
+  App f90a2deb5fe34f1031614efbe945227a
+  App a0df9f29858cfeeb52c0026814e8b07d
+  ClienteAlteraR 30c8970f79140e9d1fbbc318563ee129
+  ClienteApagarR 0b94c879f0c5420f88179583b48a7856
+  ClientePerfilR e0723ddf9e49005f19867173d47736aa
+  ClienteR e2c17fed6eb84bb928d0a446ed8ce880
+  FaviconR 559baffdff85f41635d528b8bd9b544d
+  Form cf051dfbb4c71a7de5fb186d8a6c942b
+  FuncionarioAlteraR 9f1396259b44cb01029b0d7532e9de4c
+  FuncionarioApagarR 9363077dd1cfafae82dd12b6b137f502
+  FuncionarioPerfilR 4ad41ab106a57cc9c9913e9e5b1714bd
+  FuncionarioR 51650b1d75dfe80f2564578ac496c438
+  Handler a1a83f5e3cfb8f37efb3907cd51cd709
+  HomeR 89363653aa7afb0701451520a4d23eab
+  LoginR 8347f8170f24a562844d86aa90f8c7ca
+  LogoutR 75f28f7d1fd80640ed75749b4ad7f0d5
+  RobotsR 322946fcf15ad031b28cd1910add6227
+  StaticR f41449b521c738be1a8a62760be15dfd
+  TodosClientesR dc6af7deaec48558e6ffc313bbd57934
+  TodosFuncionariosR 686d7b841e0d89cda2b69f7bf03219de
+  Widget c6edfbc772ead9399f67d114ed4aae8a
+  appConnPool 587214fa327f4cf3f110751e373148a5
+  appHttpManager a0df9f29858cfeeb52c0026814e8b07d
+  appLogger c0bb0df106873fe0afff4709e2b5dcae
+  appSettings 541fd490cca11adc3c03ff91b76beef4
+  appStatic 36d8034b95794020ce038d7b069c659f
+  isAdmin cf196f02d144a851ffa31ed88e0c7d8d
+  isUser b3af61ca53053b1e54b77cce4880ba10
+  resourcesApp f3b9ffbfe69917470a96480c82b494e0
 import  -/  Import.NoFoundation d276fea93bd8dbffae6acb356aaf1343
   exports: 99d3ee4f40b1db2302a1bfb1279ffa53
 import  -/  Model b6824be59d44c2a147b41321610273d5

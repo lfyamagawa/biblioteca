@@ -1,0 +1,9 @@
+#!/bin/bash
+sudo apt-get update; sudo apt-get upgrade -y; sudo apt-get install postgresql-9.6 -y
+sudo /etc/init.d/postgresql start
+sudo -u postgres createuser projeto
+sudo -u postgres createdb projeto
+sudo -u postgres psql -c "alter user projeto with encrypted password 'projeto';"
+sudo -u postgres psql -c 'grant all privileges on database projeto to "projeto";'
+sudo sed -i "s,#listen_addresses\ =\ 'localhost',listen_addresses\ =\ '*',g" /etc/postgresql/9.6/main/postgresql.conf
+sudo /etc/init.d/postgresql restart

@@ -1,0 +1,2 @@
+#!/bin/bash
+echo -e "set tabstop=4\nset expandtab\nset mouse-=a" | sudo tee -a /etc/vim/vimrc

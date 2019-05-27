@@ -1,0 +1,5 @@
+#!/bin/bash
+        rsync -CravzpP --delete  /mnt/d/Meus\ Documentos/OneDrive/Pessoal/Fatec/ITE002\ -\ Tópicos\ Especiais\ em\ Informática\ -\ Alexandre\ Garcia/projeto /home/ale/
+        rsync -CravzpP --delete  /mnt/d/Meus\ Documentos/OneDrive/Pessoal/Fatec/ITE002\ -\ Tópicos\ Especiais\ em\ Informática\ -\ Alexandre\ Garcia/projetoadsn /home/ale/
+        rsync -CravzpP --delete  /mnt/d/Meus\ Documentos/OneDrive/Pessoal/Fatec/ITE002\ -\ Tópicos\ Especiais\ em\ Informática\ -\ Alexandre\ Garcia/biblioteca /home/ale/
+        rsync -CravzpP --delete  /mnt/d/Meus\ Documentos/OneDrive/Pessoal/Fatec/ITE002\ -\ Tópicos\ Especiais\ em\ Informática\ -\ Alexandre\ Garcia/scripts /home/ale/

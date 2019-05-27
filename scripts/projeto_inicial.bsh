@@ -1,0 +1,14 @@
+#!/bin/bash
+sudo apt-get update ; sudo apt-get upgrade -y
+sudo apt-get install -y curl git-core apache2 g++ gcc libc6-dev libffi-dev libgmp-dev make xz-utils zlib1g-dev git gnupg netbase postgresql-9.6 libpq-dev vim screen sudo
+
+curl -sSL https://get.haskellstack.org/ | sh
+
+git clone https://github.com/romefeller/yesodvazio.git
+
+mv yesodvazio/ projeto
+
+cd projeto
+
+stack install
+

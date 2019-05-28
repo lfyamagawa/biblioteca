@@ -42,6 +42,13 @@ getHomeR = do
                 <li>
                     <a href=@{TodosLivrosR}>
                         Listar Livros
+                     <h4>------- Emprestimo ---------</h4>
+                <li>
+                    <a href=@{EmprestimoR}>
+                        Cadastro de empréstimo
+                <li>
+                    <a href=@{TodosEmprestimosR}>
+                        Listar Empréstimos
                     <h4>------- Login/Logout -------</h4>
                 $maybe _ <- sess
                     <form action=@{LogoutR} method=post>

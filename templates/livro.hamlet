@@ -25,6 +25,8 @@
             <th>
             
             <th>
+
+            <th>
                 
     <tbody>
         <h2>Lista de Livros<br><br>
@@ -58,8 +60,10 @@
                     &nbsp;&nbsp;&nbsp;&nbsp;
 
                 <td>
-                    <a href=@{LivroAlteraR livid} class="btn btn-primary btn-sm active" role"button" aria-pressed="true">Editar
+                    <a href=@{LivroAlteraR livid} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Editar
                     &nbsp;&nbsp;&nbsp;&nbsp;
+                <td> 
+                    <a href=@{LivroEmprestarR livid} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Emprestar
                 <td>
                     <form action=@{LivroApagarR livid} method=post>
                         <input type="submit" value="X">

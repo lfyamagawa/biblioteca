@@ -99,3 +99,26 @@ postLivroAlteraR livid = do
             runDB $ replace livid livroNovo
             redirect TodosLivrosR
         _ -> redirect HomeR
+
+getLivroEmprestarR :: LivroId -> Handler Html
+getLivroEmprestarR livid = do
+    livro <- runDB $ get404 livid
+    (widget,enctype) <- generateFormPost (formLivro $ Just livro)
+    defaultLayout $ do
+        addStylesheet $ StaticR css_bootstrap_css
+        [whamlet|
+            <form action=@{LivroAlteraR livid} method=post>
+                ^{widget}
+                <input type="submit" value="Atualizar">
+                <br><br><a href=@{TodosLivrosR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Voltar
+        |]
+
+postLivroEmprestarR :: LivroId -> Handler Html
+postLivroEmprestarR livid = do
+    livro <- runDB $ get404 livid
+    ((res,_),_) <- runFormPost (formLivro $ Just livro) 
+    case res of
+        FormSuccess livroNovo -> do
+            runDB $ replace livid livroNovo
+            redirect TodosLivrosR
+        _ -> redirect HomeR

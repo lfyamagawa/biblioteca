@@ -1,60 +1,58 @@
-<table>
+<table class="table table-hover table-striped">
     <thead>
         <tr>
             <th>
-                Id
-                &nbsp;&nbsp;&nbsp;&nbsp
+                &nbsp;&nbsp;&nbsp;
+                Id               
             <th>
                 Nome
-                &nbsp;&nbsp;&nbsp;&nbsp
             <th>
                 RG
-                &nbsp;&nbsp;&nbsp;&nbsp
             <th>
                 CPF
-                &nbsp;&nbsp;&nbsp;&nbsp
             <th>
                 Endereco
-                &nbsp;&nbsp;&nbsp;&nbsp
             <th>    
                 Telefone
-                &nbsp;&nbsp;&nbsp;&nbsp
             <th>
             
             <th>
                 
     <tbody>
-        <h2>Lista de Clientes<br><br>
-        <a href=@{HomeR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Principal
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <a href=@{ClienteR} class="btn btn-primary btn-sm active" role"button" aria-pressed="true">Incluir
-        <br><br>
-        $forall (Entity cliid cliente) <- clientes
+        <center><h2><b>Lista de Clientes<br><br>
+ 
+            <center>
+                 <a href=@{HomeR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Principal
+                 <a href=@{ClienteR} class="btn btn-primary btn-sm active" role"button" aria-pressed="true">Incluir   
+            <br>
+            
+                 $forall (Entity cliid cliente) <- clientes
             <tr>
                 <td>
+                    &nbsp;&nbsp;&nbsp;
                     <a href=@{ClientePerfilR cliid}>
                         #{show $ fromSqlKey cliid}
                 <td>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    
                     #{clienteNome cliente}
                 <td>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    
                     #{clienteRg cliente}
                 <td>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
+                   
                     #{clienteCpf cliente}
                 <td>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    
                     #{clienteEndereco cliente}
                 <td>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    
                     #{clienteTelefone cliente}
-                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    
  
                 <td>
                     <a href=@{ClienteAlteraR cliid} class="btn btn-primary btn-sm active" role"button" aria-pressed="true">
                         Editar
-                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    
                 <td>
                     <form action=@{ClienteApagarR cliid} method=post>
                         <input type="submit" value="X">

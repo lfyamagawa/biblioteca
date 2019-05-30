@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2019-05-28 18:14:41.847139 UTC
+2019-05-30 14:09:19.46417 UTC
 
 interface aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX:Import 8002
-  interface hash: ee9c5c189bcbfa0e5cd9cb4a62f9d2aa
-  ABI hash: 48c215963025aa9e1e1479ae0d2b5702
-  export-list hash: 983943cb3b269e56f1fd9cdfff57fc4e
+  interface hash: 09dd3c9536f5ce276f1d3a9383c65f6c
+  ABI hash: 8ccc34ad955c52553b9a569e30fddbe6
+  export-list hash: 0dea0296b8ba971d2c17492174c1efd0
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: ab396f11155bd696ab63895436e6f1df
   sig of: Nothing
@@ -1855,7 +1855,7 @@ exports:
   Yesod.Core.Widget.ToWidgetMedia{Yesod.Core.Widget.toWidgetMedia}
   Yesod.Routes.Class.ParseRoute{Yesod.Routes.Class.parseRoute}
   Yesod.Routes.Class.RenderRoute{Yesod.Routes.Class.Route Yesod.Routes.Class.renderRoute}
-  Yesod.Routes.Class.Route|{Foundation.AdminR Foundation.ClienteAlteraR Foundation.ClienteApagarR Foundation.ClientePerfilR Foundation.ClienteR Foundation.EmprestimoAlteraR Foundation.EmprestimoApagarR Foundation.EmprestimoPerfilR Foundation.EmprestimoR Foundation.FaviconR Foundation.FuncionarioAlteraR Foundation.FuncionarioApagarR Foundation.FuncionarioPerfilR Foundation.FuncionarioR Foundation.HomeR Foundation.LivroAlteraR Foundation.LivroApagarR Foundation.LivroPerfilR Foundation.LivroR Foundation.LoginR Foundation.LogoutR Foundation.RobotsR Foundation.StaticR Foundation.TodosClientesR Foundation.TodosEmprestimosR Foundation.TodosFuncionariosR Foundation.TodosLivrosR Yesod.Core.Internal.LiteApp.LiteAppRoute Yesod.Core.Types.WaiSubsiteRoute Yesod.Core.Types.WaiSubsiteWithAuthRoute Yesod.Static.StaticRoute}
+  Yesod.Routes.Class.Route|{Foundation.AdminR Foundation.ClienteAlteraR Foundation.ClienteApagarR Foundation.ClientePerfilR Foundation.ClienteR Foundation.FaviconR Foundation.FuncionarioAlteraR Foundation.FuncionarioApagarR Foundation.FuncionarioPerfilR Foundation.FuncionarioR Foundation.HomeR Foundation.LivroAlteraR Foundation.LivroApagarR Foundation.LivroPerfilR Foundation.LivroR Foundation.LoginR Foundation.LogoutR Foundation.RobotsR Foundation.StaticR Foundation.TodosClientesR Foundation.TodosFuncionariosR Foundation.TodosLivrosR Yesod.Core.Internal.LiteApp.LiteAppRoute Yesod.Core.Types.WaiSubsiteRoute Yesod.Core.Types.WaiSubsiteWithAuthRoute Yesod.Static.StaticRoute}
   Yesod.Routes.Class.RouteAttrs{Yesod.Routes.Class.routeAttrs}
   Yesod.Form.Fields.AutoFocus
   Yesod.Form.Fields.Option{Yesod.Form.Fields.Option optionDisplay optionExternalValue optionInternalValue}
@@ -2221,48 +2221,43 @@ family instance modules: adjunctions-4.3@adjunctions-4.3-A5jfd1yrmaY4DRMJuiquBp:
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.FromJSON f70746c5b1cd1a03ee098f0728e87383
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.Internal f040a64200abf1dfa06f5db9b9e027c1
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.ToJSON d8ae0f04da94d706b89336fd9d0bf43b
-import  -/  Foundation 225035261a78c49c3e561f3a448e5c58
-  exports: 4c756ea60931cee8b957c855baab1d41
-  AdminR 8686677c09675f4b4cf5d2a978879477
-  App 5e53ccfb82fdb27b7e4c8628c3ca7e49
-  App 4af7c50b06199209e98254b51ab94ca6
-  ClienteAlteraR 4bd53b0b7e3de228fa698ebff2ee77bb
-  ClienteApagarR f8ea707b73c31f4623e58011a4cd5a7a
-  ClientePerfilR bc3e201ba845c0ac348b6afeac176cad
-  ClienteR fad43174e04bf820c6de49a2640b75c7
-  EmprestimoAlteraR 80ff30793b2220becc748bbf28ca2083
-  EmprestimoApagarR 31db8bfe8079335a8c7b550113b503f2
-  EmprestimoPerfilR 48995b352c91753058a7bb6e2aebe587
-  EmprestimoR d93913611a32f08a2c8f6f3887cfc1fb
-  FaviconR 98feee26bfa7eb975219355280476c8e
-  Form 4e228a3b16660fad6d90d2e8faa1ad8a
-  FuncionarioAlteraR af4cd3e67eebd2e2b1e1d147462b40e2
-  FuncionarioApagarR 964be44f949d4f8dca778fc841f2e70a
-  FuncionarioPerfilR 5682e1ac9b297ec638c3c74b4dc1e99c
-  FuncionarioR 97bc0400fca4d4794a09a6d4ec1bbb24
-  Handler 4fa160dd11e745bb3d18f01dc47a26ec
-  HomeR 57cd1907ea8f9196839bc893da987fd3
-  LivroAlteraR 91296f07cc941c9bb1c731cbf4cfa1bb
-  LivroApagarR e47cdbb0d8b2cf2d0599b89e6a8a43bd
-  LivroPerfilR b6145e4e8ffe94c25c458afde5fa477e
-  LivroR 4903fb231391ffa452dc9649d97efcf9
-  LoginR 1e0de00a08d8e9903cd55b565e69634f
-  LogoutR bb1e7edd134327fcb5000e4451ed01d8
-  RobotsR 3b07241410e01851a07fc1155e102991
-  StaticR e3ffe8eb5a6643a138508a215b58bc96
-  TodosClientesR 2c26a38f3d9d98aa8cb2cd7a987da6f6
-  TodosEmprestimosR 8cc6d2115513111f1b61e6deaf5ca131
-  TodosFuncionariosR ce8f099b958bfc2aae0800890aafb7cd
-  TodosLivrosR 60dd6897ae3273e63dc07535c9e2f247
-  Widget 731167e0953060b5389adfe34119984f
-  appConnPool a61484c1e4a01ec3213ca4acf478c457
-  appHttpManager 4af7c50b06199209e98254b51ab94ca6
-  appLogger 25afd19a34e03e20849f89354f8d0efe
-  appSettings bd1342cae6f3b6f35487d9f89dcecbd1
-  appStatic f8aaeeaef9cf64d5e6a2c2da7f402734
-  isAdmin cd769c41278214ed831f9a97e3fdef29
-  isUser 22b761bb8d770478cc36bf34843907c8
-  resourcesApp 6e35a5d1cb5c8cfd6e8595d74df9d8d8
+import  -/  Foundation 50d1e4fc6c413dab030e68285ad1ac08
+  exports: 50d06adb79aff1c283f924c0556673fe
+  AdminR 241b0bd803658fa2fb05e86f9a9d9d64
+  App 037c6c478d35a2d758a52a076782e448
+  App f11f4b9969633f3f4f55a50b9ddde26b
+  ClienteAlteraR c13218edf1631ec4a0d7a621b322f437
+  ClienteApagarR ad187287a3b27f94ea8b78f5522c069e
+  ClientePerfilR 60f2008764d20b7a32e5bfead90642ed
+  ClienteR adadc38f97c16c57f26f255cd43048b1
+  FaviconR ac7ecccb7c1f1c679106fc43d66361ac
+  Form 7aa32b701b9290ecea6fc9bd5fad6796
+  FuncionarioAlteraR 5ac0691fc5189be5d526b70f02266d92
+  FuncionarioApagarR d2d3172d525cc2f974a5a447eae88113
+  FuncionarioPerfilR d6c564d863706c6226decb84b300c323
+  FuncionarioR d0be522f2bcbe9ecc3cb5df421d1c9d4
+  Handler ffb79c1af07ec69f372d35853b3a127f
+  HomeR 70ccdba3306199bfe01dd8563aff0ff4
+  LivroAlteraR 69ffe0e6fb6d5d721efc4e7ec2948ac6
+  LivroApagarR d4ef851dff2e84b655feb55548e49c55
+  LivroPerfilR db16a087078088dc4fee389191ec0677
+  LivroR ab222a3ffd5b8035d00f1240c28ce38a
+  LoginR d09dfb9b6ac7dcb566617b137bb45cb5
+  LogoutR e11c3526e2a7eb5eed6ceb654ca147de
+  RobotsR d0d019244efe99225e5b33f68cc18e39
+  StaticR 61c5c01287a48020d5a25dcb8b497ce6
+  TodosClientesR 5b3f8a86d0612f5ea38e039ef7073cda
+  TodosFuncionariosR 0fd7c12bf7b20fd2039084c5cd7085e8
+  TodosLivrosR e2fa19035d9ed31bc0168e90c7f6e48a
+  Widget 10325fca84e580b5b340a08d6d995a91
+  appConnPool 1cbd92701b3fe3814082e93c77e5c29e
+  appHttpManager f11f4b9969633f3f4f55a50b9ddde26b
+  appLogger c50ee302f62b84607b30dcc114becf49
+  appSettings 185fe6668691ca7d30e08c8a07efc201
+  appStatic 3ca98b00d0adef1cee7f4c2f780fadc9
+  isAdmin aa2b97c4fddbb7adcde25d679ef0a0c8
+  isUser f260ab9dff0a741fa0a75c762883b212
+  resourcesApp 8f11b4cc2b45b1bff7a7276a38a7b651
 import  -/  Import.NoFoundation 8cd61d0bf26f6b3c84cd936e32426e90
   exports: 4a457dcfff1faa1ff43bebc0feacad73
 import  -/  Model ca0a41839802f18c4468f82b9104a2ac

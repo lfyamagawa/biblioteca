@@ -20,39 +20,37 @@
                 
     <tbody>
         <center><h2><b>Lista de Clientes<br><br>
- 
-            <center>
-                 <a href=@{HomeR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Principal
-                 <a href=@{ClienteR} class="btn btn-primary btn-sm active" role"button" aria-pressed="true">Incluir   
-            <br>
-            
-                 $forall (Entity cliid cliente) <- clientes
-            <tr>
-                <td>
-                    &nbsp;&nbsp;&nbsp;
-                    <a href=@{ClientePerfilR cliid}>
-                        #{show $ fromSqlKey cliid}
-                <td>
+        <center>
+             <a href=@{HomeR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Principal
+             <a href=@{ClienteR} class="btn btn-primary btn-sm active" role"button" aria-pressed="true">Incluir   
+        <br>
+        
+             $forall (Entity cliid cliente) <- clientes
+                 <tr>
+                    <td>
+                        <a href=@{ClientePerfilR cliid}>
+                            #{show $ fromSqlKey cliid}
+                    <td>
                     
-                    #{clienteNome cliente}
-                <td>
-                    
-                    #{clienteRg cliente}
-                <td>
+                        #{clienteNome cliente}
+                    <td>
+                        
+                        #{clienteRg cliente}
+                    <td>
                    
-                    #{clienteCpf cliente}
-                <td>
+                        #{clienteCpf cliente}
+                    <td>
                     
-                    #{clienteEndereco cliente}
-                <td>
+                        #{clienteEndereco cliente}
+                    <td>
                     
-                    #{clienteTelefone cliente}
+                        #{clienteTelefone cliente}
                     
  
-                <td>
-                    <a href=@{ClienteAlteraR cliid} class="btn btn-primary btn-sm active" role"button" aria-pressed="true">
-                        Editar
+                    <td>
+                        <a href=@{ClienteAlteraR cliid} class="btn btn-primary btn-sm active" role"button" aria-pressed="true">
+                            Editar
                     
-                <td>
-                    <form action=@{ClienteApagarR cliid} method=post>
-                        <input type="submit" value="X">
+                    <td>
+                        <form action=@{ClienteApagarR cliid} method=post>
+                            <input type="submit" value="X">

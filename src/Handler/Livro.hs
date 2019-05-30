@@ -107,10 +107,19 @@ getLivroEmprestarR livid = do
     defaultLayout $ do
         addStylesheet $ StaticR css_bootstrap_css
         [whamlet|
-            <form action=@{LivroAlteraR livid} method=post>
-                ^{widget}
-                <input type="submit" value="Atualizar">
-                <br><br><a href=@{TodosLivrosR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Voltar
+            <form action=@{LivroEmprestarR livid} method=post>
+            <h1>
+                Livro #{livroTitulo livro}
+            <div>
+                Autor: #{livroAutor livro}
+            <div>
+                Publicacoa: #{livroPublicacao livro}
+            <div>
+                Descricao: #{livroDescricao livro}
+            <div>
+                Assunto: #{livroAssunto livro}
+            <input type="submit" value="Atualizar">
+            <br><br><a href=@{TodosLivrosR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Voltar
         |]
 
 postLivroEmprestarR :: LivroId -> Handler Html

@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2019-05-30 14:25:12.369494 UTC
+2019-05-30 14:42:56.693912 UTC
 
 interface aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX:Application [orphan module] 8002
-  interface hash: 6a81026ba0209465eb287ec73d8102cf
+  interface hash: d8f7514a631cfb5c02bb09a79a50eb5e
   ABI hash: f5c9e159216b35c634b6514b902d26da
   export-list hash: 9560bb4909d1dd3b4b54293861c1436e
   orphan hash: 95dd648c342c18643bab06515e74d5ed
@@ -403,17 +403,17 @@ import  -/  Handler.Funcionario 9f379811166d1ef523c179feef6ff633
 import  -/  Handler.Home 0f95f22e82f9ffe0eca3318daa684a58
   exports: ccf1fd5d13d8ee912cac09a6c456f703
   getHomeR 3f349f7404d65be4c6a1b45620a8288b
-import  -/  Handler.Livro b26a973957a80b926bbe0eca2c80bc33
-  exports: 536df8505daa13c916da5f416530dcfb
+import  -/  Handler.Livro 3263e3bfe064ed822a2e284c725d76ff
+  exports: 8799d593d87a87f7871f9fcada46b151
   getLivroAlteraR 23c1cbf01fb55cb844f6ee24d450d161
   getLivroEmprestarR 7ba55bd82331b2ac503e7681f5432ff6
   getLivroPerfilR 5214511e52292a1bbe6d0dc8c0a11989
-  getLivroR 9699c36b227511f98431a5ee0b510750
-  getTodosLivrosR a151d66d1c1c44b165e965c110d0dff4
-  postLivroAlteraR 210d55211456c798a79922660a2b8d0f
-  postLivroApagarR 9b661d44156c73835f340b351b2c82e6
-  postLivroEmprestarR ac23dff545b9d76013a3d7703bdbdae3
-  postLivroR 5fd741713734ee10b4d7ace72e38dace
+  getLivroR c73a4f94433a4b2246d2a39c55742bdb
+  getTodosLivrosR 7606983800ba422ab2e42e672cdaf44c
+  postLivroAlteraR adfc47a3684f0af2ad0d164b97c20f85
+  postLivroApagarR 6e1a5ab38b658531beb8658a9bdee5b1
+  postLivroEmprestarR 48456c0ea43e6ab59272ae2c532c7570
+  postLivroR 7c2d00b107b0c387a95331022dacce98
 import  -/  Handler.Login cf3122ebe8989ecfc35983e8fa10a66e
   exports: b66af81e29637fa396b7b702670617a4
   getAdminR 8620b85c656cd95d6ef429c2084f33ad

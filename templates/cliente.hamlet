@@ -1,56 +1,60 @@
-<table class="table table-hover table-striped">
-    <thead>
-        <tr>
-            <th>
-                &nbsp;&nbsp;&nbsp;
-                Id               
-            <th>
-                Nome
-            <th>
-                RG
-            <th>
-                CPF
-            <th>
-                Endereco
-            <th>    
-                Telefone
-            <th>
+<table class="container table-striped table-hover thead-dark">
+    <thead style="background-color:silver">
+            <tr>
+                <th>
+                    <h4><strong>Id
+                <th>
+                    <h4><strong>Nome
+                <th>
+                    <h4><strong>RG
+                <th>
+                    <h4><strong>CPF
+                <th>
+                    <h4><strong>Endereco
+                <th>    
+                    <h4><strong>Telefone
+                <th>
             
-            <th>
+                <th>
                 
-    <tbody>
-        <center><h2><b>Lista de Clientes<br><br>
-        <center>
-             <a href=@{HomeR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Principal
-             <a href=@{ClienteR} class="btn btn-primary btn-sm active" role"button" aria-pressed="true">Incluir   
-        <br>
-        
-             $forall (Entity cliid cliente) <- clientes
-                 <tr>
-                    <td>
-                        <a href=@{ClientePerfilR cliid}>
-                            #{show $ fromSqlKey cliid}
-                    <td>
-                    
-                        #{clienteNome cliente}
-                    <td>
-                        
-                        #{clienteRg cliente}
-                    <td>
-                   
-                        #{clienteCpf cliente}
-                    <td>
-                    
-                        #{clienteEndereco cliente}
-                    <td>
-                    
-                        #{clienteTelefone cliente}
-                    
- 
-                    <td>
-                        <a href=@{ClienteAlteraR cliid} class="btn btn-primary btn-sm active" role"button" aria-pressed="true">
-                            Editar
-                    
-                    <td>
-                        <form action=@{ClienteApagarR cliid} method=post>
-                            <input type="submit" value="X">
+                
+       <tbody>
+            <div class="container" style="background-color:silver">
+                <center><h2><strong>Lista de Clientes<br><br>
+                              
+                <center>
+                    <a href=@{HomeR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Principal
+                    <a href=@{ClienteR} class="btn btn-primary btn-sm active" role"button" aria-pressed="true">Incluir
+                    <br><br>
+
+                                
+                      $forall (Entity cliid cliente) <- clientes
+                      
+                        <tr>
+                            <td>
+                                <a href=@{ClientePerfilR cliid}>
+                                    #{show $ fromSqlKey cliid}
+                            <td>
+                                #{clienteNome cliente}
+                            <td>
+                                #{clienteRg cliente}
+                            <td>
+                                #{clienteCpf cliente}
+                            <td>
+                                #{clienteEndereco cliente}
+                            <td>
+                                #{clienteTelefone cliente}
+                            <td>
+                                <a href=@{ClienteAlteraR cliid} class="btn btn-primary btn-sm active" role"button" aria-pressed="true">Editar
+                            <td>
+                                <form action=@{ClienteApagarR cliid} method=post>
+                                        <input type="submit" value="X">
+                            
+                                      
+<div>
+   <br><br>
+<div>
+        <div class="row">                 
+           <div class="container col-12" style="background-color:silver">
+                <center><h4><strong>Rodape 
+

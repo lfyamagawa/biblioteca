@@ -12,10 +12,11 @@ RESULT=$?
 if [ $RESULT -eq 0 ]; then
         if [ -f "scripts/.temp.swp" ]; then 
             rsync -CravzpP /home/ale/biblioteca /mnt/d/Meus\ Documentos/OneDrive/Pessoal/Fatec/ITE002\ -\ Tópicos\ Especiais\ em\ Informática\ -\ Alexandre\ Garcia/
-            git lfs install
             git add .
             git commit -m "outro commit"
             git push -f origin master
+            git config lfs.https://www.github.com/ale156ale/biblioteca.git/info/lfs.locksverify true
+            git lfs install
             rm -rf scripts/.temp.swp
         else
             touch scripts/.temp.swp

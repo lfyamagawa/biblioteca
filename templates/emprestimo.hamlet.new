@@ -1,0 +1,63 @@
+<table>
+    <thead>
+        <tr>
+            <th>
+                Id
+                &nbsp;&nbsp;&nbsp;&nbsp
+            <th>
+                Titulo
+                &nbsp;&nbsp;&nbsp;&nbsp
+            <th>
+                Autor
+                &nbsp;&nbsp;&nbsp;&nbsp
+            <th>
+                Publicacao
+                &nbsp;&nbsp;&nbsp;&nbsp
+            <th>
+                Descricao
+                &nbsp;&nbsp;&nbsp;&nbsp
+            <th>    
+                Assunto
+                &nbsp;&nbsp;&nbsp;&nbsp
+            <th>
+                Emprestado
+                &nbsp;&nbsp;&nbsp;&nbsp;
+            <th>
+            
+            <th>
+
+            <th>
+                
+    <tbody>
+        <h2>Lista de Livros<br><br>
+        <a href=@{HomeR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Principal
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <br><br>
+        $forall (Entity livid livro) <- livros
+            <tr>
+                <td>
+                    #{show $ fromSqlKey livid}
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    #{livroTitulo livro}
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    #{livroAutor livro}
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    #{livroPublicacao livro}
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    #{livroDescricao livro}
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    #{livroAssunto livro}
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    #{livroEmprestado livro}
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                <td> 
+                <td>

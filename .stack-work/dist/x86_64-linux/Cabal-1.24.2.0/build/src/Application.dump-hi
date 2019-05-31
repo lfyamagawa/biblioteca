@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2019-05-31 13:10:22.67064 UTC
+2019-05-31 20:40:08.668512 UTC
 
 interface aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX:Application [orphan module] 8002
-  interface hash: 6f2484001f14a17f6f913ddf24a2652f
+  interface hash: 8756b6960c15258face871a8692e9d2e
   ABI hash: f5c9e159216b35c634b6514b902d26da
   export-list hash: 9560bb4909d1dd3b4b54293861c1436e
   orphan hash: 95dd648c342c18643bab06515e74d5ed
@@ -389,8 +389,8 @@ import  -/  Handler.Common e832548b4c3e8af115835a70e4b1f8e1
   exports: 1e2f43249f564bf081b0b39344d88d37
   getFaviconR c55a945319f8c720aa1e8eebb9e5b851
   getRobotsR 533d28cb4f497159e83b43db90a6a289
-import  -/  Handler.Emprestimo e7dad93e18c379a8920a18f1d2f39ac5
-  exports: 30c9a69730871d94fe938f3105649907
+import  -/  Handler.Emprestimo 8d49ee64fd112893c2c4a3249232bc86
+  exports: 5b1f1ecb0f193bdef6ec7f1feedd505f
 import  -/  Handler.Funcionario 9f379811166d1ef523c179feef6ff633
   exports: c5ee028d30298eefd18d789feddbe409
   getFuncionarioAlteraR bac4fecf512dccf3f0eded1444e81f81

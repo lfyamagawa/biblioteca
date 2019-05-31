@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2019-05-31 21:32:03.158115 UTC
+2019-05-31 22:21:15.134946 UTC
 
 interface aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX:Handler.Home 8002
-  interface hash: 1b7d09f93794e305c02b0dc72f12af91
-  ABI hash: 275152912ac43db430bb9890b6635024
+  interface hash: 00338a5425511556985752815bb294ff
+  ABI hash: b86f08128cfb119ef2a8e08300fd4d8b
   export-list hash: ccf1fd5d13d8ee912cac09a6c456f703
   orphan hash: c615116cd212abc4390675378980b9b9
   flag hash: f123df0d0ff34442f243f0943d78ec4c
@@ -336,19 +336,19 @@ family instance modules: adjunctions-4.3@adjunctions-4.3-A5jfd1yrmaY4DRMJuiquBp:
                          yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Types
                          yesod-static-1.5.3.1@yesod-static-1.5.3.1-3fPHfGwGXLD6UjosrxUpf7:Yesod.Static
                          zlib-0.6.1.2@zlib-0.6.1.2-7negTfm2ujt1gW4wr40MUp:Codec.Compression.Zlib.Stream
-import  -/  Foundation 860bf4c415d263b9c0bbd1a610171d7a
-  ClienteR c7494d29cfacf43d3c0270df45fca40c
-  FuncionarioR a66730b052b29832fcc696d5ca3c957a
-  Handler e2d2590d764cbd3b31683ec0e04f949a
-  LivroR ca77ab581a5477503d2fc95a829b746c
-  LoginR 4a76fb907ea708cc2e4e8309dd73231c
-  LogoutR 29e0680ebe820eb85b4a91e1b9fd79d0
-  StaticR 9bc29f22a925c1670d1904f4e417c982
-  TodosClientesR 74f09a3460fb6a02f0df5214686ff1df
-  TodosFuncionariosR cc26a9aeab60aa28ba9d5c77b288b3d8
-  TodosLivrosR f2b1710c418f2b896a3af4f5138b8249
-import  -/  Import 8bb087658e8424487649b3139739e102
-  exports: a8fabc9208273118c563d402c55bea68
+import  -/  Foundation cf3b97b2e302847460a46eedbf1fe090
+  ClienteR aed1db09dbe03c8d68c109a295e1e0f7
+  FuncionarioR bbdd6e52268ea1030ac93bea2b1e6e10
+  Handler 54b343d9331cbda2721d5e627c250492
+  LivroR 41f9853d415b75f3642383ac749a0ca8
+  LoginR 901cad08eacf8ae49c7cf83ab896ce04
+  LogoutR 329d7f9df1c8e9c33ae1dc36de1a4555
+  StaticR 632ef9bb4655955d5e70467bfd09695d
+  TodosClientesR 60f4adf7538e4988092808736982dd49
+  TodosFuncionariosR 8d2372c895f5312f7f0d4c7413841a52
+  TodosLivrosR 930c0faf8d05665d3431402b9842c28a
+import  -/  Import 10f17d500e07fe5cba8a946c3c39d48c
+  exports: 59dafee8700e8b5a27a2bb465962ff3f
 import  -/  Settings.StaticFiles 3ad9e40099153eabf23a2de0893be5c8
   css_bootstrap_css 7fb70e8cf207ea213dca2425cf051440
 import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
@@ -413,7 +413,7 @@ f0297d6a37c78c79e4a009ea4d8eb1d4
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    "aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX"#) -}
-ba8c8fcf7af55e219086087dd69b6aff
+5baa8510b267eb147f05152ad6d5956c
   getHomeR :: Foundation.Handler Text.Blaze.Html.Html
   {- Arity: 2, Strictness: <L,U><S,U>,
      Unfolding: InlineRule (0, True, True)
@@ -425,7 +425,7 @@ ba8c8fcf7af55e219086087dd69b6aff
                       ->_R Sym (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R))
                      (Sym (Yesod.Core.Types.N:HandlerT[0]
                                <Foundation.App>_N <GHC.Types.IO>_N <Text.Blaze.Html.Html>_N))) -}
-a2c4e1e88cef88d0d1de84409153829d
+aa444835e6d4bbb820e810d7c4c99431
   getHomeR1 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)

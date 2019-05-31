@@ -13,9 +13,23 @@ import Database.Persist.Sql
 
 getTodosEmprestimoR :: Handler Html
 getTodosEmprestimoR = do
-    let sql = "SELECT * FROM \"livro\" LEFT JOIN \"emprestimo\" ON \"livro\".id = \"emprestimo\".livid \
-            \WHERE \"emprestimo\".data_emp IS NULL;"
+    let sql = "SELECT ?? FROM livro LEFT JOIN emprestimo ON livro.id=emprestimo.livid \
+            \WHERE emprestimo.data_emp IS NULL;"
     livros <- runDB $ rawSql sql []
     defaultLayout $(whamletFile "templates/emprestimos.hamlet")
-        -- where sql = "SELECT * FROM livro LEFT JOIN emprestimo ON livro.id=emprestimo.livid WHERE emprestimo.data_emp IS NULL;"
+
+getEmprestarClienteR :: LivroId -> Handler Html
+getEmprestarClienteR livid = do
+    defaultLayout $ do
+        [whamlet|
+            Oi
+        |]
+
+postEmprestarClienteR :: LivroId -> Handler Html
+postEmprestarClienteR livid = do
+    defaultLayout $ do
+        [whamlet|
+            Oi
+        |]
+
 

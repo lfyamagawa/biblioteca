@@ -30,3 +30,4 @@
 /livro/#LivroId/emprestar LivroEmprestarR GET POST
 
 /emprestimo TodosEmprestimoR GET
+/emprestimo/#LivroId/emprestarclient EmprestarClienteR GET POST

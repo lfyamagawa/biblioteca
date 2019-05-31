@@ -27,7 +27,6 @@
 /livro/#LivroId/perfil LivroPerfilR GET
 /livro/#LivroId/apagar LivroApagarR POST
 /livro/#LivroId/alterar LivroAlteraR GET POST
-/livro/#LivroId/emprestar LivroEmprestarR GET POST
 
 /emprestimo TodosEmprestimoR GET
-/emprestimo/#LivroId/emprestarclient EmprestarClienteR GET POST
+/emprestimo/#LivroId/emprestarcliente EmprestarClienteR GET POST

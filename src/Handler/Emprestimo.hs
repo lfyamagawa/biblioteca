@@ -22,14 +22,14 @@ getEmprestarClienteR :: LivroId -> Handler Html
 getEmprestarClienteR livid = do
     defaultLayout $ do
         [whamlet|
-            Oi
+            Oi GET
         |]
 
 postEmprestarClienteR :: LivroId -> Handler Html
 postEmprestarClienteR livid = do
     defaultLayout $ do
         [whamlet|
-            Oi
+            Oi POST
         |]
 
 

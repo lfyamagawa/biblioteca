@@ -5,5 +5,9 @@ sudo -u postgres createuser projeto
 sudo -u postgres createdb projeto
 sudo -u postgres psql -c "alter user projeto with encrypted password 'projeto';"
 sudo -u postgres psql -c 'grant all privileges on database projeto to "projeto";'
+sudo -u postgres createuser projetoadsn
+sudo -u postgres createdb projetoadsn
+sudo -u postgres psql -c "alter user projetoadsn with encrypted password 'projetoadsn';"
+sudo -u postgres psql -c 'grant all privileges on database projetoadsn to "projetoadsn";'
 sudo sed -i "s,#listen_addresses\ =\ 'localhost',listen_addresses\ =\ '*',g" /etc/postgresql/9.6/main/postgresql.conf
 sudo /etc/init.d/postgresql restart

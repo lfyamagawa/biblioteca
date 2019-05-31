@@ -1,0 +1,1 @@
+sudo -u postgres psql projeto -f scripts/popula_bd.sql

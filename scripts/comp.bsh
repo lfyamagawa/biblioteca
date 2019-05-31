@@ -10,11 +10,16 @@ stack clean
 stack build
 RESULT=$?
 if [ $RESULT -eq 0 ]; then
-        rsync -CravzpP /home/ale/biblioteca /mnt/d/Meus\ Documentos/OneDrive/Pessoal/Fatec/ITE002\ -\ Tópicos\ Especiais\ em\ Informática\ -\ Alexandre\ Garcia/
-        git lfs install
-        git add .
-        git commit -m "outro commit"
-        git push -f origin master
+        if [ -f "scripts/.temp.swp" ]; then 
+            rsync -CravzpP /home/ale/biblioteca /mnt/d/Meus\ Documentos/OneDrive/Pessoal/Fatec/ITE002\ -\ Tópicos\ Especiais\ em\ Informática\ -\ Alexandre\ Garcia/
+            git lfs install
+            git add .
+            git commit -m "outro commit"
+            git push -f origin master
+            rm -rf scripts/.temp.swp
+        else
+            touch scripts/.temp.swp
+        fi       
         echo -e "\n\n\n\n\nsucesso !!!"
         echo -e "\n\nExecute no navegador: http://localhost:8080"
         stack exec aulahaskell

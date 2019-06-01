@@ -1,12 +1,12 @@
 
 ==================== FINAL INTERFACE ====================
-2019-06-01 12:15:25.618043 UTC
+2019-06-01 12:36:42.947959 UTC
 
 interface aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX:Handler.Emprestimo 8002
-  interface hash: 4cdbfce705e6fd5a1e0b150d3692a9ec
-  ABI hash: c8787b59b7bebc1e5c654ac7e791ebc7
-  export-list hash: c6eb17bea27a228b97997b16a5f4852f
-  orphan hash: 8c95a604f7ec95d6054de60f985b4794
+  interface hash: 0f42833995d2903e4ca9a9c00ff01d52
+  ABI hash: 81bd0ec821bdb3a7404892d16bbef9bb
+  export-list hash: 7cade49a917d64f506c20102586393ef
+  orphan hash: c388c6fea1b2a71baf12c74e213ff9e7
   flag hash: f123df0d0ff34442f243f0943d78ec4c
   sig of: Nothing
   used TH splices: True
@@ -410,19 +410,19 @@ addDependentFile "templates/emprestimos.hamlet"
                      @ GHC.Types.IO
                      @ site
                      Handler.Emprestimo.$s$fApplicativeHandlerT_$dMonad) -}
-d0948213947ef6b5a9c9f9d583c3f30c
+1dd11a3f0bfdaccf45dc01b599ea81cb
   $s$fApplicativeHandlerT_$creturn ::
     a -> Yesod.Core.Types.HandlerT site GHC.Types.IO a
   {- Arity: 3, HasNoCafRefs, Strictness: <L,U><L,A><S,U>,
      Unfolding: InlineRule (1, True, True)
                 (\ @ site
                    @ a
-                   (eta32 :: a)
-                   (eta33 :: Yesod.Core.Types.HandlerData
+                   (eta40 :: a)
+                   (eta41 :: Yesod.Core.Types.HandlerData
                                site (Yesod.Core.Types.MonadRoute GHC.Types.IO))
-                   (eta34 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
-                 (GHC.Base.returnIO @ a eta32) `cast` (GHC.Types.N:IO[0] <a>_R)
-                   eta34)
+                   (eta42 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 (GHC.Base.returnIO @ a eta40) `cast` (GHC.Types.N:IO[0] <a>_R)
+                   eta42)
                   `cast`
                 (forall (site :: <*>_N) (a :: <*>_N).
                  <a>_R
@@ -450,7 +450,7 @@ c52255e119babcb479dc0e6922f56f35
                      @ GHC.Types.IO
                      @ site
                      Handler.Emprestimo.$s$fApplicativeHandlerT_$dMonad) -}
-9762b071da1c874601cf0593b73f85d0
+b9a3c8639a52502c74880d82f3e6cb7c
   $s$fFunctorAForm1 ::
     GHC.Base.Monad
       (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
@@ -458,7 +458,7 @@ c52255e119babcb479dc0e6922f56f35
      Unfolding: InlineRule (0, True, True)
                 (Handler.Emprestimo.$s$fFunctorAForm_$s$fMonadHandlerT
                    @ Foundation.App) -}
-7d753155c148db8badd886ada4c6eff6
+699beccaa30c24b409af5b591309d434
   $s$fFunctorAForm_$s$fMonadHandlerT ::
     GHC.Base.Monad (Yesod.Core.Types.HandlerT site GHC.Types.IO)
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -479,19 +479,19 @@ c52255e119babcb479dc0e6922f56f35
                   (Handler.Emprestimo.$s$fApplicativeHandlerT_$creturn @ site)
                   (Handler.Emprestimo.$s$fFunctorAForm_$s$fMonadHandlerT_$cfail
                      @ site) -}
-b64abff3dac8b1943ee054a827b65dd8
+222944a39af2130b389952329e77573e
   $s$fFunctorAForm_$s$fMonadHandlerT_$cfail ::
     GHC.Base.String -> Yesod.Core.Types.HandlerT site GHC.Types.IO a
   {- Arity: 1, Strictness: <B,U>x,
      Unfolding: InlineRule (1, True, False)
-                (\ @ site @ a (eta32 :: GHC.Base.String) ->
+                (\ @ site @ a (eta40 :: GHC.Base.String) ->
                  Yesod.Core.Types.$fMonadHandlerT1
                    @ site
                    @ GHC.Types.IO
                    @ a
                    GHC.Base.$fMonadIO
-                   eta32) -}
-6281d1a788f1df67baf88cd5b54b684f
+                   eta40) -}
+2b09edaee27afbf1128f0e00be7e86ed
   $s$fMonadBasebHandlerT ::
     Control.Monad.Base.MonadBase
       GHC.Types.IO (Yesod.Core.Types.HandlerT site GHC.Types.IO)
@@ -509,18 +509,18 @@ b64abff3dac8b1943ee054a827b65dd8
                      @ site)
                   (Handler.Emprestimo.$s$fMonadBasebHandlerT_$s$fMonadBasebHandlerT_$cliftBase
                      @ site) -}
-1e58aa324e455afa20d9ebf4fa679356
+2ebccafa77b28ecc729547430291f7fa
   $s$fMonadBasebHandlerT_$s$fMonadBasebHandlerT_$cliftBase ::
     GHC.Types.IO α -> Yesod.Core.Types.HandlerT site GHC.Types.IO α
   {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,A>,
      Unfolding: InlineRule (1, True, False)
-                (\ @ site @ α (eta32 :: GHC.Types.IO α) ->
+                (\ @ site @ α (eta40 :: GHC.Types.IO α) ->
                  let {
-                   eta33 :: GHC.Types.IO α = GHC.Base.id @ (GHC.Types.IO α) eta32
+                   eta41 :: GHC.Types.IO α = GHC.Base.id @ (GHC.Types.IO α) eta40
                  } in
                  (\ (ds :: Yesod.Core.Types.HandlerData
                              site (Yesod.Core.Types.MonadRoute GHC.Types.IO)) ->
-                  eta33)
+                  eta41)
                    `cast`
                  (Sym (Yesod.Core.Types.N:HandlerT[0]
                            <site>_N <GHC.Types.IO>_N <α>_N))) -}
@@ -542,7 +542,7 @@ bbf384993280a70783d51c8e2afdbdde
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 Handler.Emprestimo.$s$fApplicativeHandlerT -}
-0ba19b9dc8bfc47d4abba3a2d87f2bef
+f198e2a7bcde93ccda2b89b39c66670b
   $s$fMonadBasebHandlerT_$s$fMonadThrowHandlerT_$cp1MonadThrow ::
     GHC.Base.Monad (Yesod.Core.Types.HandlerT site GHC.Types.IO)
   {- Strictness: m,
@@ -571,7 +571,7 @@ bbf384993280a70783d51c8e2afdbdde
                   Control.Monad.Catch.$fMonadThrowIO,
                   Control.Monad.Base.$fMonadBaseIOIO,
                   Control.Monad.IO.Class.$fMonadIOIO, GHC.Base.$fApplicativeIO)) -}
-60575353e728bf0a9c4690b3f002e522
+581667646f87a5df2e4c83d069ff2766
   $s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT ::
     Control.Monad.IO.Class.MonadIO
       (Yesod.Core.Types.HandlerT site GHC.Types.IO)
@@ -582,7 +582,7 @@ bbf384993280a70783d51c8e2afdbdde
                      @ site)
                   (Handler.Emprestimo.$s$fMonadBasebHandlerT_$s$fMonadBasebHandlerT_$cliftBase
                      @ site) -}
-b0547c353473b9a9425f198d0441266a
+0dcf850595fb7a1475590986c1b465a9
   $s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadThrowHandlerT ::
     Control.Monad.Catch.MonadThrow
       (Yesod.Core.Types.HandlerT site GHC.Types.IO)
@@ -593,7 +593,7 @@ b0547c353473b9a9425f198d0441266a
                      @ site)
                   (Handler.Emprestimo.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadThrowHandlerT_$cthrowM
                      @ site) -}
-e054aa1d7f27d418f9e51fd6e1caa375
+f54992abc6d29e124475aff75dc8936e
   $s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadThrowHandlerT_$cthrowM ::
     GHC.Exception.Exception e =>
     e -> Yesod.Core.Types.HandlerT site GHC.Types.IO a
@@ -603,13 +603,13 @@ e054aa1d7f27d418f9e51fd6e1caa375
                 (\ @ site
                    @ e
                    @ a
-                   (eta32 :: GHC.Exception.Exception e)
-                   (x7 :: e)
-                   (eta33 :: Yesod.Core.Types.HandlerData
+                   (eta40 :: GHC.Exception.Exception e)
+                   (x9 :: e)
+                   (eta41 :: Yesod.Core.Types.HandlerData
                                site (Yesod.Core.Types.MonadRoute GHC.Types.IO))
-                   (eta34 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
-                 (GHC.IO.throwIO @ e @ a eta32 x7) `cast` (GHC.Types.N:IO[0] <a>_R)
-                   eta34)
+                   (eta42 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 (GHC.IO.throwIO @ e @ a eta40 x9) `cast` (GHC.Types.N:IO[0] <a>_R)
+                   eta42)
                   `cast`
                 (forall (site :: <*>_N) (e :: <*>_N) (a :: <*>_N).
                  <GHC.Exception.Exception e>_R
@@ -635,7 +635,7 @@ e054aa1d7f27d418f9e51fd6e1caa375
                      @ GHC.Types.IO
                      @ site
                      Handler.Emprestimo.$s$fMonadHandlerHandlerT1) -}
-e527872f3eb3e0710f1b2e694666692a
+cd2a48087e849e771e91866ed65a13d7
   $s$fMonadResourceHandlerT ::
     Control.Monad.Trans.Resource.Internal.MonadResource
       (Yesod.Core.Types.HandlerT site GHC.Types.IO)
@@ -656,21 +656,21 @@ e527872f3eb3e0710f1b2e694666692a
                      Control.Monad.IO.Class.$fMonadIOIO
                      Control.Monad.Base.$fMonadBaseIOIO
                      Control.Monad.Catch.$fMonadThrowIO) -}
-d5c3dc6b12f7cf2091ca7c75560d9701
+bbf858ab8b8e78212cb2bf3bd0f1cb55
   $s$fMonadResourceHandlerT_$s$fMonadResourceHandlerT_$cp1MonadResource ::
     Control.Monad.Catch.MonadThrow
       (Yesod.Core.Types.HandlerT site GHC.Types.IO)
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 Handler.Emprestimo.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadThrowHandlerT -}
-ee840e15e4de81b493225193657902c8
+5fa4020e5d41d2612b99e6358df78919
   $s$fMonadResourceHandlerT_$s$fMonadResourceHandlerT_$cp2MonadResource ::
     Control.Monad.IO.Class.MonadIO
       (Yesod.Core.Types.HandlerT site GHC.Types.IO)
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 Handler.Emprestimo.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT -}
-8b3bdb8955247f5e092da5f648d4144f
+a93341fa4d154410de795fc58c9c4a34
   $s$fMonadResourceHandlerT_$s$fMonadResourceHandlerT_$cp4MonadResource ::
     Control.Monad.Base.MonadBase
       GHC.Types.IO (Yesod.Core.Types.HandlerT site GHC.Types.IO)
@@ -744,7 +744,7 @@ acc5155e510257bd949053f03299875d
                         Model.Livro)
                    @~ <Database.Persist.Class.PersistEntity.PersistEntityBackend
                          Model.Livro>_N) -}
-0837ce8e30a90e29b5d77e67a0c9a940
+6e2319ecf2bca339e86b2d06f4b6e11b
   $sdayField ::
     Yesod.Form.Types.Field
       (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
@@ -789,7 +789,7 @@ c974fa0976818cb64f53d7504af05b09
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    "aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX"#) -}
-8cbabe396e9248102bb55ffdaff85567
+dd048285647c16792cae5b0fe8e01c52
   cliLista ::
     Yesod.Core.Types.HandlerT
       Foundation.App
@@ -811,7 +811,7 @@ c974fa0976818cb64f53d7504af05b09
                                <GHC.Types.IO>_N
                                <Yesod.Form.Fields.OptionList
                                   (Database.Persist.Class.PersistEntity.Key Model.Cliente)>_N))) -}
-96db6ef9a1fb1415c79f165d6fccd355
+f864b7102e383a0a96df9b519b200d55
   cliLista1 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -895,7 +895,7 @@ c974fa0976818cb64f53d7504af05b09
                   Database.Persist.Class.PersistEntity.entityKey
                     @ Model.Cliente
                     ent)) -}
-2ee5a332329e64a1bcb53b33f786086c
+9ac333566fa902dc6e6b8480d4c395c9
   cliLista3 ::
     Yesod.Persist.Core.YesodPersistBackend Foundation.App
     -> Yesod.Core.Types.HandlerT
@@ -977,7 +977,7 @@ c974fa0976818cb64f53d7504af05b09
                                 <GHC.Types.IO>_N
                                 <[Database.Persist.Class.PersistEntity.Entity
                                     Model.Cliente]>_N)))) -}
-740acd8ddb410b2f14c9abee463c3e70
+fbadb757584dad61fd288e3ef9fd5e8b
   cliLista4 ::
     Control.Monad.Trans.Reader.ReaderT
       Database.Persist.Sql.Types.Internal.SqlBackend
@@ -1058,7 +1058,7 @@ ca109e3cd2b54a9794fcfd2084ac4333
                             <*>_N) <Database.Persist.Sql.Types.Internal.SqlBackend>_N <Database.Persist.Class.PersistStore.BaseBackend
                                                                                          (Yesod.Persist.Core.YesodPersistBackend
                                                                                             Foundation.App)>_N))) -}
-c3b10041342823d6962a17025462894d
+39649b9998de76d28850122f5d71cd82
   formEmpr :: Model.LivroId -> Foundation.Form Model.Emprestimo
   {- Arity: 4, Strictness: <L,U><L,U><L,U><L,U>,
      Unfolding: InlineRule (0, True, True)
@@ -1081,7 +1081,7 @@ c3b10041342823d6962a17025462894d
                                                <GHC.Types.IO>_N <Foundation.App>_N))
                                      <GHC.Types.IO>_N
                                      <()>_N)_N)_N)) -}
-a5d6b86aab5d362c5b741f0d32e775b7
+6a735df6a9f301af68e93732c70bfd90
   formEmpr1 ::
     Model.LivroId
     -> Text.Blaze.Internal.Markup
@@ -1103,13 +1103,13 @@ a5d6b86aab5d362c5b741f0d32e775b7
           Yesod.Form.Types.Ints, Yesod.Form.Types.Enctype)
   {- Arity: 4, Strictness: <L,U><L,U><L,U><L,U>,
      Unfolding: (\ (livid :: Model.LivroId)
-                   (eta32 :: Text.Blaze.Internal.Markup)
-                   (eta33 :: (GHC.Base.Maybe
+                   (eta40 :: Text.Blaze.Internal.Markup)
+                   (eta41 :: (GHC.Base.Maybe
                                 (Yesod.Form.Types.Env, Yesod.Form.Types.FileEnv),
                               Yesod.Core.Class.Handler.HandlerSite
                                 (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO),
                               [Text.Shakespeare.I18N.Lang]))
-                   (eta34 :: Yesod.Form.Types.Ints) ->
+                   (eta42 :: Yesod.Form.Types.Ints) ->
                  Yesod.Form.Functions.renderBootstrap1
                    @ (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
                    @ Model.Emprestimo
@@ -1190,7 +1190,7 @@ a5d6b86aab5d362c5b741f0d32e775b7
                                                    Foundation.App GHC.Types.IO))],
                                        Yesod.Form.Types.Ints, Yesod.Form.Types.Enctype)>_R)
                                   s of ds1 { (#,#) ipv ipv1 ->
-                           case ipv1 of wild { (,,,) w x7 y z ->
+                           case ipv1 of wild { (,,,) w x9 y z ->
                            (# ipv,
                               (case w of wild1 {
                                  Yesod.Form.Types.FormMissing
@@ -1207,11 +1207,11 @@ a5d6b86aab5d362c5b741f0d32e775b7
                                       @ (Data.Time.Calendar.Days.Day
                                          -> Data.Time.Calendar.Days.Day -> Model.Emprestimo)
                                       (Model.$WEmprestimo a1 livid) },
-                               \ (x8 :: [Yesod.Form.Types.FieldView
-                                           (Yesod.Core.Class.Handler.HandlerSite
-                                              (Yesod.Core.Types.HandlerT
-                                                 Foundation.App GHC.Types.IO))]) ->
-                               x7 x8,
+                               \ (x10 :: [Yesod.Form.Types.FieldView
+                                            (Yesod.Core.Class.Handler.HandlerSite
+                                               (Yesod.Core.Types.HandlerT
+                                                  Foundation.App GHC.Types.IO))]) ->
+                               x9 x10,
                                y, z) #) } })
                             `cast`
                           (Trans
@@ -1262,9 +1262,9 @@ a5d6b86aab5d362c5b741f0d32e775b7
                    (Sym (Yesod.Form.Types.N:AForm[0]
                              <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_N
                              <Model.Emprestimo>_N))
-                   eta32
-                   eta33
-                   eta34) -}
+                   eta40
+                   eta41
+                   eta42) -}
 d6df08e3a0d4964404352727468f8288
   formEmpr10 :: Data.Text.Internal.Text
   {- Unfolding: (case GHC.Magic.runRW#
@@ -1335,7 +1335,7 @@ ec466bce616dd6143937495b08107b82
 b2f24f204d38f3883e3f290435a7c766
   formEmpr16 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "Cliente: "#) -}
-3415890107d12f79e4d06b8d525e00c7
+f607815acdc78dee83e08b9ed483bb40
   formEmpr17 ::
     Yesod.Form.Types.Field
       (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
@@ -1374,7 +1374,7 @@ b2f24f204d38f3883e3f290435a7c766
                      `cast`
                    (Sym (Text.Shakespeare.I18N.N:RenderMessage[0]
                              <Foundation.App>_N <Yesod.Form.Types.FormMessage>_N))) -}
-b8ad783e5d9c6aada5a94afde05951c5
+a1517e1f7ee0c65c7119ac9c6c400f3d
   formEmpr2 ::
     Yesod.Form.Types.AForm
       (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
@@ -1444,7 +1444,7 @@ fb99fc772ea5d688a475eead7ae1d15e
 35367d6de1dc396e0b90996118c190c8
   formEmpr6 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "Data Devolucao: "#) -}
-467f60b5cd588f17ba4adf17bce82954
+37201b661f7e4b3325e2f25e5049d470
   formEmpr7 ::
     Yesod.Form.Types.AForm
       (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
@@ -1494,7 +1494,7 @@ b0652149221f3114312202bf16d39848
                    (Sym (Text.Shakespeare.I18N.N:RenderMessage[0]
                              <Foundation.App>_N <Data.Text.Internal.Text>_N))
                    Handler.Emprestimo.formEmpr10) -}
-740f3fab8ad1a755fbfeab45aa4392c9
+bb1b23af6a55eb61d79ce7e064ca3507
   formEmpr_ds ::
     Yesod.Form.Types.AForm
       (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
@@ -1523,11 +1523,11 @@ b0652149221f3114312202bf16d39848
                    Handler.Emprestimo.formEmpr12
                    (GHC.Base.Nothing
                       @ (Database.Persist.Class.PersistEntity.Key Model.Cliente))) -}
-dee2a30f6a4d3d9940054e7ee0307e13
+55c9f8e5cd67228d267771718d4cf172
   getEmprestarClienteR ::
     Model.LivroId -> Foundation.Handler Text.Blaze.Html.Html
-  {- Arity: 1, Strictness: <L,U> -}
-d1531ad3e42264e91f7fd01232cba3b0
+  {- Arity: 1, Strictness: <L,U(U)> -}
+6dbe7d0ea4c811fb19d0be27492aaf95
   getTodosEmprestimoR :: Foundation.Handler Text.Blaze.Html.Html
   {- Arity: 2, Strictness: <L,U><S,U>,
      Unfolding: InlineRule (0, True, True)
@@ -1539,7 +1539,7 @@ d1531ad3e42264e91f7fd01232cba3b0
                       ->_R Sym (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R))
                      (Sym (Yesod.Core.Types.N:HandlerT[0]
                                <Foundation.App>_N <GHC.Types.IO>_N <Text.Blaze.Html.Html>_N))) -}
-903ed4bf776ee0c10f17a0d66bf2ce71
+4427e87773824563b085a98351e6a0bd
   getTodosEmprestimoR1 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -1562,7 +1562,7 @@ d1531ad3e42264e91f7fd01232cba3b0
                         s of ds1 { (#,#) ipv ipv1 ->
                  ((Foundation.$fYesodApp_$cdefaultLayout
                      (let {
-                        m1 :: Yesod.Core.Types.HandlerData
+                        m4 :: Yesod.Core.Types.HandlerData
                                 Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
                               -> GHC.Prim.State# GHC.Prim.RealWorld
                               -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -1573,7 +1573,7 @@ d1531ad3e42264e91f7fd01232cba3b0
                         = Handler.Emprestimo.getTodosEmprestimoR22 ipv1
                       } in
                       let {
-                        lvl82 :: ()
+                        lvl91 :: ()
                                  -> Yesod.Core.Types.HandlerData
                                       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
                                  -> GHC.Types.IO
@@ -1582,7 +1582,7 @@ d1531ad3e42264e91f7fd01232cba3b0
                                          (Yesod.Routes.Class.Route Foundation.App))
                           {- Arity: 2 -}
                         = \ (ds :: ())
-                            (eta32 :: Yesod.Core.Types.HandlerData
+                            (eta40 :: Yesod.Core.Types.HandlerData
                                         Foundation.App
                                         (Yesod.Core.Types.MonadRoute GHC.Types.IO))[OneShot] ->
                           Yesod.Core.Types.$fApplicativeWidgetT3
@@ -1591,7 +1591,7 @@ d1531ad3e42264e91f7fd01232cba3b0
                             GHC.Base.$fMonadIO
                             @ ()
                             @ ()
-                            m1
+                            m4
                               `cast`
                             (Trans
                                  (<Yesod.Core.Types.HandlerData
@@ -1619,10 +1619,10 @@ d1531ad3e42264e91f7fd01232cba3b0
                                                                         <Foundation.App>_N)))_R)_R)_R))
                                       (Sym (Yesod.Core.Types.N:WidgetT[0]
                                                 <Foundation.App>_N <GHC.Types.IO>_N <()>_N)))
-                            eta32
+                            eta40
                       } in
                       let {
-                        lvl83 :: ()
+                        lvl92 :: ()
                                  -> Yesod.Core.Types.HandlerData
                                       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
                                  -> GHC.Types.IO
@@ -1631,7 +1631,7 @@ d1531ad3e42264e91f7fd01232cba3b0
                                          (Yesod.Routes.Class.Route Foundation.App))
                           {- Arity: 2 -}
                         = \ (ds :: ())
-                            (eta32 :: Yesod.Core.Types.HandlerData
+                            (eta40 :: Yesod.Core.Types.HandlerData
                                         Foundation.App
                                         (Yesod.Core.Types.MonadRoute GHC.Types.IO))[OneShot] ->
                           Yesod.Core.Types.$fApplicativeWidgetT3
@@ -1655,15 +1655,15 @@ d1531ad3e42264e91f7fd01232cba3b0
                                                                    <Foundation.App>_N)))_R)_R)_R))
                                  (Sym (Yesod.Core.Types.N:WidgetT[0]
                                            <Foundation.App>_N <GHC.Types.IO>_N <()>_N)))
-                            lvl82
+                            lvl91
                               `cast`
                             (<()>_R
                              ->_R Sym (Yesod.Core.Types.N:WidgetT[0]
                                            <Foundation.App>_N <GHC.Types.IO>_N <()>_N))
-                            eta32
+                            eta40
                       } in
                       let {
-                        lvl84 :: ()
+                        lvl93 :: ()
                                  -> Yesod.Core.Types.HandlerData
                                       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
                                  -> GHC.Types.IO
@@ -1672,7 +1672,7 @@ d1531ad3e42264e91f7fd01232cba3b0
                                          (Yesod.Routes.Class.Route Foundation.App))
                           {- Arity: 2 -}
                         = \ (ds :: ())
-                            (eta32 :: Yesod.Core.Types.HandlerData
+                            (eta40 :: Yesod.Core.Types.HandlerData
                                         Foundation.App
                                         (Yesod.Core.Types.MonadRoute GHC.Types.IO))[OneShot] ->
                           Yesod.Core.Types.$fApplicativeWidgetT3
@@ -1685,14 +1685,14 @@ d1531ad3e42264e91f7fd01232cba3b0
                               `cast`
                             (Sym (Yesod.Core.Types.N:WidgetT[0]
                                       <Foundation.App>_N <GHC.Types.IO>_N <()>_N))
-                            lvl83
+                            lvl92
                               `cast`
                             (<()>_R
                              ->_R Sym (Yesod.Core.Types.N:WidgetT[0]
                                            <Foundation.App>_N <GHC.Types.IO>_N <()>_N))
-                            eta32
+                            eta40
                       } in
-                      (\ (eta32 :: Yesod.Core.Types.HandlerData
+                      (\ (eta40 :: Yesod.Core.Types.HandlerData
                                      Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)) ->
                        Yesod.Core.Types.$fApplicativeWidgetT3
                          @ GHC.Types.IO
@@ -1715,12 +1715,12 @@ d1531ad3e42264e91f7fd01232cba3b0
                                                                 <Foundation.App>_N)))_R)_R)_R))
                               (Sym (Yesod.Core.Types.N:WidgetT[0]
                                         <Foundation.App>_N <GHC.Types.IO>_N <()>_N)))
-                         lvl84
+                         lvl93
                            `cast`
                          (<()>_R
                           ->_R Sym (Yesod.Core.Types.N:WidgetT[0]
                                         <Foundation.App>_N <GHC.Types.IO>_N <()>_N))
-                         eta32)
+                         eta40)
                         `cast`
                       (Sym (Yesod.Core.Types.N:WidgetT[0]
                                 <Foundation.App>_N <GHC.Types.IO>_N <()>_N))))
@@ -1731,7 +1731,7 @@ d1531ad3e42264e91f7fd01232cba3b0
                    `cast`
                  (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R)
                    ipv }) -}
-0746758b3b54f04fbe284ec22eacbda6
+3ba3fa1a3ac3aa189d6174ef0d2287fe
   getTodosEmprestimoR10 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -1744,10 +1744,10 @@ d1531ad3e42264e91f7fd01232cba3b0
                    (Yesod.Core.Types.WidgetT Foundation.App GHC.Types.IO)))) #)
   {- Arity: 2, Strictness: <L,A>,
      Unfolding: InlineRule (1, True, True)
-                (\ (eta32 :: Yesod.Core.Types.HandlerData
+                (\ (eta40 :: Yesod.Core.Types.HandlerData
                                Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
-                   (eta33 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
-                 Handler.Emprestimo.getTodosEmprestimoR11 eta33) -}
+                   (eta41 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 Handler.Emprestimo.getTodosEmprestimoR11 eta41) -}
 8d2c43e07efc9e84b50a6411470312a7
   getTodosEmprestimoR11 ::
     GHC.Prim.State# GHC.Prim.RealWorld
@@ -1825,7 +1825,7 @@ e938f95183d4f26d9f29c4cf5382a0d3
                    "\" role=\"button\" aria-pressed=\"true\">Principal</a>\n\
                    \&nbsp;&nbsp;&nbsp;&nbsp;\n\
                    \<br><br></br>\n"#) -}
-31481daaf324acaa88393a8ac472ffe7
+1072c303f2c9ee788ff73a79bb2ebbbb
   getTodosEmprestimoR15 ::
     ()
     -> Yesod.Core.Types.HandlerData
@@ -1839,10 +1839,10 @@ e938f95183d4f26d9f29c4cf5382a0d3
                    (Yesod.Core.Types.WidgetT Foundation.App GHC.Types.IO)))) #)
   {- Arity: 3,
      Unfolding: (\ (ds :: ())
-                   (eta32 :: Yesod.Core.Types.HandlerData
+                   (eta40 :: Yesod.Core.Types.HandlerData
                                Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))[OneShot]
-                   (eta33 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
-                 (# eta33, Handler.Emprestimo.getTodosEmprestimoR16 #)) -}
+                   (eta41 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 (# eta41, Handler.Emprestimo.getTodosEmprestimoR16 #)) -}
 74be85d10876e8497867620daeaca1ce
   getTodosEmprestimoR16 ::
     ((),
@@ -1915,7 +1915,7 @@ e938f95183d4f26d9f29c4cf5382a0d3
   {- Strictness: m5,
      Unfolding: (Text.Blaze.Internal.PreEscaped
                    Handler.Emprestimo.getTodosEmprestimoR20) -}
-05faa35586ec3d0fb0e27b4dc61175a4
+19ebec86ad7bb9d1833713f7f8a63333
   getTodosEmprestimoR2 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -1928,10 +1928,10 @@ e938f95183d4f26d9f29c4cf5382a0d3
                    (Yesod.Core.Types.WidgetT Foundation.App GHC.Types.IO)))) #)
   {- Arity: 2, Strictness: <L,A>,
      Unfolding: InlineRule (1, True, True)
-                (\ (eta32 :: Yesod.Core.Types.HandlerData
+                (\ (eta40 :: Yesod.Core.Types.HandlerData
                                Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
-                   (eta33 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
-                 Handler.Emprestimo.getTodosEmprestimoR3 eta33) -}
+                   (eta41 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 Handler.Emprestimo.getTodosEmprestimoR3 eta41) -}
 4b99ab39fa62550572428c1ef6e6cce3
   getTodosEmprestimoR20 :: Text.Blaze.Internal.ChoiceString
   {- Strictness: m3,
@@ -1953,7 +1953,7 @@ e938f95183d4f26d9f29c4cf5382a0d3
            Yesod.Core.Types.GWData
              (Yesod.Routes.Class.Route Foundation.App)) #)
   {- Arity: 3, Strictness: <S,1*U><L,U><S,U> -}
-c529af6d052afece6d06a5966efbd164
+f170d7d66a64eeaf2b9a5df61ba8b781
   getTodosEmprestimoR23 ::
     Control.Monad.Trans.Reader.ReaderT
       Database.Persist.Sql.Types.Internal.SqlBackend
@@ -1966,7 +1966,7 @@ c529af6d052afece6d06a5966efbd164
   getTodosEmprestimoR24 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    "SELECT ?? FROM livro LEFT JOIN emprestimo ON livro.id=emprestimo.livid WHERE emprestimo.data_emp IS NULL;"#) -}
-01f04ee1dc2fc911e1286a33dc1fd0b3
+e0414cf6c4b3ad87948f43f5e47b4380
   getTodosEmprestimoR25 ::
     Data.Text.Internal.Text
     -> [Database.Persist.Types.Base.PersistValue]
@@ -2053,7 +2053,7 @@ a5b19febcf56c7cfa268d001669ec2fe
                    Handler.Emprestimo.getTodosEmprestimoR6) -}
 1f6eaa88c9e75c1e1d53738a88dc561d
   getTodosEmprestimoR6 :: Data.Text.Internal.Text
-9cb1d72f360569a8026fd95af5f0b763
+1731d8f8db7e5daceb6ba497bdd79968
   getTodosEmprestimoR7 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -2080,7 +2080,7 @@ a5b19febcf56c7cfa268d001669ec2fe
                        ->_N <[(Data.Text.Internal.Text, Data.Text.Internal.Text)]
                              -> Data.Text.Internal.Text>_N))_R
                    Handler.Emprestimo.getTodosEmprestimoR8) -}
-d576aedfeac15f5f99411322980baafc
+31930d34474b897f141bb1997cd7e87f
   getTodosEmprestimoR8 ::
     (Yesod.Routes.Class.Route Foundation.App
      -> [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
@@ -2091,21 +2091,21 @@ d576aedfeac15f5f99411322980baafc
                                -> [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
                                -> Data.Text.Internal.Text) ->
                  let {
-                   eta32 :: Data.Text.Internal.Text
+                   eta40 :: Data.Text.Internal.Text
                    = urender
                        Foundation.HomeR `cast` (Sym (Foundation.D:R:RouteApp0[0]))
                        (GHC.Types.[] @ (Data.Text.Internal.Text, Data.Text.Internal.Text))
                  } in
                  let {
-                   eta33 :: Text.Blaze.Internal.ChoiceString
-                   = Text.Blaze.Internal.Text eta32
+                   eta41 :: Text.Blaze.Internal.ChoiceString
+                   = Text.Blaze.Internal.Text eta40
                  } in
                  let {
-                   eta34 :: Text.Blaze.Html.Html
-                   = Text.Blaze.Internal.Content @ () eta33 GHC.Tuple.()
+                   eta42 :: Text.Blaze.Html.Html
+                   = Text.Blaze.Internal.Content @ () eta41 GHC.Tuple.()
                  } in
                  let {
-                   lvl82 :: (Yesod.Routes.Class.Route Foundation.App
+                   lvl91 :: (Yesod.Routes.Class.Route Foundation.App
                              -> [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
                              -> Data.Text.Internal.Text)
                             -> Text.Blaze.Html.Html
@@ -2113,14 +2113,14 @@ d576aedfeac15f5f99411322980baafc
                    = \ (ds :: Yesod.Routes.Class.Route Foundation.App
                               -> [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
                               -> Data.Text.Internal.Text) ->
-                     eta34
+                     eta42
                  } in
                  let {
-                   lvl83 :: Yesod.Core.Types.GWData
+                   lvl92 :: Yesod.Core.Types.GWData
                               (Yesod.Routes.Class.Route Foundation.App)
                    = Yesod.Core.Types.GWData
                        @ (Yesod.Routes.Class.Route Foundation.App)
-                       lvl82
+                       lvl91
                          `cast`
                        (Sym (Yesod.Core.Types.N:Body[0]
                                  <Yesod.Routes.Class.Route Foundation.App>_R))
@@ -2159,23 +2159,23 @@ d576aedfeac15f5f99411322980baafc
                                  <Yesod.Routes.Class.Route Foundation.App>_R))
                  } in
                  let {
-                   lvl84 :: ((),
+                   lvl93 :: ((),
                              Yesod.Core.Types.GWData
                                (Yesod.Routes.Class.Route
                                   (Yesod.Core.Class.Handler.HandlerSite
                                      (Yesod.Core.Types.WidgetT Foundation.App GHC.Types.IO))))
                    = (GHC.Tuple.(),
-                      lvl83
+                      lvl92
                         `cast`
                       (Yesod.Core.Types.GWData
                          (Yesod.Routes.Class.Route
                             (Sym (Yesod.Core.Class.Handler.D:R:HandlerSiteWidgetT[0]
                                       <GHC.Types.IO>_N <Foundation.App>_N)))_R)_R)
                  } in
-                 (\ (eta35 :: Yesod.Core.Types.HandlerData
+                 (\ (eta43 :: Yesod.Core.Types.HandlerData
                                 Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
-                    (eta36 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
-                  (# eta36, lvl84 #))
+                    (eta44 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                  (# eta44, lvl93 #))
                    `cast`
                  (Trans
                       (<Yesod.Core.Types.HandlerData
@@ -2224,7 +2224,7 @@ f9e3021570ecdd66437d0bcc4afd2dc1
                    @ ()
                    Handler.Emprestimo.getTodosEmprestimoR19
                    GHC.Tuple.()) -}
-d33974343dd54fed29225f478e81825d
+f48488eebc92de0da889fccd1474144a
   postEmprestarClienteR ::
     Model.LivroId -> Foundation.Handler Text.Blaze.Html.Html
   {- Arity: 1, Strictness: <L,U>,
@@ -2376,7 +2376,7 @@ d33974343dd54fed29225f478e81825d
   postEmprestarClienteR5 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    "<h3> Emprestimo cadastrado com sucesso</h3>\n"#) -}
-238f0f94f797bec521d805cf35670376
+0fba9e0b418853f4399c7a0f998e96ca
   postEmprestarClienteR6 ::
     Model.Emprestimo
     -> Control.Monad.Trans.Reader.ReaderT

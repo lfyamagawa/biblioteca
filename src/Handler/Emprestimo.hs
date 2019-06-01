@@ -41,8 +41,10 @@ getEmprestarClienteR livid = do
             $maybe mensagem <- msg
                 ^{mensagem}
             <form action=@{EmprestarClienteR livid} method=post enctype=#{enctype}>
+                <h2>#{show $ fromSqlKey livid}
                 ^{widget}
                 <input type="submit" value="Cadastrar">
+                <a href=@{HomeR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Principal
         |]
 
 postEmprestarClienteR :: LivroId -> Handler Html

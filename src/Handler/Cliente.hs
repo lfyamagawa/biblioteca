@@ -25,13 +25,9 @@ getClienteR = do
         [whamlet|
             <form action=@{ClienteR} method=post>
                 <center><h3>Cadastro de Cliente</h3>
-                <center><br><h3>-------------------</h3><br>
                 <center>^{widget}
                 <center><input type="submit" value="cadastrar">
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                <br><br>
                 <center><a href=@{HomeR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Principal
-                &nbsp;&nbsp;&nbsp;&nbsp;
                 <center><a href=@{TodosClientesR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Lista Todos
         |]
 

@@ -13,13 +13,14 @@
                 
     <tbody>
         <div class="container" style="background-color:silver">
-            <center><h2><strong>Lista de funcionarios<br><br>
+            <center><h2><strong>Lista de funcionarios<br>
 
             <center>
                <a href=@{HomeR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Principal
                <a href=@{FuncionarioR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Incluir</a>
                 <br><br>
-               $forall (Entity funcid funcionario) <- funcionarios
+                
+                  $forall (Entity funcid funcionario) <- funcionarios
                     <tr>
                         <td>
                             <a href=@{FuncionarioPerfilR funcid}>

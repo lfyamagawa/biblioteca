@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2019-06-01 18:30:52.601339 UTC
+2019-06-01 18:54:23.375505 UTC
 
 interface aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX:Application [orphan module] 8002
-  interface hash: d4aa2160881f7127f40ceb8017b451f1
+  interface hash: 5829b0346016b9cf39fe961486613c8e
   ABI hash: 9eb9395b021f895e9e602dbd2dfab6ff
   export-list hash: 88760f1f9acb48ffaaf15dca9d22339d
   orphan hash: 69fb11262dae83ffce14fbd96767d29f
@@ -379,49 +379,49 @@ import  -/  Foundation 4fed6a6ce02d868e609fda2d87290d7d
   appSettings 1ab9ceacdeac599ac7efaee52d9777eb
   appStatic 627c1675c6e672d8e948384aa159c4d8
   resourcesApp d201639308ba56a084764ccf129bcfaf
-import  -/  Handler.Cliente dc3d1520804150674f1d3fb4d34a6c64
+import  -/  Handler.Cliente b0e7e1aae777918a73a4f5450cf6ed1e
   exports: 81a68f1c0e190ea07cb6fa1138da61dc
   getClienteAlteraR a0441549f9d203e67e84461435f53ad9
   getClientePerfilR 29a2e371ec82df22e75be7ca85447ecb
   getClienteR f410accfddb2c90a8c6f45d0db4cb1fa
   getTodosClientesR c7b01f6621092039dd6b2b5ba1f46e31
-  postClienteAlteraR 832a678fb569f1e5342fd1846d56bd3c
-  postClienteApagarR 41abbd6d9cbd5e54d401cfd36f01da37
-  postClienteR db7df942141bfc80a6f3fb60153b05d0
+  postClienteAlteraR 408ec27efbb6cab48b18ca22fa76947f
+  postClienteApagarR 56b36f0764823ca75282a7529ea7e722
+  postClienteR e28eb4a8158672408648ff7d1048133b
 import  -/  Handler.Common 77250ed35f4c22c74c5bff6e86e7d7e6
   exports: 1e2f43249f564bf081b0b39344d88d37
   getFaviconR 93a76af9e176a2f3d0f783f0a17cc519
   getRobotsR 47283a097011a872e173783c539db584
-import  -/  Handler.Devolucao dbbc8568a8b8c5cc14f88dcccc051454
+import  -/  Handler.Devolucao 18981c60a1f866df1497b6ad7cb5465d
   exports: 69f63e9f34c463f6dbba3dbed0706767
   getTodosDevolucaoR a5c6e2c6191c69f7b0f561754f5a8716
-  postDevolverApagarR bbf145c08e1c05ae6ff5b31a3cfc9125
-import  -/  Handler.Emprestimo 455ebcd6947cc9c02d4f2d8b26a0d781
+  postDevolverApagarR 79ca841ea2a76e15dfdf02089bd0e709
+import  -/  Handler.Emprestimo 04ccdfc11a4f5438eab77e52e9f673a0
   exports: 13c035d573c7adf94ccb3520efc00c38
   getEmprestarClienteR 6d174181d29878ab23fbb46ee540013c
-  getTodosEmprestimoR 82b7075eef7e18f9ad88150731440cc6
-  postEmprestarClienteR ef366ff3367ca146d1d018c52a0ca32e
-import  -/  Handler.Funcionario 8ab8458c331b4ccec78ae30eeb747710
+  getTodosEmprestimoR 72b135142bbbb5132a76a2d3f33ef6df
+  postEmprestarClienteR 0d01b2bf92e51ce82394703c7e55e9a1
+import  -/  Handler.Funcionario aedf0bdf5759f7fe16ae8edf2156b227
   exports: b9ff3f3f1f68b6dbc2033fbca5fab8bc
   getFuncionarioAlteraR 3a2c54068f7ab0716b3de24b498f9ba3
   getFuncionarioPerfilR 539415e569e9590e520a602fc0b542db
   getFuncionarioR 4a2354f1cd4954bfdd7e89485d241850
-  getTodosFuncionariosR 13ab943bc0d61b4cb720ec4d14354938
-  postFuncionarioAlteraR e8e0effa22de4ff4a4dab2dc0b6b1691
-  postFuncionarioApagarR d734470361d5b3e11af7cbfd7bb31bdf
-  postFuncionarioR 8ab6d6be7e2a1fef79ac47ea60a8b515
+  getTodosFuncionariosR 285b757815e1405700a0445ffa3dc010
+  postFuncionarioAlteraR 8b30a66fb023600145f34994b564476c
+  postFuncionarioApagarR b5c0dbcacd3c703f701473535ea8fe7e
+  postFuncionarioR b162ab6181001bbe56639d5a554ba876
 import  -/  Handler.Home 209e98fa82659808f5d3afe00d3eb46e
   exports: ccf1fd5d13d8ee912cac09a6c456f703
   getHomeR 500b0cf9ac4d6874cacc277eda2d2f32
-import  -/  Handler.Livro dcbb3fecb699aeef4a016966f45eba62
+import  -/  Handler.Livro fc1ffd2d505baab7070c1232b40229b3
   exports: 83547732e7f528cc34108bcaa98eb201
   getLivroAlteraR 42e069512fd686baab78c1fe63eca576
   getLivroPerfilR c86deee904c23de3dd6fb4c858259d9e
   getLivroR de7d5066ae6d09c5d00255bb12ccbf9d
   getTodosLivrosR fb2242a649cbe92ec84e2c2375abfe59
-  postLivroAlteraR 43270387de94d6a9b4fd39ea6ab42280
-  postLivroApagarR bb4c5558a36b07d907dc0be0014569a5
-  postLivroR a211dac5a498f56869bebe85a6dc985f
+  postLivroAlteraR 95e9abcb6ae8255b1978db841d159d88
+  postLivroApagarR d8dbf270597e7c641cf76e03a96c3137
+  postLivroR 0a925b8cc891e75dc1113d693d476aad
 import  -/  Handler.Login 684115ce8f19bfdf3a139f1f9314ec98
   exports: 062839076225c0949cdadaa71c63f7ad
   getAdminR b9d935ca01cb3b333614d956056faff7

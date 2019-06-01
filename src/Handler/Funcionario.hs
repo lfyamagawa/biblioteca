@@ -49,7 +49,7 @@ postFuncionarioR = do
     case res of
         FormSuccess (funcionario,confirmacao) -> do
             if (funcionarioSenha funcionario) == confirmacao then do
-                runDB $ insert funcionario
+                _ <- ($) runDB $ insert funcionario
                 redirect HomeR
             else do
                 setMessage [shamlet|<h2> Usuario e senha nao batem|]
@@ -82,8 +82,8 @@ getFuncionarioPerfilR funcid = do
 
 postFuncionarioApagarR :: FuncionarioId -> Handler Html
 postFuncionarioApagarR funcid = do
-    runDB $ get404 funcid
-    runDB $ delete funcid
+    _ <- ($) runDB $ get404 funcid
+    _ <- ($) runDB $ delete funcid
     redirect TodosFuncionariosR
 
 -- ALTERAR
@@ -107,7 +107,7 @@ postFuncionarioAlteraR funcid = do
     ((res,_),_) <- runFormPost (formFuncionarioAlt $ Just funcionario) 
     case res of
         FormSuccess funcionarioNovo -> do
-            runDB $ replace funcid funcionarioNovo
+            _ <- ($) runDB $ replace funcid funcionarioNovo
             redirect TodosFuncionariosR
         _ -> redirect HomeR
 

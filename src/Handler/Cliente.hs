@@ -39,7 +39,7 @@ postClienteR = do
     ((res,_),_) <- runFormPost (formCliente Nothing)
     case res of
         FormSuccess cliente -> do
-            runDB $ insert cliente
+            _ <- ($) runDB $ insert cliente
             redirect ClienteR
         _ -> redirect HomeR
     
@@ -71,8 +71,8 @@ getClientePerfilR cliid = do
 
 postClienteApagarR :: ClienteId -> Handler Html
 postClienteApagarR cliid = do
-    runDB $ get404 cliid
-    runDB $ delete cliid
+    _ <- ($) runDB $ get404 cliid
+    _ <- ($) runDB $ delete cliid
     redirect TodosClientesR
 
 getClienteAlteraR :: ClienteId -> Handler Html
@@ -94,6 +94,6 @@ postClienteAlteraR cliid = do
     ((res,_),_) <- runFormPost (formCliente $ Just cliente) 
     case res of
         FormSuccess clienteNovo -> do
-            runDB $ replace cliid clienteNovo
+            _ <- ($) runDB $ replace cliid clienteNovo
             redirect TodosClientesR
         _ -> redirect HomeR

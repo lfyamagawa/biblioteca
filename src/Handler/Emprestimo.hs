@@ -34,7 +34,7 @@ getTodosEmprestimoR = do
 
 getEmprestarClienteR :: LivroId -> Handler Html
 getEmprestarClienteR livid = do
-    runDB $ get404 livid
+    _ <- ($) runDB $ get404 livid
     msg <- getMessage
     (widget,enctype) <- generateFormPost (formEmpr livid)
     defaultLayout $ do
@@ -54,7 +54,7 @@ postEmprestarClienteR livid = do
     ((res,_),_) <- runFormPost (formEmpr livid)
     case res of
         FormSuccess empr -> do
-            _ <- runDB $ insert empr
+            _ <- ($) runDB $ insert empr
             setMessage [shamlet|
                  <h3> Emprestimo cadastrado com sucesso
             |]

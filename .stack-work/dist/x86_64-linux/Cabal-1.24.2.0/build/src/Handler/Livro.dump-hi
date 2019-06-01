@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2019-06-01 18:30:49.583619 UTC
+2019-06-01 18:54:20.302745 UTC
 
 interface aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX:Handler.Livro 8002
-  interface hash: c74431f6334b352abb349da64deabe8d
-  ABI hash: dcbb3fecb699aeef4a016966f45eba62
+  interface hash: d3119aad36c1c6a0f27aaf7bb323345e
+  ABI hash: fc1ffd2d505baab7070c1232b40229b3
   export-list hash: 83547732e7f528cc34108bcaa98eb201
   orphan hash: 0e76984b0ecbf58ebd02ad315b132afa
   flag hash: f123df0d0ff34442f243f0943d78ec4c
@@ -3463,7 +3463,7 @@ fbc04651526714b792bb9aeaf00d005c
                    (GHC.Types.[]
                       @ (Database.Persist.Class.PersistEntity.Filter Model.Livro))
                    Handler.Livro.getTodosLivrosR30) -}
-43270387de94d6a9b4fd39ea6ab42280
+95e9abcb6ae8255b1978db841d159d88
   postLivroAlteraR ::
     Model.LivroId -> Foundation.Handler Text.Blaze.Html.Html
   {- Arity: 1, Strictness: <L,U>,
@@ -3473,7 +3473,7 @@ fbc04651526714b792bb9aeaf00d005c
                            Database.Persist.Sql.Types.Internal.SqlBackend
                            (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
                            Model.Livro
-                   = Handler.Livro.postLivroAlteraR3 livid
+                   = Handler.Livro.postLivroAlteraR4 livid
                  } in
                  (\ (r :: Yesod.Core.Types.HandlerData
                             Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
@@ -3550,7 +3550,7 @@ fbc04651526714b792bb9aeaf00d005c
                   case ds4 of wild1 { (,) res ds6 ->
                   case res of wild2 {
                     DEFAULT
-                    -> (Handler.Livro.postLivroAlteraR2
+                    -> (Handler.Livro.postLivroAlteraR3
                           `cast`
                         (Yesod.Core.Types.N:HandlerT[0]
                              <Foundation.App>_N <GHC.Types.IO>_N <Text.Blaze.Html.Html>_N)
@@ -3559,31 +3559,35 @@ fbc04651526714b792bb9aeaf00d005c
                        (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R)
                          ipv4
                     Yesod.Form.Types.FormSuccess livroNovo
-                    -> case Foundation.$fYesodPersistApp1
-                              @ ()
-                              (Database.Persist.Sql.Orphan.PersistStore.$fPersistStoreWriteSqlBackend_$creplace
-                                 @ (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
-                                 @ Model.Livro
-                                 (Handler.Livro.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT
-                                    @ Foundation.App)
-                                 Handler.Livro.getTodosLivrosR32
-                                   `cast`
-                                 (GHC.Classes.(%,%)
-                                    <Database.Persist.Class.PersistEntity.PersistEntity
-                                       Model.Livro>_N
-                                    ((Data.Type.Equality.~)
-                                       <*>_N
-                                       (Sym (Model.D:R:PersistEntityBackendLivro[0]))
-                                       (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0])))_N)_R
-                                 livid
-                                 livroNovo)
-                                `cast`
-                              (Control.Monad.Trans.Reader.ReaderT
-                                 <*>_N
-                                 (Sub (Sym (Foundation.D:R:YesodPersistBackendApp[0])))
-                                 <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
-                                 <()>_N)_R
-                              r
+                    -> case ((Handler.Livro.postLivroAlteraR2
+                                (Database.Persist.Sql.Orphan.PersistStore.$fPersistStoreWriteSqlBackend_$creplace
+                                   @ (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
+                                   @ Model.Livro
+                                   (Handler.Livro.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT
+                                      @ Foundation.App)
+                                   Handler.Livro.getTodosLivrosR32
+                                     `cast`
+                                   (GHC.Classes.(%,%)
+                                      <Database.Persist.Class.PersistEntity.PersistEntity
+                                         Model.Livro>_N
+                                      ((Data.Type.Equality.~)
+                                         <*>_N
+                                         (Sym (Model.D:R:PersistEntityBackendLivro[0]))
+                                         (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0])))_N)_R
+                                   livid
+                                   livroNovo)
+                                  `cast`
+                                (Control.Monad.Trans.Reader.ReaderT
+                                   <*>_N
+                                   (Sub (Sym (Foundation.D:R:YesodPersistBackendApp[0])))
+                                   <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
+                                   <()>_N)_R)
+                               `cast`
+                             (Yesod.Core.Types.N:HandlerT[0]
+                                  <Foundation.App>_N <GHC.Types.IO>_N <()>_N)
+                               r)
+                              `cast`
+                            (GHC.Types.N:IO[0] <()>_R)
                               ipv4 of ds7 { (#,#) ipv6 ipv7 ->
                        (Handler.Livro.postLivroAlteraR1
                           `cast`
@@ -3619,8 +3623,25 @@ cd1e740c20339913b2a32ab5f4e7a45e
                    Foundation.TodosLivrosR
                      `cast`
                    (Sym (Foundation.D:R:RouteApp0[0]))) -}
-df12a4a2ba7f060cf3a21b29d5f9d822
+1fdcc9e36a4ee313b0148099b623ec41
   postLivroAlteraR2 ::
+    Yesod.Persist.Core.YesodDB Foundation.App ()
+    -> Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO ()
+  {- Unfolding: (GHC.Base.$
+                   @ 'GHC.Types.PtrRepLifted
+                   @ (Yesod.Persist.Core.YesodDB Foundation.App ())
+                   @ (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO ())
+                   (Foundation.$fYesodPersistApp1 @ ())
+                     `cast`
+                   (<Yesod.Persist.Core.YesodDB Foundation.App ()>_R
+                    ->_R Trans
+                             (<Yesod.Core.Types.HandlerData
+                                 Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                              ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                             (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                       <Foundation.App>_N <GHC.Types.IO>_N <()>_N)))) -}
+aeeb6fa994e14d02d71f4e5fe3125792
+  postLivroAlteraR3 ::
     Yesod.Core.Types.HandlerT
       Foundation.App GHC.Types.IO Text.Blaze.Html.Html
   {- Unfolding: (Yesod.Core.Handler.redirect
@@ -3636,8 +3657,8 @@ df12a4a2ba7f060cf3a21b29d5f9d822
                                   <GHC.Types.IO>_N <Foundation.App>_N)
                              <Yesod.Routes.Class.Route Foundation.App>_N))
                    Foundation.HomeR `cast` (Sym (Foundation.D:R:RouteApp0[0]))) -}
-9aa421dc392fa46c485881afb3822a23
-  postLivroAlteraR3 ::
+801ee4075afc1cba117ba1232c9fd524
+  postLivroAlteraR4 ::
     Database.Persist.Class.PersistEntity.Key Model.Livro
     -> Control.Monad.Trans.Reader.ReaderT
          Database.Persist.Sql.Types.Internal.SqlBackend
@@ -3658,68 +3679,71 @@ df12a4a2ba7f060cf3a21b29d5f9d822
                          <*>_N
                          (Sym (Model.D:R:PersistEntityBackendLivro[0]))
                          (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0])))_N)_R) -}
-bb4c5558a36b07d907dc0be0014569a5
+d8dbf270597e7c641cf76e03a96c3137
   postLivroApagarR ::
     Model.LivroId -> Foundation.Handler Text.Blaze.Html.Html
   {- Arity: 1, Strictness: <L,U>,
      Unfolding: (\ (livid :: Model.LivroId) ->
                  let {
-                   m7 :: Control.Monad.Trans.Reader.ReaderT
-                           Database.Persist.Sql.Types.Internal.SqlBackend
-                           (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
-                           Model.Livro
-                   = Handler.Livro.postLivroAlteraR3 livid
+                   ds :: Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO ()
+                   = Handler.Livro.postLivroAlteraR2
+                       (Database.Persist.Sql.Orphan.PersistStore.$fPersistStoreWriteSqlBackend_$cdelete
+                          @ (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
+                          @ Model.Livro
+                          (Handler.Livro.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT
+                             @ Foundation.App)
+                          Handler.Livro.getTodosLivrosR32
+                            `cast`
+                          (GHC.Classes.(%,%)
+                             <Database.Persist.Class.PersistEntity.PersistEntity Model.Livro>_N
+                             ((Data.Type.Equality.~)
+                                <*>_N
+                                (Sym (Model.D:R:PersistEntityBackendLivro[0]))
+                                (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0])))_N)_R
+                          livid)
+                         `cast`
+                       (Control.Monad.Trans.Reader.ReaderT
+                          <*>_N
+                          (Sub (Sym (Foundation.D:R:YesodPersistBackendApp[0])))
+                          <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
+                          <()>_N)_R
                  } in
                  let {
-                   m8 :: Control.Monad.Trans.Reader.ReaderT
-                           Database.Persist.Sql.Types.Internal.SqlBackend
-                           (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
-                           ()
-                   = Database.Persist.Sql.Orphan.PersistStore.$fPersistStoreWriteSqlBackend_$cdelete
-                       @ (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
-                       @ Model.Livro
-                       (Handler.Livro.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT
-                          @ Foundation.App)
-                       Handler.Livro.getTodosLivrosR32
+                   ds1 :: Yesod.Core.Types.HandlerT
+                            Foundation.App GHC.Types.IO Model.Livro
+                   = Handler.Livro.postLivroApagarR1
+                       (Handler.Livro.postLivroAlteraR4 livid)
                          `cast`
-                       (GHC.Classes.(%,%)
-                          <Database.Persist.Class.PersistEntity.PersistEntity Model.Livro>_N
-                          ((Data.Type.Equality.~)
-                             <*>_N
-                             (Sym (Model.D:R:PersistEntityBackendLivro[0]))
-                             (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0])))_N)_R
-                       livid
+                       (Control.Monad.Trans.Reader.ReaderT
+                          <*>_N
+                          (Sub (Sym (Foundation.D:R:YesodPersistBackendApp[0])))
+                          <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
+                          <Model.Livro>_N)_R
                  } in
-                 (\ (eta68 :: Yesod.Core.Types.HandlerData
-                                Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
-                    (eta69 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
-                  case Foundation.$fYesodPersistApp1
-                         @ Model.Livro
-                         m7
-                           `cast`
-                         (Control.Monad.Trans.Reader.ReaderT
-                            <*>_N
-                            (Sub (Sym (Foundation.D:R:YesodPersistBackendApp[0])))
-                            <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
-                            <Model.Livro>_N)_R
-                         eta68
-                         eta69 of ds1 { (#,#) ipv ipv1 ->
-                  case Foundation.$fYesodPersistApp1
-                         @ ()
-                         m8
-                           `cast`
-                         (Control.Monad.Trans.Reader.ReaderT
-                            <*>_N
-                            (Sub (Sym (Foundation.D:R:YesodPersistBackendApp[0])))
-                            <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
-                            <()>_N)_R
-                         eta68
-                         ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 (\ (r :: Yesod.Core.Types.HandlerData
+                            Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                    (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                  case (ds1
+                          `cast`
+                        (Yesod.Core.Types.N:HandlerT[0]
+                             <Foundation.App>_N <GHC.Types.IO>_N <Model.Livro>_N)
+                          r)
+                         `cast`
+                       (GHC.Types.N:IO[0] <Model.Livro>_R)
+                         s of ds2 { (#,#) ipv ipv1 ->
+                  case (ds
+                          `cast`
+                        (Yesod.Core.Types.N:HandlerT[0]
+                             <Foundation.App>_N <GHC.Types.IO>_N <()>_N)
+                          r)
+                         `cast`
+                       (GHC.Types.N:IO[0] <()>_R)
+                         ipv of ds3 { (#,#) ipv2 ipv3 ->
                   (Handler.Livro.postLivroAlteraR1
                      `cast`
                    (Yesod.Core.Types.N:HandlerT[0]
                         <Foundation.App>_N <GHC.Types.IO>_N <Text.Blaze.Html.Html>_N)
-                     eta68)
+                     r)
                     `cast`
                   (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R)
                     ipv2 } })
@@ -3730,7 +3754,26 @@ bb4c5558a36b07d907dc0be0014569a5
                        ->_R Sym (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R))
                       (Sym (Yesod.Core.Types.N:HandlerT[0]
                                 <Foundation.App>_N <GHC.Types.IO>_N <Text.Blaze.Html.Html>_N)))) -}
-a211dac5a498f56869bebe85a6dc985f
+fb04c5515f690c7751717cb6ede2d8eb
+  postLivroApagarR1 ::
+    Yesod.Persist.Core.YesodDB Foundation.App Model.Livro
+    -> Yesod.Core.Types.HandlerT
+         Foundation.App GHC.Types.IO Model.Livro
+  {- Unfolding: (GHC.Base.$
+                   @ 'GHC.Types.PtrRepLifted
+                   @ (Yesod.Persist.Core.YesodDB Foundation.App Model.Livro)
+                   @ (Yesod.Core.Types.HandlerT
+                        Foundation.App GHC.Types.IO Model.Livro)
+                   (Foundation.$fYesodPersistApp1 @ Model.Livro)
+                     `cast`
+                   (<Yesod.Persist.Core.YesodDB Foundation.App Model.Livro>_R
+                    ->_R Trans
+                             (<Yesod.Core.Types.HandlerData
+                                 Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                              ->_R Sym (GHC.Types.N:IO[0] <Model.Livro>_R))
+                             (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                       <Foundation.App>_N <GHC.Types.IO>_N <Model.Livro>_N)))) -}
+0a925b8cc891e75dc1113d693d476aad
   postLivroR :: Foundation.Handler Text.Blaze.Html.Html
   {- Arity: 2, Strictness: <L,U><S,U>,
      Unfolding: InlineRule (0, True, True)
@@ -3742,7 +3785,7 @@ a211dac5a498f56869bebe85a6dc985f
                       ->_R Sym (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R))
                      (Sym (Yesod.Core.Types.N:HandlerT[0]
                                <Foundation.App>_N <GHC.Types.IO>_N <Text.Blaze.Html.Html>_N))) -}
-bd19ae45287ed7ce3b01fa3c7d37c7e7
+1f45f7d795743c25b6d7f7168a26ac0c
   postLivroR1 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -3811,7 +3854,7 @@ bd19ae45287ed7ce3b01fa3c7d37c7e7
                  case ds of wild1 { (,) res ds4 ->
                  case res of wild2 {
                    DEFAULT
-                   -> (Handler.Livro.postLivroAlteraR2
+                   -> (Handler.Livro.postLivroAlteraR3
                          `cast`
                        (Yesod.Core.Types.N:HandlerT[0]
                             <Foundation.App>_N <GHC.Types.IO>_N <Text.Blaze.Html.Html>_N)
@@ -3820,16 +3863,23 @@ bd19ae45287ed7ce3b01fa3c7d37c7e7
                       (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R)
                         ipv2
                    Yesod.Form.Types.FormSuccess livro
-                   -> case Foundation.$fYesodPersistApp1
-                             @ (Database.Persist.Class.PersistEntity.Key Model.Livro)
-                             (Handler.Livro.postLivroR3 livro)
-                               `cast`
-                             (Control.Monad.Trans.Reader.ReaderT
-                                <*>_N
-                                (Sub (Sym (Foundation.D:R:YesodPersistBackendApp[0])))
-                                <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
-                                <Database.Persist.Class.PersistEntity.Key Model.Livro>_N)_R
-                             r
+                   -> case ((Handler.Livro.postLivroR4
+                               (Handler.Livro.postLivroR3 livro)
+                                 `cast`
+                               (Control.Monad.Trans.Reader.ReaderT
+                                  <*>_N
+                                  (Sub (Sym (Foundation.D:R:YesodPersistBackendApp[0])))
+                                  <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
+                                  <Database.Persist.Class.PersistEntity.Key Model.Livro>_N)_R)
+                              `cast`
+                            (Yesod.Core.Types.N:HandlerT[0]
+                                 <Foundation.App>_N
+                                 <GHC.Types.IO>_N
+                                 <Database.Persist.Class.PersistEntity.Key Model.Livro>_N)
+                              r)
+                             `cast`
+                           (GHC.Types.N:IO[0]
+                                <Database.Persist.Class.PersistEntity.Key Model.Livro>_R)
                              ipv2 of ds5 { (#,#) ipv4 ipv5 ->
                       (Handler.Livro.postLivroR2
                          `cast`
@@ -3876,6 +3926,41 @@ b88c65f1360cee13fa18b652340a6f3c
                          <*>_N
                          (Sym (Model.D:R:PersistEntityBackendLivro[0]))
                          (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0])))_N)_R) -}
+4c1e45583dd060584e1f7ec77a790c35
+  postLivroR4 ::
+    Yesod.Persist.Core.YesodDB
+      Foundation.App
+      (Database.Persist.Class.PersistEntity.Key Model.Livro)
+    -> Yesod.Core.Types.HandlerT
+         Foundation.App
+         GHC.Types.IO
+         (Database.Persist.Class.PersistEntity.Key Model.Livro)
+  {- Unfolding: (GHC.Base.$
+                   @ 'GHC.Types.PtrRepLifted
+                   @ (Yesod.Persist.Core.YesodDB
+                        Foundation.App
+                        (Database.Persist.Class.PersistEntity.Key Model.Livro))
+                   @ (Yesod.Core.Types.HandlerT
+                        Foundation.App
+                        GHC.Types.IO
+                        (Database.Persist.Class.PersistEntity.Key Model.Livro))
+                   (Foundation.$fYesodPersistApp1
+                      @ (Database.Persist.Class.PersistEntity.Key Model.Livro))
+                     `cast`
+                   (<Yesod.Persist.Core.YesodDB
+                       Foundation.App
+                       (Database.Persist.Class.PersistEntity.Key Model.Livro)>_R
+                    ->_R Trans
+                             (<Yesod.Core.Types.HandlerData
+                                 Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                              ->_R Sym (GHC.Types.N:IO[0]
+                                            <Database.Persist.Class.PersistEntity.Key
+                                               Model.Livro>_R))
+                             (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                       <Foundation.App>_N
+                                       <GHC.Types.IO>_N
+                                       <Database.Persist.Class.PersistEntity.Key
+                                          Model.Livro>_N)))) -}
 1fe9e2a49f54a13cad801aac44bd3601
   postLivroR_ds ::
     Yesod.Core.Types.HandlerT

@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2019-06-01 18:30:48.160508 UTC
+2019-06-01 18:54:18.843032 UTC
 
 interface aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX:Handler.Funcionario 8002
-  interface hash: 599627c9e70f16e4618a7953c10b2dfe
-  ABI hash: 8ab8458c331b4ccec78ae30eeb747710
+  interface hash: beaa20d9598b30c4973c23f9710ea842
+  ABI hash: aedf0bdf5759f7fe16ae8edf2156b227
   export-list hash: b9ff3f3f1f68b6dbc2033fbca5fab8bc
   orphan hash: 2678be28f61274d3c9ecc1f7eeb92b57
   flag hash: f123df0d0ff34442f243f0943d78ec4c
@@ -3705,7 +3705,7 @@ c6c3f851bc8ab960bb621515b624e23c
                    @ ()
                    Handler.Funcionario.getFuncionarioR37
                    GHC.Tuple.()) -}
-13ab943bc0d61b4cb720ec4d14354938
+285b757815e1405700a0445ffa3dc010
   getTodosFuncionariosR :: Foundation.Handler Text.Blaze.Html.Html
   {- Arity: 2, Strictness: <L,U><S,U>,
      Unfolding: InlineRule (0, True, True)
@@ -3717,7 +3717,7 @@ c6c3f851bc8ab960bb621515b624e23c
                       ->_R Sym (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R))
                      (Sym (Yesod.Core.Types.N:HandlerT[0]
                                <Foundation.App>_N <GHC.Types.IO>_N <Text.Blaze.Html.Html>_N))) -}
-561f0e9340e091af51dba8b53dec32e3
+bef7aab73ffda4f511372900e5cea777
   getTodosFuncionariosR1 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -4235,7 +4235,7 @@ d133555ba92ed556f35eba8812ebb487
                                                         <Foundation.App>_N)))_R)_R)_R))
                       (Sym (Yesod.Core.Types.N:WidgetT[0]
                                 <Foundation.App>_N <GHC.Types.IO>_N <()>_N)))) -}
-e6723ff9299c9a5baa99635733adcc59
+761816288281627e2850d3da2e90b5f8
   getTodosFuncionariosR16 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -4252,7 +4252,7 @@ e6723ff9299c9a5baa99635733adcc59
                                Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
                    (eta37 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
                  Handler.Funcionario.getTodosFuncionariosR17 eta37) -}
-6e171f9f763358baf8942422645cc12c
+45afddb9bbce8b8571fa105a1b29abef
   getTodosFuncionariosR17 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -4313,12 +4313,12 @@ e6723ff9299c9a5baa99635733adcc59
                         (Yesod.Routes.Class.Route
                            (Sym (Yesod.Core.Class.Handler.D:R:HandlerSiteWidgetT[0]
                                      <GHC.Types.IO>_N <Foundation.App>_N)))_R)_R) #)) -}
-11b5a738b66574394765ab7b795edce9
+d8f088f52275808f6a9d3bf1579325de
   getTodosFuncionariosR18 :: Text.Blaze.Internal.ChoiceString
   {- Strictness: m5,
      Unfolding: (Text.Blaze.Internal.PreEscaped
                    Handler.Funcionario.getTodosFuncionariosR19) -}
-259565f25060d1d0664fee8f0fd72b84
+24bca4cad494b88b15b078deca35e526
   getTodosFuncionariosR19 :: Text.Blaze.Internal.ChoiceString
   {- Strictness: m3,
      Unfolding: (Text.Blaze.Internal.Text
@@ -4340,12 +4340,11 @@ d55952f4b993f931bcbe59566e78595e
                                Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
                    (eta37 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
                  Handler.Funcionario.getTodosFuncionariosR3 eta37) -}
-9892561c945ff6267e75c917d2193155
+644580c92226ba59120eb4db409070fb
   getTodosFuncionariosR20 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
-                   "\" role=\"button\" aria-pressed=\"true\">Incluir</a><br><br></br>\n\
-                   \</a>\n"#) -}
-ba62c454e92533e5d228e6ebf1d79453
+                   "\" role=\"button\" aria-pressed=\"true\">Incluir</a><br><br>"#) -}
+ed92efad18610ec8c69b7f6f559bded2
   getTodosFuncionariosR21 ::
     ()
     -> Yesod.Core.Types.HandlerData
@@ -4363,7 +4362,7 @@ ba62c454e92533e5d228e6ebf1d79453
                                Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))[OneShot]
                    (eta37 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
                  (# eta37, Handler.Funcionario.getTodosFuncionariosR22 #)) -}
-c8e3cd6774380de3c93a5443ca5ac84c
+d64589d0f119f80645d91e1a85393692
   getTodosFuncionariosR22 ::
     ((),
      Yesod.Core.Types.GWData
@@ -4377,7 +4376,7 @@ c8e3cd6774380de3c93a5443ca5ac84c
                      (Yesod.Routes.Class.Route
                         (Sym (Yesod.Core.Class.Handler.D:R:HandlerSiteWidgetT[0]
                                   <GHC.Types.IO>_N <Foundation.App>_N)))_R)_R)) -}
-f1c8a2d89bb10e93e9d752c867e4a332
+9b42bcee00930593d674516397adea4f
   getTodosFuncionariosR23 ::
     Yesod.Core.Types.GWData (Yesod.Routes.Class.Route Foundation.App)
   {- Unfolding: (Yesod.Core.Types.GWData
@@ -4419,7 +4418,7 @@ f1c8a2d89bb10e93e9d752c867e4a332
                      `cast`
                    (Sym (Yesod.Core.Types.N:Head[0]
                              <Yesod.Routes.Class.Route Foundation.App>_R))) -}
-7c9068d478849d034c3f2b6c85acf15b
+4e9957a6a90f94ee630bede0d734d1f4
   getTodosFuncionariosR24 ::
     (Yesod.Routes.Class.Route Foundation.App
      -> [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
@@ -4430,20 +4429,22 @@ f1c8a2d89bb10e93e9d752c867e4a332
                            -> [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
                            -> Data.Text.Internal.Text) ->
                  Handler.Funcionario.getTodosFuncionariosR_eta3) -}
-a816bf53df87ca2cf4cd13ebbb4315d4
+d1363ea59364398c0df91ed79ef75fce
   getTodosFuncionariosR25 :: Text.Blaze.Internal.ChoiceString
   {- Strictness: m5,
      Unfolding: (Text.Blaze.Internal.PreEscaped
                    Handler.Funcionario.getTodosFuncionariosR26) -}
-670aac7669cc2039b57ef9713260952a
+a250ebec7a6f3580eed41c1395ded60c
   getTodosFuncionariosR26 :: Text.Blaze.Internal.ChoiceString
   {- Strictness: m3,
      Unfolding: (Text.Blaze.Internal.Text
                    Handler.Funcionario.getTodosFuncionariosR27) -}
-f5744755a298779861316e07d9b438b0
+486e5565b9e994ce72fb85c421f4ade9
   getTodosFuncionariosR27 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
-                   "</center>\n\
+                   "</br>\n\
+                   \</a>\n\
+                   \</center>\n\
                    \</div>\n\
                    \</tbody>\n\
                    \</table>\n\
@@ -4807,14 +4808,14 @@ ad623c467017f6c7a4448806f4a41b4d
                    @ ()
                    Handler.Funcionario.getTodosFuncionariosR11
                    GHC.Tuple.()) -}
-ca08196768c8d43f6bd3147aa40acf24
+b749af924fdd924e34d28423eb84c2f7
   getTodosFuncionariosR_eta2 :: Text.Blaze.Html.Html
   {- Strictness: m5,
      Unfolding: (Text.Blaze.Internal.Content
                    @ ()
                    Handler.Funcionario.getTodosFuncionariosR18
                    GHC.Tuple.()) -}
-88a23e6b12dcd9323d72b4c6272c028a
+2a99ac6652d73d70dacc012453591057
   getTodosFuncionariosR_eta3 :: Text.Blaze.Html.Html
   {- Strictness: m5,
      Unfolding: (Text.Blaze.Internal.Content
@@ -4849,7 +4850,7 @@ ca08196768c8d43f6bd3147aa40acf24
                    (GHC.Types.[]
                       @ (Database.Persist.Class.PersistEntity.Filter Model.Funcionario))
                    Handler.Funcionario.getTodosFuncionariosR30) -}
-e8e0effa22de4ff4a4dab2dc0b6b1691
+8b30a66fb023600145f34994b564476c
   postFuncionarioAlteraR ::
     Model.FuncionarioId -> Foundation.Handler Text.Blaze.Html.Html
   {- Arity: 1, Strictness: <L,U>,
@@ -4939,7 +4940,7 @@ e8e0effa22de4ff4a4dab2dc0b6b1691
                   case ds7 of wild1 { (,) res ds9 ->
                   case res of wild2 {
                     DEFAULT
-                    -> (Handler.Funcionario.postFuncionarioAlteraR2
+                    -> (Handler.Funcionario.postFuncionarioAlteraR3
                           `cast`
                         (Yesod.Core.Types.N:HandlerT[0]
                              <Foundation.App>_N <GHC.Types.IO>_N <Text.Blaze.Html.Html>_N)
@@ -4948,31 +4949,35 @@ e8e0effa22de4ff4a4dab2dc0b6b1691
                        (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R)
                          ipv4
                     Yesod.Form.Types.FormSuccess funcionarioNovo
-                    -> case Foundation.$fYesodPersistApp1
-                              @ ()
-                              (Database.Persist.Sql.Orphan.PersistStore.$fPersistStoreWriteSqlBackend_$creplace
-                                 @ (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
-                                 @ Model.Funcionario
-                                 (Handler.Funcionario.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT
-                                    @ Foundation.App)
-                                 Handler.Funcionario.getFuncionarioPerfilR26
-                                   `cast`
-                                 (GHC.Classes.(%,%)
-                                    <Database.Persist.Class.PersistEntity.PersistEntity
-                                       Model.Funcionario>_N
-                                    ((Data.Type.Equality.~)
-                                       <*>_N
-                                       (Sym (Model.D:R:PersistEntityBackendFuncionario[0]))
-                                       (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0])))_N)_R
-                                 funcid
-                                 funcionarioNovo)
-                                `cast`
-                              (Control.Monad.Trans.Reader.ReaderT
-                                 <*>_N
-                                 (Sub (Sym (Foundation.D:R:YesodPersistBackendApp[0])))
-                                 <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
-                                 <()>_N)_R
-                              r
+                    -> case ((Handler.Funcionario.postFuncionarioAlteraR2
+                                (Database.Persist.Sql.Orphan.PersistStore.$fPersistStoreWriteSqlBackend_$creplace
+                                   @ (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
+                                   @ Model.Funcionario
+                                   (Handler.Funcionario.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT
+                                      @ Foundation.App)
+                                   Handler.Funcionario.getFuncionarioPerfilR26
+                                     `cast`
+                                   (GHC.Classes.(%,%)
+                                      <Database.Persist.Class.PersistEntity.PersistEntity
+                                         Model.Funcionario>_N
+                                      ((Data.Type.Equality.~)
+                                         <*>_N
+                                         (Sym (Model.D:R:PersistEntityBackendFuncionario[0]))
+                                         (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0])))_N)_R
+                                   funcid
+                                   funcionarioNovo)
+                                  `cast`
+                                (Control.Monad.Trans.Reader.ReaderT
+                                   <*>_N
+                                   (Sub (Sym (Foundation.D:R:YesodPersistBackendApp[0])))
+                                   <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
+                                   <()>_N)_R)
+                               `cast`
+                             (Yesod.Core.Types.N:HandlerT[0]
+                                  <Foundation.App>_N <GHC.Types.IO>_N <()>_N)
+                               r)
+                              `cast`
+                            (GHC.Types.N:IO[0] <()>_R)
                               ipv4 of ds10 { (#,#) ipv6 ipv7 ->
                        (Handler.Funcionario.postFuncionarioAlteraR1
                           `cast`
@@ -5008,8 +5013,25 @@ e8e0effa22de4ff4a4dab2dc0b6b1691
                    Foundation.TodosFuncionariosR
                      `cast`
                    (Sym (Foundation.D:R:RouteApp0[0]))) -}
-e6fe82b4ded8605c2680c787c54030af
+9409872e9e65f8ff36622dabcb6beb86
   postFuncionarioAlteraR2 ::
+    Yesod.Persist.Core.YesodDB Foundation.App ()
+    -> Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO ()
+  {- Unfolding: (GHC.Base.$
+                   @ 'GHC.Types.PtrRepLifted
+                   @ (Yesod.Persist.Core.YesodDB Foundation.App ())
+                   @ (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO ())
+                   (Foundation.$fYesodPersistApp1 @ ())
+                     `cast`
+                   (<Yesod.Persist.Core.YesodDB Foundation.App ()>_R
+                    ->_R Trans
+                             (<Yesod.Core.Types.HandlerData
+                                 Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                              ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                             (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                       <Foundation.App>_N <GHC.Types.IO>_N <()>_N)))) -}
+53c10f9e3d89c3c11503a5de55fc2d2c
+  postFuncionarioAlteraR3 ::
     Yesod.Core.Types.HandlerT
       Foundation.App GHC.Types.IO Text.Blaze.Html.Html
   {- Unfolding: (Yesod.Core.Handler.redirect
@@ -5025,69 +5047,72 @@ e6fe82b4ded8605c2680c787c54030af
                                   <GHC.Types.IO>_N <Foundation.App>_N)
                              <Yesod.Routes.Class.Route Foundation.App>_N))
                    Foundation.HomeR `cast` (Sym (Foundation.D:R:RouteApp0[0]))) -}
-d734470361d5b3e11af7cbfd7bb31bdf
+b5c0dbcacd3c703f701473535ea8fe7e
   postFuncionarioApagarR ::
     Model.FuncionarioId -> Foundation.Handler Text.Blaze.Html.Html
   {- Arity: 1, Strictness: <L,U>,
      Unfolding: (\ (funcid :: Model.FuncionarioId) ->
                  let {
-                   m4 :: Control.Monad.Trans.Reader.ReaderT
-                           Database.Persist.Sql.Types.Internal.SqlBackend
-                           (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
-                           Model.Funcionario
-                   = Handler.Funcionario.getFuncionarioPerfilR25 funcid
+                   ds3 :: Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO ()
+                   = Handler.Funcionario.postFuncionarioAlteraR2
+                       (Database.Persist.Sql.Orphan.PersistStore.$fPersistStoreWriteSqlBackend_$cdelete
+                          @ (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
+                          @ Model.Funcionario
+                          (Handler.Funcionario.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT
+                             @ Foundation.App)
+                          Handler.Funcionario.getFuncionarioPerfilR26
+                            `cast`
+                          (GHC.Classes.(%,%)
+                             <Database.Persist.Class.PersistEntity.PersistEntity
+                                Model.Funcionario>_N
+                             ((Data.Type.Equality.~)
+                                <*>_N
+                                (Sym (Model.D:R:PersistEntityBackendFuncionario[0]))
+                                (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0])))_N)_R
+                          funcid)
+                         `cast`
+                       (Control.Monad.Trans.Reader.ReaderT
+                          <*>_N
+                          (Sub (Sym (Foundation.D:R:YesodPersistBackendApp[0])))
+                          <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
+                          <()>_N)_R
                  } in
                  let {
-                   m5 :: Control.Monad.Trans.Reader.ReaderT
-                           Database.Persist.Sql.Types.Internal.SqlBackend
-                           (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
-                           ()
-                   = Database.Persist.Sql.Orphan.PersistStore.$fPersistStoreWriteSqlBackend_$cdelete
-                       @ (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
-                       @ Model.Funcionario
-                       (Handler.Funcionario.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT
-                          @ Foundation.App)
-                       Handler.Funcionario.getFuncionarioPerfilR26
+                   ds4 :: Yesod.Core.Types.HandlerT
+                            Foundation.App GHC.Types.IO Model.Funcionario
+                   = Handler.Funcionario.postFuncionarioApagarR1
+                       (Handler.Funcionario.getFuncionarioPerfilR25 funcid)
                          `cast`
-                       (GHC.Classes.(%,%)
-                          <Database.Persist.Class.PersistEntity.PersistEntity
-                             Model.Funcionario>_N
-                          ((Data.Type.Equality.~)
-                             <*>_N
-                             (Sym (Model.D:R:PersistEntityBackendFuncionario[0]))
-                             (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0])))_N)_R
-                       funcid
+                       (Control.Monad.Trans.Reader.ReaderT
+                          <*>_N
+                          (Sub (Sym (Foundation.D:R:YesodPersistBackendApp[0])))
+                          <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
+                          <Model.Funcionario>_N)_R
                  } in
-                 (\ (eta36 :: Yesod.Core.Types.HandlerData
-                                Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
-                    (eta37 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
-                  case Foundation.$fYesodPersistApp1
-                         @ Model.Funcionario
-                         m4
-                           `cast`
-                         (Control.Monad.Trans.Reader.ReaderT
-                            <*>_N
-                            (Sub (Sym (Foundation.D:R:YesodPersistBackendApp[0])))
-                            <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
-                            <Model.Funcionario>_N)_R
-                         eta36
-                         eta37 of ds3 { (#,#) ipv ipv1 ->
-                  case Foundation.$fYesodPersistApp1
-                         @ ()
-                         m5
-                           `cast`
-                         (Control.Monad.Trans.Reader.ReaderT
-                            <*>_N
-                            (Sub (Sym (Foundation.D:R:YesodPersistBackendApp[0])))
-                            <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
-                            <()>_N)_R
-                         eta36
-                         ipv of ds4 { (#,#) ipv2 ipv3 ->
+                 (\ (r :: Yesod.Core.Types.HandlerData
+                            Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                    (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                  case (ds4
+                          `cast`
+                        (Yesod.Core.Types.N:HandlerT[0]
+                             <Foundation.App>_N <GHC.Types.IO>_N <Model.Funcionario>_N)
+                          r)
+                         `cast`
+                       (GHC.Types.N:IO[0] <Model.Funcionario>_R)
+                         s of ds5 { (#,#) ipv ipv1 ->
+                  case (ds3
+                          `cast`
+                        (Yesod.Core.Types.N:HandlerT[0]
+                             <Foundation.App>_N <GHC.Types.IO>_N <()>_N)
+                          r)
+                         `cast`
+                       (GHC.Types.N:IO[0] <()>_R)
+                         ipv of ds6 { (#,#) ipv2 ipv3 ->
                   (Handler.Funcionario.postFuncionarioAlteraR1
                      `cast`
                    (Yesod.Core.Types.N:HandlerT[0]
                         <Foundation.App>_N <GHC.Types.IO>_N <Text.Blaze.Html.Html>_N)
-                     eta36)
+                     r)
                     `cast`
                   (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R)
                     ipv2 } })
@@ -5098,7 +5123,28 @@ d734470361d5b3e11af7cbfd7bb31bdf
                        ->_R Sym (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R))
                       (Sym (Yesod.Core.Types.N:HandlerT[0]
                                 <Foundation.App>_N <GHC.Types.IO>_N <Text.Blaze.Html.Html>_N)))) -}
-8ab6d6be7e2a1fef79ac47ea60a8b515
+344c0b648280495a75868aa2c7bc5c46
+  postFuncionarioApagarR1 ::
+    Yesod.Persist.Core.YesodDB Foundation.App Model.Funcionario
+    -> Yesod.Core.Types.HandlerT
+         Foundation.App GHC.Types.IO Model.Funcionario
+  {- Unfolding: (GHC.Base.$
+                   @ 'GHC.Types.PtrRepLifted
+                   @ (Yesod.Persist.Core.YesodDB Foundation.App Model.Funcionario)
+                   @ (Yesod.Core.Types.HandlerT
+                        Foundation.App GHC.Types.IO Model.Funcionario)
+                   (Foundation.$fYesodPersistApp1 @ Model.Funcionario)
+                     `cast`
+                   (<Yesod.Persist.Core.YesodDB Foundation.App Model.Funcionario>_R
+                    ->_R Trans
+                             (<Yesod.Core.Types.HandlerData
+                                 Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                              ->_R Sym (GHC.Types.N:IO[0] <Model.Funcionario>_R))
+                             (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                       <Foundation.App>_N
+                                       <GHC.Types.IO>_N
+                                       <Model.Funcionario>_N)))) -}
+b162ab6181001bbe56639d5a554ba876
   postFuncionarioR :: Foundation.Handler Text.Blaze.Html.Html
   {- Arity: 2, Strictness: <L,U><S,U>,
      Unfolding: InlineRule (0, True, True)
@@ -5110,7 +5156,7 @@ d734470361d5b3e11af7cbfd7bb31bdf
                       ->_R Sym (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R))
                      (Sym (Yesod.Core.Types.N:HandlerT[0]
                                <Foundation.App>_N <GHC.Types.IO>_N <Text.Blaze.Html.Html>_N))) -}
-dfb80a1252e71c60cec845548bdff8e2
+2d7823edae1c7d5332efa894fe9f3d61
   postFuncionarioR1 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -5120,7 +5166,7 @@ dfb80a1252e71c60cec845548bdff8e2
      Unfolding: (\ (r :: Yesod.Core.Types.HandlerData
                            Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
                    (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
-                 case (Handler.Funcionario.postFuncionarioR8
+                 case (Handler.Funcionario.postFuncionarioR9
                          `cast`
                        (Yesod.Core.Types.N:HandlerT[0]
                             <Foundation.App>_N
@@ -5141,7 +5187,7 @@ dfb80a1252e71c60cec845548bdff8e2
                  case ds4 of wild1 { (,) res ds6 ->
                  case res of wild2 {
                    DEFAULT
-                   -> (Handler.Funcionario.postFuncionarioAlteraR2
+                   -> (Handler.Funcionario.postFuncionarioAlteraR3
                          `cast`
                        (Yesod.Core.Types.N:HandlerT[0]
                             <Foundation.App>_N <GHC.Types.IO>_N <Text.Blaze.Html.Html>_N)
@@ -5157,7 +5203,7 @@ dfb80a1252e71c60cec845548bdff8e2
                       case GHC.Prim.tagToEnum#
                              @ GHC.Types.Bool
                              (GHC.Prim.==# dt2 dt5) of wild7 {
-                        GHC.Types.False -> Handler.Funcionario.postFuncionarioR3 r ipv
+                        GHC.Types.False -> Handler.Funcionario.postFuncionarioR4 r ipv
                         GHC.Types.True
                         -> case {__pkg_ccall text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00 _hs_text_memcmp GHC.Prim.ByteArray#
                                                                                                               -> GHC.Prim.Word#
@@ -5176,22 +5222,31 @@ dfb80a1252e71c60cec845548bdff8e2
                                   (GHC.Prim.int2Word# dt2)
                                   GHC.Prim.realWorld# of wild8 { (#,#) ds11 ds12 ->
                            case GHC.Prim.narrow32Int# ds12 of wild9 {
-                             DEFAULT -> Handler.Funcionario.postFuncionarioR3 r ipv
+                             DEFAULT -> Handler.Funcionario.postFuncionarioR4 r ipv
                              0#
-                             -> case Foundation.$fYesodPersistApp1
-                                       @ (Database.Persist.Class.PersistEntity.Key
-                                            Model.Funcionario)
-                                       (Handler.Funcionario.postFuncionarioR2 wild4)
-                                         `cast`
-                                       (Control.Monad.Trans.Reader.ReaderT
-                                          <*>_N
-                                          (Sub (Sym (Foundation.D:R:YesodPersistBackendApp[0])))
-                                          <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
+                             -> case ((Handler.Funcionario.postFuncionarioR3
+                                         (Handler.Funcionario.postFuncionarioR2 wild4)
+                                           `cast`
+                                         (Control.Monad.Trans.Reader.ReaderT
+                                            <*>_N
+                                            (Sub (Sym (Foundation.D:R:YesodPersistBackendApp[0])))
+                                            <Yesod.Core.Types.HandlerT
+                                               Foundation.App GHC.Types.IO>_R
+                                            <Database.Persist.Class.PersistEntity.Key
+                                               Model.Funcionario>_N)_R)
+                                        `cast`
+                                      (Yesod.Core.Types.N:HandlerT[0]
+                                           <Foundation.App>_N
+                                           <GHC.Types.IO>_N
+                                           <Database.Persist.Class.PersistEntity.Key
+                                              Model.Funcionario>_N)
+                                        r)
+                                       `cast`
+                                     (GHC.Types.N:IO[0]
                                           <Database.Persist.Class.PersistEntity.Key
-                                             Model.Funcionario>_N)_R
-                                       r
+                                             Model.Funcionario>_R)
                                        ipv of ds10 { (#,#) ipv2 ipv3 ->
-                                (Handler.Funcionario.postFuncionarioAlteraR2
+                                (Handler.Funcionario.postFuncionarioAlteraR3
                                    `cast`
                                  (Yesod.Core.Types.N:HandlerT[0]
                                       <Foundation.App>_N <GHC.Types.IO>_N <Text.Blaze.Html.Html>_N)
@@ -5220,8 +5275,43 @@ dfb80a1252e71c60cec845548bdff8e2
                          <*>_N
                          (Sym (Model.D:R:PersistEntityBackendFuncionario[0]))
                          (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0])))_N)_R) -}
-3699802c8a63447a4448a02c821bc14b
+7bcfa3560d14a402b15fcbe7a127761e
   postFuncionarioR3 ::
+    Yesod.Persist.Core.YesodDB
+      Foundation.App
+      (Database.Persist.Class.PersistEntity.Key Model.Funcionario)
+    -> Yesod.Core.Types.HandlerT
+         Foundation.App
+         GHC.Types.IO
+         (Database.Persist.Class.PersistEntity.Key Model.Funcionario)
+  {- Unfolding: (GHC.Base.$
+                   @ 'GHC.Types.PtrRepLifted
+                   @ (Yesod.Persist.Core.YesodDB
+                        Foundation.App
+                        (Database.Persist.Class.PersistEntity.Key Model.Funcionario))
+                   @ (Yesod.Core.Types.HandlerT
+                        Foundation.App
+                        GHC.Types.IO
+                        (Database.Persist.Class.PersistEntity.Key Model.Funcionario))
+                   (Foundation.$fYesodPersistApp1
+                      @ (Database.Persist.Class.PersistEntity.Key Model.Funcionario))
+                     `cast`
+                   (<Yesod.Persist.Core.YesodDB
+                       Foundation.App
+                       (Database.Persist.Class.PersistEntity.Key Model.Funcionario)>_R
+                    ->_R Trans
+                             (<Yesod.Core.Types.HandlerData
+                                 Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                              ->_R Sym (GHC.Types.N:IO[0]
+                                            <Database.Persist.Class.PersistEntity.Key
+                                               Model.Funcionario>_R))
+                             (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                       <Foundation.App>_N
+                                       <GHC.Types.IO>_N
+                                       <Database.Persist.Class.PersistEntity.Key
+                                          Model.Funcionario>_N)))) -}
+9507d36d4a824164f23aaa76253db94e
+  postFuncionarioR4 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -5247,26 +5337,26 @@ dfb80a1252e71c60cec845548bdff8e2
                    `cast`
                  (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R)
                    ipv }) -}
-88066ae7e0314a98f2b62e91e6291727
-  postFuncionarioR4 :: Text.Blaze.Internal.MarkupM ()
+e92e6c8cd9c5747fa351074cd46b80dc
+  postFuncionarioR5 :: Text.Blaze.Internal.MarkupM ()
   {- Unfolding: (Text.Blaze.Internal.Content
                    @ ()
-                   Handler.Funcionario.postFuncionarioR5
+                   Handler.Funcionario.postFuncionarioR6
                    GHC.Tuple.()) -}
-139bce6bfd6af0780ca25781014c87e9
-  postFuncionarioR5 :: Text.Blaze.Internal.ChoiceString
-  {- Unfolding: (Text.Blaze.Internal.PreEscaped
-                   Handler.Funcionario.postFuncionarioR6) -}
-ba0ba64157352cc784a68161f98f4f3b
+965fd466a0b9793b0994be653c5b415a
   postFuncionarioR6 :: Text.Blaze.Internal.ChoiceString
-  {- Unfolding: (Text.Blaze.Internal.Text
+  {- Unfolding: (Text.Blaze.Internal.PreEscaped
                    Handler.Funcionario.postFuncionarioR7) -}
-1f821f5adc726812641526da8355cae0
-  postFuncionarioR7 :: Data.Text.Internal.Text
+37a75db2cd4d70169be729299460cbe3
+  postFuncionarioR7 :: Text.Blaze.Internal.ChoiceString
+  {- Unfolding: (Text.Blaze.Internal.Text
+                   Handler.Funcionario.postFuncionarioR8) -}
+2e26d9c3084ffbb6712eb1dce1aba376
+  postFuncionarioR8 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    "<h2> Usuario e senha nao batem</h2>\n"#) -}
-f44583e65cdd33fffdb910c32c4ab77e
-  postFuncionarioR8 ::
+34276f213f0721678cf699efa144576b
+  postFuncionarioR9 ::
     Foundation.Handler
       ((Yesod.Form.Types.FormResult
           (Model.Funcionario, Data.Text.Internal.Text),
@@ -5321,14 +5411,14 @@ ea345e87568f3f27993b89d1bbb42699
                    Foundation.FuncionarioR
                      `cast`
                    (Sym (Foundation.D:R:RouteApp0[0]))) -}
-603513aa54bd6d109a92a57f170e133c
+341d6ab53e9ab277d569577e2d44c2b5
   postFuncionarioR_m1 ::
     Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO ()
   {- Unfolding: (Yesod.Core.Handler.addMessage
                    @ (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
                    (Handler.Funcionario.$s$fMonadHandlerHandlerT @ Foundation.App)
                    Data.Text.Internal.empty_
-                   Handler.Funcionario.postFuncionarioR4) -}
+                   Handler.Funcionario.postFuncionarioR5) -}
 "SPEC/Handler.Funcionario $fApplicativeHandlerT @ IO _" [ALWAYS] forall @ site
                                                                         ($dMonad :: GHC.Base.Monad
                                                                                       GHC.Types.IO)

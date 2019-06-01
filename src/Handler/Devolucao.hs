@@ -23,7 +23,7 @@ getTodosDevolucaoR = do
 
 postDevolverApagarR :: EmprestimoId -> Handler Html
 postDevolverApagarR empid = do
-    runDB $ get404 empid
-    runDB $ delete empid
+    _ <- ($) runDB $ get404 empid
+    _ <- ($) runDB $ delete empid
     redirect TodosDevolucaoR
 

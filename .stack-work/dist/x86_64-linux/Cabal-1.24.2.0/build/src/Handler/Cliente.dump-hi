@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2019-06-01 18:30:45.945712 UTC
+2019-06-01 18:54:16.705525 UTC
 
 interface aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX:Handler.Cliente 8002
-  interface hash: 80ba81ba9fa7cf657b0c64848c41f358
-  ABI hash: dc3d1520804150674f1d3fb4d34a6c64
+  interface hash: 0b2338348c6822f6f866de1efd60ddf9
+  ABI hash: b0e7e1aae777918a73a4f5450cf6ed1e
   export-list hash: 81a68f1c0e190ea07cb6fa1138da61dc
   orphan hash: 5e440b87f9a107521ea19114387d48de
   flag hash: f123df0d0ff34442f243f0943d78ec4c
@@ -3479,7 +3479,7 @@ f5703136335e41f2cfd7469da70b67fd
                    (GHC.Types.[]
                       @ (Database.Persist.Class.PersistEntity.Filter Model.Cliente))
                    Handler.Cliente.getTodosClientesR30) -}
-832a678fb569f1e5342fd1846d56bd3c
+408ec27efbb6cab48b18ca22fa76947f
   postClienteAlteraR ::
     Model.ClienteId -> Foundation.Handler Text.Blaze.Html.Html
   {- Arity: 1, Strictness: <L,U>,
@@ -3489,7 +3489,7 @@ f5703136335e41f2cfd7469da70b67fd
                            Database.Persist.Sql.Types.Internal.SqlBackend
                            (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
                            Model.Cliente
-                   = Handler.Cliente.postClienteAlteraR3 cliid
+                   = Handler.Cliente.postClienteAlteraR4 cliid
                  } in
                  (\ (r :: Yesod.Core.Types.HandlerData
                             Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
@@ -3566,7 +3566,7 @@ f5703136335e41f2cfd7469da70b67fd
                   case ds4 of wild1 { (,) res ds6 ->
                   case res of wild2 {
                     DEFAULT
-                    -> (Handler.Cliente.postClienteAlteraR2
+                    -> (Handler.Cliente.postClienteAlteraR3
                           `cast`
                         (Yesod.Core.Types.N:HandlerT[0]
                              <Foundation.App>_N <GHC.Types.IO>_N <Text.Blaze.Html.Html>_N)
@@ -3575,31 +3575,35 @@ f5703136335e41f2cfd7469da70b67fd
                        (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R)
                          ipv4
                     Yesod.Form.Types.FormSuccess clienteNovo
-                    -> case Foundation.$fYesodPersistApp1
-                              @ ()
-                              (Database.Persist.Sql.Orphan.PersistStore.$fPersistStoreWriteSqlBackend_$creplace
-                                 @ (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
-                                 @ Model.Cliente
-                                 (Handler.Cliente.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT
-                                    @ Foundation.App)
-                                 Handler.Cliente.getTodosClientesR32
-                                   `cast`
-                                 (GHC.Classes.(%,%)
-                                    <Database.Persist.Class.PersistEntity.PersistEntity
-                                       Model.Cliente>_N
-                                    ((Data.Type.Equality.~)
-                                       <*>_N
-                                       (Sym (Model.D:R:PersistEntityBackendCliente[0]))
-                                       (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0])))_N)_R
-                                 cliid
-                                 clienteNovo)
-                                `cast`
-                              (Control.Monad.Trans.Reader.ReaderT
-                                 <*>_N
-                                 (Sub (Sym (Foundation.D:R:YesodPersistBackendApp[0])))
-                                 <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
-                                 <()>_N)_R
-                              r
+                    -> case ((Handler.Cliente.postClienteAlteraR2
+                                (Database.Persist.Sql.Orphan.PersistStore.$fPersistStoreWriteSqlBackend_$creplace
+                                   @ (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
+                                   @ Model.Cliente
+                                   (Handler.Cliente.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT
+                                      @ Foundation.App)
+                                   Handler.Cliente.getTodosClientesR32
+                                     `cast`
+                                   (GHC.Classes.(%,%)
+                                      <Database.Persist.Class.PersistEntity.PersistEntity
+                                         Model.Cliente>_N
+                                      ((Data.Type.Equality.~)
+                                         <*>_N
+                                         (Sym (Model.D:R:PersistEntityBackendCliente[0]))
+                                         (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0])))_N)_R
+                                   cliid
+                                   clienteNovo)
+                                  `cast`
+                                (Control.Monad.Trans.Reader.ReaderT
+                                   <*>_N
+                                   (Sub (Sym (Foundation.D:R:YesodPersistBackendApp[0])))
+                                   <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
+                                   <()>_N)_R)
+                               `cast`
+                             (Yesod.Core.Types.N:HandlerT[0]
+                                  <Foundation.App>_N <GHC.Types.IO>_N <()>_N)
+                               r)
+                              `cast`
+                            (GHC.Types.N:IO[0] <()>_R)
                               ipv4 of ds7 { (#,#) ipv6 ipv7 ->
                        (Handler.Cliente.postClienteAlteraR1
                           `cast`
@@ -3635,8 +3639,25 @@ cb0597c2bdc5cb1b9e534a4cda719f9d
                    Foundation.TodosClientesR
                      `cast`
                    (Sym (Foundation.D:R:RouteApp0[0]))) -}
-6b4bf13b5fd44269406679f907345e89
+acbc8ed4bcf1045926e7161313afb3a6
   postClienteAlteraR2 ::
+    Yesod.Persist.Core.YesodDB Foundation.App ()
+    -> Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO ()
+  {- Unfolding: (GHC.Base.$
+                   @ 'GHC.Types.PtrRepLifted
+                   @ (Yesod.Persist.Core.YesodDB Foundation.App ())
+                   @ (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO ())
+                   (Foundation.$fYesodPersistApp1 @ ())
+                     `cast`
+                   (<Yesod.Persist.Core.YesodDB Foundation.App ()>_R
+                    ->_R Trans
+                             (<Yesod.Core.Types.HandlerData
+                                 Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                              ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                             (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                       <Foundation.App>_N <GHC.Types.IO>_N <()>_N)))) -}
+c4506818ed4a23273e088c091431e692
+  postClienteAlteraR3 ::
     Yesod.Core.Types.HandlerT
       Foundation.App GHC.Types.IO Text.Blaze.Html.Html
   {- Unfolding: (Yesod.Core.Handler.redirect
@@ -3652,8 +3673,8 @@ cb0597c2bdc5cb1b9e534a4cda719f9d
                                   <GHC.Types.IO>_N <Foundation.App>_N)
                              <Yesod.Routes.Class.Route Foundation.App>_N))
                    Foundation.HomeR `cast` (Sym (Foundation.D:R:RouteApp0[0]))) -}
-bfcad27a743aca697c4cda5960f60a19
-  postClienteAlteraR3 ::
+a7052d42e912d106bf91d1cbd89f936f
+  postClienteAlteraR4 ::
     Database.Persist.Class.PersistEntity.Key Model.Cliente
     -> Control.Monad.Trans.Reader.ReaderT
          Database.Persist.Sql.Types.Internal.SqlBackend
@@ -3675,69 +3696,72 @@ bfcad27a743aca697c4cda5960f60a19
                          <*>_N
                          (Sym (Model.D:R:PersistEntityBackendCliente[0]))
                          (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0])))_N)_R) -}
-41abbd6d9cbd5e54d401cfd36f01da37
+56b36f0764823ca75282a7529ea7e722
   postClienteApagarR ::
     Model.ClienteId -> Foundation.Handler Text.Blaze.Html.Html
   {- Arity: 1, Strictness: <L,U>,
      Unfolding: (\ (cliid :: Model.ClienteId) ->
                  let {
-                   m7 :: Control.Monad.Trans.Reader.ReaderT
-                           Database.Persist.Sql.Types.Internal.SqlBackend
-                           (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
-                           Model.Cliente
-                   = Handler.Cliente.postClienteAlteraR3 cliid
+                   ds :: Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO ()
+                   = Handler.Cliente.postClienteAlteraR2
+                       (Database.Persist.Sql.Orphan.PersistStore.$fPersistStoreWriteSqlBackend_$cdelete
+                          @ (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
+                          @ Model.Cliente
+                          (Handler.Cliente.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT
+                             @ Foundation.App)
+                          Handler.Cliente.getTodosClientesR32
+                            `cast`
+                          (GHC.Classes.(%,%)
+                             <Database.Persist.Class.PersistEntity.PersistEntity
+                                Model.Cliente>_N
+                             ((Data.Type.Equality.~)
+                                <*>_N
+                                (Sym (Model.D:R:PersistEntityBackendCliente[0]))
+                                (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0])))_N)_R
+                          cliid)
+                         `cast`
+                       (Control.Monad.Trans.Reader.ReaderT
+                          <*>_N
+                          (Sub (Sym (Foundation.D:R:YesodPersistBackendApp[0])))
+                          <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
+                          <()>_N)_R
                  } in
                  let {
-                   m8 :: Control.Monad.Trans.Reader.ReaderT
-                           Database.Persist.Sql.Types.Internal.SqlBackend
-                           (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
-                           ()
-                   = Database.Persist.Sql.Orphan.PersistStore.$fPersistStoreWriteSqlBackend_$cdelete
-                       @ (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
-                       @ Model.Cliente
-                       (Handler.Cliente.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT
-                          @ Foundation.App)
-                       Handler.Cliente.getTodosClientesR32
+                   ds1 :: Yesod.Core.Types.HandlerT
+                            Foundation.App GHC.Types.IO Model.Cliente
+                   = Handler.Cliente.postClienteApagarR1
+                       (Handler.Cliente.postClienteAlteraR4 cliid)
                          `cast`
-                       (GHC.Classes.(%,%)
-                          <Database.Persist.Class.PersistEntity.PersistEntity
-                             Model.Cliente>_N
-                          ((Data.Type.Equality.~)
-                             <*>_N
-                             (Sym (Model.D:R:PersistEntityBackendCliente[0]))
-                             (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0])))_N)_R
-                       cliid
+                       (Control.Monad.Trans.Reader.ReaderT
+                          <*>_N
+                          (Sub (Sym (Foundation.D:R:YesodPersistBackendApp[0])))
+                          <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
+                          <Model.Cliente>_N)_R
                  } in
-                 (\ (eta68 :: Yesod.Core.Types.HandlerData
-                                Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
-                    (eta69 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
-                  case Foundation.$fYesodPersistApp1
-                         @ Model.Cliente
-                         m7
-                           `cast`
-                         (Control.Monad.Trans.Reader.ReaderT
-                            <*>_N
-                            (Sub (Sym (Foundation.D:R:YesodPersistBackendApp[0])))
-                            <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
-                            <Model.Cliente>_N)_R
-                         eta68
-                         eta69 of ds1 { (#,#) ipv ipv1 ->
-                  case Foundation.$fYesodPersistApp1
-                         @ ()
-                         m8
-                           `cast`
-                         (Control.Monad.Trans.Reader.ReaderT
-                            <*>_N
-                            (Sub (Sym (Foundation.D:R:YesodPersistBackendApp[0])))
-                            <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
-                            <()>_N)_R
-                         eta68
-                         ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 (\ (r :: Yesod.Core.Types.HandlerData
+                            Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                    (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                  case (ds1
+                          `cast`
+                        (Yesod.Core.Types.N:HandlerT[0]
+                             <Foundation.App>_N <GHC.Types.IO>_N <Model.Cliente>_N)
+                          r)
+                         `cast`
+                       (GHC.Types.N:IO[0] <Model.Cliente>_R)
+                         s of ds2 { (#,#) ipv ipv1 ->
+                  case (ds
+                          `cast`
+                        (Yesod.Core.Types.N:HandlerT[0]
+                             <Foundation.App>_N <GHC.Types.IO>_N <()>_N)
+                          r)
+                         `cast`
+                       (GHC.Types.N:IO[0] <()>_R)
+                         ipv of ds3 { (#,#) ipv2 ipv3 ->
                   (Handler.Cliente.postClienteAlteraR1
                      `cast`
                    (Yesod.Core.Types.N:HandlerT[0]
                         <Foundation.App>_N <GHC.Types.IO>_N <Text.Blaze.Html.Html>_N)
-                     eta68)
+                     r)
                     `cast`
                   (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R)
                     ipv2 } })
@@ -3748,7 +3772,26 @@ bfcad27a743aca697c4cda5960f60a19
                        ->_R Sym (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R))
                       (Sym (Yesod.Core.Types.N:HandlerT[0]
                                 <Foundation.App>_N <GHC.Types.IO>_N <Text.Blaze.Html.Html>_N)))) -}
-db7df942141bfc80a6f3fb60153b05d0
+9a6de1946284a1a3d1389d68200bbd7c
+  postClienteApagarR1 ::
+    Yesod.Persist.Core.YesodDB Foundation.App Model.Cliente
+    -> Yesod.Core.Types.HandlerT
+         Foundation.App GHC.Types.IO Model.Cliente
+  {- Unfolding: (GHC.Base.$
+                   @ 'GHC.Types.PtrRepLifted
+                   @ (Yesod.Persist.Core.YesodDB Foundation.App Model.Cliente)
+                   @ (Yesod.Core.Types.HandlerT
+                        Foundation.App GHC.Types.IO Model.Cliente)
+                   (Foundation.$fYesodPersistApp1 @ Model.Cliente)
+                     `cast`
+                   (<Yesod.Persist.Core.YesodDB Foundation.App Model.Cliente>_R
+                    ->_R Trans
+                             (<Yesod.Core.Types.HandlerData
+                                 Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                              ->_R Sym (GHC.Types.N:IO[0] <Model.Cliente>_R))
+                             (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                       <Foundation.App>_N <GHC.Types.IO>_N <Model.Cliente>_N)))) -}
+e28eb4a8158672408648ff7d1048133b
   postClienteR :: Foundation.Handler Text.Blaze.Html.Html
   {- Arity: 2, Strictness: <L,U><S,U>,
      Unfolding: InlineRule (0, True, True)
@@ -3760,7 +3803,7 @@ db7df942141bfc80a6f3fb60153b05d0
                       ->_R Sym (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R))
                      (Sym (Yesod.Core.Types.N:HandlerT[0]
                                <Foundation.App>_N <GHC.Types.IO>_N <Text.Blaze.Html.Html>_N))) -}
-e8f63bd05655fcfef5027001559d8ac6
+4e7f10c2807750b37732996999f473ec
   postClienteR1 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -3829,7 +3872,7 @@ e8f63bd05655fcfef5027001559d8ac6
                  case ds of wild1 { (,) res ds4 ->
                  case res of wild2 {
                    DEFAULT
-                   -> (Handler.Cliente.postClienteAlteraR2
+                   -> (Handler.Cliente.postClienteAlteraR3
                          `cast`
                        (Yesod.Core.Types.N:HandlerT[0]
                             <Foundation.App>_N <GHC.Types.IO>_N <Text.Blaze.Html.Html>_N)
@@ -3838,16 +3881,23 @@ e8f63bd05655fcfef5027001559d8ac6
                       (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R)
                         ipv2
                    Yesod.Form.Types.FormSuccess cliente
-                   -> case Foundation.$fYesodPersistApp1
-                             @ (Database.Persist.Class.PersistEntity.Key Model.Cliente)
-                             (Handler.Cliente.postClienteR3 cliente)
-                               `cast`
-                             (Control.Monad.Trans.Reader.ReaderT
-                                <*>_N
-                                (Sub (Sym (Foundation.D:R:YesodPersistBackendApp[0])))
-                                <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
-                                <Database.Persist.Class.PersistEntity.Key Model.Cliente>_N)_R
-                             r
+                   -> case ((Handler.Cliente.postClienteR4
+                               (Handler.Cliente.postClienteR3 cliente)
+                                 `cast`
+                               (Control.Monad.Trans.Reader.ReaderT
+                                  <*>_N
+                                  (Sub (Sym (Foundation.D:R:YesodPersistBackendApp[0])))
+                                  <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
+                                  <Database.Persist.Class.PersistEntity.Key Model.Cliente>_N)_R)
+                              `cast`
+                            (Yesod.Core.Types.N:HandlerT[0]
+                                 <Foundation.App>_N
+                                 <GHC.Types.IO>_N
+                                 <Database.Persist.Class.PersistEntity.Key Model.Cliente>_N)
+                              r)
+                             `cast`
+                           (GHC.Types.N:IO[0]
+                                <Database.Persist.Class.PersistEntity.Key Model.Cliente>_R)
                              ipv2 of ds5 { (#,#) ipv4 ipv5 ->
                       (Handler.Cliente.postClienteR2
                          `cast`
@@ -3895,6 +3945,41 @@ b7a2740df428047e8921bb7923921efd
                          <*>_N
                          (Sym (Model.D:R:PersistEntityBackendCliente[0]))
                          (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0])))_N)_R) -}
+003e251e7f5cf3d32b568f3aad8c685d
+  postClienteR4 ::
+    Yesod.Persist.Core.YesodDB
+      Foundation.App
+      (Database.Persist.Class.PersistEntity.Key Model.Cliente)
+    -> Yesod.Core.Types.HandlerT
+         Foundation.App
+         GHC.Types.IO
+         (Database.Persist.Class.PersistEntity.Key Model.Cliente)
+  {- Unfolding: (GHC.Base.$
+                   @ 'GHC.Types.PtrRepLifted
+                   @ (Yesod.Persist.Core.YesodDB
+                        Foundation.App
+                        (Database.Persist.Class.PersistEntity.Key Model.Cliente))
+                   @ (Yesod.Core.Types.HandlerT
+                        Foundation.App
+                        GHC.Types.IO
+                        (Database.Persist.Class.PersistEntity.Key Model.Cliente))
+                   (Foundation.$fYesodPersistApp1
+                      @ (Database.Persist.Class.PersistEntity.Key Model.Cliente))
+                     `cast`
+                   (<Yesod.Persist.Core.YesodDB
+                       Foundation.App
+                       (Database.Persist.Class.PersistEntity.Key Model.Cliente)>_R
+                    ->_R Trans
+                             (<Yesod.Core.Types.HandlerData
+                                 Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                              ->_R Sym (GHC.Types.N:IO[0]
+                                            <Database.Persist.Class.PersistEntity.Key
+                                               Model.Cliente>_R))
+                             (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                       <Foundation.App>_N
+                                       <GHC.Types.IO>_N
+                                       <Database.Persist.Class.PersistEntity.Key
+                                          Model.Cliente>_N)))) -}
 b53dfb6039748406d6798b29377fc08d
   postClienteR_ds ::
     Yesod.Core.Types.HandlerT

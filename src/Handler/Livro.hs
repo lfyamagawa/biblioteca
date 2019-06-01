@@ -37,7 +37,7 @@ postLivroR = do
     ((res,_),_) <- runFormPost (formLivro Nothing)
     case res of
         FormSuccess livro -> do
-            runDB $ insert livro
+            _ <- ($) runDB $ insert livro
             redirect LivroR
         _ -> redirect HomeR
     
@@ -70,8 +70,8 @@ getLivroPerfilR livid = do
 
 postLivroApagarR :: LivroId -> Handler Html
 postLivroApagarR livid = do
-    runDB $ get404 livid
-    runDB $ delete livid
+    _ <- ($) runDB $ get404 livid
+    _ <- ($) runDB $ delete livid
     redirect TodosLivrosR
 
 getLivroAlteraR :: LivroId -> Handler Html
@@ -93,7 +93,7 @@ postLivroAlteraR livid = do
     ((res,_),_) <- runFormPost (formLivro $ Just livro) 
     case res of
         FormSuccess livroNovo -> do
-            runDB $ replace livid livroNovo
+            _ <- ($) runDB $ replace livid livroNovo
             redirect TodosLivrosR
         _ -> redirect HomeR
 

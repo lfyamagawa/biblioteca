@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2019-06-01 18:30:50.272899 UTC
+2019-06-01 18:54:21.013199 UTC
 
 interface aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX:Handler.Login 8002
-  interface hash: 1862c0ddb6782531da44b311f9a0f602
+  interface hash: c14eacd311a5558963f317a8087b23bd
   ABI hash: 684115ce8f19bfdf3a139f1f9314ec98
   export-list hash: 062839076225c0949cdadaa71c63f7ad
   orphan hash: 7a8d01da01f2a44e3d1dbd6e43da3b06
@@ -364,7 +364,6 @@ import  -/  blaze-markup-0.8.0.0@blaze-markup-0.8.0.0-GsxkVbRgODkgUQDmmDVob:Text
 import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
 import  -/  persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u:Database.Persist.Class.PersistEntity b1a81164694b45dd782d2c329cb2cab2
 import  -/  persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u:Database.Persist.Class.PersistUnique 32678f57ac1212b0f3aac70a77a3c0df
-import  -/  persistent-postgresql-2.6.1@persistent-postgresql-2.6.1-2dvMQeNrMidL0mEJqjlR9n:Database.Persist.Postgresql 10b056d5394430454ce529b83ca42db3
 import  -/  shakespeare-2.0.14@shakespeare-2.0.14-FNvjJPHGgnVJw5IpBEAfAj:Text.Hamlet f0191913c7fb82d3b277f10e3ea32aec
 import  -/  text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text e8aa34be3dde178f567ae461e65c988b
 import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Class.Yesod 671521227b842a05ae6b4e758829bb55

@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2019-06-01 18:30:46.750851 UTC
+2019-06-01 18:54:17.458809 UTC
 
 interface aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX:Handler.Devolucao 8002
-  interface hash: 1b958e19099393c40244c179bf7a88db
-  ABI hash: dbbc8568a8b8c5cc14f88dcccc051454
+  interface hash: 336cb832d323ec709bc592a29b7d04b7
+  ABI hash: 18981c60a1f866df1497b6ad7cb5465d
   export-list hash: 69f63e9f34c463f6dbba3dbed0706767
   orphan hash: d55df556e47191704ad0a7be5f6eab1a
   flag hash: f123df0d0ff34442f243f0943d78ec4c
@@ -955,69 +955,72 @@ a56549739d8b1c071ea332f09b5a04e1
                    @ ()
                    Handler.Devolucao.getTodosDevolucaoR11
                    GHC.Tuple.()) -}
-bbf145c08e1c05ae6ff5b31a3cfc9125
+79ca841ea2a76e15dfdf02089bd0e709
   postDevolverApagarR ::
     Model.EmprestimoId -> Foundation.Handler Text.Blaze.Html.Html
   {- Arity: 1, Strictness: <L,U>,
      Unfolding: (\ (empid :: Model.EmprestimoId) ->
                  let {
-                   m1 :: Control.Monad.Trans.Reader.ReaderT
-                           Database.Persist.Sql.Types.Internal.SqlBackend
-                           (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
-                           Model.Emprestimo
-                   = Handler.Devolucao.postDevolverApagarR4 empid
+                   ds :: Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO ()
+                   = Handler.Devolucao.postDevolverApagarR6
+                       (Database.Persist.Sql.Orphan.PersistStore.$fPersistStoreWriteSqlBackend_$cdelete
+                          @ (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
+                          @ Model.Emprestimo
+                          (Handler.Devolucao.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT
+                             @ Foundation.App)
+                          Handler.Devolucao.postDevolverApagarR3
+                            `cast`
+                          (GHC.Classes.(%,%)
+                             <Database.Persist.Class.PersistEntity.PersistEntity
+                                Model.Emprestimo>_N
+                             ((Data.Type.Equality.~)
+                                <*>_N
+                                (Sym (Model.D:R:PersistEntityBackendEmprestimo[0]))
+                                (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0])))_N)_R
+                          empid)
+                         `cast`
+                       (Control.Monad.Trans.Reader.ReaderT
+                          <*>_N
+                          (Sub (Sym (Foundation.D:R:YesodPersistBackendApp[0])))
+                          <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
+                          <()>_N)_R
                  } in
                  let {
-                   m2 :: Control.Monad.Trans.Reader.ReaderT
-                           Database.Persist.Sql.Types.Internal.SqlBackend
-                           (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
-                           ()
-                   = Database.Persist.Sql.Orphan.PersistStore.$fPersistStoreWriteSqlBackend_$cdelete
-                       @ (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
-                       @ Model.Emprestimo
-                       (Handler.Devolucao.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT
-                          @ Foundation.App)
-                       Handler.Devolucao.postDevolverApagarR2
+                   ds1 :: Yesod.Core.Types.HandlerT
+                            Foundation.App GHC.Types.IO Model.Emprestimo
+                   = Handler.Devolucao.postDevolverApagarR5
+                       (Handler.Devolucao.postDevolverApagarR2 empid)
                          `cast`
-                       (GHC.Classes.(%,%)
-                          <Database.Persist.Class.PersistEntity.PersistEntity
-                             Model.Emprestimo>_N
-                          ((Data.Type.Equality.~)
-                             <*>_N
-                             (Sym (Model.D:R:PersistEntityBackendEmprestimo[0]))
-                             (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0])))_N)_R
-                       empid
+                       (Control.Monad.Trans.Reader.ReaderT
+                          <*>_N
+                          (Sub (Sym (Foundation.D:R:YesodPersistBackendApp[0])))
+                          <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
+                          <Model.Emprestimo>_N)_R
                  } in
-                 (\ (eta20 :: Yesod.Core.Types.HandlerData
-                                Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
-                    (eta21 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
-                  case Foundation.$fYesodPersistApp1
-                         @ Model.Emprestimo
-                         m1
-                           `cast`
-                         (Control.Monad.Trans.Reader.ReaderT
-                            <*>_N
-                            (Sub (Sym (Foundation.D:R:YesodPersistBackendApp[0])))
-                            <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
-                            <Model.Emprestimo>_N)_R
-                         eta20
-                         eta21 of ds1 { (#,#) ipv ipv1 ->
-                  case Foundation.$fYesodPersistApp1
-                         @ ()
-                         m2
-                           `cast`
-                         (Control.Monad.Trans.Reader.ReaderT
-                            <*>_N
-                            (Sub (Sym (Foundation.D:R:YesodPersistBackendApp[0])))
-                            <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
-                            <()>_N)_R
-                         eta20
-                         ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 (\ (r :: Yesod.Core.Types.HandlerData
+                            Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                    (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                  case (ds1
+                          `cast`
+                        (Yesod.Core.Types.N:HandlerT[0]
+                             <Foundation.App>_N <GHC.Types.IO>_N <Model.Emprestimo>_N)
+                          r)
+                         `cast`
+                       (GHC.Types.N:IO[0] <Model.Emprestimo>_R)
+                         s of ds2 { (#,#) ipv ipv1 ->
+                  case (ds
+                          `cast`
+                        (Yesod.Core.Types.N:HandlerT[0]
+                             <Foundation.App>_N <GHC.Types.IO>_N <()>_N)
+                          r)
+                         `cast`
+                       (GHC.Types.N:IO[0] <()>_R)
+                         ipv of ds3 { (#,#) ipv2 ipv3 ->
                   (Handler.Devolucao.postDevolverApagarR1
                      `cast`
                    (Yesod.Core.Types.N:HandlerT[0]
                         <Foundation.App>_N <GHC.Types.IO>_N <Text.Blaze.Html.Html>_N)
-                     eta20)
+                     r)
                     `cast`
                   (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R)
                     ipv2 } })
@@ -1047,31 +1050,8 @@ ad0c3f5f4ec75a5caede3df3c43a6f2f
                    Foundation.TodosDevolucaoR
                      `cast`
                    (Sym (Foundation.D:R:RouteApp0[0]))) -}
-4337a5a4361a430b1b91059810c1bdb3
+d8d1ce9e311ee2e82ea4fc580165f575
   postDevolverApagarR2 ::
-    (Database.Persist.Class.PersistEntity.PersistEntity
-       Model.Emprestimo,
-     Database.Persist.Sql.Types.Internal.SqlBackend
-     Data.Type.Equality.~ Database.Persist.Sql.Types.Internal.SqlBackend)
-  {- Strictness: m,
-     Unfolding: ((Model.$fPersistEntityEmprestimo,
-                  Handler.Devolucao.postDevolverApagarR3
-                    `cast`
-                  (Sym (Data.Type.Equality.N:~[0]
-                            <*>_N) <Database.Persist.Sql.Types.Internal.SqlBackend>_N <Database.Persist.Sql.Types.Internal.SqlBackend>_N))) -}
-903bfb37bfed8af71867959e69412102
-  postDevolverApagarR3 ::
-    Database.Persist.Sql.Types.Internal.SqlBackend
-    GHC.Types.~~ Database.Persist.Sql.Types.Internal.SqlBackend
-  {- HasNoCafRefs, Strictness: m,
-     Unfolding: (GHC.Types.Eq#
-                   @ *
-                   @ *
-                   @ Database.Persist.Sql.Types.Internal.SqlBackend
-                   @ Database.Persist.Sql.Types.Internal.SqlBackend
-                   @~ <Database.Persist.Sql.Types.Internal.SqlBackend>_N) -}
-64f267d1daaafb471d7fab5fc8948e94
-  postDevolverApagarR4 ::
     Database.Persist.Class.PersistEntity.Key Model.Emprestimo
     -> Control.Monad.Trans.Reader.ReaderT
          Database.Persist.Sql.Types.Internal.SqlBackend
@@ -1084,7 +1064,7 @@ ad0c3f5f4ec75a5caede3df3c43a6f2f
                    (Handler.Devolucao.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT
                       @ Foundation.App)
                    Database.Persist.Sql.Orphan.PersistStore.$fPersistStoreWriteSqlBackend
-                   Handler.Devolucao.postDevolverApagarR2
+                   Handler.Devolucao.postDevolverApagarR3
                      `cast`
                    (GHC.Classes.(%,%)
                       <Database.Persist.Class.PersistEntity.PersistEntity
@@ -1093,6 +1073,67 @@ ad0c3f5f4ec75a5caede3df3c43a6f2f
                          <*>_N
                          (Sym (Model.D:R:PersistEntityBackendEmprestimo[0]))
                          (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0])))_N)_R) -}
+0eae803e59b328068c3d1b41ee349a97
+  postDevolverApagarR3 ::
+    (Database.Persist.Class.PersistEntity.PersistEntity
+       Model.Emprestimo,
+     Database.Persist.Sql.Types.Internal.SqlBackend
+     Data.Type.Equality.~ Database.Persist.Sql.Types.Internal.SqlBackend)
+  {- Strictness: m,
+     Unfolding: ((Model.$fPersistEntityEmprestimo,
+                  Handler.Devolucao.postDevolverApagarR4
+                    `cast`
+                  (Sym (Data.Type.Equality.N:~[0]
+                            <*>_N) <Database.Persist.Sql.Types.Internal.SqlBackend>_N <Database.Persist.Sql.Types.Internal.SqlBackend>_N))) -}
+95c591e16e0b1019380662b4d9a500d2
+  postDevolverApagarR4 ::
+    Database.Persist.Sql.Types.Internal.SqlBackend
+    GHC.Types.~~ Database.Persist.Sql.Types.Internal.SqlBackend
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ *
+                   @ *
+                   @ Database.Persist.Sql.Types.Internal.SqlBackend
+                   @ Database.Persist.Sql.Types.Internal.SqlBackend
+                   @~ <Database.Persist.Sql.Types.Internal.SqlBackend>_N) -}
+b3f17a52ab540e367705a25eb441a3b9
+  postDevolverApagarR5 ::
+    Yesod.Persist.Core.YesodDB Foundation.App Model.Emprestimo
+    -> Yesod.Core.Types.HandlerT
+         Foundation.App GHC.Types.IO Model.Emprestimo
+  {- Unfolding: (GHC.Base.$
+                   @ 'GHC.Types.PtrRepLifted
+                   @ (Yesod.Persist.Core.YesodDB Foundation.App Model.Emprestimo)
+                   @ (Yesod.Core.Types.HandlerT
+                        Foundation.App GHC.Types.IO Model.Emprestimo)
+                   (Foundation.$fYesodPersistApp1 @ Model.Emprestimo)
+                     `cast`
+                   (<Yesod.Persist.Core.YesodDB Foundation.App Model.Emprestimo>_R
+                    ->_R Trans
+                             (<Yesod.Core.Types.HandlerData
+                                 Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                              ->_R Sym (GHC.Types.N:IO[0] <Model.Emprestimo>_R))
+                             (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                       <Foundation.App>_N
+                                       <GHC.Types.IO>_N
+                                       <Model.Emprestimo>_N)))) -}
+6320b7e89097b8b2ed1323f5329e554b
+  postDevolverApagarR6 ::
+    Yesod.Persist.Core.YesodDB Foundation.App ()
+    -> Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO ()
+  {- Unfolding: (GHC.Base.$
+                   @ 'GHC.Types.PtrRepLifted
+                   @ (Yesod.Persist.Core.YesodDB Foundation.App ())
+                   @ (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO ())
+                   (Foundation.$fYesodPersistApp1 @ ())
+                     `cast`
+                   (<Yesod.Persist.Core.YesodDB Foundation.App ()>_R
+                    ->_R Trans
+                             (<Yesod.Core.Types.HandlerData
+                                 Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                              ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                             (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                       <Foundation.App>_N <GHC.Types.IO>_N <()>_N)))) -}
 "SPEC/Handler.Devolucao $fApplicativeHandlerT_$creturn @ IO _" [ALWAYS] forall @ site
                                                                                ($dMonad :: GHC.Base.Monad
                                                                                              GHC.Types.IO)

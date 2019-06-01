@@ -39,7 +39,6 @@
                             <td>
                                 #{livroAssunto livro}
                             <td>
-                            <td>
                     
                                 <form action=@{EmprestarClienteR livid} method=get>
                                     <input type="submit" value="Emprestar">
@@ -47,5 +46,5 @@
     <br><br>
 <div>
         <div class="row">
-            <div class="container col-12" style-"background-color:silver">
+            <div class="container col-12" style="background-color:silver">
                 <center><h4><strong>Fim

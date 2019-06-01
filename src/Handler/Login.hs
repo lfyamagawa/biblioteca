@@ -7,7 +7,7 @@
 module Handler.Login where
 
 import Import
-import Database.Persist.Postgresql
+-- import Database.Persist.Postgresql
 
 formLogin :: Form Funcionario
 formLogin = renderBootstrap $ Funcionario 

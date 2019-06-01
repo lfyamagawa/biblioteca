@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2019-06-01 17:23:01.127971 UTC
+2019-06-01 17:27:03.210898 UTC
 
 interface aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX:Handler.Devolucao 8002
-  interface hash: b1d76db80ad2dcf48ed762f9f7f514ce
+  interface hash: 04496829653bd3f628616d48bca56a68
   ABI hash: 5bb08de67675e373a890755c76baf555
   export-list hash: ee979002d028b546bc908ab0c2af2a41
   orphan hash: d4ce7d30c2152b68cb4e67dc0f298e73
@@ -346,6 +346,8 @@ import  -/  Import 3c12d840e4536e2e1bedd3687372c77c
 import  -/  Model 0322a236513b611476018acb9209b978
   EmprestimoId fe166303cba5652833a759be78375951
   emprestimoCliid b901883d64bab2fd88a1892e05e3df89
+  emprestimoData_emp 7da99546e8ec9d9b0eedc473a23f1e24
+  emprestimoLivid 0f2911897e9703046079dccc8546b1e6
 import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
 import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
 import  -/  base-4.9.1.0:GHC.Show a027f5ac24879eaba752f44aa90fe511

@@ -25,7 +25,17 @@
                     #{show $ fromSqlKey devid}
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <td>
+                    #{show $ fromSqlKey (emprestimoCliid emprestimo)}
+                    &nbsp;&nbsp;&nbsp;&nbsp;
                 <td>
+                    #{show $ fromSqlKey (emprestimoLivid emprestimo)}
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                <td>
+                    #{show $ (emprestimoData_emp emprestimo)}
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                <td>
+                    #{show $ (emprestimoData_dev emprestimo)}
+                    &nbsp;&nbsp;&nbsp;&nbsp;
                 <td>
                     <form action=@{DevolverApagarR devid} method=post>
                         <input type="submit" value="Devolver">

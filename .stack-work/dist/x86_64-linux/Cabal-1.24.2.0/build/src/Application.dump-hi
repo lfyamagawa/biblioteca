@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2019-06-01 17:43:22.234974 UTC
+2019-06-01 17:51:48.470031 UTC
 
 interface aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX:Application [orphan module] 8002
-  interface hash: 19b7ca4644a41e7428818c580e0774d2
+  interface hash: 54f21589a336255d5cb6fa99fb4e1e6c
   ABI hash: 9eb9395b021f895e9e602dbd2dfab6ff
   export-list hash: 88760f1f9acb48ffaaf15dca9d22339d
   orphan hash: 69fb11262dae83ffce14fbd96767d29f
@@ -392,10 +392,10 @@ import  -/  Handler.Common 77250ed35f4c22c74c5bff6e86e7d7e6
   exports: 1e2f43249f564bf081b0b39344d88d37
   getFaviconR 93a76af9e176a2f3d0f783f0a17cc519
   getRobotsR 47283a097011a872e173783c539db584
-import  -/  Handler.Devolucao fedc5b0c32b567a03404068c205d4875
-  exports: 69f63e9f34c463f6dbba3dbed0706767
-  getTodosDevolucaoR 42e4373f3d6cf372e079c5f55bb636dc
-  postDevolverApagarR bbf145c08e1c05ae6ff5b31a3cfc9125
+import  -/  Handler.Devolucao ae07fa709eafe037275d386e627eda22
+  exports: fee9f1227c14574dcc99acfdb839eefe
+  getTodosDevolucaoR 582fa4f26c7a68cfb50db55063d13dbc
+  postDevolverApagarR 04ab4092c77a9fdfebedc613c76032b4
 import  -/  Handler.Emprestimo a108fd4b6d76453d65b9ba3200138940
   exports: b19a8218ee0949f39693c67e54d5730d
   getEmprestarClienteR 6d174181d29878ab23fbb46ee540013c

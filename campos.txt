@@ -22,4 +22,4 @@ Emprestimo
     cliid   ClienteId
     livid   LivroId
     data_emp    Date
-    date_dev    Date
+    data_dev    Date

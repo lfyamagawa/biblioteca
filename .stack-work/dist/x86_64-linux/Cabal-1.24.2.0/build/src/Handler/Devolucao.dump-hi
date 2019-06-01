@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2019-06-01 17:05:41.652495 UTC
+2019-06-01 17:23:01.127971 UTC
 
 interface aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX:Handler.Devolucao 8002
-  interface hash: 2cd2c626cf61ef2792ca6b02ef0298a4
-  ABI hash: 0fc14b011e0537ccc8508f000da7426f
+  interface hash: b1d76db80ad2dcf48ed762f9f7f514ce
+  ABI hash: 5bb08de67675e373a890755c76baf555
   export-list hash: ee979002d028b546bc908ab0c2af2a41
   orphan hash: d4ce7d30c2152b68cb4e67dc0f298e73
   flag hash: f123df0d0ff34442f243f0943d78ec4c
@@ -576,7 +576,7 @@ c4d2a93906fec36a1468862d2bf10b0e
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    "aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX"#) -}
-ef0ce6071e21ca34208c9063443a7541
+955de08a193d319fdfec538c04eebd11
   getTodosDevolucaoR :: Foundation.Handler Text.Blaze.Html.Html
   {- Arity: 2, Strictness: <L,U><S,U>,
      Unfolding: InlineRule (0, True, True)
@@ -588,7 +588,7 @@ ef0ce6071e21ca34208c9063443a7541
                       ->_R Sym (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R))
                      (Sym (Yesod.Core.Types.N:HandlerT[0]
                                <Foundation.App>_N <GHC.Types.IO>_N <Text.Blaze.Html.Html>_N))) -}
-217b702543984bd87391e2cffcd59168
+62b1a40f0bd597ff085df5a4a8480e7e
   getTodosDevolucaoR1 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -747,7 +747,7 @@ a1877d876290fc2714ead2ddeee74df7
            Yesod.Core.Types.GWData
              (Yesod.Routes.Class.Route Foundation.App)) #)
   {- Arity: 3, Strictness: <S,1*U><L,U><S,U> -}
-9f65177fc8b528b10821c95bf847fc7b
+d2904d8da38ef05c01ead3165e02c7aa
   getTodosDevolucaoR15 ::
     Control.Monad.Trans.Reader.ReaderT
       Database.Persist.Sql.Types.Internal.SqlBackend
@@ -756,10 +756,10 @@ a1877d876290fc2714ead2ddeee74df7
   {- Unfolding: (Handler.Devolucao.getTodosDevolucaoR17
                    Handler.Devolucao.getTodosDevolucaoR16
                    (GHC.Types.[] @ Database.Persist.Types.Base.PersistValue)) -}
-b309aa4adc69d3b55e268ec194494734
+443a824b3f189f32aadd3300d1789d44
   getTodosDevolucaoR16 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
-                   "SELECT ??,?? FROM emprestimo INNER JOIN cliente ON emprestimo.cliid=cliente.id INNER JOIN livro ON emprestimo.livid=livro.id WHERE emprestimo.data_emp IS NOT NULL;"#) -}
+                   "SELECT ?? FROM emprestimo INNER JOIN cliente ON emprestimo.cliid=cliente.id INNER JOIN livro ON emprestimo.livid=livro.id WHERE emprestimo.data_emp IS NOT NULL;"#) -}
 2b1fc8c15748b70ce71b0d2331c7adfc
   getTodosDevolucaoR17 ::
     Data.Text.Internal.Text

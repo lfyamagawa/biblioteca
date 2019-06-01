@@ -1,41 +1,40 @@
-<table>
-    <thead>
-        <h2>Livros Emprestados
+<table class="container table-striped table-hover thead-dark">
+    <thead style="background-color:silver">
         <tr>
             <th>
-                Emprestimo ID:
-                &nbsp;&nbsp;&nbsp;&nbsp;
+                <h4><strong>Emprestimo ID:
             <th>
-                Cliente ID:
-                &nbsp;&nbsp;&nbsp;&nbsp;
+                <h4><strong>Cliente ID:
             <th>
-                Livro ID:
-                &nbsp;&nbsp;&nbsp;&nbsp;
+                <h4><strong>Livro ID:
             <th>
-                Data Emprestimo:
-                &nbsp;&nbsp;&nbsp;&nbsp;
+                <h4><strong>Data Emprestimo:
             <th>
-                Data Devolucao:
-                &nbsp;&nbsp;&nbsp;&nbsp;
+                <h4><strong>Data Devolucao:
             <th>
     <tbody>
-        $forall (Entity devid emprestimo) <- devolucoes
-            <tr>
-                <td>
-                    #{show $ fromSqlKey devid}
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                <td>
-                    #{show $ fromSqlKey (emprestimoCliid emprestimo)}
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                <td>
-                    #{show $ fromSqlKey (emprestimoLivid emprestimo)}
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                <td>
-                    #{show $ (emprestimoData_emp emprestimo)}
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                <td>
-                    #{show $ (emprestimoData_dev emprestimo)}
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                <td>
-                    <form action=@{DevolverApagarR devid} method=post>
-                        <input type="submit" value="Devolver">
+        <div class="container" style="background-color:silver">
+            <center><h2><strong>Relacao para devolucoes
+            <center>
+                <a href=@{HomeR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Principal
+                    $forall (Entity devid emprestimo) <- devolucoes
+                        <tr>
+                            <td>
+                                #{show $ fromSqlKey devid}
+                            <td>
+                                #{show $ fromSqlKey (emprestimoCliid emprestimo)}
+                            <td>
+                                #{show $ fromSqlKey (emprestimoLivid emprestimo)}
+                            <td>
+                                #{show $ (emprestimoData_emp emprestimo)}
+                            <td>
+                                #{show $ (emprestimoData_dev emprestimo)}
+                            <td>
+                                <form action=@{DevolverApagarR devid} method=post>
+                                    <input type="submit" value="Devolver">
+<div>
+    <br><br>
+<div>
+        <div class="row">
+            <div class="container col-12" style="background-color:silver">
+                <center><h4><strong>Fim

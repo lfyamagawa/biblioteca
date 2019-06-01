@@ -19,7 +19,9 @@ getTodosDevolucaoR = do
         \RIGHT JOIN livro ON emprestimo.livid=livro.id \
         \WHERE emprestimo.data_emp IS NOT NULL;"
     devolucoes <- runDB $ rawSql sql_ []
-    defaultLayout $(whamletFile "templates/devolucoes.hamlet")
+    defaultLayout $ do
+        addStylesheet $ StaticR css_bootstrap_css
+        $(whamletFile "templates/devolucoes.hamlet")
 
 postDevolverApagarR :: EmprestimoId -> Handler Html
 postDevolverApagarR empid = do

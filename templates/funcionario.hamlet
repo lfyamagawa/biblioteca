@@ -1,37 +1,40 @@
-<table>
-    <thead>
+<table class="container table-striped table-hove thead-dark">
+    <thead style="background-color:silver">
         <tr>
             <th>
-                Id
-                &nbsp;&nbsp;&nbsp;&nbsp;
+                <h4><strong>Id
             <th>
-                Nome
-                &nbsp;&nbsp;&nbsp;&nbsp;
+                <h4><strong>Nome
             <th>
-                Senha
-                &nbsp;&nbsp;&nbsp;&nbsp;
+                <h4><strong>Senha
+            <th>
+            
+            <th>
                 
     <tbody>
-        <h2>Lista de funcionários<br><br>
-        <a href=@{HomeR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Principal
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <a href=@{FuncionarioR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Incluir
-        <br><br>
-        $forall (Entity funcid funcionario) <- funcionarios
-            <tr>
-                <td>
-                    <a href=@{FuncionarioPerfilR funcid}>
-                        #{show $ fromSqlKey funcid}
-                <td>
-                        &nbsp;&nbsp;&nbsp;&nbsp
-                        #{funcionarioEmail funcionario}
-                        &nbsp;&nbsp;&nbsp;&nbsp
-                <td>
-                        #{funcionarioSenha funcionario}
-                        &nbsp;&nbsp;&nbsp;&nbsp
-                <td>
-                        <a href=@{FuncionarioAlteraR funcid} class="btn btn-primary btn-sm active" role="button" aria-pressed="false">Editar
-                        &nbsp;&nbsp;&nbsp;&nbsp
-                <td>
-                    <form action=@{FuncionarioApagarR funcid} method=post>
-                        <input type="submit" value="X">
+        <div class="container" style="background-color:silver">
+            <center><h2><strong>Lista de funcionarios<br><br>
+
+            <center>
+               <a href=@{HomeR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Principal
+               <a href=@{FuncionarioR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Incluir</a>
+                <br><br>
+               $forall (Entity funcid funcionario) <- funcionarios
+                    <tr>
+                        <td>
+                            <a href=@{FuncionarioPerfilR funcid}>
+                                #{show $ fromSqlKey funcid}
+                        <td>
+                            #{funcionarioEmail funcionario}
+                        <td>
+                            #{funcionarioSenha funcionario}
+                        <td>
+                            <a href=@{FuncionarioAlteraR funcid} class="btn btn-primary btn-sm active" role="button" aria-pressed="false">Editar
+                        <td>
+                            <form action=@{FuncionarioApagarR funcid} method=post>
+                                <input type="submit" value="X">
+<div>
+    <br><br>
+<div>
+    <div class="container col-12" style="background-color:silver">
+        <center><h4><strong>Fim

@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2019-06-01 17:56:12.976104 UTC
+2019-06-01 18:08:27.319998 UTC
 
 interface aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX:Application [orphan module] 8002
-  interface hash: 1e9d816aef5f18dc0ebf68544ae1a424
+  interface hash: 60c1e66e03bc7c7257b05d21cc8ff4bd
   ABI hash: 9eb9395b021f895e9e602dbd2dfab6ff
   export-list hash: 88760f1f9acb48ffaaf15dca9d22339d
   orphan hash: 69fb11262dae83ffce14fbd96767d29f
@@ -379,12 +379,12 @@ import  -/  Foundation 4fed6a6ce02d868e609fda2d87290d7d
   appSettings 1ab9ceacdeac599ac7efaee52d9777eb
   appStatic 627c1675c6e672d8e948384aa159c4d8
   resourcesApp d201639308ba56a084764ccf129bcfaf
-import  -/  Handler.Cliente 4301181d936cbadc5f25089ba56e0da5
+import  -/  Handler.Cliente dc3d1520804150674f1d3fb4d34a6c64
   exports: 81a68f1c0e190ea07cb6fa1138da61dc
   getClienteAlteraR a0441549f9d203e67e84461435f53ad9
   getClientePerfilR 29a2e371ec82df22e75be7ca85447ecb
   getClienteR f410accfddb2c90a8c6f45d0db4cb1fa
-  getTodosClientesR 1b4030487f89ad21ddecb956ebebe11a
+  getTodosClientesR c7b01f6621092039dd6b2b5ba1f46e31
   postClienteAlteraR 832a678fb569f1e5342fd1846d56bd3c
   postClienteApagarR 41abbd6d9cbd5e54d401cfd36f01da37
   postClienteR db7df942141bfc80a6f3fb60153b05d0
@@ -401,12 +401,12 @@ import  -/  Handler.Emprestimo a108fd4b6d76453d65b9ba3200138940
   getEmprestarClienteR 6d174181d29878ab23fbb46ee540013c
   getTodosEmprestimoR 1a4213caa7ae4e5d483090161edc34b5
   postEmprestarClienteR e38fe3066420830320ba6535f654b47c
-import  -/  Handler.Funcionario 15cb80d75deee4b1afb3f64f1ef88575
+import  -/  Handler.Funcionario 8ab8458c331b4ccec78ae30eeb747710
   exports: b9ff3f3f1f68b6dbc2033fbca5fab8bc
   getFuncionarioAlteraR 3a2c54068f7ab0716b3de24b498f9ba3
-  getFuncionarioPerfilR 302b05de6cb1d4857fc171b149911f10
-  getFuncionarioR 67f439c6526a1c5e87572405eebe8c76
-  getTodosFuncionariosR d295e168ff5d5aa8fd23277a307a9d06
+  getFuncionarioPerfilR 539415e569e9590e520a602fc0b542db
+  getFuncionarioR 4a2354f1cd4954bfdd7e89485d241850
+  getTodosFuncionariosR 13ab943bc0d61b4cb720ec4d14354938
   postFuncionarioAlteraR e8e0effa22de4ff4a4dab2dc0b6b1691
   postFuncionarioApagarR d734470361d5b3e11af7cbfd7bb31bdf
   postFuncionarioR 8ab6d6be7e2a1fef79ac47ea60a8b515

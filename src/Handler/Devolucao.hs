@@ -14,7 +14,7 @@ import Database.Persist.Sql
 
 getTodosDevolucaoR :: Handler Html
 getTodosDevolucaoR = do
-    let sql_ = "SELECT ??,?? FROM emprestimo \
+    let sql_ = "SELECT ??,?? FROM livro \
         \RIGHT JOIN cliente ON emprestimo.cliid=cliente.id \
         \RIGHT JOIN livro ON emprestimo.livid=livro.id \
         \WHERE emprestimo.data_emp IS NOT NULL;"

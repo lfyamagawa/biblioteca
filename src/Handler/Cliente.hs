@@ -24,11 +24,12 @@ getClienteR = do
         addStylesheet $ StaticR css_bootstrap_css
         [whamlet|
             <form action=@{ClienteR} method=post>
-                <center><h3>Cadastro de Cliente</h3>
-                <center>^{widget}
-                <center><input type="submit" value="cadastrar">
-                <center><a href=@{HomeR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Principal
-                <center><a href=@{TodosClientesR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Lista Todos
+                <center>
+                    <h3>Cadastro de Cliente</h3>
+                    ^{widget}
+                    <input type="submit" value="cadastrar">
+                    <a href=@{HomeR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Principal
+                    <a href=@{TodosClientesR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Lista Todos
         |]
 
 postClienteR :: Handler Html

@@ -14,13 +14,9 @@ import Database.Persist.Sql
 
 getTodosDevolucaoR :: Handler Html
 getTodosDevolucaoR = do
-    -- let sql_ = "SELECT ??,??,??,??,?? FROM emprestimo \
-    --    \INNER JOIN cliente ON emprestimo.cliid=cliente.id \
-    --    \INNER JOIN livro ON emprestimo.livid=livro.id \
-    --    \WHERE emprestimo.data_emp IS NOT NULL;"
-    let sql_ = "SELECT ?? FROM emprestimo \
-        \INNER JOIN cliente ON emprestimo.cliid=cliente.id \
-        \INNER JOIN livro ON emprestimo.livid=livro.id \
+    let sql_ = "SELECT ??,?? FROM emprestimo \
+        \RIGHT JOIN cliente ON emprestimo.cliid=cliente.id \
+        \RIGHT JOIN livro ON emprestimo.livid=livro.id \
         \WHERE emprestimo.data_emp IS NOT NULL;"
     devolucoes <- runDB $ rawSql sql_ []
     defaultLayout $(whamletFile "templates/devolucoes.hamlet")

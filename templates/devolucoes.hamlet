@@ -1,27 +1,41 @@
 <table>
     <thead>
+        <h2>Livros Emprestados
         <tr>
             <th>
                 Emprestimo ID:
+                &nbsp;&nbsp;&nbsp;&nbsp;
             <th>
                 Cliente ID:
+                &nbsp;&nbsp;&nbsp;&nbsp;
             <th>
                 Livro ID:
+                &nbsp;&nbsp;&nbsp;&nbsp;
             <th>
                 Data Emprestimo:
+                &nbsp;&nbsp;&nbsp;&nbsp;
             <th>
                 Data Devolucao:
+                &nbsp;&nbsp;&nbsp;&nbsp;
+            <th>
     <tbody>
         $forall (Entity devid emprestimo) <- devolucoes
             <tr>
                 <td>
                     #{show $ fromSqlKey devid}
+                &nbsp;&nbsp;&nbsp;&nbsp;
                 <td>
                     #{show $ fromSqlKey (emprestimoCliid emprestimo)}
+                    &nbsp;&nbsp;&nbsp;&nbsp;
                 <td>
                     #{show $ fromSqlKey (emprestimoLivid emprestimo)}
+                    &nbsp;&nbsp;&nbsp;&nbsp;
                 <td>
                     #{show $ (emprestimoData_emp emprestimo)}
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                <td>
+                    #{show $ (emprestimoData_dev emprestimo)}
+                    &nbsp;&nbsp;&nbsp;&nbsp;
                 <td>
                     <form action=@{DevolverApagarR devid} method=post>
                         <input type="submit" value="Devolver">

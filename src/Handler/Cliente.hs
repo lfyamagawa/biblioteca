@@ -24,14 +24,15 @@ getClienteR = do
         addStylesheet $ StaticR css_bootstrap_css
         [whamlet|
             <form action=@{ClienteR} method=post>
-                <h3>Cadastro de Cliente</h3>
-                <br><h3>-------------------</h3><br>
-                ^{widget}
-                <input type="submit" value="cadastrar">
-                <br><br>
-                <a href=@{HomeR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Principal
+                <center><h3>Cadastro de Cliente</h3>
+                <center><br><h3>-------------------</h3><br>
+                <center>^{widget}
+                <center><input type="submit" value="cadastrar">
                 &nbsp;&nbsp;&nbsp;&nbsp;
-                <a href=@{TodosClientesR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Lista Todos
+                <br><br>
+                <center><a href=@{HomeR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Principal
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <center><a href=@{TodosClientesR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Lista Todos
         |]
 
 postClienteR :: Handler Html
@@ -57,16 +58,17 @@ getClientePerfilR cliid = do
         addStylesheet $ StaticR css_bootstrap_css
         [whamlet|
             <h1>
-                Cliente #{clienteNome cliente}
+                 <center>Cliente #{clienteNome cliente}
             <div>
-                RG: #{clienteRg cliente}
+                <center>RG: #{clienteRg cliente}
             <div>
-                CPF: #{clienteCpf cliente}
+                <center>CPF: #{clienteCpf cliente}
             <div>
-                Endereco: #{clienteEndereco cliente}
+                <center>Endereco: #{clienteEndereco cliente}
             <div>
-                Telefone: #{clienteTelefone cliente}
-            <br><br><a href=@{TodosClientesR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Voltar
+                <center>Telefone: #{clienteTelefone cliente}
+                <br><br>
+                <a href=@{TodosClientesR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Voltar
         |]
 
 postClienteApagarR :: ClienteId -> Handler Html
@@ -84,8 +86,9 @@ getClienteAlteraR cliid = do
         [whamlet|
             <form action=@{ClienteAlteraR cliid} method=post>
                 ^{widget}
-                <input type="submit" value="Atualizar">
-                <br><br><a href=@{TodosClientesR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Voltar
+                <center><input type="submit" value="Atualizar">
+                <br><br>
+                <center><a href=@{TodosClientesR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Voltar
         |]
 
 postClienteAlteraR :: ClienteId -> Handler Html

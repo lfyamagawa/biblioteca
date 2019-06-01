@@ -16,13 +16,13 @@ getHomeR = do
         addStylesheet $ StaticR css_bootstrap_css
         [whamlet|
             $maybe sessao <- sess
-                <h4><center><strong>Gestão de bibliotecas
-                <h5><center><strong>Ola #{sessao}
+                <h2><center><strong>Gestão de bibliotecas
+                <h3><center><strong>Ola #{sessao}
             $nothing
                 <h3>Gestão de bibliotecas
             <ul class="list-group">
-                    <br><center><h4>------- Funcionário ---------</h4>
                 <li class="list-group-item">
+                    <br><center><h4>------- Funcionário ---------</h4>
                     <center><a href=@{FuncionarioR}>
                         <center>Cadastro de Funcionario
                 <li class="list-group-item">

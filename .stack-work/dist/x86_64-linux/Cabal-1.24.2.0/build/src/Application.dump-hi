@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2019-06-01 19:17:41.350808 UTC
+2019-06-01 19:27:00.532329 UTC
 
 interface aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX:Application [orphan module] 8002
-  interface hash: 7c7576c74dfe045fdd800df4e880844a
+  interface hash: 58059284dcad62db5400251effe52f3d
   ABI hash: 9eb9395b021f895e9e602dbd2dfab6ff
   export-list hash: 88760f1f9acb48ffaaf15dca9d22339d
   orphan hash: 69fb11262dae83ffce14fbd96767d29f
@@ -379,11 +379,11 @@ import  -/  Foundation 4fed6a6ce02d868e609fda2d87290d7d
   appSettings 1ab9ceacdeac599ac7efaee52d9777eb
   appStatic 627c1675c6e672d8e948384aa159c4d8
   resourcesApp d201639308ba56a084764ccf129bcfaf
-import  -/  Handler.Cliente b0e7e1aae777918a73a4f5450cf6ed1e
+import  -/  Handler.Cliente 8b22598c0d0f87f7bf1eacd273b3d1e4
   exports: 81a68f1c0e190ea07cb6fa1138da61dc
   getClienteAlteraR a0441549f9d203e67e84461435f53ad9
   getClientePerfilR 29a2e371ec82df22e75be7ca85447ecb
-  getClienteR f410accfddb2c90a8c6f45d0db4cb1fa
+  getClienteR 7a7995a5f653f2a1f93096dd89a9b00a
   getTodosClientesR c7b01f6621092039dd6b2b5ba1f46e31
   postClienteAlteraR 408ec27efbb6cab48b18ca22fa76947f
   postClienteApagarR 56b36f0764823ca75282a7529ea7e722
@@ -422,10 +422,10 @@ import  -/  Handler.Livro fc1ffd2d505baab7070c1232b40229b3
   postLivroAlteraR 95e9abcb6ae8255b1978db841d159d88
   postLivroApagarR d8dbf270597e7c641cf76e03a96c3137
   postLivroR 0a925b8cc891e75dc1113d693d476aad
-import  -/  Handler.Login 684115ce8f19bfdf3a139f1f9314ec98
+import  -/  Handler.Login e1a7b12349eaed458716fe20deb28916
   exports: 062839076225c0949cdadaa71c63f7ad
   getAdminR b9d935ca01cb3b333614d956056faff7
-  getLoginR 9fe66814c948ab9dcbce1ec13eba8431
+  getLoginR 719c2ea7cb9d73c2625fbfa2106d4a2a
   postLoginR 5db99ecca1f994a127a8788f3613fd9d
   postLogoutR 0ff054144ed107969a54b32170aa1b44
 import  -/  Import 3c12d840e4536e2e1bedd3687372c77c

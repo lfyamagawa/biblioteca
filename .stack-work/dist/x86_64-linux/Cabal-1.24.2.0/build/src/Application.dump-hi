@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2019-06-01 18:08:27.319998 UTC
+2019-06-01 18:21:07.242743 UTC
 
 interface aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX:Application [orphan module] 8002
-  interface hash: 60c1e66e03bc7c7257b05d21cc8ff4bd
+  interface hash: 3b85e849ef1a9f851ca437d65f073695
   ABI hash: 9eb9395b021f895e9e602dbd2dfab6ff
   export-list hash: 88760f1f9acb48ffaaf15dca9d22339d
   orphan hash: 69fb11262dae83ffce14fbd96767d29f
@@ -396,11 +396,11 @@ import  -/  Handler.Devolucao dbbc8568a8b8c5cc14f88dcccc051454
   exports: 69f63e9f34c463f6dbba3dbed0706767
   getTodosDevolucaoR a5c6e2c6191c69f7b0f561754f5a8716
   postDevolverApagarR bbf145c08e1c05ae6ff5b31a3cfc9125
-import  -/  Handler.Emprestimo a108fd4b6d76453d65b9ba3200138940
-  exports: b19a8218ee0949f39693c67e54d5730d
+import  -/  Handler.Emprestimo 08f37ec1be6754c67f907da0a5fbbac8
+  exports: 13c035d573c7adf94ccb3520efc00c38
   getEmprestarClienteR 6d174181d29878ab23fbb46ee540013c
-  getTodosEmprestimoR 1a4213caa7ae4e5d483090161edc34b5
-  postEmprestarClienteR e38fe3066420830320ba6535f654b47c
+  getTodosEmprestimoR 0294912462d38899a1829a5978b8daae
+  postEmprestarClienteR ef366ff3367ca146d1d018c52a0ca32e
 import  -/  Handler.Funcionario 8ab8458c331b4ccec78ae30eeb747710
   exports: b9ff3f3f1f68b6dbc2033fbca5fab8bc
   getFuncionarioAlteraR 3a2c54068f7ab0716b3de24b498f9ba3

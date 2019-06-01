@@ -1,61 +1,50 @@
-<table>
-    <thead>
+<table class="container table-striped table-hover thead-dark">
+    <thead style="background-color:silver">
         <tr>
             <th>
-                Id
-                &nbsp;&nbsp;&nbsp;&nbsp
+                <h4><strong>Id
             <th>
-                Titulo
-                &nbsp;&nbsp;&nbsp;&nbsp
+                <h4><strong>Titulo
             <th>
-                Autor
-                &nbsp;&nbsp;&nbsp;&nbsp
+                <h4><strong>Autor
             <th>
-                Publicacao
-                &nbsp;&nbsp;&nbsp;&nbsp
+                <h4><strong>Publicacao
             <th>
-                Descricao
-                &nbsp;&nbsp;&nbsp;&nbsp
+                <h4><strong>Descricao
             <th>    
-                Assunto
-                &nbsp;&nbsp;&nbsp;&nbsp
-            <th>
-                Emprestado
-                &nbsp;&nbsp;&nbsp;&nbsp;
+                <h4><strong>Assunto
             <th>
             
             <th>
 
-            <th>
-                
     <tbody>
-        <h2>Lista de Livros para Emprestimo<br><br>
-        <a href=@{HomeR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Principal
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <br><br>
-        $forall (Entity livid livro) <- livros
-            <tr>
-                <td>
-                    #{show $ fromSqlKey livid}
-                <td>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    #{livroTitulo livro}
-                <td>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    #{livroAutor livro}
-                <td>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    #{livroPublicacao livro}
-                <td>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    #{livroDescricao livro}
-                <td>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    #{livroAssunto livro}
-                <td>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="container" style="background-color:silver">
+            <center><h2>Lista de Livros para Emprestimo<br>
 
-                <td>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    <form action=@{EmprestarClienteR livid} method=get>
-                        <input type="submit" value="Emprestar">
+            <center>
+                <a href=@{HomeR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Principal
+                <br><br>
+                    $forall (Entity livid livro) <- livros
+                        <tr>
+                            <td>
+                                #{show $ fromSqlKey livid}
+                            <td>
+                                #{livroTitulo livro}
+                            <td>
+                                #{livroAutor livro}
+                            <td>
+                                #{livroPublicacao livro}
+                            <td>
+                                #{livroDescricao livro}
+                            <td>
+                                #{livroAssunto livro}
+                            <td>
+                            <td>
+                    
+                                <form action=@{EmprestarClienteR livid} method=get>
+                                    <input type="submit" value="Emprestar">
+<div>
+    <br><br>
+        <div class="row">
+            <div class="container col-12" style-"background-color:silver">
+                <center><h4><strong>Fim

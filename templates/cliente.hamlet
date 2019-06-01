@@ -20,7 +20,7 @@
                 
        <tbody>
             <div class="container" style="background-color:silver">
-                <center><h2><strong>Lista de Clientes<br><br>
+                <center><h2><strong>Lista de Clientes<br>
                               
                 <center>
                     <a href=@{HomeR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Principal

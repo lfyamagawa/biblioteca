@@ -28,7 +28,9 @@ getTodosEmprestimoR = do
     let sql = "SELECT ?? FROM livro LEFT JOIN emprestimo ON livro.id=emprestimo.livid \
             \WHERE emprestimo.data_emp IS NULL;"
     livros <- runDB $ rawSql sql []
-    defaultLayout $(whamletFile "templates/emprestimos.hamlet")
+    defaultLayout $ do
+        addStylesheet $ StaticR css_bootstrap_css
+        $(whamletFile "templates/emprestimos.hamlet")
 
 getEmprestarClienteR :: LivroId -> Handler Html
 getEmprestarClienteR livid = do

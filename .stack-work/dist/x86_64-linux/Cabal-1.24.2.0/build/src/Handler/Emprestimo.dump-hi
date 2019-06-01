@@ -1,12 +1,12 @@
 
 ==================== FINAL INTERFACE ====================
-2019-06-01 12:44:00.183069 UTC
+2019-06-01 16:03:21.184247 UTC
 
 interface aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX:Handler.Emprestimo 8002
-  interface hash: 16538c4501270af5c4d1f2c1c9cfcdcc
-  ABI hash: 81bd0ec821bdb3a7404892d16bbef9bb
-  export-list hash: 7cade49a917d64f506c20102586393ef
-  orphan hash: c388c6fea1b2a71baf12c74e213ff9e7
+  interface hash: e56bed8ed575e4a698434bc1c86c2e40
+  ABI hash: a108fd4b6d76453d65b9ba3200138940
+  export-list hash: b19a8218ee0949f39693c67e54d5730d
+  orphan hash: 790125d86c28f9132fb47fec5f3721f9
   flag hash: f123df0d0ff34442f243f0943d78ec4c
   sig of: Nothing
   used TH splices: True
@@ -340,26 +340,25 @@ family instance modules: adjunctions-4.3@adjunctions-4.3-A5jfd1yrmaY4DRMJuiquBp:
                          yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Types
                          yesod-static-1.5.3.1@yesod-static-1.5.3.1-3fPHfGwGXLD6UjosrxUpf7:Yesod.Static
                          zlib-0.6.1.2@zlib-0.6.1.2-7negTfm2ujt1gW4wr40MUp:Codec.Compression.Zlib.Stream
-import  -/  Foundation de9540d2094dcecd05f029661baf23d6
-  EmprestarClienteR 113093d61265322bdad96b24de15d571
-  Form c474ea94ce48b2c1c65570ffbc09369b
-  Handler 2de5575a173c77d83c53ec176aa326f8
-  HomeR bf762b2ab366e5c522455ec0f5ce6889
-  StaticR c39afe6ee55a793578825ca190be085f
-import  -/  Import b050ca37eddf81c0b22db262afe123dc
-  exports: 7e45d41e666a810bc7f712323990c2a4
-import  -/  Model ca0a41839802f18c4468f82b9104a2ac
+import  -/  Foundation 4fed6a6ce02d868e609fda2d87290d7d
+  EmprestarClienteR c663ce522941d6167efe9549eed734a9
+  Form 26ee10d51091a2c1c5173f356f15abc5
+  Handler 7d8a11bd33b9e2126a9dfe1a56e4a9d6
+  HomeR a1ca682e39bdcf9db803a327759c7c35
+  StaticR b61a74d95189608c16720a9298017193
+import  -/  Import 3c12d840e4536e2e1bedd3687372c77c
+  exports: bf77b56e5e0ff2b65a820e08bfa63c14
+import  -/  Model 0322a236513b611476018acb9209b978
   ClienteNome 1a5dc5e17ed6d66d59b968fef905eb31
-  Emprestimo f021c8fec3268605d946e50e4e60acbd
-  Emprestimo b16349aef463ea38e3bc2bc521613eba
-  LivroId fac869dd482e1eb50437f0ad5481b4f8
+  Emprestimo c5663d1460cb0b038434d433fd5ca240
+  Emprestimo 58276e9429454230fe42cfc41d049957
+  LivroId ffcdf4452e1e688c69787b5b12d66a61
   clienteNome 3bea657df4638380cf71e84a4bc2e0ee
-  livroAssunto b9fde7e41aada167d0036123dbead590
-  livroAutor 7861c3a967822856ccd33292c91d5da4
-  livroDescricao f4b5c163dfc7552439c98bec0f04e7b8
-  livroEmprestado fd11c660a1e5d41291919aca007362a9
-  livroPublicacao 2e5899293e2767a9cab55a1d000c8089
-  livroTitulo 9033a9940862d0604b8932b47a5e63e5
+  livroAssunto e45ceb80ec724d60d917ec1f46601ca3
+  livroAutor 1709c43ac7faa7c93cecaeb0ca4e2506
+  livroDescricao 48eac9c02a25d9d992d00be0bf5ce55d
+  livroPublicacao 640e51029245a1a24196a0368c29489b
+  livroTitulo e77ab55e2dbacd7990ee3cba930ea365
 import  -/  Settings.StaticFiles 3ad9e40099153eabf23a2de0893be5c8
   css_bootstrap_css 7fb70e8cf207ea213dca2425cf051440
 import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
@@ -450,7 +449,7 @@ c52255e119babcb479dc0e6922f56f35
                      @ GHC.Types.IO
                      @ site
                      Handler.Emprestimo.$s$fApplicativeHandlerT_$dMonad) -}
-b9a3c8639a52502c74880d82f3e6cb7c
+10ff95ce88916fb09403f40474447f2c
   $s$fFunctorAForm1 ::
     GHC.Base.Monad
       (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
@@ -677,7 +676,7 @@ a93341fa4d154410de795fc58c9c4a34
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 Handler.Emprestimo.$s$fMonadBasebHandlerT -}
-749ef02f0cdfa8405528975ac939166c
+9c90a9e3755cdefe1d6e9ed2f50a2f76
   $s$fRawSqlEntity ::
     Database.Persist.Sql.Class.RawSql
       (Database.Persist.Class.PersistEntity.Entity Model.Livro)
@@ -714,7 +713,7 @@ a93341fa4d154410de795fc58c9c4a34
                        `cast`
                      (Database.Persist.Class.PersistStore.IsPersistBackend
                         (Sym (Model.D:R:PersistEntityBackendLivro[0])))_R) -}
-5cfea7e2f502384f62aea01ee875698e
+054dc073a8d525034cc94100495b43b8
   $s$fRawSqlEntity_$d~ ::
     Database.Persist.Class.PersistEntity.PersistEntityBackend
       Model.Livro
@@ -728,7 +727,7 @@ a93341fa4d154410de795fc58c9c4a34
                           <*>_N) <Database.Persist.Class.PersistEntity.PersistEntityBackend
                                     Model.Livro>_N <Database.Persist.Class.PersistEntity.PersistEntityBackend
                                                       Model.Livro>_N) -}
-acc5155e510257bd949053f03299875d
+a00dba39234d07f77a57b800b2e1dd73
   $s$fRawSqlEntity_$d~~ ::
     Database.Persist.Class.PersistEntity.PersistEntityBackend
       Model.Livro
@@ -744,7 +743,7 @@ acc5155e510257bd949053f03299875d
                         Model.Livro)
                    @~ <Database.Persist.Class.PersistEntity.PersistEntityBackend
                          Model.Livro>_N) -}
-6e2319ecf2bca339e86b2d06f4b6e11b
+f4bca214b9b7ade9fddd7eaa4541420b
   $sdayField ::
     Yesod.Form.Types.Field
       (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
@@ -789,7 +788,7 @@ c974fa0976818cb64f53d7504af05b09
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    "aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX"#) -}
-dd048285647c16792cae5b0fe8e01c52
+ea7233b4b363292916d0a3d22d2baab5
   cliLista ::
     Yesod.Core.Types.HandlerT
       Foundation.App
@@ -811,7 +810,7 @@ dd048285647c16792cae5b0fe8e01c52
                                <GHC.Types.IO>_N
                                <Yesod.Form.Fields.OptionList
                                   (Database.Persist.Class.PersistEntity.Key Model.Cliente)>_N))) -}
-f864b7102e383a0a96df9b519b200d55
+5a0c981ee3d65b7e033bcdc2b1fbf916
   cliLista1 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -864,7 +863,7 @@ f864b7102e383a0a96df9b519b200d55
                       <Yesod.Form.Fields.OptionList
                          (Database.Persist.Class.PersistEntity.Key Model.Cliente)>_R)
                    ipv }) -}
-8baa423d170819c3e36db7c9feb71b88
+953fc04f10328f179dc73fa15254c50b
   cliLista10 ::
     Database.Persist.Sql.Types.Internal.SqlBackend
     GHC.Types.~~ Database.Persist.Class.PersistStore.BaseBackend
@@ -895,7 +894,7 @@ f864b7102e383a0a96df9b519b200d55
                   Database.Persist.Class.PersistEntity.entityKey
                     @ Model.Cliente
                     ent)) -}
-9ac333566fa902dc6e6b8480d4c395c9
+36cc19a1e87c963e149a3e5d27592d1a
   cliLista3 ::
     Yesod.Persist.Core.YesodPersistBackend Foundation.App
     -> Yesod.Core.Types.HandlerT
@@ -977,7 +976,7 @@ f864b7102e383a0a96df9b519b200d55
                                 <GHC.Types.IO>_N
                                 <[Database.Persist.Class.PersistEntity.Entity
                                     Model.Cliente]>_N)))) -}
-fbadb757584dad61fd288e3ef9fd5e8b
+b305f895246f2464cdcca782b57d888b
   cliLista4 ::
     Control.Monad.Trans.Reader.ReaderT
       Database.Persist.Sql.Types.Internal.SqlBackend
@@ -1045,7 +1044,7 @@ ca109e3cd2b54a9794fcfd2084ac4333
                    @ Data.Text.Internal.Text
                    @ Data.Text.Internal.Text
                    @~ <Data.Text.Internal.Text>_N) -}
-2c8b62c928b73d4fee7c3b16a46aa5f1
+ce70fcee50cf89f6f93e8a15f0619fcd
   cliLista9 ::
     (Database.Persist.Class.PersistEntity.PersistEntity Model.Cliente,
      Database.Persist.Sql.Types.Internal.SqlBackend
@@ -1058,7 +1057,7 @@ ca109e3cd2b54a9794fcfd2084ac4333
                             <*>_N) <Database.Persist.Sql.Types.Internal.SqlBackend>_N <Database.Persist.Class.PersistStore.BaseBackend
                                                                                          (Yesod.Persist.Core.YesodPersistBackend
                                                                                             Foundation.App)>_N))) -}
-39649b9998de76d28850122f5d71cd82
+bb4f9ece25072e8209a26c0b7590a03a
   formEmpr :: Model.LivroId -> Foundation.Form Model.Emprestimo
   {- Arity: 4, Strictness: <L,U><L,U><L,U><L,U>,
      Unfolding: InlineRule (0, True, True)
@@ -1081,7 +1080,7 @@ ca109e3cd2b54a9794fcfd2084ac4333
                                                <GHC.Types.IO>_N <Foundation.App>_N))
                                      <GHC.Types.IO>_N
                                      <()>_N)_N)_N)) -}
-6a735df6a9f301af68e93732c70bfd90
+57720f44a244e476b456c4c1d3df5845
   formEmpr1 ::
     Model.LivroId
     -> Text.Blaze.Internal.Markup
@@ -1285,7 +1284,7 @@ d6df08e3a0d4964404352727468f8288
 ddc088c25228e239850684726b9923dc
   formEmpr11 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "Data Emprestimo: "#) -}
-97202a51dbcd6f6a452395ed37c57566
+ebbe3e57b134ae4ed4321344e70d196c
   formEmpr12 :: Yesod.Form.Types.FieldSettings Foundation.App
   {- Unfolding: (Yesod.Form.Types.FieldSettings
                    @ Foundation.App
@@ -1296,7 +1295,7 @@ ddc088c25228e239850684726b9923dc
                    (GHC.Base.Nothing @ Data.Text.Internal.Text)
                    (GHC.Types.[]
                       @ (Data.Text.Internal.Text, Data.Text.Internal.Text))) -}
-ec466bce616dd6143937495b08107b82
+4bb11204f873d0d5d047a027b3f2a7aa
   formEmpr13 :: Text.Shakespeare.I18N.SomeMessage Foundation.App
   {- Unfolding: (Text.Shakespeare.I18N.SomeMessage
                    @ Foundation.App
@@ -1335,7 +1334,7 @@ ec466bce616dd6143937495b08107b82
 b2f24f204d38f3883e3f290435a7c766
   formEmpr16 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "Cliente: "#) -}
-f607815acdc78dee83e08b9ed483bb40
+32dfc6621a837ba548db8eab8ccf169b
   formEmpr17 ::
     Yesod.Form.Types.Field
       (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
@@ -1356,7 +1355,7 @@ f607815acdc78dee83e08b9ed483bb40
                                   <Yesod.Form.Fields.OptionList
                                      (Database.Persist.Class.PersistEntity.Key
                                         Model.Cliente)>_N)))) -}
-7c2bcacdd49b9fb96de7656761ffcb35
+7c84c65d6612663ff4540e11bf2fb12a
   formEmpr18 ::
     Yesod.Core.Types.HandlerT
       Foundation.App
@@ -1374,7 +1373,7 @@ f607815acdc78dee83e08b9ed483bb40
                      `cast`
                    (Sym (Text.Shakespeare.I18N.N:RenderMessage[0]
                              <Foundation.App>_N <Yesod.Form.Types.FormMessage>_N))) -}
-a1517e1f7ee0c65c7119ac9c6c400f3d
+38f92c37f4925e6d4077d9a167880d9c
   formEmpr2 ::
     Yesod.Form.Types.AForm
       (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
@@ -1402,7 +1401,7 @@ a1517e1f7ee0c65c7119ac9c6c400f3d
                    Handler.Emprestimo.$sdayField
                    Handler.Emprestimo.formEmpr3
                    (GHC.Base.Nothing @ Data.Time.Calendar.Days.Day)) -}
-2cbd53accd8026213986d7bc31fb5998
+c5b680febb49ccc8659f4e2988ff75fa
   formEmpr3 :: Yesod.Form.Types.FieldSettings Foundation.App
   {- Unfolding: (Yesod.Form.Types.FieldSettings
                    @ Foundation.App
@@ -1413,7 +1412,7 @@ a1517e1f7ee0c65c7119ac9c6c400f3d
                    (GHC.Base.Nothing @ Data.Text.Internal.Text)
                    (GHC.Types.[]
                       @ (Data.Text.Internal.Text, Data.Text.Internal.Text))) -}
-fb99fc772ea5d688a475eead7ae1d15e
+1a2b24d9fcec72f5068e6da6783bf62f
   formEmpr4 :: Text.Shakespeare.I18N.SomeMessage Foundation.App
   {- Unfolding: (Text.Shakespeare.I18N.SomeMessage
                    @ Foundation.App
@@ -1444,7 +1443,7 @@ fb99fc772ea5d688a475eead7ae1d15e
 35367d6de1dc396e0b90996118c190c8
   formEmpr6 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "Data Devolucao: "#) -}
-37201b661f7e4b3325e2f25e5049d470
+e32d28ba4b4d9348a05cd110ace83d8e
   formEmpr7 ::
     Yesod.Form.Types.AForm
       (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
@@ -1472,7 +1471,7 @@ fb99fc772ea5d688a475eead7ae1d15e
                    Handler.Emprestimo.$sdayField
                    Handler.Emprestimo.formEmpr8
                    (GHC.Base.Nothing @ Data.Time.Calendar.Days.Day)) -}
-51c8bd25948ae8ace0f7408f881b930b
+8491e1f581abb86ed43c7bed85682f8f
   formEmpr8 :: Yesod.Form.Types.FieldSettings Foundation.App
   {- Unfolding: (Yesod.Form.Types.FieldSettings
                    @ Foundation.App
@@ -1483,7 +1482,7 @@ fb99fc772ea5d688a475eead7ae1d15e
                    (GHC.Base.Nothing @ Data.Text.Internal.Text)
                    (GHC.Types.[]
                       @ (Data.Text.Internal.Text, Data.Text.Internal.Text))) -}
-b0652149221f3114312202bf16d39848
+96b6672b9bd5f4f03bdedd9316170ea5
   formEmpr9 :: Text.Shakespeare.I18N.SomeMessage Foundation.App
   {- Unfolding: (Text.Shakespeare.I18N.SomeMessage
                    @ Foundation.App
@@ -1494,7 +1493,7 @@ b0652149221f3114312202bf16d39848
                    (Sym (Text.Shakespeare.I18N.N:RenderMessage[0]
                              <Foundation.App>_N <Data.Text.Internal.Text>_N))
                    Handler.Emprestimo.formEmpr10) -}
-bb1b23af6a55eb61d79ce7e064ca3507
+783d1e4b73378b59f32d9018b88edfa9
   formEmpr_ds ::
     Yesod.Form.Types.AForm
       (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
@@ -1523,11 +1522,11 @@ bb1b23af6a55eb61d79ce7e064ca3507
                    Handler.Emprestimo.formEmpr12
                    (GHC.Base.Nothing
                       @ (Database.Persist.Class.PersistEntity.Key Model.Cliente))) -}
-55c9f8e5cd67228d267771718d4cf172
+6d174181d29878ab23fbb46ee540013c
   getEmprestarClienteR ::
     Model.LivroId -> Foundation.Handler Text.Blaze.Html.Html
   {- Arity: 1, Strictness: <L,U(U)> -}
-6dbe7d0ea4c811fb19d0be27492aaf95
+1a4213caa7ae4e5d483090161edc34b5
   getTodosEmprestimoR :: Foundation.Handler Text.Blaze.Html.Html
   {- Arity: 2, Strictness: <L,U><S,U>,
      Unfolding: InlineRule (0, True, True)
@@ -1539,7 +1538,7 @@ bb1b23af6a55eb61d79ce7e064ca3507
                       ->_R Sym (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R))
                      (Sym (Yesod.Core.Types.N:HandlerT[0]
                                <Foundation.App>_N <GHC.Types.IO>_N <Text.Blaze.Html.Html>_N))) -}
-4427e87773824563b085a98351e6a0bd
+1507fc518e6835f2ee5deb24298fe129
   getTodosEmprestimoR1 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -1731,7 +1730,7 @@ bb1b23af6a55eb61d79ce7e064ca3507
                    `cast`
                  (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R)
                    ipv }) -}
-3ba3fa1a3ac3aa189d6174ef0d2287fe
+84b013f055002c967daa131eb1a2dae8
   getTodosEmprestimoR10 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -1748,7 +1747,7 @@ bb1b23af6a55eb61d79ce7e064ca3507
                                Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
                    (eta41 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
                  Handler.Emprestimo.getTodosEmprestimoR11 eta41) -}
-8d2c43e07efc9e84b50a6411470312a7
+9482bf9524a4504080fb9b3e63bda71d
   getTodosEmprestimoR11 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -1825,7 +1824,7 @@ e938f95183d4f26d9f29c4cf5382a0d3
                    "\" role=\"button\" aria-pressed=\"true\">Principal</a>\n\
                    \&nbsp;&nbsp;&nbsp;&nbsp;\n\
                    \<br><br></br>\n"#) -}
-1072c303f2c9ee788ff73a79bb2ebbbb
+cfadc938aa49f16986509ecdc3f21048
   getTodosEmprestimoR15 ::
     ()
     -> Yesod.Core.Types.HandlerData
@@ -1843,7 +1842,7 @@ e938f95183d4f26d9f29c4cf5382a0d3
                                Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))[OneShot]
                    (eta41 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
                  (# eta41, Handler.Emprestimo.getTodosEmprestimoR16 #)) -}
-74be85d10876e8497867620daeaca1ce
+f087311a89986f7fa5745a5d5d88e618
   getTodosEmprestimoR16 ::
     ((),
      Yesod.Core.Types.GWData
@@ -1857,7 +1856,7 @@ e938f95183d4f26d9f29c4cf5382a0d3
                      (Yesod.Routes.Class.Route
                         (Sym (Yesod.Core.Class.Handler.D:R:HandlerSiteWidgetT[0]
                                   <GHC.Types.IO>_N <Foundation.App>_N)))_R)_R)) -}
-957b0ea54ee3b403bfd88e38dd20372d
+2c99ddbbe65e0f85938da3325c3991b6
   getTodosEmprestimoR17 ::
     Yesod.Core.Types.GWData (Yesod.Routes.Class.Route Foundation.App)
   {- Unfolding: (Yesod.Core.Types.GWData
@@ -1899,7 +1898,7 @@ e938f95183d4f26d9f29c4cf5382a0d3
                      `cast`
                    (Sym (Yesod.Core.Types.N:Head[0]
                              <Yesod.Routes.Class.Route Foundation.App>_R))) -}
-244635d370dc0dd885ca1b7488ee0fc6
+2b63ac0fb054040aa9c8c42249c17069
   getTodosEmprestimoR18 ::
     (Yesod.Routes.Class.Route Foundation.App
      -> [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
@@ -1915,7 +1914,7 @@ e938f95183d4f26d9f29c4cf5382a0d3
   {- Strictness: m5,
      Unfolding: (Text.Blaze.Internal.PreEscaped
                    Handler.Emprestimo.getTodosEmprestimoR20) -}
-19ebec86ad7bb9d1833713f7f8a63333
+e2681834ccf03dbe1b065acc7630528e
   getTodosEmprestimoR2 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -1942,7 +1941,7 @@ e938f95183d4f26d9f29c4cf5382a0d3
   {- Unfolding: (Data.Text.Show.unpackCString#
                    "</tbody>\n\
                    \</table>\n"#) -}
-619ce424c06209bf55cb53b309764695
+bbc48fe0fcf40da8ef6a92825031c81b
   getTodosEmprestimoR22 ::
     [Database.Persist.Class.PersistEntity.Entity Model.Livro]
     -> Yesod.Core.Types.HandlerData
@@ -1953,7 +1952,7 @@ e938f95183d4f26d9f29c4cf5382a0d3
            Yesod.Core.Types.GWData
              (Yesod.Routes.Class.Route Foundation.App)) #)
   {- Arity: 3, Strictness: <S,1*U><L,U><S,U> -}
-f170d7d66a64eeaf2b9a5df61ba8b781
+ba0ade7d118a136920d8d179b78d0810
   getTodosEmprestimoR23 ::
     Control.Monad.Trans.Reader.ReaderT
       Database.Persist.Sql.Types.Internal.SqlBackend
@@ -1966,7 +1965,7 @@ f170d7d66a64eeaf2b9a5df61ba8b781
   getTodosEmprestimoR24 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    "SELECT ?? FROM livro LEFT JOIN emprestimo ON livro.id=emprestimo.livid WHERE emprestimo.data_emp IS NULL;"#) -}
-e0414cf6c4b3ad87948f43f5e47b4380
+0d71df1c43c368110e59e3e93d380644
   getTodosEmprestimoR25 ::
     Data.Text.Internal.Text
     -> [Database.Persist.Types.Base.PersistValue]
@@ -1980,7 +1979,7 @@ e0414cf6c4b3ad87948f43f5e47b4380
                    Handler.Emprestimo.$s$fRawSqlEntity
                    (Handler.Emprestimo.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT
                       @ Foundation.App)) -}
-a97fd540dc5371fb7580769959272939
+ceb7986061b4eb634c043450a872323a
   getTodosEmprestimoR3 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -2053,7 +2052,7 @@ a5b19febcf56c7cfa268d001669ec2fe
                    Handler.Emprestimo.getTodosEmprestimoR6) -}
 1f6eaa88c9e75c1e1d53738a88dc561d
   getTodosEmprestimoR6 :: Data.Text.Internal.Text
-1731d8f8db7e5daceb6ba497bdd79968
+cc782270c89ad66a5b749c6b41680c73
   getTodosEmprestimoR7 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -2080,7 +2079,7 @@ a5b19febcf56c7cfa268d001669ec2fe
                        ->_N <[(Data.Text.Internal.Text, Data.Text.Internal.Text)]
                              -> Data.Text.Internal.Text>_N))_R
                    Handler.Emprestimo.getTodosEmprestimoR8) -}
-31930d34474b897f141bb1997cd7e87f
+e10ff3c5067f30df3d8c2096e0b7a266
   getTodosEmprestimoR8 ::
     (Yesod.Routes.Class.Route Foundation.App
      -> [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
@@ -2190,7 +2189,7 @@ a5b19febcf56c7cfa268d001669ec2fe
                                                         <Foundation.App>_N)))_R)_R)_R))
                       (Sym (Yesod.Core.Types.N:WidgetT[0]
                                 <Foundation.App>_N <GHC.Types.IO>_N <()>_N)))) -}
-c5cbdb7f2e4f697acd48afa76fc975e8
+1417ce9769241973573f8545d201d54c
   getTodosEmprestimoR9 ::
     Yesod.Core.Types.WidgetT
       Foundation.App
@@ -2224,7 +2223,7 @@ f9e3021570ecdd66437d0bcc4afd2dc1
                    @ ()
                    Handler.Emprestimo.getTodosEmprestimoR19
                    GHC.Tuple.()) -}
-f48488eebc92de0da889fccd1474144a
+e38fe3066420830320ba6535f654b47c
   postEmprestarClienteR ::
     Model.LivroId -> Foundation.Handler Text.Blaze.Html.Html
   {- Arity: 1, Strictness: <L,U>,
@@ -2350,7 +2349,7 @@ f48488eebc92de0da889fccd1474144a
                        ->_R Sym (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R))
                       (Sym (Yesod.Core.Types.N:HandlerT[0]
                                 <Foundation.App>_N <GHC.Types.IO>_N <Text.Blaze.Html.Html>_N)))) -}
-741b70fbf0f63342e880304cb7f8e6a1
+fb0406134396c1579ac1bdbc2e73e7e5
   postEmprestarClienteR1 ::
     Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO ()
   {- Unfolding: (Yesod.Core.Handler.addMessage
@@ -2376,7 +2375,7 @@ f48488eebc92de0da889fccd1474144a
   postEmprestarClienteR5 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    "<h3> Emprestimo cadastrado com sucesso</h3>\n"#) -}
-0fba9e0b418853f4399c7a0f998e96ca
+3f273b93aa87df2bc74dc44b91dc592d
   postEmprestarClienteR6 ::
     Model.Emprestimo
     -> Control.Monad.Trans.Reader.ReaderT
@@ -2397,7 +2396,7 @@ f48488eebc92de0da889fccd1474144a
                          <*>_N
                          (Sym (Model.D:R:PersistEntityBackendEmprestimo[0]))
                          (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0])))_N)_R) -}
-5c8e0068e4593e28087b256b09dad5d0
+fb2111072aeb5c91ec8487d67156751c
   postEmprestarClienteR7 ::
     (Database.Persist.Class.PersistEntity.PersistEntity
        Model.Emprestimo,
@@ -2420,7 +2419,7 @@ f48488eebc92de0da889fccd1474144a
                    @ Database.Persist.Sql.Types.Internal.SqlBackend
                    @ Database.Persist.Sql.Types.Internal.SqlBackend
                    @~ <Database.Persist.Sql.Types.Internal.SqlBackend>_N) -}
-dcb42894524156bce32bdaded9bbacf4
+58207a95fed44dda968313b39d62d7a8
   postEmprestarClienteR9 ::
     Yesod.Core.Types.HandlerT
       Foundation.App GHC.Types.IO Text.Blaze.Html.Html

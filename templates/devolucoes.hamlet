@@ -1,0 +1,21 @@
+<table>
+    <thead>
+        <tr>
+            <th>
+                Emprestimo ID:
+            <th>
+                Cliente ID:
+            <th>
+                Livro ID:
+            <th>
+                Data Emprestimo:
+            <th>
+                Data Devolucao:
+    <tbody>
+        $forall (Entity devid emprestimo) <- devolucoes
+            <tr>
+                <td>
+                    #{show $ fromSqlKey devid}
+                <td>
+                    <form action=@{DevolverApagarR devid} method=post>
+                        <input type="submit" value="Devolver">

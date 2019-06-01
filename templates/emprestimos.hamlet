@@ -29,7 +29,7 @@
             <th>
                 
     <tbody>
-        <h2>Lista de Livros<br><br>
+        <h2>Lista de Livros para Emprestimo<br><br>
         <a href=@{HomeR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Principal
         &nbsp;&nbsp;&nbsp;&nbsp;
         <br><br>
@@ -53,8 +53,6 @@
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     #{livroAssunto livro}
                 <td>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    #{livroEmprestado livro}
                     &nbsp;&nbsp;&nbsp;&nbsp;
 
                 <td>

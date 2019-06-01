@@ -30,3 +30,7 @@
 
 /emprestimo TodosEmprestimoR GET
 /emprestimo/#LivroId/emprestarcliente EmprestarClienteR GET POST
+
+
+/devolucao TodosDevolucaoR GET
+/devolucao/#EmprestimoId/apagar DevolverApagarR POST

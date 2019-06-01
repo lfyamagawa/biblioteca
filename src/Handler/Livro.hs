@@ -16,7 +16,6 @@ formLivro mLivro = renderBootstrap $ Livro
     <*> areq textField "Publicacao: " (fmap livroPublicacao mLivro)
     <*> areq textField "Descricao: " (fmap livroDescricao mLivro)
     <*> areq textField "Assunto: " (fmap livroAssunto mLivro)
-    <*> areq boolField "Emprestado: " (fmap livroEmprestado mLivro)
 
 getLivroR :: Handler Html
 getLivroR = do 
@@ -65,8 +64,6 @@ getLivroPerfilR livid = do
                 Descricao: #{livroDescricao livro}
             <div>
                 Assunto: #{livroAssunto livro}
-            <div>
-                Emprestado: #{livroEmprestado livro}
 
             <br><br><a href=@{TodosLivrosR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Voltar
         |]

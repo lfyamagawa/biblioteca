@@ -9,7 +9,6 @@ Livro
     publicacao  Text
     descricao   Text
     assunto     Text
-    emprestado  Bool
 
 Cliente
     nome        Text

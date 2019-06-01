@@ -20,9 +20,6 @@
                 Assunto
                 &nbsp;&nbsp;&nbsp;&nbsp
             <th>
-                Emprestado
-                &nbsp;&nbsp;&nbsp;&nbsp;
-            <th>
             
             <th>
 
@@ -55,8 +52,6 @@
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     #{livroAssunto livro}
                 <td>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    #{livroEmprestado livro}
                     &nbsp;&nbsp;&nbsp;&nbsp;
 
                 <td>

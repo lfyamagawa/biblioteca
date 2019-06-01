@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2019-06-01 12:43:54.70594 UTC
+2019-06-01 16:03:15.286484 UTC
 
 interface aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX:Model [family instance module] 8002
-  interface hash: cbc6d7e898ac47c479330bfdf7dc4e69
-  ABI hash: ca0a41839802f18c4468f82b9104a2ac
-  export-list hash: eeef0e7a168c3b1aea08e991bc7d5974
+  interface hash: 86cedb0ae77d822fab2fa217fda6b1f6
+  ABI hash: 0322a236513b611476018acb9209b978
+  export-list hash: 03f7ac7c9ca5c3f562d1dbfb8d003ad5
   orphan hash: 157ea08da5b9b86f0df7c2cdb8a3fc5f
   flag hash: 52ff668dc27d6990aed1fb19c88425bb
   sig of: Nothing
@@ -19,9 +19,9 @@ exports:
   Model.EmprestimoId
   Model.Funcionario{Model.Funcionario funcionarioEmail funcionarioSenha}
   Model.FuncionarioId
-  Model.Livro{Model.Livro livroAssunto livroAutor livroDescricao livroEmprestado livroPublicacao livroTitulo}
+  Model.Livro{Model.Livro livroAssunto livroAutor livroDescricao livroPublicacao livroTitulo}
   Model.LivroId
-  Database.Persist.Class.PersistEntity.EntityField{Model.ClienteCpf Model.ClienteEndereco Model.ClienteId Model.ClienteNome Model.ClienteRg Model.ClienteTelefone Model.EmprestimoCliid Model.EmprestimoData_dev Model.EmprestimoData_emp Model.EmprestimoId Model.EmprestimoLivid Model.FuncionarioEmail Model.FuncionarioId Model.FuncionarioSenha Model.LivroAssunto Model.LivroAutor Model.LivroDescricao Model.LivroEmprestado Model.LivroId Model.LivroPublicacao Model.LivroTitulo}
+  Database.Persist.Class.PersistEntity.EntityField{Model.ClienteCpf Model.ClienteEndereco Model.ClienteId Model.ClienteNome Model.ClienteRg Model.ClienteTelefone Model.EmprestimoCliid Model.EmprestimoData_dev Model.EmprestimoData_emp Model.EmprestimoId Model.EmprestimoLivid Model.FuncionarioEmail Model.FuncionarioId Model.FuncionarioSenha Model.LivroAssunto Model.LivroAutor Model.LivroDescricao Model.LivroId Model.LivroPublicacao Model.LivroTitulo}
   Database.Persist.Class.PersistEntity.Key{Model.ClienteKey Model.EmprestimoKey Model.FuncionarioKey Model.LivroKey unClienteKey unEmprestimoKey unFuncionarioKey unLivroKey}
   Database.Persist.Class.PersistEntity.Unique{Model.UniqueRestEmail}
 module dependencies:
@@ -379,7 +379,7 @@ import  -/  time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Days 0625fb086700e00eea
 import  -/  unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC:Data.HashMap.Base 214d0e8bbe09552a4e9173f83388cb27
 import  -/  unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC:Data.HashMap.Strict cdc8d7d8128e5603c14becb8a365dbe4
 addDependentFile "config/models"
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fEqKey ::
     GHC.Classes.Eq
       (Database.Persist.Class.PersistEntity.Key Model.Emprestimo)
@@ -445,7 +445,7 @@ b16349aef463ea38e3bc2bc521613eba
                                     (Sym (Model.N:R:KeyCliente[0]))
                                     (Sym (Model.D:R:KeyCliente0[0]))))
                  ->_R <GHC.Types.Bool>_R) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fEqKey1 ::
     GHC.Classes.Eq
       (Database.Persist.Class.PersistEntity.Key Model.Livro)
@@ -455,7 +455,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                   @ (Database.Persist.Class.PersistEntity.Key Model.Livro)
                   Model.$fEqKey1_$c==
                   Model.$fEqKey1_$c/= -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fEqKey1_$c/= ::
     Database.Persist.Class.PersistEntity.Key Model.Livro
     -> Database.Persist.Class.PersistEntity.Key Model.Livro
@@ -477,7 +477,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                                (Trans
                                     (Sym (Model.N:R:KeyLivro[0])) (Sym (Model.D:R:KeyLivro0[0]))))
                  ->_R <GHC.Types.Bool>_R) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fEqKey1_$c== ::
     Database.Persist.Class.PersistEntity.Key Model.Livro
     -> Database.Persist.Class.PersistEntity.Key Model.Livro
@@ -557,7 +557,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                                     (Sym (Model.N:R:KeyFuncionario[0]))
                                     (Sym (Model.D:R:KeyFuncionario0[0]))))
                  ->_R <GHC.Types.Bool>_R) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fEqKey_$c/= ::
     Database.Persist.Class.PersistEntity.Key Model.Emprestimo
     -> Database.Persist.Class.PersistEntity.Key Model.Emprestimo
@@ -581,7 +581,7 @@ b16349aef463ea38e3bc2bc521613eba
                                     (Sym (Model.N:R:KeyEmprestimo[0]))
                                     (Sym (Model.D:R:KeyEmprestimo0[0]))))
                  ->_R <GHC.Types.Bool>_R) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fEqKey_$c== ::
     Database.Persist.Class.PersistEntity.Key Model.Emprestimo
     -> Database.Persist.Class.PersistEntity.Key Model.Emprestimo
@@ -605,7 +605,7 @@ b16349aef463ea38e3bc2bc521613eba
                                     (Sym (Model.N:R:KeyEmprestimo[0]))
                                     (Sym (Model.D:R:KeyEmprestimo0[0]))))
                  ->_R <GHC.Types.Bool>_R) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fFromHttpApiDataKey ::
     Web.Internal.HttpApiData.FromHttpApiData
       (Database.Persist.Class.PersistEntity.Key Model.Emprestimo)
@@ -667,7 +667,7 @@ b16349aef463ea38e3bc2bc521613eba
                                    (Trans
                                         (Sym (Model.N:R:KeyCliente[0]))
                                         (Sym (Model.D:R:KeyCliente0[0]))))))_R) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fFromHttpApiDataKey1 ::
     Web.Internal.HttpApiData.FromHttpApiData
       (Database.Persist.Class.PersistEntity.Key Model.Livro)
@@ -678,7 +678,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                   Model.$fFromHttpApiDataKey1_$cparseUrlPiece
                   Model.$fFromHttpApiDataKey1_$cparseHeader
                   Model.$fFromHttpApiDataKey1_$cparseUrlPiece -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fFromHttpApiDataKey1_$cparseHeader ::
     Data.ByteString.Internal.ByteString
     -> Data.Either.Either
@@ -698,7 +698,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                                    (Trans
                                         (Sym (Model.N:R:KeyLivro[0]))
                                         (Sym (Model.D:R:KeyLivro0[0]))))))_R) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fFromHttpApiDataKey1_$cparseUrlPiece ::
     Data.Text.Internal.Text
     -> Data.Either.Either
@@ -769,7 +769,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                                    (Trans
                                         (Sym (Model.N:R:KeyFuncionario[0]))
                                         (Sym (Model.D:R:KeyFuncionario0[0]))))))_R) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fFromHttpApiDataKey_$cparseHeader ::
     Data.ByteString.Internal.ByteString
     -> Data.Either.Either
@@ -789,7 +789,7 @@ b16349aef463ea38e3bc2bc521613eba
                                    (Trans
                                         (Sym (Model.N:R:KeyEmprestimo[0]))
                                         (Sym (Model.D:R:KeyEmprestimo0[0]))))))_R) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fFromHttpApiDataKey_$cparseUrlPiece ::
     Data.Text.Internal.Text
     -> Data.Either.Either
@@ -809,7 +809,7 @@ b16349aef463ea38e3bc2bc521613eba
                                    (Trans
                                         (Sym (Model.N:R:KeyEmprestimo[0]))
                                         (Sym (Model.D:R:KeyEmprestimo0[0]))))))_R) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fFromJSONKey ::
     Data.Aeson.Types.FromJSON.FromJSON
       (Database.Persist.Class.PersistEntity.Key Model.Emprestimo)
@@ -865,7 +865,7 @@ b16349aef463ea38e3bc2bc521613eba
                                     (Trans
                                          (Sym (Model.N:R:KeyCliente[0]))
                                          (Sym (Model.D:R:KeyCliente0[0]))))])_R)_R) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fFromJSONKey1 ::
     Data.Aeson.Types.FromJSON.FromJSON
       (Database.Persist.Class.PersistEntity.Key Model.Livro)
@@ -875,7 +875,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                   @ (Database.Persist.Class.PersistEntity.Key Model.Livro)
                   Model.$fFromJSONKey1_$cparseJSON
                   Model.$fFromJSONKey1_$cparseJSONList -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fFromJSONKey1_$cparseJSON ::
     Data.Aeson.Types.Internal.Value
     -> Data.Aeson.Types.Internal.Parser
@@ -893,7 +893,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                                    (Trans
                                         (Sym (Model.N:R:KeyLivro[0]))
                                         (Sym (Model.D:R:KeyLivro0[0]))))))_R) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fFromJSONKey1_$cparseJSONList ::
     Data.Aeson.Types.Internal.Value
     -> Data.Aeson.Types.Internal.Parser
@@ -957,7 +957,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                                     (Trans
                                          (Sym (Model.N:R:KeyFuncionario[0]))
                                          (Sym (Model.D:R:KeyFuncionario0[0]))))])_R)_R) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fFromJSONKey_$cparseJSON ::
     Data.Aeson.Types.Internal.Value
     -> Data.Aeson.Types.Internal.Parser
@@ -975,7 +975,7 @@ b16349aef463ea38e3bc2bc521613eba
                                    (Trans
                                         (Sym (Model.N:R:KeyEmprestimo[0]))
                                         (Sym (Model.D:R:KeyEmprestimo0[0]))))))_R) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fFromJSONKey_$cparseJSONList ::
     Data.Aeson.Types.Internal.Value
     -> Data.Aeson.Types.Internal.Parser
@@ -993,7 +993,7 @@ b16349aef463ea38e3bc2bc521613eba
                                     (Trans
                                          (Sym (Model.N:R:KeyEmprestimo[0]))
                                          (Sym (Model.D:R:KeyEmprestimo0[0]))))])_R)_R) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fOrdKey ::
     GHC.Classes.Ord
       (Database.Persist.Class.PersistEntity.Key Model.Emprestimo)
@@ -1198,7 +1198,7 @@ b16349aef463ea38e3bc2bc521613eba
                                (Trans
                                     (Sym (Model.N:R:KeyCliente[0]))
                                     (Sym (Model.D:R:KeyCliente0[0]))))) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fOrdKey1 ::
     GHC.Classes.Ord
       (Database.Persist.Class.PersistEntity.Key Model.Livro)
@@ -1214,7 +1214,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                   Model.$fOrdKey1_$c>=
                   Model.$fOrdKey1_$cmax
                   Model.$fOrdKey1_$cmin -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fOrdKey1_$c< ::
     Database.Persist.Class.PersistEntity.Key Model.Livro
     -> Database.Persist.Class.PersistEntity.Key Model.Livro
@@ -1236,7 +1236,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                                (Trans
                                     (Sym (Model.N:R:KeyLivro[0])) (Sym (Model.D:R:KeyLivro0[0]))))
                  ->_R <GHC.Types.Bool>_R) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fOrdKey1_$c<= ::
     Database.Persist.Class.PersistEntity.Key Model.Livro
     -> Database.Persist.Class.PersistEntity.Key Model.Livro
@@ -1258,7 +1258,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                                (Trans
                                     (Sym (Model.N:R:KeyLivro[0])) (Sym (Model.D:R:KeyLivro0[0]))))
                  ->_R <GHC.Types.Bool>_R) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fOrdKey1_$c> ::
     Database.Persist.Class.PersistEntity.Key Model.Livro
     -> Database.Persist.Class.PersistEntity.Key Model.Livro
@@ -1280,7 +1280,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                                (Trans
                                     (Sym (Model.N:R:KeyLivro[0])) (Sym (Model.D:R:KeyLivro0[0]))))
                  ->_R <GHC.Types.Bool>_R) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fOrdKey1_$c>= ::
     Database.Persist.Class.PersistEntity.Key Model.Livro
     -> Database.Persist.Class.PersistEntity.Key Model.Livro
@@ -1302,7 +1302,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                                (Trans
                                     (Sym (Model.N:R:KeyLivro[0])) (Sym (Model.D:R:KeyLivro0[0]))))
                  ->_R <GHC.Types.Bool>_R) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fOrdKey1_$ccompare ::
     Database.Persist.Class.PersistEntity.Key Model.Livro
     -> Database.Persist.Class.PersistEntity.Key Model.Livro
@@ -1324,7 +1324,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                                (Trans
                                     (Sym (Model.N:R:KeyLivro[0])) (Sym (Model.D:R:KeyLivro0[0]))))
                  ->_R <GHC.Types.Ordering>_R) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fOrdKey1_$cmax ::
     Database.Persist.Class.PersistEntity.Key Model.Livro
     -> Database.Persist.Class.PersistEntity.Key Model.Livro
@@ -1352,7 +1352,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                                (Trans
                                     (Sym (Model.N:R:KeyLivro[0]))
                                     (Sym (Model.D:R:KeyLivro0[0]))))) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fOrdKey1_$cmin ::
     Database.Persist.Class.PersistEntity.Key Model.Livro
     -> Database.Persist.Class.PersistEntity.Key Model.Livro
@@ -1576,7 +1576,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                                (Trans
                                     (Sym (Model.N:R:KeyFuncionario[0]))
                                     (Sym (Model.D:R:KeyFuncionario0[0]))))) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fOrdKey_$c< ::
     Database.Persist.Class.PersistEntity.Key Model.Emprestimo
     -> Database.Persist.Class.PersistEntity.Key Model.Emprestimo
@@ -1600,7 +1600,7 @@ b16349aef463ea38e3bc2bc521613eba
                                     (Sym (Model.N:R:KeyEmprestimo[0]))
                                     (Sym (Model.D:R:KeyEmprestimo0[0]))))
                  ->_R <GHC.Types.Bool>_R) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fOrdKey_$c<= ::
     Database.Persist.Class.PersistEntity.Key Model.Emprestimo
     -> Database.Persist.Class.PersistEntity.Key Model.Emprestimo
@@ -1624,7 +1624,7 @@ b16349aef463ea38e3bc2bc521613eba
                                     (Sym (Model.N:R:KeyEmprestimo[0]))
                                     (Sym (Model.D:R:KeyEmprestimo0[0]))))
                  ->_R <GHC.Types.Bool>_R) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fOrdKey_$c> ::
     Database.Persist.Class.PersistEntity.Key Model.Emprestimo
     -> Database.Persist.Class.PersistEntity.Key Model.Emprestimo
@@ -1648,7 +1648,7 @@ b16349aef463ea38e3bc2bc521613eba
                                     (Sym (Model.N:R:KeyEmprestimo[0]))
                                     (Sym (Model.D:R:KeyEmprestimo0[0]))))
                  ->_R <GHC.Types.Bool>_R) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fOrdKey_$c>= ::
     Database.Persist.Class.PersistEntity.Key Model.Emprestimo
     -> Database.Persist.Class.PersistEntity.Key Model.Emprestimo
@@ -1672,7 +1672,7 @@ b16349aef463ea38e3bc2bc521613eba
                                     (Sym (Model.N:R:KeyEmprestimo[0]))
                                     (Sym (Model.D:R:KeyEmprestimo0[0]))))
                  ->_R <GHC.Types.Bool>_R) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fOrdKey_$ccompare ::
     Database.Persist.Class.PersistEntity.Key Model.Emprestimo
     -> Database.Persist.Class.PersistEntity.Key Model.Emprestimo
@@ -1696,7 +1696,7 @@ b16349aef463ea38e3bc2bc521613eba
                                     (Sym (Model.N:R:KeyEmprestimo[0]))
                                     (Sym (Model.D:R:KeyEmprestimo0[0]))))
                  ->_R <GHC.Types.Ordering>_R) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fOrdKey_$cmax ::
     Database.Persist.Class.PersistEntity.Key Model.Emprestimo
     -> Database.Persist.Class.PersistEntity.Key Model.Emprestimo
@@ -1726,7 +1726,7 @@ b16349aef463ea38e3bc2bc521613eba
                                (Trans
                                     (Sym (Model.N:R:KeyEmprestimo[0]))
                                     (Sym (Model.D:R:KeyEmprestimo0[0]))))) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fOrdKey_$cmin ::
     Database.Persist.Class.PersistEntity.Key Model.Emprestimo
     -> Database.Persist.Class.PersistEntity.Key Model.Emprestimo
@@ -1756,7 +1756,7 @@ b16349aef463ea38e3bc2bc521613eba
                                (Trans
                                     (Sym (Model.N:R:KeyEmprestimo[0]))
                                     (Sym (Model.D:R:KeyEmprestimo0[0]))))) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fPathPieceKey ::
     Web.PathPieces.PathPiece
       (Database.Persist.Class.PersistEntity.Key Model.Emprestimo)
@@ -1809,7 +1809,7 @@ b16349aef463ea38e3bc2bc521613eba
                           (Trans
                                (Sym (Model.N:R:KeyCliente[0])) (Sym (Model.D:R:KeyCliente0[0]))))
                  ->_R <Data.Text.Internal.Text>_R) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fPathPieceKey1 ::
     Web.PathPieces.PathPiece
       (Database.Persist.Class.PersistEntity.Key Model.Livro)
@@ -1819,7 +1819,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                   @ (Database.Persist.Class.PersistEntity.Key Model.Livro)
                   Model.$fPathPieceKey1_$cfromPathPiece
                   Model.$fPathPieceKey1_$ctoPathPiece -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fPathPieceKey1_$cfromPathPiece ::
     Data.Text.Internal.Text
     -> GHC.Base.Maybe
@@ -1837,7 +1837,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                                    (Trans
                                         (Sym (Model.N:R:KeyLivro[0]))
                                         (Sym (Model.D:R:KeyLivro0[0]))))))_R) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fPathPieceKey1_$ctoPathPiece ::
     Database.Persist.Class.PersistEntity.Key Model.Livro
     -> Data.Text.Internal.Text
@@ -1896,7 +1896,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                                (Sym (Model.N:R:KeyFuncionario[0]))
                                (Sym (Model.D:R:KeyFuncionario0[0]))))
                  ->_R <Data.Text.Internal.Text>_R) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fPathPieceKey_$cfromPathPiece ::
     Data.Text.Internal.Text
     -> GHC.Base.Maybe
@@ -1914,7 +1914,7 @@ b16349aef463ea38e3bc2bc521613eba
                                    (Trans
                                         (Sym (Model.N:R:KeyEmprestimo[0]))
                                         (Sym (Model.D:R:KeyEmprestimo0[0]))))))_R) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fPathPieceKey_$ctoPathPiece ::
     Database.Persist.Class.PersistEntity.Key Model.Emprestimo
     -> Data.Text.Internal.Text
@@ -2549,7 +2549,7 @@ ee8d4c6518bf43b75a5a6d290fcdad5f
     -> Data.Map.Base.Map Data.Text.Internal.Text a
     -> Data.Map.Base.Map Data.Text.Internal.Text a
   {- Arity: 6, Strictness: <L,U><L,U><L,U><L,U><L,U><S,1*U> -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fPersistEntityEmprestimo ::
     Database.Persist.Class.PersistEntity.PersistEntity Model.Emprestimo
   DFunId
@@ -2702,7 +2702,7 @@ abd6eed562bbcc9379e91b3972e2d5cf
                    @ Database.Persist.Types.Base.FieldDef
                    Model.$fPersistEntityEmprestimo1
                    (GHC.Types.[] @ Database.Persist.Types.Base.FieldDef)) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fPersistEntityEmprestimo21 ::
     Database.Persist.Class.PersistEntity.Key Model.Emprestimo
     Data.Type.Equality.~ Database.Persist.Class.PersistEntity.Key
@@ -2715,7 +2715,7 @@ b16349aef463ea38e3bc2bc521613eba
                           <*>_N) <Database.Persist.Class.PersistEntity.Key
                                     Model.Emprestimo>_N <Database.Persist.Class.PersistEntity.Key
                                                            Model.Emprestimo>_N) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fPersistEntityEmprestimo22 ::
     Database.Persist.Class.PersistEntity.Key Model.Emprestimo
     GHC.Types.~~ Database.Persist.Class.PersistEntity.Key
@@ -2771,7 +2771,7 @@ c27eba03d53ac0ddb323afeb9cee1e42
 4c7a6a690fd45d906b9b7a44ec9a962a
   $fPersistEntityEmprestimo9 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString# "LivroId"#) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fPersistEntityEmprestimo_$centityDef ::
     GHC.Base.Monad m =>
     m Model.Emprestimo -> Database.Persist.Types.Base.EntityDef
@@ -2781,7 +2781,7 @@ b16349aef463ea38e3bc2bc521613eba
                    ($dMonad :: GHC.Base.Monad m)
                    (ds :: m Model.Emprestimo) ->
                  Model.$fPersistEntityEmprestimo16) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fPersistEntityEmprestimo_$cfieldLens ::
     Database.Persist.Class.PersistEntity.EntityField
       Model.Emprestimo field
@@ -2792,12 +2792,12 @@ b16349aef463ea38e3bc2bc521613eba
        -> f (Database.Persist.Class.PersistEntity.Entity Model.Emprestimo)
   {- Arity: 4, HasNoCafRefs,
      Strictness: <S,1*U><S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,1*C1(U)><L,U(U,U,U(U,U,U,U))> -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fPersistEntityEmprestimo_$cfromPersistValues ::
     [Database.Persist.Types.Base.PersistValue]
     -> Data.Either.Either Data.Text.Internal.Text Model.Emprestimo
   {- Arity: 1, Strictness: <S,U> -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fPersistEntityEmprestimo_$ckeyFromValues ::
     [Database.Persist.Types.Base.PersistValue]
     -> Data.Either.Either
@@ -2827,7 +2827,7 @@ b16349aef463ea38e3bc2bc521613eba
                         (Trans
                              (Sym (Model.N:R:KeyEmprestimo[0]))
                              (Sym (Model.D:R:KeyEmprestimo0[0]))) }) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fPersistEntityEmprestimo_$ckeyToValues ::
     Database.Persist.Class.PersistEntity.Key Model.Emprestimo
     -> [Database.Persist.Types.Base.PersistValue]
@@ -2847,7 +2847,7 @@ b16349aef463ea38e3bc2bc521613eba
                                      (Database.Persist.Sql.Orphan.PersistStore.D:R:BackendKeySqlBackend0[0])
                                      (Database.Persist.Sql.Orphan.PersistStore.N:R:BackendKeySqlBackend[0])))))
                    (GHC.Types.[] @ Database.Persist.Types.Base.PersistValue)) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fPersistEntityEmprestimo_$cpersistFieldDef ::
     Database.Persist.Class.PersistEntity.EntityField
       Model.Emprestimo typ
@@ -2917,7 +2917,7 @@ b16349aef463ea38e3bc2bc521613eba
                              (Data.Type.Equality.N:~[0]
                                   <GHC.Types.*>_N <typ>_N <Data.Time.Calendar.Days.Day>_N) of cobox0 { DEFAULT ->
                       Model.$fPersistEntityEmprestimo1 } }) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fPersistEntityEmprestimo_$cpersistUniqueKeys ::
     Model.Emprestimo
     -> [Database.Persist.Class.PersistEntity.Unique Model.Emprestimo]
@@ -2928,7 +2928,7 @@ b16349aef463ea38e3bc2bc521613eba
                  GHC.Types.[]
                    @ (Database.Persist.Class.PersistEntity.Unique
                         Model.Emprestimo) }) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fPersistEntityEmprestimo_$cpersistUniqueToFieldNames ::
     Database.Persist.Class.PersistEntity.Unique Model.Emprestimo
     -> [(Database.Persist.Types.Base.HaskellName,
@@ -2938,7 +2938,7 @@ b16349aef463ea38e3bc2bc521613eba
                 (\ (ds :: Database.Persist.Class.PersistEntity.Unique
                             Model.Emprestimo) ->
                  Model.$fPersistEntityCliente2) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fPersistEntityEmprestimo_$cpersistUniqueToValues ::
     Database.Persist.Class.PersistEntity.Unique Model.Emprestimo
     -> [Database.Persist.Types.Base.PersistValue]
@@ -2947,7 +2947,7 @@ b16349aef463ea38e3bc2bc521613eba
                 (\ (ds :: Database.Persist.Class.PersistEntity.Unique
                             Model.Emprestimo) ->
                  Model.$fPersistEntityCliente1) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fPersistEntityEmprestimo_$ctoPersistFields ::
     Model.Emprestimo
     -> [Database.Persist.Class.PersistField.SomePersistField]
@@ -2982,7 +2982,7 @@ b16349aef463ea38e3bc2bc521613eba
                                ww4)
                             (GHC.Types.[]
                                @ Database.Persist.Class.PersistField.SomePersistField)))) }) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fPersistEntityEmprestimo_$s$WEmprestimoId ::
     Database.Persist.Class.PersistEntity.EntityField
       Model.Emprestimo
@@ -3514,7 +3514,7 @@ bd2f57281fcc9c342ebc402c89aff33b
                   `cast`
                 (Sym (Model.D:R:EntityFieldFuncionariotyp0[0]) <Database.Persist.Class.PersistEntity.Key
                                                                   Model.Funcionario>_N) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fPersistEntityLivro ::
     Database.Persist.Class.PersistEntity.PersistEntity Model.Livro
   DFunId
@@ -3539,20 +3539,198 @@ ab4c18d07126571b6c67f9d650d46f2e
                   Model.$fPersistEntityLivro_$cpersistUniqueToFieldNames
                   Model.$fPersistEntityLivro_$cpersistUniqueToValues
                   Model.$fPersistEntityLivro_$cfieldLens -}
-9a86f4ee079d7f7b24d1d0e866ade518
+331c785debb9dad618fbd6614642ce15
   $fPersistEntityLivro1 :: Database.Persist.Types.Base.FieldDef
   {- Unfolding: (case Data.Text.Show.unpackCString#
-                        "emprestado"# of nt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                        "assunto"# of nt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
                  Database.Persist.Types.Base.FieldDef
                    nt `cast` (Sym (Database.Persist.Types.Base.N:HaskellName[0]))
                    nt `cast` (Sym (Database.Persist.Types.Base.N:DBName[0]))
-                   Model.$fPersistEntityLivro2
-                   Database.Persist.Types.Base.SqlBool
+                   Model.$fPersistEntityCliente4
+                   Database.Persist.Types.Base.SqlString
                    (GHC.Types.[] @ Database.Persist.Types.Base.Attr)
                    GHC.Types.True
                    Database.Persist.Types.Base.NoReference }) -}
-67703316d8e937c7bbba0e4a0354faae
-  $fPersistEntityLivro10 :: Database.Persist.Types.Base.EntityDef
+0c1b374fcfa1f013723bde1722a9f3f8
+  $fPersistEntityLivro10 :: [Database.Persist.Types.Base.FieldDef]
+  {- Unfolding: (GHC.Types.:
+                   @ Database.Persist.Types.Base.FieldDef
+                   Model.$fPersistEntityLivro17
+                   Model.$fPersistEntityLivro11) -}
+42493f165d9be72dc9924d64737dd9ef
+  $fPersistEntityLivro11 :: [Database.Persist.Types.Base.FieldDef]
+  {- Unfolding: (GHC.Types.:
+                   @ Database.Persist.Types.Base.FieldDef
+                   Model.$fPersistEntityLivro15
+                   Model.$fPersistEntityLivro12) -}
+ccf306cb129e932b6472da8942ec3655
+  $fPersistEntityLivro12 :: [Database.Persist.Types.Base.FieldDef]
+  {- Unfolding: (GHC.Types.:
+                   @ Database.Persist.Types.Base.FieldDef
+                   Model.$fPersistEntityLivro13
+                   (GHC.Types.[] @ Database.Persist.Types.Base.FieldDef)) -}
+7f53206dbcef91a3efb0a774bf66365a
+  $fPersistEntityLivro13 :: Database.Persist.Types.Base.FieldDef
+  {- Unfolding: (case Model.$fPersistEntityLivro14 of nt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Database.Persist.Types.Base.FieldDef
+                   nt `cast` (Sym (Database.Persist.Types.Base.N:HaskellName[0]))
+                   nt `cast` (Sym (Database.Persist.Types.Base.N:DBName[0]))
+                   Model.$fPersistEntityCliente4
+                   Database.Persist.Types.Base.SqlString
+                   (GHC.Types.[] @ Database.Persist.Types.Base.Attr)
+                   GHC.Types.True
+                   Database.Persist.Types.Base.NoReference }) -}
+c89f932d9391de6557c57e372d72f29c
+  $fPersistEntityLivro14 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "assunto"#) -}
+f888074bdae49906fd24958783e8ff7f
+  $fPersistEntityLivro15 :: Database.Persist.Types.Base.FieldDef
+  {- Unfolding: (case Model.$fPersistEntityLivro16 of nt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Database.Persist.Types.Base.FieldDef
+                   nt `cast` (Sym (Database.Persist.Types.Base.N:HaskellName[0]))
+                   nt `cast` (Sym (Database.Persist.Types.Base.N:DBName[0]))
+                   Model.$fPersistEntityCliente4
+                   Database.Persist.Types.Base.SqlString
+                   (GHC.Types.[] @ Database.Persist.Types.Base.Attr)
+                   GHC.Types.True
+                   Database.Persist.Types.Base.NoReference }) -}
+46f0b6b2705fd2b60241b304f40b15e2
+  $fPersistEntityLivro16 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "descricao"#) -}
+d2f8f98b869c10ad9950ac9a78556112
+  $fPersistEntityLivro17 :: Database.Persist.Types.Base.FieldDef
+  {- Unfolding: (case Model.$fPersistEntityLivro18 of nt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Database.Persist.Types.Base.FieldDef
+                   nt `cast` (Sym (Database.Persist.Types.Base.N:HaskellName[0]))
+                   nt `cast` (Sym (Database.Persist.Types.Base.N:DBName[0]))
+                   Model.$fPersistEntityCliente4
+                   Database.Persist.Types.Base.SqlString
+                   (GHC.Types.[] @ Database.Persist.Types.Base.Attr)
+                   GHC.Types.True
+                   Database.Persist.Types.Base.NoReference }) -}
+35708e72d07602d405c644207e61944b
+  $fPersistEntityLivro18 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "publicacao"#) -}
+786f2c08503424ea04fd3aa86bc5c0d4
+  $fPersistEntityLivro19 :: Database.Persist.Types.Base.FieldDef
+  {- Unfolding: (case Model.$fPersistEntityLivro20 of nt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Database.Persist.Types.Base.FieldDef
+                   nt `cast` (Sym (Database.Persist.Types.Base.N:HaskellName[0]))
+                   nt `cast` (Sym (Database.Persist.Types.Base.N:DBName[0]))
+                   Model.$fPersistEntityCliente4
+                   Database.Persist.Types.Base.SqlString
+                   (GHC.Types.[] @ Database.Persist.Types.Base.Attr)
+                   GHC.Types.True
+                   Database.Persist.Types.Base.NoReference }) -}
+0cbde90b02f9a192ac15244de67e7b0d
+  $fPersistEntityLivro2 :: Database.Persist.Types.Base.FieldDef
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "descricao"# of nt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Database.Persist.Types.Base.FieldDef
+                   nt `cast` (Sym (Database.Persist.Types.Base.N:HaskellName[0]))
+                   nt `cast` (Sym (Database.Persist.Types.Base.N:DBName[0]))
+                   Model.$fPersistEntityCliente4
+                   Database.Persist.Types.Base.SqlString
+                   (GHC.Types.[] @ Database.Persist.Types.Base.Attr)
+                   GHC.Types.True
+                   Database.Persist.Types.Base.NoReference }) -}
+8f50c797a1f1749ce70b02a45a6db9dd
+  $fPersistEntityLivro20 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "autor"#) -}
+4d70a75751c15711453e5d94085d528f
+  $fPersistEntityLivro21 :: Database.Persist.Types.Base.FieldDef
+  {- Unfolding: (case Model.$fPersistEntityLivro22 of nt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Database.Persist.Types.Base.FieldDef
+                   nt `cast` (Sym (Database.Persist.Types.Base.N:HaskellName[0]))
+                   nt `cast` (Sym (Database.Persist.Types.Base.N:DBName[0]))
+                   Model.$fPersistEntityCliente4
+                   Database.Persist.Types.Base.SqlString
+                   (GHC.Types.[] @ Database.Persist.Types.Base.Attr)
+                   GHC.Types.True
+                   Database.Persist.Types.Base.NoReference }) -}
+defec6891936a3eb095b750f62ca3a77
+  $fPersistEntityLivro22 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "titulo"#) -}
+c3e262a0882d221615712cc438926620
+  $fPersistEntityLivro23 ::
+    Database.Persist.Class.PersistEntity.Key Model.Livro
+    Data.Type.Equality.~ Database.Persist.Class.PersistEntity.Key
+                           Model.Livro
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                Model.$fPersistEntityLivro24
+                  `cast`
+                (Sym (Data.Type.Equality.N:~[0]
+                          <*>_N) <Database.Persist.Class.PersistEntity.Key
+                                    Model.Livro>_N <Database.Persist.Class.PersistEntity.Key
+                                                      Model.Livro>_N) -}
+c3e262a0882d221615712cc438926620
+  $fPersistEntityLivro24 ::
+    Database.Persist.Class.PersistEntity.Key Model.Livro
+    GHC.Types.~~ Database.Persist.Class.PersistEntity.Key Model.Livro
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ *
+                   @ *
+                   @ (Database.Persist.Class.PersistEntity.Key Model.Livro)
+                   @ (Database.Persist.Class.PersistEntity.Key Model.Livro)
+                   @~ <Database.Persist.Class.PersistEntity.Key Model.Livro>_N) -}
+880fb0af9f5b0fdc4cb05dcdca2c72b9
+  $fPersistEntityLivro3 :: Database.Persist.Types.Base.FieldDef
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "publicacao"# of nt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Database.Persist.Types.Base.FieldDef
+                   nt `cast` (Sym (Database.Persist.Types.Base.N:HaskellName[0]))
+                   nt `cast` (Sym (Database.Persist.Types.Base.N:DBName[0]))
+                   Model.$fPersistEntityCliente4
+                   Database.Persist.Types.Base.SqlString
+                   (GHC.Types.[] @ Database.Persist.Types.Base.Attr)
+                   GHC.Types.True
+                   Database.Persist.Types.Base.NoReference }) -}
+9a1bea285f617c1b0b6f77f00a75367f
+  $fPersistEntityLivro4 :: Database.Persist.Types.Base.FieldDef
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "autor"# of nt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Database.Persist.Types.Base.FieldDef
+                   nt `cast` (Sym (Database.Persist.Types.Base.N:HaskellName[0]))
+                   nt `cast` (Sym (Database.Persist.Types.Base.N:DBName[0]))
+                   Model.$fPersistEntityCliente4
+                   Database.Persist.Types.Base.SqlString
+                   (GHC.Types.[] @ Database.Persist.Types.Base.Attr)
+                   GHC.Types.True
+                   Database.Persist.Types.Base.NoReference }) -}
+0c9b966f55efb242d22defacb56e8922
+  $fPersistEntityLivro5 :: Database.Persist.Types.Base.FieldDef
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "titulo"# of nt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Database.Persist.Types.Base.FieldDef
+                   nt `cast` (Sym (Database.Persist.Types.Base.N:HaskellName[0]))
+                   nt `cast` (Sym (Database.Persist.Types.Base.N:DBName[0]))
+                   Model.$fPersistEntityCliente4
+                   Database.Persist.Types.Base.SqlString
+                   (GHC.Types.[] @ Database.Persist.Types.Base.Attr)
+                   GHC.Types.True
+                   Database.Persist.Types.Base.NoReference }) -}
+684a08442a50a7b7a1df024d75fa70eb
+  $fPersistEntityLivro6 :: Database.Persist.Types.Base.FieldDef
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "Id"# of nt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 case Data.Text.Show.unpackCString#
+                        "id"# of nt1 { Data.Text.Internal.Text ipv3 ipv4 ipv5 ->
+                 case Data.Text.Show.unpackCString#
+                        "Livro"# of nt2 { Data.Text.Internal.Text ipv6 ipv7 ipv8 ->
+                 Database.Persist.Types.Base.FieldDef
+                   nt `cast` (Sym (Database.Persist.Types.Base.N:HaskellName[0]))
+                   nt1 `cast` (Sym (Database.Persist.Types.Base.N:DBName[0]))
+                   Model.$fPersistEntityEmprestimo8
+                   Database.Persist.Types.Base.SqlInt64
+                   (GHC.Types.[] @ Database.Persist.Types.Base.Attr)
+                   GHC.Types.True
+                   (Database.Persist.Types.Base.ForeignRef
+                      nt2 `cast` (Sym (Database.Persist.Types.Base.N:HaskellName[0]))
+                      Model.$fPersistEntityCliente11) } } }) -}
+f8feb025b319a407bdec36bc87b9418c
+  $fPersistEntityLivro7 :: Database.Persist.Types.Base.EntityDef
   {- Unfolding: (case Data.Text.Show.unpackCString#
                         "Livro"# of nt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
                  case Data.Text.Show.unpackCString#
@@ -3580,243 +3758,25 @@ ab4c18d07126571b6c67f9d650d46f2e
                          nt `cast` (Sym (Database.Persist.Types.Base.N:HaskellName[0]))
                          Model.$fPersistEntityCliente11))
                    (GHC.Types.[] @ Database.Persist.Types.Base.Attr)
-                   Model.$fPersistEntityLivro11
+                   Model.$fPersistEntityLivro8
                    (GHC.Types.[] @ Database.Persist.Types.Base.UniqueDef)
                    (GHC.Types.[] @ Database.Persist.Types.Base.ForeignDef)
                    (GHC.Types.[] @ Data.Text.Internal.Text)
                    dt
                    GHC.Types.False } } } } }) -}
-00a0bb56dac1813850e35bae7183cc8a
-  $fPersistEntityLivro11 :: [Database.Persist.Types.Base.FieldDef]
-  {- Unfolding: (GHC.Types.:
-                   @ Database.Persist.Types.Base.FieldDef
-                   Model.$fPersistEntityLivro27
-                   Model.$fPersistEntityLivro12) -}
-bef965c06a0676b15d34c5a85563763c
-  $fPersistEntityLivro12 :: [Database.Persist.Types.Base.FieldDef]
-  {- Unfolding: (GHC.Types.:
-                   @ Database.Persist.Types.Base.FieldDef
-                   Model.$fPersistEntityLivro25
-                   Model.$fPersistEntityLivro13) -}
-e39279f15b267e8b36842571ad56434a
-  $fPersistEntityLivro13 :: [Database.Persist.Types.Base.FieldDef]
-  {- Unfolding: (GHC.Types.:
-                   @ Database.Persist.Types.Base.FieldDef
-                   Model.$fPersistEntityLivro23
-                   Model.$fPersistEntityLivro14) -}
-30051c9825a969ba5b7fcce71766c73d
-  $fPersistEntityLivro14 :: [Database.Persist.Types.Base.FieldDef]
+6661e198ba83c7c19a4234f2d6b3b631
+  $fPersistEntityLivro8 :: [Database.Persist.Types.Base.FieldDef]
   {- Unfolding: (GHC.Types.:
                    @ Database.Persist.Types.Base.FieldDef
                    Model.$fPersistEntityLivro21
-                   Model.$fPersistEntityLivro15) -}
-35f56d6a752403b28a820c924aea2163
-  $fPersistEntityLivro15 :: [Database.Persist.Types.Base.FieldDef]
+                   Model.$fPersistEntityLivro9) -}
+f6e66b8dd201b93e70ed49cb9df8e21d
+  $fPersistEntityLivro9 :: [Database.Persist.Types.Base.FieldDef]
   {- Unfolding: (GHC.Types.:
                    @ Database.Persist.Types.Base.FieldDef
                    Model.$fPersistEntityLivro19
-                   Model.$fPersistEntityLivro16) -}
-9530986006c8f79ba6714eb48d65644c
-  $fPersistEntityLivro16 :: [Database.Persist.Types.Base.FieldDef]
-  {- Unfolding: (GHC.Types.:
-                   @ Database.Persist.Types.Base.FieldDef
-                   Model.$fPersistEntityLivro17
-                   (GHC.Types.[] @ Database.Persist.Types.Base.FieldDef)) -}
-947254a137a9901b2db4f5c912b51e4e
-  $fPersistEntityLivro17 :: Database.Persist.Types.Base.FieldDef
-  {- Unfolding: (case Model.$fPersistEntityLivro18 of nt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
-                 Database.Persist.Types.Base.FieldDef
-                   nt `cast` (Sym (Database.Persist.Types.Base.N:HaskellName[0]))
-                   nt `cast` (Sym (Database.Persist.Types.Base.N:DBName[0]))
-                   Model.$fPersistEntityLivro2
-                   Database.Persist.Types.Base.SqlBool
-                   (GHC.Types.[] @ Database.Persist.Types.Base.Attr)
-                   GHC.Types.True
-                   Database.Persist.Types.Base.NoReference }) -}
-be788fc8b7a23bac72ae23c08a51ac07
-  $fPersistEntityLivro18 :: Data.Text.Internal.Text
-  {- Unfolding: (Data.Text.Show.unpackCString# "emprestado"#) -}
-8ccfc4bfe595eb803edb9fed4a583cac
-  $fPersistEntityLivro19 :: Database.Persist.Types.Base.FieldDef
-  {- Unfolding: (case Model.$fPersistEntityLivro20 of nt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
-                 Database.Persist.Types.Base.FieldDef
-                   nt `cast` (Sym (Database.Persist.Types.Base.N:HaskellName[0]))
-                   nt `cast` (Sym (Database.Persist.Types.Base.N:DBName[0]))
-                   Model.$fPersistEntityCliente4
-                   Database.Persist.Types.Base.SqlString
-                   (GHC.Types.[] @ Database.Persist.Types.Base.Attr)
-                   GHC.Types.True
-                   Database.Persist.Types.Base.NoReference }) -}
-6b0e0fb444e623d3f7a3c60e78eeeb6d
-  $fPersistEntityLivro2 :: Database.Persist.Types.Base.FieldType
-  {- Unfolding: (Database.Persist.Types.Base.FTTypeCon
-                   (GHC.Base.Nothing @ Data.Text.Internal.Text)
-                   Model.$fPersistEntityLivro3) -}
-a6126082eef97661f5fcee6160c57999
-  $fPersistEntityLivro20 :: Data.Text.Internal.Text
-  {- Unfolding: (Data.Text.Show.unpackCString# "assunto"#) -}
-fb3f5fbc696568bc38d854e55a4c0c45
-  $fPersistEntityLivro21 :: Database.Persist.Types.Base.FieldDef
-  {- Unfolding: (case Model.$fPersistEntityLivro22 of nt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
-                 Database.Persist.Types.Base.FieldDef
-                   nt `cast` (Sym (Database.Persist.Types.Base.N:HaskellName[0]))
-                   nt `cast` (Sym (Database.Persist.Types.Base.N:DBName[0]))
-                   Model.$fPersistEntityCliente4
-                   Database.Persist.Types.Base.SqlString
-                   (GHC.Types.[] @ Database.Persist.Types.Base.Attr)
-                   GHC.Types.True
-                   Database.Persist.Types.Base.NoReference }) -}
-9db3aaa9a5be83f4026853f71a946838
-  $fPersistEntityLivro22 :: Data.Text.Internal.Text
-  {- Unfolding: (Data.Text.Show.unpackCString# "descricao"#) -}
-ee441c0a9f62eb5966175d4d423c3704
-  $fPersistEntityLivro23 :: Database.Persist.Types.Base.FieldDef
-  {- Unfolding: (case Model.$fPersistEntityLivro24 of nt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
-                 Database.Persist.Types.Base.FieldDef
-                   nt `cast` (Sym (Database.Persist.Types.Base.N:HaskellName[0]))
-                   nt `cast` (Sym (Database.Persist.Types.Base.N:DBName[0]))
-                   Model.$fPersistEntityCliente4
-                   Database.Persist.Types.Base.SqlString
-                   (GHC.Types.[] @ Database.Persist.Types.Base.Attr)
-                   GHC.Types.True
-                   Database.Persist.Types.Base.NoReference }) -}
-62e7eafe77accded2aef37a0ef7915b3
-  $fPersistEntityLivro24 :: Data.Text.Internal.Text
-  {- Unfolding: (Data.Text.Show.unpackCString# "publicacao"#) -}
-9db5a326c215a6f38fdcb0d10a3451e9
-  $fPersistEntityLivro25 :: Database.Persist.Types.Base.FieldDef
-  {- Unfolding: (case Model.$fPersistEntityLivro26 of nt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
-                 Database.Persist.Types.Base.FieldDef
-                   nt `cast` (Sym (Database.Persist.Types.Base.N:HaskellName[0]))
-                   nt `cast` (Sym (Database.Persist.Types.Base.N:DBName[0]))
-                   Model.$fPersistEntityCliente4
-                   Database.Persist.Types.Base.SqlString
-                   (GHC.Types.[] @ Database.Persist.Types.Base.Attr)
-                   GHC.Types.True
-                   Database.Persist.Types.Base.NoReference }) -}
-4401ca6060581dce122dcdad8dbb8cf7
-  $fPersistEntityLivro26 :: Data.Text.Internal.Text
-  {- Unfolding: (Data.Text.Show.unpackCString# "autor"#) -}
-da1bc920daeda47752e6131f4d5f3d68
-  $fPersistEntityLivro27 :: Database.Persist.Types.Base.FieldDef
-  {- Unfolding: (case Model.$fPersistEntityLivro28 of nt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
-                 Database.Persist.Types.Base.FieldDef
-                   nt `cast` (Sym (Database.Persist.Types.Base.N:HaskellName[0]))
-                   nt `cast` (Sym (Database.Persist.Types.Base.N:DBName[0]))
-                   Model.$fPersistEntityCliente4
-                   Database.Persist.Types.Base.SqlString
-                   (GHC.Types.[] @ Database.Persist.Types.Base.Attr)
-                   GHC.Types.True
-                   Database.Persist.Types.Base.NoReference }) -}
-48e82308b482624698f20cb707ed02f1
-  $fPersistEntityLivro28 :: Data.Text.Internal.Text
-  {- Unfolding: (Data.Text.Show.unpackCString# "titulo"#) -}
-ab4c18d07126571b6c67f9d650d46f2e
-  $fPersistEntityLivro29 ::
-    Database.Persist.Class.PersistEntity.Key Model.Livro
-    Data.Type.Equality.~ Database.Persist.Class.PersistEntity.Key
-                           Model.Livro
-  {- Strictness: m,
-     Unfolding: InlineRule (0, True, True)
-                Model.$fPersistEntityLivro30
-                  `cast`
-                (Sym (Data.Type.Equality.N:~[0]
-                          <*>_N) <Database.Persist.Class.PersistEntity.Key
-                                    Model.Livro>_N <Database.Persist.Class.PersistEntity.Key
-                                                      Model.Livro>_N) -}
-a074ea9b90f16dc868012b9c1e36d429
-  $fPersistEntityLivro3 :: Data.Text.Internal.Text
-  {- Unfolding: (Data.Text.Show.unpackCString# "Bool"#) -}
-ab4c18d07126571b6c67f9d650d46f2e
-  $fPersistEntityLivro30 ::
-    Database.Persist.Class.PersistEntity.Key Model.Livro
-    GHC.Types.~~ Database.Persist.Class.PersistEntity.Key Model.Livro
-  {- HasNoCafRefs, Strictness: m,
-     Unfolding: (GHC.Types.Eq#
-                   @ *
-                   @ *
-                   @ (Database.Persist.Class.PersistEntity.Key Model.Livro)
-                   @ (Database.Persist.Class.PersistEntity.Key Model.Livro)
-                   @~ <Database.Persist.Class.PersistEntity.Key Model.Livro>_N) -}
-a9a8adb8d90bd305356a2230f8814694
-  $fPersistEntityLivro4 :: Database.Persist.Types.Base.FieldDef
-  {- Unfolding: (case Data.Text.Show.unpackCString#
-                        "assunto"# of nt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
-                 Database.Persist.Types.Base.FieldDef
-                   nt `cast` (Sym (Database.Persist.Types.Base.N:HaskellName[0]))
-                   nt `cast` (Sym (Database.Persist.Types.Base.N:DBName[0]))
-                   Model.$fPersistEntityCliente4
-                   Database.Persist.Types.Base.SqlString
-                   (GHC.Types.[] @ Database.Persist.Types.Base.Attr)
-                   GHC.Types.True
-                   Database.Persist.Types.Base.NoReference }) -}
-3cd5fa1e91dd03194d24eb110845f224
-  $fPersistEntityLivro5 :: Database.Persist.Types.Base.FieldDef
-  {- Unfolding: (case Data.Text.Show.unpackCString#
-                        "descricao"# of nt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
-                 Database.Persist.Types.Base.FieldDef
-                   nt `cast` (Sym (Database.Persist.Types.Base.N:HaskellName[0]))
-                   nt `cast` (Sym (Database.Persist.Types.Base.N:DBName[0]))
-                   Model.$fPersistEntityCliente4
-                   Database.Persist.Types.Base.SqlString
-                   (GHC.Types.[] @ Database.Persist.Types.Base.Attr)
-                   GHC.Types.True
-                   Database.Persist.Types.Base.NoReference }) -}
-686b609d01371b97243cbf585e96583c
-  $fPersistEntityLivro6 :: Database.Persist.Types.Base.FieldDef
-  {- Unfolding: (case Data.Text.Show.unpackCString#
-                        "publicacao"# of nt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
-                 Database.Persist.Types.Base.FieldDef
-                   nt `cast` (Sym (Database.Persist.Types.Base.N:HaskellName[0]))
-                   nt `cast` (Sym (Database.Persist.Types.Base.N:DBName[0]))
-                   Model.$fPersistEntityCliente4
-                   Database.Persist.Types.Base.SqlString
-                   (GHC.Types.[] @ Database.Persist.Types.Base.Attr)
-                   GHC.Types.True
-                   Database.Persist.Types.Base.NoReference }) -}
-ea7bc7e4966f5ec757b63eaafca8e81a
-  $fPersistEntityLivro7 :: Database.Persist.Types.Base.FieldDef
-  {- Unfolding: (case Data.Text.Show.unpackCString#
-                        "autor"# of nt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
-                 Database.Persist.Types.Base.FieldDef
-                   nt `cast` (Sym (Database.Persist.Types.Base.N:HaskellName[0]))
-                   nt `cast` (Sym (Database.Persist.Types.Base.N:DBName[0]))
-                   Model.$fPersistEntityCliente4
-                   Database.Persist.Types.Base.SqlString
-                   (GHC.Types.[] @ Database.Persist.Types.Base.Attr)
-                   GHC.Types.True
-                   Database.Persist.Types.Base.NoReference }) -}
-fcfd5f1721a73fcb24bca00f4e93ca8e
-  $fPersistEntityLivro8 :: Database.Persist.Types.Base.FieldDef
-  {- Unfolding: (case Data.Text.Show.unpackCString#
-                        "titulo"# of nt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
-                 Database.Persist.Types.Base.FieldDef
-                   nt `cast` (Sym (Database.Persist.Types.Base.N:HaskellName[0]))
-                   nt `cast` (Sym (Database.Persist.Types.Base.N:DBName[0]))
-                   Model.$fPersistEntityCliente4
-                   Database.Persist.Types.Base.SqlString
-                   (GHC.Types.[] @ Database.Persist.Types.Base.Attr)
-                   GHC.Types.True
-                   Database.Persist.Types.Base.NoReference }) -}
-70c6f271d483a22dd6681358aeec623a
-  $fPersistEntityLivro9 :: Database.Persist.Types.Base.FieldDef
-  {- Unfolding: (case Data.Text.Show.unpackCString#
-                        "Id"# of nt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
-                 case Data.Text.Show.unpackCString#
-                        "id"# of nt1 { Data.Text.Internal.Text ipv3 ipv4 ipv5 ->
-                 case Data.Text.Show.unpackCString#
-                        "Livro"# of nt2 { Data.Text.Internal.Text ipv6 ipv7 ipv8 ->
-                 Database.Persist.Types.Base.FieldDef
-                   nt `cast` (Sym (Database.Persist.Types.Base.N:HaskellName[0]))
-                   nt1 `cast` (Sym (Database.Persist.Types.Base.N:DBName[0]))
-                   Model.$fPersistEntityEmprestimo8
-                   Database.Persist.Types.Base.SqlInt64
-                   (GHC.Types.[] @ Database.Persist.Types.Base.Attr)
-                   GHC.Types.True
-                   (Database.Persist.Types.Base.ForeignRef
-                      nt2 `cast` (Sym (Database.Persist.Types.Base.N:HaskellName[0]))
-                      Model.$fPersistEntityCliente11) } } }) -}
-ab4c18d07126571b6c67f9d650d46f2e
+                   Model.$fPersistEntityLivro10) -}
+c3e262a0882d221615712cc438926620
   $fPersistEntityLivro_$centityDef ::
     GHC.Base.Monad m =>
     m Model.Livro -> Database.Persist.Types.Base.EntityDef
@@ -3825,8 +3785,8 @@ ab4c18d07126571b6c67f9d650d46f2e
                 (\ @ (m :: * -> *)
                    ($dMonad :: GHC.Base.Monad m)
                    (ds :: m Model.Livro) ->
-                 Model.$fPersistEntityLivro10) -}
-ab4c18d07126571b6c67f9d650d46f2e
+                 Model.$fPersistEntityLivro7) -}
+c3e262a0882d221615712cc438926620
   $fPersistEntityLivro_$cfieldLens ::
     Database.Persist.Class.PersistEntity.EntityField Model.Livro field
     -> forall (f :: * -> *).
@@ -3835,13 +3795,13 @@ ab4c18d07126571b6c67f9d650d46f2e
        -> Database.Persist.Class.PersistEntity.Entity Model.Livro
        -> f (Database.Persist.Class.PersistEntity.Entity Model.Livro)
   {- Arity: 4, HasNoCafRefs,
-     Strictness: <S,1*U><S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,1*C1(U)><L,U(U,U,U(U,U,U,U,U,U))> -}
-ab4c18d07126571b6c67f9d650d46f2e
+     Strictness: <S,1*U><S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,1*C1(U)><L,U(U,U,U(U,U,U,U,U))> -}
+c3e262a0882d221615712cc438926620
   $fPersistEntityLivro_$cfromPersistValues ::
     [Database.Persist.Types.Base.PersistValue]
     -> Data.Either.Either Data.Text.Internal.Text Model.Livro
   {- Arity: 1, Strictness: <S,U> -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fPersistEntityLivro_$ckeyFromValues ::
     [Database.Persist.Types.Base.PersistValue]
     -> Data.Either.Either
@@ -3870,7 +3830,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                         y `cast`
                         (Trans
                              (Sym (Model.N:R:KeyLivro[0])) (Sym (Model.D:R:KeyLivro0[0]))) }) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fPersistEntityLivro_$ckeyToValues ::
     Database.Persist.Class.PersistEntity.Key Model.Livro
     -> [Database.Persist.Types.Base.PersistValue]
@@ -3889,7 +3849,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                                      (Database.Persist.Sql.Orphan.PersistStore.D:R:BackendKeySqlBackend0[0])
                                      (Database.Persist.Sql.Orphan.PersistStore.N:R:BackendKeySqlBackend[0])))))
                    (GHC.Types.[] @ Database.Persist.Types.Base.PersistValue)) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fPersistEntityLivro_$cpersistFieldDef ::
     Database.Persist.Class.PersistEntity.EntityField Model.Livro typ
     -> Database.Persist.Types.Base.FieldDef
@@ -3911,7 +3871,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                              (Data.Type.Equality.N:~[0]
                                   <GHC.Types.*>_N <typ>_N <Database.Persist.Class.PersistEntity.Key
                                                              Model.Livro>_N) of cobox0 { DEFAULT ->
-                      Model.$fPersistEntityLivro9 }
+                      Model.$fPersistEntityLivro6 }
                    Model.LivroTitulo $d~
                    -> case GHC.Types.HEq_sc
                              @ GHC.Types.*
@@ -3922,7 +3882,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                                `cast`
                              (Data.Type.Equality.N:~[0]
                                   <GHC.Types.*>_N <typ>_N <Data.Text.Internal.Text>_N) of cobox0 { DEFAULT ->
-                      Model.$fPersistEntityLivro8 }
+                      Model.$fPersistEntityLivro5 }
                    Model.LivroAutor $d~
                    -> case GHC.Types.HEq_sc
                              @ GHC.Types.*
@@ -3933,7 +3893,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                                `cast`
                              (Data.Type.Equality.N:~[0]
                                   <GHC.Types.*>_N <typ>_N <Data.Text.Internal.Text>_N) of cobox0 { DEFAULT ->
-                      Model.$fPersistEntityLivro7 }
+                      Model.$fPersistEntityLivro4 }
                    Model.LivroPublicacao $d~
                    -> case GHC.Types.HEq_sc
                              @ GHC.Types.*
@@ -3944,7 +3904,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                                `cast`
                              (Data.Type.Equality.N:~[0]
                                   <GHC.Types.*>_N <typ>_N <Data.Text.Internal.Text>_N) of cobox0 { DEFAULT ->
-                      Model.$fPersistEntityLivro6 }
+                      Model.$fPersistEntityLivro3 }
                    Model.LivroDescricao $d~
                    -> case GHC.Types.HEq_sc
                              @ GHC.Types.*
@@ -3955,7 +3915,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                                `cast`
                              (Data.Type.Equality.N:~[0]
                                   <GHC.Types.*>_N <typ>_N <Data.Text.Internal.Text>_N) of cobox0 { DEFAULT ->
-                      Model.$fPersistEntityLivro5 }
+                      Model.$fPersistEntityLivro2 }
                    Model.LivroAssunto $d~
                    -> case GHC.Types.HEq_sc
                              @ GHC.Types.*
@@ -3966,29 +3926,18 @@ ab4c18d07126571b6c67f9d650d46f2e
                                `cast`
                              (Data.Type.Equality.N:~[0]
                                   <GHC.Types.*>_N <typ>_N <Data.Text.Internal.Text>_N) of cobox0 { DEFAULT ->
-                      Model.$fPersistEntityLivro4 }
-                   Model.LivroEmprestado $d~
-                   -> case GHC.Types.HEq_sc
-                             @ GHC.Types.*
-                             @ GHC.Types.*
-                             @ typ
-                             @ GHC.Types.Bool
-                             $d~
-                               `cast`
-                             (Data.Type.Equality.N:~[0]
-                                  <GHC.Types.*>_N <typ>_N <GHC.Types.Bool>_N) of cobox0 { DEFAULT ->
                       Model.$fPersistEntityLivro1 } }) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fPersistEntityLivro_$cpersistUniqueKeys ::
     Model.Livro
     -> [Database.Persist.Class.PersistEntity.Unique Model.Livro]
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*H>,
      Unfolding: InlineRule (1, True, False)
                 (\ (ds :: Model.Livro) ->
-                 case ds of wild { Model.Livro _titulo _autor _publicacao _descricao _assunto _emprestado ->
+                 case ds of wild { Model.Livro _titulo _autor _publicacao _descricao _assunto ->
                  GHC.Types.[]
                    @ (Database.Persist.Class.PersistEntity.Unique Model.Livro) }) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fPersistEntityLivro_$cpersistUniqueToFieldNames ::
     Database.Persist.Class.PersistEntity.Unique Model.Livro
     -> [(Database.Persist.Types.Base.HaskellName,
@@ -3998,7 +3947,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                 (\ (ds :: Database.Persist.Class.PersistEntity.Unique
                             Model.Livro) ->
                  Model.$fPersistEntityCliente2) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fPersistEntityLivro_$cpersistUniqueToValues ::
     Database.Persist.Class.PersistEntity.Unique Model.Livro
     -> [Database.Persist.Types.Base.PersistValue]
@@ -4007,15 +3956,15 @@ ab4c18d07126571b6c67f9d650d46f2e
                 (\ (ds :: Database.Persist.Class.PersistEntity.Unique
                             Model.Livro) ->
                  Model.$fPersistEntityCliente1) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fPersistEntityLivro_$ctoPersistFields ::
     Model.Livro
     -> [Database.Persist.Class.PersistField.SomePersistField]
-  {- Arity: 1, Strictness: <S(SSSSSS),1*U(U,U,U,U,U,U)>m2,
+  {- Arity: 1, Strictness: <S(SSSSS),1*U(U,U,U,U,U)>m2,
      Inline: INLINE[0],
      Unfolding: InlineRule (1, True, False)
                 (\ (w :: Model.Livro) ->
-                 case w of ww { Model.Livro ww1 ww2 ww3 ww4 ww5 ww6 ->
+                 case w of ww { Model.Livro ww1 ww2 ww3 ww4 ww5 ->
                  GHC.Types.:
                    @ Database.Persist.Class.PersistField.SomePersistField
                    (Database.Persist.Class.PersistField.SomePersistField
@@ -4046,15 +3995,9 @@ ab4c18d07126571b6c67f9d650d46f2e
                                   @ Data.Text.Internal.Text
                                   Database.Persist.Class.PersistField.$fPersistFieldText0
                                   ww5)
-                               (GHC.Types.:
-                                  @ Database.Persist.Class.PersistField.SomePersistField
-                                  (Database.Persist.Class.PersistField.SomePersistField
-                                     @ GHC.Types.Bool
-                                     Database.Persist.Class.PersistField.$fPersistFieldBool
-                                     ww6)
-                                  (GHC.Types.[]
-                                     @ Database.Persist.Class.PersistField.SomePersistField)))))) }) -}
-ab4c18d07126571b6c67f9d650d46f2e
+                               (GHC.Types.[]
+                                  @ Database.Persist.Class.PersistField.SomePersistField))))) }) -}
+c3e262a0882d221615712cc438926620
   $fPersistEntityLivro_$s$WLivroId ::
     Database.Persist.Class.PersistEntity.EntityField
       Model.Livro (Database.Persist.Class.PersistEntity.Key Model.Livro)
@@ -4062,7 +4005,7 @@ ab4c18d07126571b6c67f9d650d46f2e
      Unfolding: InlineRule (0, False, False)
                 (Model.LivroId
                    @ (Database.Persist.Class.PersistEntity.Key Model.Livro)
-                   Model.$fPersistEntityLivro29)
+                   Model.$fPersistEntityLivro23)
                   `cast`
                 (Sym (Model.D:R:EntityFieldLivrotyp0[0]) <Database.Persist.Class.PersistEntity.Key
                                                             Model.Livro>_N) -}
@@ -4287,7 +4230,7 @@ c557db51afc29cc68fa678c6a99d3970
     -> Data.HashMap.Base.HashMap
          Data.Text.Internal.Text Database.Persist.Types.Base.PersistValue
   {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fPersistFieldEmprestimo ::
     Database.Persist.Class.PersistField.PersistField Model.Emprestimo
   DFunId
@@ -4421,7 +4364,7 @@ eb1dfdec6fae9d754a252466d10e05c9
                         @ Data.Text.Internal.Text
                         Model.$fPersistFieldEmprestimo10 of ds1 { (#,#) ipv ipv1 ->
                  ipv1 }) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fPersistFieldEmprestimo_$cfromPersistValue ::
     Database.Persist.Types.Base.PersistValue
     -> Data.Either.Either Data.Text.Internal.Text Model.Emprestimo
@@ -4466,7 +4409,7 @@ b16349aef463ea38e3bc2bc521613eba
                               GHC.Base.Nothing -> Database.Persist.Types.Base.PersistNull
                               GHC.Base.Just v -> v } } })
                            Model.$fPersistFieldEmprestimo1) }) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fPersistFieldEmprestimo_$ctoPersistValue ::
     Model.Emprestimo -> Database.Persist.Types.Base.PersistValue
   {- Arity: 1, Strictness: <L,1*U(U,U,U,U)>m12, Inline: INLINE[0],
@@ -4642,7 +4585,7 @@ fd83749c6410934b9455508cea505d28
     -> Data.HashMap.Base.HashMap
          Data.Text.Internal.Text Database.Persist.Types.Base.PersistValue
   {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fPersistFieldKey ::
     Database.Persist.Class.PersistField.PersistField
       (Database.Persist.Class.PersistEntity.Key Model.Emprestimo)
@@ -4697,7 +4640,7 @@ b16349aef463ea38e3bc2bc521613eba
                           (Trans
                                (Sym (Model.N:R:KeyCliente[0])) (Sym (Model.D:R:KeyCliente0[0]))))
                  ->_R <Database.Persist.Types.Base.PersistValue>_R) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fPersistFieldKey1 ::
     Database.Persist.Class.PersistField.PersistField
       (Database.Persist.Class.PersistEntity.Key Model.Livro)
@@ -4707,7 +4650,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                   @ (Database.Persist.Class.PersistEntity.Key Model.Livro)
                   Model.$fPersistFieldKey1_$ctoPersistValue
                   Model.$fPersistFieldKey1_$cfromPersistValue -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fPersistFieldKey1_$cfromPersistValue ::
     Database.Persist.Types.Base.PersistValue
     -> Data.Either.Either
@@ -4727,7 +4670,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                                    (Trans
                                         (Sym (Model.N:R:KeyLivro[0]))
                                         (Sym (Model.D:R:KeyLivro0[0]))))))_R) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fPersistFieldKey1_$ctoPersistValue ::
     Database.Persist.Class.PersistEntity.Key Model.Livro
     -> Database.Persist.Types.Base.PersistValue
@@ -4788,7 +4731,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                                (Sym (Model.N:R:KeyFuncionario[0]))
                                (Sym (Model.D:R:KeyFuncionario0[0]))))
                  ->_R <Database.Persist.Types.Base.PersistValue>_R) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fPersistFieldKey_$cfromPersistValue ::
     Database.Persist.Types.Base.PersistValue
     -> Data.Either.Either
@@ -4808,7 +4751,7 @@ b16349aef463ea38e3bc2bc521613eba
                                    (Trans
                                         (Sym (Model.N:R:KeyEmprestimo[0]))
                                         (Sym (Model.D:R:KeyEmprestimo0[0]))))))_R) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fPersistFieldKey_$ctoPersistValue ::
     Database.Persist.Class.PersistEntity.Key Model.Emprestimo
     -> Database.Persist.Types.Base.PersistValue
@@ -4824,7 +4767,7 @@ b16349aef463ea38e3bc2bc521613eba
                                (Sym (Model.N:R:KeyEmprestimo[0]))
                                (Sym (Model.D:R:KeyEmprestimo0[0]))))
                  ->_R <Database.Persist.Types.Base.PersistValue>_R) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fPersistFieldLivro ::
     Database.Persist.Class.PersistField.PersistField Model.Livro
   DFunId
@@ -4833,30 +4776,44 @@ ab4c18d07126571b6c67f9d650d46f2e
                   @ Model.Livro
                   Model.$fPersistFieldLivro_$ctoPersistValue
                   Model.$fPersistFieldLivro_$cfromPersistValue -}
-f672055e6e027e78e08e7b2094fda909
+bb052cbd32327299f2394424bf688a02
   $fPersistFieldLivro1 :: [GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ GHC.Base.String
-                   Model.$fPersistFieldLivro12
+                   Model.$fPersistFieldLivro10
                    Model.$fPersistFieldLivro2) -}
-2a122e64e67a07dcb3cc087934898da3
+55b2c8f3be7ac31260f73ded45d9f130
   $fPersistFieldLivro10 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "publicacao"#) -}
-3ff9eb9ba9bd3e135478f5920dadea33
-  $fPersistFieldLivro11 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "autor"#) -}
-510407ce2382fc18c63f8687d8d1a9a8
-  $fPersistFieldLivro12 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "titulo"#) -}
-07feda3be051d6db4610c138508cd511
+4a3bae204a43ea3248be24e85a997ec5
+  $fPersistFieldLivro11 :: Data.Text.Internal.Text
+  {- Unfolding: (case GHC.Magic.runRW#
+                        @ 'GHC.Types.PtrRepLifted
+                        @ Data.Text.Internal.Text
+                        Model.$fPersistFieldLivro12 of ds1 { (#,#) ipv ipv1 ->
+                 ipv1 }) -}
+d763ca07ce6c86c5ceb01de4bb417e82
+  $fPersistFieldLivro12 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 1,
+     Unfolding: (\ (s1 :: GHC.Prim.State#
+                            GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.newByteArray#
+                        @ GHC.Prim.RealWorld
+                        10#
+                        s1 of ds1 { (#,#) ipv ipv1 ->
+                 Model.$wouter15 ipv1 4# Model.$fPersistFieldLivro6 0# ipv }) -}
+896a190fdd1c323c334b247263798df6
   $fPersistFieldLivro13 :: Data.Text.Internal.Text
   {- Unfolding: (case GHC.Magic.runRW#
                         @ 'GHC.Types.PtrRepLifted
                         @ Data.Text.Internal.Text
                         Model.$fPersistFieldLivro14 of ds1 { (#,#) ipv ipv1 ->
                  ipv1 }) -}
-227d76435778942d3c0a93026cf9a855
+87e5f308ea977ea1a9173da023807950
   $fPersistFieldLivro14 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -4868,15 +4825,15 @@ f672055e6e027e78e08e7b2094fda909
                         @ GHC.Prim.RealWorld
                         10#
                         s1 of ds1 { (#,#) ipv ipv1 ->
-                 Model.$wouter15 ipv1 4# Model.$fPersistFieldLivro7 0# ipv }) -}
-fa17b5c81cb453fc486974beb59f5e63
+                 Model.$wouter16 ipv1 4# Model.$fPersistFieldLivro7 0# ipv }) -}
+74fde8edb11ba095ad13fcbab5aa9ef5
   $fPersistFieldLivro15 :: Data.Text.Internal.Text
   {- Unfolding: (case GHC.Magic.runRW#
                         @ 'GHC.Types.PtrRepLifted
                         @ Data.Text.Internal.Text
                         Model.$fPersistFieldLivro16 of ds1 { (#,#) ipv ipv1 ->
                  ipv1 }) -}
-a8b19f119587c43be28d375188b7014e
+300813793de9447041a883d7db693899
   $fPersistFieldLivro16 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -4888,15 +4845,15 @@ a8b19f119587c43be28d375188b7014e
                         @ GHC.Prim.RealWorld
                         10#
                         s1 of ds1 { (#,#) ipv ipv1 ->
-                 Model.$wouter16 ipv1 4# Model.$fPersistFieldLivro8 0# ipv }) -}
-5e5528190348a2b2e22e285a1f3bd2e4
+                 Model.$wouter17 ipv1 4# Model.$fPersistFieldLivro8 0# ipv }) -}
+f8fb6271ebcfd50e334f1f99302d422e
   $fPersistFieldLivro17 :: Data.Text.Internal.Text
   {- Unfolding: (case GHC.Magic.runRW#
                         @ 'GHC.Types.PtrRepLifted
                         @ Data.Text.Internal.Text
                         Model.$fPersistFieldLivro18 of ds1 { (#,#) ipv ipv1 ->
                  ipv1 }) -}
-b0fd8374a1136c7bb42c72c8ee68a0a0
+0bdbb6154417f9fd8af864eae336de8d
   $fPersistFieldLivro18 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -4908,22 +4865,22 @@ b0fd8374a1136c7bb42c72c8ee68a0a0
                         @ GHC.Prim.RealWorld
                         10#
                         s1 of ds1 { (#,#) ipv ipv1 ->
-                 Model.$wouter17 ipv1 4# Model.$fPersistFieldLivro9 0# ipv }) -}
-9ef78418c6eb9a6c892a477f21376729
+                 Model.$wouter18 ipv1 4# Model.$fPersistFieldLivro9 0# ipv }) -}
+f8cd26037d4519a06815b8cb066fb020
   $fPersistFieldLivro19 :: Data.Text.Internal.Text
   {- Unfolding: (case GHC.Magic.runRW#
                         @ 'GHC.Types.PtrRepLifted
                         @ Data.Text.Internal.Text
                         Model.$fPersistFieldLivro20 of ds1 { (#,#) ipv ipv1 ->
                  ipv1 }) -}
-f10e15d91726ae591498b1c62337faba
+62b1390ba53f70f71ad8a3e228f00fbb
   $fPersistFieldLivro2 :: [GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ GHC.Base.String
-                   Model.$fPersistFieldLivro11
+                   Model.$fPersistFieldLivro9
                    Model.$fPersistFieldLivro3) -}
-971488b031c0b4b7b017b8e8b94587fb
+06d5b57504b53bb0cf0af4f7eb312ef5
   $fPersistFieldLivro20 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -4935,85 +4892,41 @@ f10e15d91726ae591498b1c62337faba
                         @ GHC.Prim.RealWorld
                         10#
                         s1 of ds1 { (#,#) ipv ipv1 ->
-                 Model.$wouter18 ipv1 4# Model.$fPersistFieldLivro10 0# ipv }) -}
-207a8392e6012c468112bc58947ce04a
-  $fPersistFieldLivro21 :: Data.Text.Internal.Text
-  {- Unfolding: (case GHC.Magic.runRW#
-                        @ 'GHC.Types.PtrRepLifted
-                        @ Data.Text.Internal.Text
-                        Model.$fPersistFieldLivro22 of ds1 { (#,#) ipv ipv1 ->
-                 ipv1 }) -}
-d4d1282d5d11c63b05cb9b1816c87ad1
-  $fPersistFieldLivro22 ::
-    GHC.Prim.State# GHC.Prim.RealWorld
-    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
-          Data.Text.Internal.Text #)
-  {- Arity: 1,
-     Unfolding: (\ (s1 :: GHC.Prim.State#
-                            GHC.Prim.RealWorld)[OneShot] ->
-                 case GHC.Prim.newByteArray#
-                        @ GHC.Prim.RealWorld
-                        10#
-                        s1 of ds1 { (#,#) ipv ipv1 ->
-                 Model.$wouter19 ipv1 4# Model.$fPersistFieldLivro11 0# ipv }) -}
-8ad82f7ed4fdb6d0f90f6c557d7283d4
-  $fPersistFieldLivro23 :: Data.Text.Internal.Text
-  {- Unfolding: (case GHC.Magic.runRW#
-                        @ 'GHC.Types.PtrRepLifted
-                        @ Data.Text.Internal.Text
-                        Model.$fPersistFieldLivro24 of ds1 { (#,#) ipv ipv1 ->
-                 ipv1 }) -}
-8365fb346c1ccc016f665e57e9af5f46
-  $fPersistFieldLivro24 ::
-    GHC.Prim.State# GHC.Prim.RealWorld
-    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
-          Data.Text.Internal.Text #)
-  {- Arity: 1,
-     Unfolding: (\ (s1 :: GHC.Prim.State#
-                            GHC.Prim.RealWorld)[OneShot] ->
-                 case GHC.Prim.newByteArray#
-                        @ GHC.Prim.RealWorld
-                        10#
-                        s1 of ds1 { (#,#) ipv ipv1 ->
-                 Model.$wouter20 ipv1 4# Model.$fPersistFieldLivro12 0# ipv }) -}
-de5954d50b1ca9df23104f330f75f902
+                 Model.$wouter19 ipv1 4# Model.$fPersistFieldLivro10 0# ipv }) -}
+381fe159ecd8f2fba9c6e2855b897014
   $fPersistFieldLivro3 :: [GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ GHC.Base.String
-                   Model.$fPersistFieldLivro10
+                   Model.$fPersistFieldLivro8
                    Model.$fPersistFieldLivro4) -}
-b22552a034b66c3a10af043bc057c669
+bf54186b1fec0506aa7201fbf56c7b43
   $fPersistFieldLivro4 :: [GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ GHC.Base.String
-                   Model.$fPersistFieldLivro9
+                   Model.$fPersistFieldLivro7
                    Model.$fPersistFieldLivro5) -}
-3cbd31a6d90d7af0fde37b591958d51f
+56bae9154ee00f473e9caa386d505caa
   $fPersistFieldLivro5 :: [GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ GHC.Base.String
-                   Model.$fPersistFieldLivro8
-                   Model.$fPersistFieldLivro6) -}
-50cce6f22ce1a0a573a783ee06d5417a
-  $fPersistFieldLivro6 :: [GHC.Base.String]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ GHC.Base.String
-                   Model.$fPersistFieldLivro7
+                   Model.$fPersistFieldLivro6
                    (GHC.Types.[] @ GHC.Base.String)) -}
-e9db13110a30a552c69f8fffa85c8519
-  $fPersistFieldLivro7 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "emprestado"#) -}
-fb2a902b468495f4f1d00dc40fa8fe94
-  $fPersistFieldLivro8 :: [GHC.Types.Char]
+0b1a10ab0e30354e83bc0075255e0855
+  $fPersistFieldLivro6 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "assunto"#) -}
-b2a8cfc86bad50a96e3910263c98693c
-  $fPersistFieldLivro9 :: [GHC.Types.Char]
+6f6798d341b456e392146565c158b1a4
+  $fPersistFieldLivro7 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "descricao"#) -}
-ab4c18d07126571b6c67f9d650d46f2e
+b26d200bfc6ca66ae279cc5a373aac84
+  $fPersistFieldLivro8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "publicacao"#) -}
+b2184ea92c60e2c63e3f2774d31657b8
+  $fPersistFieldLivro9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "autor"#) -}
+c3e262a0882d221615712cc438926620
   $fPersistFieldLivro_$cfromPersistValue ::
     Database.Persist.Types.Base.PersistValue
     -> Data.Either.Either Data.Text.Internal.Text Model.Livro
@@ -5063,11 +4976,10 @@ ab4c18d07126571b6c67f9d650d46f2e
                               GHC.Base.Nothing -> Database.Persist.Types.Base.PersistNull
                               GHC.Base.Just v -> v } } })
                            Model.$fPersistFieldLivro1) }) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fPersistFieldLivro_$ctoPersistValue ::
     Model.Livro -> Database.Persist.Types.Base.PersistValue
-  {- Arity: 1, Strictness: <L,1*U(U,U,U,U,U,U)>m12,
-     Inline: INLINE[0],
+  {- Arity: 1, Strictness: <L,1*U(U,U,U,U,U)>m12, Inline: INLINE[0],
      Unfolding: InlineRule (1, True, False)
                 (\ (w :: Model.Livro) ->
                  case Model.$w$ctoPersistValue2 w of ww { Unit# ww1 ->
@@ -5098,7 +5010,7 @@ b48a80796a3178073b279fff8c7112c8
      Unfolding: InlineRule (1, True, True)
                 (\ (ds :: Data.Proxy.Proxy Model.Cliente) ->
                  Database.Persist.Types.Base.SqlString) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fPersistFieldSqlEmprestimo ::
     Database.Persist.Sql.Class.PersistFieldSql Model.Emprestimo
   DFunId
@@ -5107,7 +5019,7 @@ b16349aef463ea38e3bc2bc521613eba
                   @ Model.Emprestimo
                   Model.$fPersistFieldEmprestimo
                   Model.$fPersistFieldSqlEmprestimo_$csqlType -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fPersistFieldSqlEmprestimo_$csqlType ::
     Data.Proxy.Proxy Model.Emprestimo
     -> Database.Persist.Types.Base.SqlType
@@ -5132,7 +5044,7 @@ b16349aef463ea38e3bc2bc521613eba
      Unfolding: InlineRule (1, True, True)
                 (\ (ds :: Data.Proxy.Proxy Model.Funcionario) ->
                  Database.Persist.Types.Base.SqlString) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fPersistFieldSqlKey ::
     Database.Persist.Sql.Class.PersistFieldSql
       (Database.Persist.Class.PersistEntity.Key Model.Emprestimo)
@@ -5166,7 +5078,7 @@ b16349aef463ea38e3bc2bc521613eba
                     <GHC.Int.Int64, Database.Persist.Class.PersistEntity.Key
                                       Model.Cliente>)_R
                  ->_R <Database.Persist.Types.Base.SqlType>_R) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fPersistFieldSqlKey1 ::
     Database.Persist.Sql.Class.PersistFieldSql
       (Database.Persist.Class.PersistEntity.Key Model.Livro)
@@ -5176,7 +5088,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                   @ (Database.Persist.Class.PersistEntity.Key Model.Livro)
                   Model.$fPersistFieldKey1
                   Model.$fPersistFieldSqlKey1_$csqlType -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fPersistFieldSqlKey1_$csqlType ::
     Data.Proxy.Proxy
       (Database.Persist.Class.PersistEntity.Key Model.Livro)
@@ -5214,7 +5126,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                     <GHC.Int.Int64, Database.Persist.Class.PersistEntity.Key
                                       Model.Funcionario>)_R
                  ->_R <Database.Persist.Types.Base.SqlType>_R) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fPersistFieldSqlKey_$csqlType ::
     Data.Proxy.Proxy
       (Database.Persist.Class.PersistEntity.Key Model.Emprestimo)
@@ -5228,7 +5140,7 @@ b16349aef463ea38e3bc2bc521613eba
                     <GHC.Int.Int64, Database.Persist.Class.PersistEntity.Key
                                       Model.Emprestimo>)_R
                  ->_R <Database.Persist.Types.Base.SqlType>_R) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fPersistFieldSqlLivro ::
     Database.Persist.Sql.Class.PersistFieldSql Model.Livro
   DFunId
@@ -5237,14 +5149,14 @@ ab4c18d07126571b6c67f9d650d46f2e
                   @ Model.Livro
                   Model.$fPersistFieldLivro
                   Model.$fPersistFieldSqlLivro_$csqlType -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fPersistFieldSqlLivro_$csqlType ::
     Data.Proxy.Proxy Model.Livro -> Database.Persist.Types.Base.SqlType
   {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
      Unfolding: InlineRule (1, True, True)
                 (\ (ds :: Data.Proxy.Proxy Model.Livro) ->
                  Database.Persist.Types.Base.SqlString) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fReadKey ::
     GHC.Read.Read
       (Database.Persist.Class.PersistEntity.Key Model.Emprestimo)
@@ -5328,7 +5240,7 @@ b16349aef463ea38e3bc2bc521613eba
                       @ (Database.Persist.Class.PersistEntity.Key Model.Cliente)
                       (Text.ParserCombinators.ReadP.$fApplicativeP_$cpure
                          @ (Database.Persist.Class.PersistEntity.Key Model.Cliente)))) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fReadKey1 ::
     GHC.Read.Read
       (Database.Persist.Class.PersistEntity.Key Model.Livro)
@@ -5340,7 +5252,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                   Model.$fReadKey1_$creadList
                   Model.$fReadKey1_$creadPrec
                   Model.$fReadKey1_$creadListPrec -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fReadKey10 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
@@ -5355,7 +5267,7 @@ b16349aef463ea38e3bc2bc521613eba
                           -> Text.ParserCombinators.ReadP.P b) ->
                  case w of ww { GHC.Types.I# ww1 ->
                  Model.$w$creadPrec1 ww1 @ b w1 }) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fReadKey11 ::
     Text.ParserCombinators.ReadP.P
       [Database.Persist.Class.PersistEntity.Key Model.Emprestimo]
@@ -5439,7 +5351,7 @@ b16349aef463ea38e3bc2bc521613eba
                    @ [Database.Persist.Class.PersistEntity.Key Model.Funcionario]
                    (Text.ParserCombinators.ReadP.$fApplicativeP_$cpure
                       @ [Database.Persist.Class.PersistEntity.Key Model.Funcionario])) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fReadKey16 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
@@ -5461,7 +5373,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                    eta
                    @ b
                    eta1) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fReadKey17 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> Text.ParserCombinators.ReadP.ReadP
@@ -5477,7 +5389,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                                        <Database.Persist.Class.PersistEntity.Key Model.Livro>_R))
                         (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
                                   <Database.Persist.Class.PersistEntity.Key Model.Livro>_R)))) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fReadKey18 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
@@ -5492,7 +5404,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                           -> Text.ParserCombinators.ReadP.P b) ->
                  case w of ww { GHC.Types.I# ww1 ->
                  Model.$w$creadPrec3 ww1 @ b w1 }) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fReadKey19 ::
     Text.ParserCombinators.ReadP.P
       [Database.Persist.Class.PersistEntity.Key Model.Livro]
@@ -5506,7 +5418,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                    @ [Database.Persist.Class.PersistEntity.Key Model.Livro]
                    (Text.ParserCombinators.ReadP.$fApplicativeP_$cpure
                       @ [Database.Persist.Class.PersistEntity.Key Model.Livro])) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fReadKey1_$creadList ::
     Text.ParserCombinators.ReadP.ReadS
       [Database.Persist.Class.PersistEntity.Key Model.Livro]
@@ -5514,7 +5426,7 @@ ab4c18d07126571b6c67f9d650d46f2e
      Unfolding: (Text.ParserCombinators.ReadP.run
                    @ [Database.Persist.Class.PersistEntity.Key Model.Livro]
                    Model.$fReadKey19) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fReadKey1_$creadListPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec
       [Database.Persist.Class.PersistEntity.Key Model.Livro]
@@ -5528,7 +5440,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                                     <[Database.Persist.Class.PersistEntity.Key Model.Livro]>_R))
                      (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
                                <[Database.Persist.Class.PersistEntity.Key Model.Livro]>_R))) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fReadKey1_$creadPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec
       (Database.Persist.Class.PersistEntity.Key Model.Livro)
@@ -5538,7 +5450,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                   `cast`
                 (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
                           <Database.Persist.Class.PersistEntity.Key Model.Livro>_R)) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fReadKey1_$creadsPrec ::
     GHC.Types.Int
     -> Text.ParserCombinators.ReadP.ReadS
@@ -5709,7 +5621,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                    @ [Database.Persist.Class.PersistEntity.Key Model.Cliente]
                    (Text.ParserCombinators.ReadP.$fApplicativeP_$cpure
                       @ [Database.Persist.Class.PersistEntity.Key Model.Cliente])) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fReadKey8 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
@@ -5732,7 +5644,7 @@ b16349aef463ea38e3bc2bc521613eba
                    eta
                    @ b
                    eta1) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fReadKey9 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> Text.ParserCombinators.ReadP.ReadP
@@ -5750,7 +5662,7 @@ b16349aef463ea38e3bc2bc521613eba
                         (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
                                   <Database.Persist.Class.PersistEntity.Key
                                      Model.Emprestimo>_R)))) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fReadKey_$creadList ::
     Text.ParserCombinators.ReadP.ReadS
       [Database.Persist.Class.PersistEntity.Key Model.Emprestimo]
@@ -5758,7 +5670,7 @@ b16349aef463ea38e3bc2bc521613eba
      Unfolding: (Text.ParserCombinators.ReadP.run
                    @ [Database.Persist.Class.PersistEntity.Key Model.Emprestimo]
                    Model.$fReadKey11) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fReadKey_$creadListPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec
       [Database.Persist.Class.PersistEntity.Key Model.Emprestimo]
@@ -5774,7 +5686,7 @@ b16349aef463ea38e3bc2bc521613eba
                      (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
                                <[Database.Persist.Class.PersistEntity.Key
                                    Model.Emprestimo]>_R))) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fReadKey_$creadPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec
       (Database.Persist.Class.PersistEntity.Key Model.Emprestimo)
@@ -5784,7 +5696,7 @@ b16349aef463ea38e3bc2bc521613eba
                   `cast`
                 (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
                           <Database.Persist.Class.PersistEntity.Key Model.Emprestimo>_R)) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fReadKey_$creadsPrec ::
     GHC.Types.Int
     -> Text.ParserCombinators.ReadP.ReadS
@@ -5813,7 +5725,7 @@ b16349aef463ea38e3bc2bc521613eba
                       @ (Database.Persist.Class.PersistEntity.Key Model.Emprestimo)
                       (Text.ParserCombinators.ReadP.$fApplicativeP_$cpure
                          @ (Database.Persist.Class.PersistEntity.Key Model.Emprestimo)))) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fShowKey ::
     GHC.Show.Show
       (Database.Persist.Class.PersistEntity.Key Model.Emprestimo)
@@ -5867,7 +5779,7 @@ b16349aef463ea38e3bc2bc521613eba
                    (w2 :: GHC.Base.String) ->
                  case w of ww { GHC.Types.I# ww1 ->
                  Model.$w$cshowsPrec ww1 w1 w2 }) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fShowKey1 ::
     GHC.Show.Show
       (Database.Persist.Class.PersistEntity.Key Model.Livro)
@@ -5897,7 +5809,7 @@ c5623e5db7f8f26ad5950e4b45fe11ca
 1477fe685b7025d975165213bf978fea
   $fShowKey13 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "FuncionarioKey {"#) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fShowKey14 ::
     Database.Persist.Class.PersistEntity.Key Model.Livro
     -> GHC.Show.ShowS
@@ -5912,7 +5824,7 @@ ab4c18d07126571b6c67f9d650d46f2e
 df921d91a6171b48104e4e3ca60b542a
   $fShowKey16 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "LivroKey {"#) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fShowKey1_$cshow ::
     Database.Persist.Class.PersistEntity.Key Model.Livro
     -> GHC.Base.String
@@ -5923,7 +5835,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                    GHC.Show.shows22
                    x
                    (GHC.Types.[] @ GHC.Types.Char)) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fShowKey1_$cshowList ::
     [Database.Persist.Class.PersistEntity.Key Model.Livro]
     -> GHC.Show.ShowS
@@ -5931,7 +5843,7 @@ ab4c18d07126571b6c67f9d650d46f2e
      Unfolding: (GHC.Show.showList__
                    @ (Database.Persist.Class.PersistEntity.Key Model.Livro)
                    Model.$fShowKey14) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fShowKey1_$cshowsPrec ::
     GHC.Types.Int
     -> Database.Persist.Class.PersistEntity.Key Model.Livro
@@ -6006,7 +5918,7 @@ c12913e8a375a00c7972e13d24e92d9d
 feca7725b9a3b3a8056f3a6f82b04722
   $fShowKey7 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "ClienteKey {"#) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fShowKey8 ::
     Database.Persist.Class.PersistEntity.Key Model.Emprestimo
     -> GHC.Show.ShowS
@@ -6018,7 +5930,7 @@ b16349aef463ea38e3bc2bc521613eba
 e679e31a401442630422ed9c92ef38c1
   $fShowKey9 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "unEmprestimoKey = "#) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fShowKey_$cshow ::
     Database.Persist.Class.PersistEntity.Key Model.Emprestimo
     -> GHC.Base.String
@@ -6030,7 +5942,7 @@ b16349aef463ea38e3bc2bc521613eba
                    GHC.Show.shows22
                    x
                    (GHC.Types.[] @ GHC.Types.Char)) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fShowKey_$cshowList ::
     [Database.Persist.Class.PersistEntity.Key Model.Emprestimo]
     -> GHC.Show.ShowS
@@ -6038,7 +5950,7 @@ b16349aef463ea38e3bc2bc521613eba
      Unfolding: (GHC.Show.showList__
                    @ (Database.Persist.Class.PersistEntity.Key Model.Emprestimo)
                    Model.$fShowKey8) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fShowKey_$cshowsPrec ::
     GHC.Types.Int
     -> Database.Persist.Class.PersistEntity.Key Model.Emprestimo
@@ -6095,7 +6007,7 @@ b16349aef463ea38e3bc2bc521613eba
                   `cast`
                 (Sym (Data.Type.Equality.N:~[0]
                           <*>_N) (Sym (Model.D:R:PersistEntityBackendCliente[0])) <Database.Persist.Sql.Types.Internal.SqlBackend>_N) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fToBackendKeySqlBackendEmprestimo ::
     Database.Persist.Class.PersistStore.ToBackendKey
       Database.Persist.Sql.Types.Internal.SqlBackend Model.Emprestimo
@@ -6117,7 +6029,7 @@ b16349aef463ea38e3bc2bc521613eba
                    ->_R Trans
                             (Sym (Model.N:R:KeyEmprestimo[0]))
                             (Sym (Model.D:R:KeyEmprestimo0[0]))) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fToBackendKeySqlBackendEmprestimo_$cp2ToBackendKey ::
     Database.Persist.Class.PersistEntity.PersistEntityBackend
       Model.Emprestimo
@@ -6161,7 +6073,7 @@ b16349aef463ea38e3bc2bc521613eba
                   `cast`
                 (Sym (Data.Type.Equality.N:~[0]
                           <*>_N) (Sym (Model.D:R:PersistEntityBackendFuncionario[0])) <Database.Persist.Sql.Types.Internal.SqlBackend>_N) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fToBackendKeySqlBackendLivro ::
     Database.Persist.Class.PersistStore.ToBackendKey
       Database.Persist.Sql.Types.Internal.SqlBackend Model.Livro
@@ -6182,7 +6094,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                       Database.Persist.Sql.Types.Internal.SqlBackend>_R
                    ->_R Trans
                             (Sym (Model.N:R:KeyLivro[0])) (Sym (Model.D:R:KeyLivro0[0]))) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fToBackendKeySqlBackendLivro_$cp2ToBackendKey ::
     Database.Persist.Class.PersistEntity.PersistEntityBackend
       Model.Livro
@@ -6193,7 +6105,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                   `cast`
                 (Sym (Data.Type.Equality.N:~[0]
                           <*>_N) (Sym (Model.D:R:PersistEntityBackendLivro[0])) <Database.Persist.Sql.Types.Internal.SqlBackend>_N) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fToHttpApiDataKey ::
     Web.Internal.HttpApiData.ToHttpApiData
       (Database.Persist.Class.PersistEntity.Key Model.Emprestimo)
@@ -6262,7 +6174,7 @@ b16349aef463ea38e3bc2bc521613eba
                           (Trans
                                (Sym (Model.N:R:KeyCliente[0])) (Sym (Model.D:R:KeyCliente0[0]))))
                  ->_R <Data.Text.Internal.Text>_R) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fToHttpApiDataKey1 ::
     Web.Internal.HttpApiData.ToHttpApiData
       (Database.Persist.Class.PersistEntity.Key Model.Livro)
@@ -6274,7 +6186,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                   Model.$fToHttpApiDataKey1_$ctoEncodedUrlPiece
                   Model.$fToHttpApiDataKey1_$ctoHeader
                   Model.$fToHttpApiDataKey1_$ctoUrlPiece -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fToHttpApiDataKey1_$ctoEncodedUrlPiece ::
     Database.Persist.Class.PersistEntity.Key Model.Livro
     -> Data.ByteString.Builder.Internal.Builder
@@ -6289,7 +6201,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                           (Trans
                                (Sym (Model.N:R:KeyLivro[0])) (Sym (Model.D:R:KeyLivro0[0]))))
                  ->_R <Data.ByteString.Builder.Internal.Builder>_R) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fToHttpApiDataKey1_$ctoHeader ::
     Database.Persist.Class.PersistEntity.Key Model.Livro
     -> Data.ByteString.Internal.ByteString
@@ -6304,7 +6216,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                           (Trans
                                (Sym (Model.N:R:KeyLivro[0])) (Sym (Model.D:R:KeyLivro0[0]))))
                  ->_R <Data.ByteString.Internal.ByteString>_R) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fToHttpApiDataKey1_$ctoUrlPiece ::
     Database.Persist.Class.PersistEntity.Key Model.Livro
     -> Data.Text.Internal.Text
@@ -6379,7 +6291,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                                (Sym (Model.N:R:KeyFuncionario[0]))
                                (Sym (Model.D:R:KeyFuncionario0[0]))))
                  ->_R <Data.Text.Internal.Text>_R) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fToHttpApiDataKey_$ctoEncodedUrlPiece ::
     Database.Persist.Class.PersistEntity.Key Model.Emprestimo
     -> Data.ByteString.Builder.Internal.Builder
@@ -6395,7 +6307,7 @@ b16349aef463ea38e3bc2bc521613eba
                                (Sym (Model.N:R:KeyEmprestimo[0]))
                                (Sym (Model.D:R:KeyEmprestimo0[0]))))
                  ->_R <Data.ByteString.Builder.Internal.Builder>_R) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fToHttpApiDataKey_$ctoHeader ::
     Database.Persist.Class.PersistEntity.Key Model.Emprestimo
     -> Data.ByteString.Internal.ByteString
@@ -6411,7 +6323,7 @@ b16349aef463ea38e3bc2bc521613eba
                                (Sym (Model.N:R:KeyEmprestimo[0]))
                                (Sym (Model.D:R:KeyEmprestimo0[0]))))
                  ->_R <Data.ByteString.Internal.ByteString>_R) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fToHttpApiDataKey_$ctoUrlPiece ::
     Database.Persist.Class.PersistEntity.Key Model.Emprestimo
     -> Data.Text.Internal.Text
@@ -6427,7 +6339,7 @@ b16349aef463ea38e3bc2bc521613eba
                                (Sym (Model.N:R:KeyEmprestimo[0]))
                                (Sym (Model.D:R:KeyEmprestimo0[0]))))
                  ->_R <Data.Text.Internal.Text>_R) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fToJSONKey ::
     Data.Aeson.Types.ToJSON.ToJSON
       (Database.Persist.Class.PersistEntity.Key Model.Emprestimo)
@@ -6515,7 +6427,7 @@ b16349aef463ea38e3bc2bc521613eba
                                  (Sym (Model.N:R:KeyCliente[0]))
                                  (Sym (Model.D:R:KeyCliente0[0]))))])_R
                  ->_R <Data.Aeson.Types.Internal.Value>_R) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fToJSONKey1 ::
     Data.Aeson.Types.ToJSON.ToJSON
       (Database.Persist.Class.PersistEntity.Key Model.Livro)
@@ -6527,7 +6439,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                   Model.$fToJSONKey1_$ctoEncoding
                   Model.$fToJSONKey1_$ctoJSONList
                   Model.$fToJSONKey1_$ctoEncodingList -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fToJSONKey1_$ctoEncoding ::
     Database.Persist.Class.PersistEntity.Key Model.Livro
     -> Data.Aeson.Encoding.Internal.Encoding
@@ -6543,7 +6455,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                                (Sym (Model.N:R:KeyLivro[0])) (Sym (Model.D:R:KeyLivro0[0]))))
                  ->_R Sym (Data.Aeson.Encoding.Internal.N:Encoding'[0]
                                <Data.Aeson.Types.Internal.Value>_P)) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fToJSONKey1_$ctoEncodingList ::
     [Database.Persist.Class.PersistEntity.Key Model.Livro]
     -> Data.Aeson.Encoding.Internal.Encoding
@@ -6559,7 +6471,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                             (Trans
                                  (Sym (Model.N:R:KeyLivro[0])) (Sym (Model.D:R:KeyLivro0[0]))))])_R
                  ->_R <Data.Aeson.Encoding.Internal.Encoding>_R) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fToJSONKey1_$ctoJSON ::
     Database.Persist.Class.PersistEntity.Key Model.Livro
     -> Data.Aeson.Types.Internal.Value
@@ -6574,7 +6486,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                           (Trans
                                (Sym (Model.N:R:KeyLivro[0])) (Sym (Model.D:R:KeyLivro0[0]))))
                  ->_R <Data.Aeson.Types.Internal.Value>_R) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $fToJSONKey1_$ctoJSONList ::
     [Database.Persist.Class.PersistEntity.Key Model.Livro]
     -> Data.Aeson.Types.Internal.Value
@@ -6667,7 +6579,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                                  (Sym (Model.N:R:KeyFuncionario[0]))
                                  (Sym (Model.D:R:KeyFuncionario0[0]))))])_R
                  ->_R <Data.Aeson.Types.Internal.Value>_R) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fToJSONKey_$ctoEncoding ::
     Database.Persist.Class.PersistEntity.Key Model.Emprestimo
     -> Data.Aeson.Encoding.Internal.Encoding
@@ -6684,7 +6596,7 @@ b16349aef463ea38e3bc2bc521613eba
                                (Sym (Model.D:R:KeyEmprestimo0[0]))))
                  ->_R Sym (Data.Aeson.Encoding.Internal.N:Encoding'[0]
                                <Data.Aeson.Types.Internal.Value>_P)) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fToJSONKey_$ctoEncodingList ::
     [Database.Persist.Class.PersistEntity.Key Model.Emprestimo]
     -> Data.Aeson.Encoding.Internal.Encoding
@@ -6701,7 +6613,7 @@ b16349aef463ea38e3bc2bc521613eba
                                  (Sym (Model.N:R:KeyEmprestimo[0]))
                                  (Sym (Model.D:R:KeyEmprestimo0[0]))))])_R
                  ->_R <Data.Aeson.Encoding.Internal.Encoding>_R) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fToJSONKey_$ctoJSON ::
     Database.Persist.Class.PersistEntity.Key Model.Emprestimo
     -> Data.Aeson.Types.Internal.Value
@@ -6717,7 +6629,7 @@ b16349aef463ea38e3bc2bc521613eba
                                (Sym (Model.N:R:KeyEmprestimo[0]))
                                (Sym (Model.D:R:KeyEmprestimo0[0]))))
                  ->_R <Data.Aeson.Types.Internal.Value>_R) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $fToJSONKey_$ctoJSONList ::
     [Database.Persist.Class.PersistEntity.Key Model.Emprestimo]
     -> Data.Aeson.Types.Internal.Value
@@ -6998,7 +6910,7 @@ ef18b6a4dd0121b09d47ac7eb0312521
         -> Text.ParserCombinators.ReadP.P b)
        -> Text.ParserCombinators.ReadP.P b
   {- Arity: 2, Strictness: <S,U><L,C(U)>, Inline: [0] -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $w$creadPrec1 ::
     GHC.Prim.Int#
     -> forall b.
@@ -7014,7 +6926,7 @@ b16349aef463ea38e3bc2bc521613eba
         -> Text.ParserCombinators.ReadP.P b)
        -> Text.ParserCombinators.ReadP.P b
   {- Arity: 2, Strictness: <S,U><L,C(U)>, Inline: [0] -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $w$creadPrec3 ::
     GHC.Prim.Int#
     -> forall b.
@@ -7056,7 +6968,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                         @ GHC.Types.Char
                         GHC.Show.shows7
                         (p (GHC.Types.: @ GHC.Types.Char GHC.Show.shows4 w1)) }) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $w$cshowsPrec1 ::
     GHC.Prim.Int#
     -> Database.Persist.Class.PersistEntity.Key Model.Emprestimo
@@ -7125,7 +7037,7 @@ b16349aef463ea38e3bc2bc521613eba
                         @ GHC.Types.Char
                         GHC.Show.shows7
                         (p (GHC.Types.: @ GHC.Types.Char GHC.Show.shows4 w1)) }) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $w$cshowsPrec3 ::
     GHC.Prim.Int#
     -> Database.Persist.Class.PersistEntity.Key Model.Livro
@@ -7254,7 +7166,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                                                            (GHC.Types.[]
                                                               @ (Data.Text.Internal.Text,
                                                                  Database.Persist.Types.Base.PersistValue)) }) }) }) }) } } #)) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   $w$ctoPersistValue1 ::
     Model.Emprestimo
     -> (# [(Data.Text.Internal.Text,
@@ -7334,14 +7246,14 @@ b16349aef463ea38e3bc2bc521613eba
                                                    (GHC.Types.[]
                                                       @ (Data.Text.Internal.Text,
                                                          Database.Persist.Types.Base.PersistValue)) }) }) }) } } #)) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   $w$ctoPersistValue2 ::
     Model.Livro
     -> (# [(Data.Text.Internal.Text,
             Database.Persist.Types.Base.PersistValue)] #)
-  {- Arity: 1, Strictness: <L,1*U(U,U,U,U,U,U)>, Inline: [0],
+  {- Arity: 1, Strictness: <L,1*U(U,U,U,U,U)>, Inline: [0],
      Unfolding: (\ (w :: Model.Livro) ->
-                 (# case w of ww { Model.Livro ww1 ww2 ww3 ww4 ww5 ww6 ->
+                 (# case w of wild { Model.Livro x x1 x2 x3 x4 ->
                     case GHC.Base.map
                            @ Database.Persist.Class.PersistField.SomePersistField
                            @ Database.Persist.Types.Base.PersistValue
@@ -7351,39 +7263,33 @@ ab4c18d07126571b6c67f9d650d46f2e
                               (Database.Persist.Class.PersistField.SomePersistField
                                  @ Data.Text.Internal.Text
                                  Database.Persist.Class.PersistField.$fPersistFieldText0
-                                 ww1)
+                                 x)
                               (GHC.Types.:
                                  @ Database.Persist.Class.PersistField.SomePersistField
                                  (Database.Persist.Class.PersistField.SomePersistField
                                     @ Data.Text.Internal.Text
                                     Database.Persist.Class.PersistField.$fPersistFieldText0
-                                    ww2)
+                                    x1)
                                  (GHC.Types.:
                                     @ Database.Persist.Class.PersistField.SomePersistField
                                     (Database.Persist.Class.PersistField.SomePersistField
                                        @ Data.Text.Internal.Text
                                        Database.Persist.Class.PersistField.$fPersistFieldText0
-                                       ww3)
+                                       x2)
                                     (GHC.Types.:
                                        @ Database.Persist.Class.PersistField.SomePersistField
                                        (Database.Persist.Class.PersistField.SomePersistField
                                           @ Data.Text.Internal.Text
                                           Database.Persist.Class.PersistField.$fPersistFieldText0
-                                          ww4)
+                                          x3)
                                        (GHC.Types.:
                                           @ Database.Persist.Class.PersistField.SomePersistField
                                           (Database.Persist.Class.PersistField.SomePersistField
                                              @ Data.Text.Internal.Text
                                              Database.Persist.Class.PersistField.$fPersistFieldText0
-                                             ww5)
-                                          (GHC.Types.:
-                                             @ Database.Persist.Class.PersistField.SomePersistField
-                                             (Database.Persist.Class.PersistField.SomePersistField
-                                                @ GHC.Types.Bool
-                                                Database.Persist.Class.PersistField.$fPersistFieldBool
-                                                ww6)
-                                             (GHC.Types.[]
-                                                @ Database.Persist.Class.PersistField.SomePersistField))))))) of wild {
+                                             x4)
+                                          (GHC.Types.[]
+                                             @ Database.Persist.Class.PersistField.SomePersistField)))))) of wild1 {
                       []
                       -> GHC.Types.[]
                            @ (Data.Text.Internal.Text,
@@ -7392,8 +7298,8 @@ ab4c18d07126571b6c67f9d650d46f2e
                       -> GHC.Types.:
                            @ (Data.Text.Internal.Text,
                               Database.Persist.Types.Base.PersistValue)
-                           (Model.$fPersistFieldLivro23, y)
-                           (case ys of wild1 {
+                           (Model.$fPersistFieldLivro19, y)
+                           (case ys of wild2 {
                               []
                               -> GHC.Types.[]
                                    @ (Data.Text.Internal.Text,
@@ -7402,8 +7308,8 @@ ab4c18d07126571b6c67f9d650d46f2e
                               -> GHC.Types.:
                                    @ (Data.Text.Internal.Text,
                                       Database.Persist.Types.Base.PersistValue)
-                                   (Model.$fPersistFieldLivro21, y1)
-                                   (case ys1 of wild2 {
+                                   (Model.$fPersistFieldLivro17, y1)
+                                   (case ys1 of wild3 {
                                       []
                                       -> GHC.Types.[]
                                            @ (Data.Text.Internal.Text,
@@ -7412,8 +7318,8 @@ ab4c18d07126571b6c67f9d650d46f2e
                                       -> GHC.Types.:
                                            @ (Data.Text.Internal.Text,
                                               Database.Persist.Types.Base.PersistValue)
-                                           (Model.$fPersistFieldLivro19, y2)
-                                           (case ys2 of wild3 {
+                                           (Model.$fPersistFieldLivro15, y2)
+                                           (case ys2 of wild4 {
                                               []
                                               -> GHC.Types.[]
                                                    @ (Data.Text.Internal.Text,
@@ -7422,8 +7328,8 @@ ab4c18d07126571b6c67f9d650d46f2e
                                               -> GHC.Types.:
                                                    @ (Data.Text.Internal.Text,
                                                       Database.Persist.Types.Base.PersistValue)
-                                                   (Model.$fPersistFieldLivro17, y3)
-                                                   (case ys3 of wild4 {
+                                                   (Model.$fPersistFieldLivro13, y3)
+                                                   (case ys3 of wild5 {
                                                       []
                                                       -> GHC.Types.[]
                                                            @ (Data.Text.Internal.Text,
@@ -7432,20 +7338,10 @@ ab4c18d07126571b6c67f9d650d46f2e
                                                       -> GHC.Types.:
                                                            @ (Data.Text.Internal.Text,
                                                               Database.Persist.Types.Base.PersistValue)
-                                                           (Model.$fPersistFieldLivro15, y4)
-                                                           (case ys4 of wild5 {
-                                                              []
-                                                              -> GHC.Types.[]
-                                                                   @ (Data.Text.Internal.Text,
-                                                                      Database.Persist.Types.Base.PersistValue)
-                                                              : y5 ys5
-                                                              -> GHC.Types.:
-                                                                   @ (Data.Text.Internal.Text,
-                                                                      Database.Persist.Types.Base.PersistValue)
-                                                                   (Model.$fPersistFieldLivro13, y5)
-                                                                   (GHC.Types.[]
-                                                                      @ (Data.Text.Internal.Text,
-                                                                         Database.Persist.Types.Base.PersistValue)) }) }) }) }) }) } } #)) -}
+                                                           (Model.$fPersistFieldLivro11, y4)
+                                                           (GHC.Types.[]
+                                                              @ (Data.Text.Internal.Text,
+                                                                 Database.Persist.Types.Base.PersistValue)) }) }) }) }) } } #)) -}
 1e9c40349ff8a605bf6f0bc2788b4e5e
   $w$s$wupdateOrSnocWithKey ::
     (Data.Text.Internal.Text -> v -> v -> v)
@@ -7839,17 +7735,6 @@ a0d7d0888c5cf5fc008721989314129d
           Data.Text.Internal.Text #)
   {- Arity: 5, Strictness: <L,U><L,U><S,1*U><S,U><S,U>,
      Inline: [0] -}
-b405ba7e15f649490f8d48871225fcc3
-  $wouter20 ::
-    GHC.Prim.MutableByteArray# GHC.Prim.RealWorld
-    -> GHC.Prim.Int#
-    -> [GHC.Types.Char]
-    -> GHC.Prim.Int#
-    -> GHC.Prim.State# GHC.Prim.RealWorld
-    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
-          Data.Text.Internal.Text #)
-  {- Arity: 5, Strictness: <L,U><L,U><S,1*U><S,U><S,U>,
-     Inline: [0] -}
 431bff9d5c08cfd98352b6b403c8b1ec
   $wouter3 ::
     GHC.Prim.MutableByteArray# GHC.Prim.RealWorld
@@ -7979,7 +7864,7 @@ fd022ccc1f96bba36d035efff3443223
   axiom D:R:EntityFieldClientetyp0::
       Database.Persist.Class.PersistEntity.EntityField Model.Cliente
         = Model.R:EntityFieldClientetyp
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   axiom D:R:EntityFieldEmprestimotyp0::
       Database.Persist.Class.PersistEntity.EntityField Model.Emprestimo
         = Model.R:EntityFieldEmprestimotyp
@@ -7987,7 +7872,7 @@ b16349aef463ea38e3bc2bc521613eba
   axiom D:R:EntityFieldFuncionariotyp0::
       Database.Persist.Class.PersistEntity.EntityField Model.Funcionario
         = Model.R:EntityFieldFuncionariotyp
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   axiom D:R:EntityFieldLivrotyp0::
       Database.Persist.Class.PersistEntity.EntityField Model.Livro
         = Model.R:EntityFieldLivrotyp
@@ -7995,7 +7880,7 @@ ab4c18d07126571b6c67f9d650d46f2e
   axiom D:R:KeyCliente0::
       Database.Persist.Class.PersistEntity.Key Model.Cliente
         = Model.R:KeyCliente
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   axiom D:R:KeyEmprestimo0::
       Database.Persist.Class.PersistEntity.Key Model.Emprestimo
         = Model.R:KeyEmprestimo
@@ -8003,7 +7888,7 @@ b16349aef463ea38e3bc2bc521613eba
   axiom D:R:KeyFuncionario0::
       Database.Persist.Class.PersistEntity.Key Model.Funcionario
         = Model.R:KeyFuncionario
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   axiom D:R:KeyLivro0::
       Database.Persist.Class.PersistEntity.Key Model.Livro
         = Model.R:KeyLivro
@@ -8012,7 +7897,7 @@ ab4c18d07126571b6c67f9d650d46f2e
       Database.Persist.Class.PersistEntity.PersistEntityBackend
         Model.Cliente
         = Database.Persist.Sql.Types.Internal.SqlBackend
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   axiom D:R:PersistEntityBackendEmprestimo::
       Database.Persist.Class.PersistEntity.PersistEntityBackend
         Model.Emprestimo
@@ -8022,7 +7907,7 @@ b16349aef463ea38e3bc2bc521613eba
       Database.Persist.Class.PersistEntity.PersistEntityBackend
         Model.Funcionario
         = Database.Persist.Sql.Types.Internal.SqlBackend
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   axiom D:R:PersistEntityBackendLivro::
       Database.Persist.Class.PersistEntity.PersistEntityBackend
         Model.Livro
@@ -8031,7 +7916,7 @@ ab4c18d07126571b6c67f9d650d46f2e
   axiom D:R:UniqueCliente0::
       Database.Persist.Class.PersistEntity.Unique Model.Cliente
         = Model.R:UniqueCliente
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   axiom D:R:UniqueEmprestimo0::
       Database.Persist.Class.PersistEntity.Unique Model.Emprestimo
         = Model.R:UniqueEmprestimo
@@ -8039,11 +7924,11 @@ b16349aef463ea38e3bc2bc521613eba
   axiom D:R:UniqueFuncionario0::
       Database.Persist.Class.PersistEntity.Unique Model.Funcionario
         = Model.R:UniqueFuncionario
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   axiom D:R:UniqueLivro0::
       Database.Persist.Class.PersistEntity.Unique Model.Livro
         = Model.R:UniqueLivro
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   data Emprestimo
     = Emprestimo {emprestimoCliid :: !Database.Persist.Class.PersistEntity.Key
                                         Model.Cliente,
@@ -8051,7 +7936,7 @@ b16349aef463ea38e3bc2bc521613eba
                                         Model.Livro,
                   emprestimoData_emp :: !Data.Time.Calendar.Days.Day,
                   emprestimoData_dev :: !Data.Time.Calendar.Days.Day}
-c44576bca740475f1cba8258453085f6
+fe166303cba5652833a759be78375951
   type EmprestimoId =
     Database.Persist.Class.PersistEntity.Key Model.Emprestimo
 784411d46fe997e0aed3471a9cf9611a
@@ -8061,15 +7946,14 @@ c44576bca740475f1cba8258453085f6
 438cc7778c47cd631a17e7ac095de822
   type FuncionarioId =
     Database.Persist.Class.PersistEntity.Key Model.Funcionario
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   data Livro
     = Livro {livroTitulo :: !Data.Text.Internal.Text,
              livroAutor :: !Data.Text.Internal.Text,
              livroPublicacao :: !Data.Text.Internal.Text,
              livroDescricao :: !Data.Text.Internal.Text,
-             livroAssunto :: !Data.Text.Internal.Text,
-             livroEmprestado :: !GHC.Types.Bool}
-fac869dd482e1eb50437f0ad5481b4f8
+             livroAssunto :: !Data.Text.Internal.Text}
+ffcdf4452e1e688c69787b5b12d66a61
   type LivroId = Database.Persist.Class.PersistEntity.Key Model.Livro
 9adaac9ce26d1fabc444a2184096ae06
   data instance Database.Persist.Class.PersistEntity.EntityField
@@ -8091,7 +7975,7 @@ fac869dd482e1eb50437f0ad5481b4f8
                        Data.Type.Equality.~ Data.Text.Internal.Text =>
                        Database.Persist.Class.PersistEntity.EntityField Model.Cliente typ
     RecFlag: Recursive
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   data instance Database.Persist.Class.PersistEntity.EntityField
                   Model.Emprestimo typ where
     EmprestimoId :: typ
@@ -8135,7 +8019,7 @@ b16349aef463ea38e3bc2bc521613eba
                         Database.Persist.Class.PersistEntity.EntityField
                           Model.Funcionario typ
     RecFlag: Recursive
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   data instance Database.Persist.Class.PersistEntity.EntityField
                   Model.Livro typ where
     LivroId :: typ
@@ -8154,8 +8038,6 @@ ab4c18d07126571b6c67f9d650d46f2e
                       Database.Persist.Class.PersistEntity.EntityField Model.Livro typ
     LivroAssunto :: typ Data.Type.Equality.~ Data.Text.Internal.Text =>
                     Database.Persist.Class.PersistEntity.EntityField Model.Livro typ
-    LivroEmprestado :: typ Data.Type.Equality.~ GHC.Types.Bool =>
-                       Database.Persist.Class.PersistEntity.EntityField Model.Livro typ
     RecFlag: Recursive
 9adaac9ce26d1fabc444a2184096ae06
   newtype instance Database.Persist.Class.PersistEntity.Key
@@ -8163,7 +8045,7 @@ ab4c18d07126571b6c67f9d650d46f2e
     = ClienteKey {unClienteKey :: Database.Persist.Class.PersistStore.BackendKey
                                     Database.Persist.Sql.Types.Internal.SqlBackend}
     RecFlag: Recursive
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   newtype instance Database.Persist.Class.PersistEntity.Key
                      Model.Emprestimo
     = EmprestimoKey {unEmprestimoKey :: Database.Persist.Class.PersistStore.BackendKey
@@ -8175,7 +8057,7 @@ b16349aef463ea38e3bc2bc521613eba
     = FuncionarioKey {unFuncionarioKey :: Database.Persist.Class.PersistStore.BackendKey
                                             Database.Persist.Sql.Types.Internal.SqlBackend}
     RecFlag: Recursive
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   newtype instance Database.Persist.Class.PersistEntity.Key
                      Model.Livro
     = LivroKey {unLivroKey :: Database.Persist.Class.PersistStore.BackendKey
@@ -8185,7 +8067,7 @@ ab4c18d07126571b6c67f9d650d46f2e
   data instance Database.Persist.Class.PersistEntity.Unique
                   Model.Cliente
     RecFlag: Recursive
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   data instance Database.Persist.Class.PersistEntity.Unique
                   Model.Emprestimo
     RecFlag: Recursive
@@ -8194,7 +8076,7 @@ b16349aef463ea38e3bc2bc521613eba
                   Model.Funcionario
     = UniqueRestEmail Data.Text.Internal.Text
     RecFlag: Recursive
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   data instance Database.Persist.Class.PersistEntity.Unique
                   Model.Livro
     RecFlag: Recursive
@@ -8238,7 +8120,7 @@ c1be0e19520b3a6cff89efbaa7311a7e
      Unfolding: InlineRule (1, True, False)
                 (\ (ds :: Model.Cliente) ->
                  case ds of wild { Model.Cliente ds1 ds2 ds3 ds4 ds5 -> ds5 }) -}
-70ace8d630227898dac5333d73024072
+b901883d64bab2fd88a1892e05e3df89
   emprestimoCliid ::
     Model.Emprestimo
     -> Database.Persist.Class.PersistEntity.Key Model.Cliente
@@ -8247,7 +8129,7 @@ c1be0e19520b3a6cff89efbaa7311a7e
      Unfolding: InlineRule (1, True, False)
                 (\ (ds :: Model.Emprestimo) ->
                  case ds of wild { Model.Emprestimo ds1 ds2 ds3 ds4 -> ds1 }) -}
-c0173ae589815722dd29067d0b2585d6
+2e2d9070fdfe0d1b5019f415138c2042
   emprestimoData_dev ::
     Model.Emprestimo -> Data.Time.Calendar.Days.Day
   RecSel Left Model.Emprestimo
@@ -8255,7 +8137,7 @@ c0173ae589815722dd29067d0b2585d6
      Unfolding: InlineRule (1, True, False)
                 (\ (ds :: Model.Emprestimo) ->
                  case ds of wild { Model.Emprestimo ds1 ds2 ds3 ds4 -> ds4 }) -}
-d333f486d248387b775d253f0ac8fd07
+7da99546e8ec9d9b0eedc473a23f1e24
   emprestimoData_emp ::
     Model.Emprestimo -> Data.Time.Calendar.Days.Day
   RecSel Left Model.Emprestimo
@@ -8263,7 +8145,7 @@ d333f486d248387b775d253f0ac8fd07
      Unfolding: InlineRule (1, True, False)
                 (\ (ds :: Model.Emprestimo) ->
                  case ds of wild { Model.Emprestimo ds1 ds2 ds3 ds4 -> ds3 }) -}
-6d60bfa852d46120fdf2a86c32523319
+0f2911897e9703046079dccc8546b1e6
   emprestimoLivid ::
     Model.Emprestimo
     -> Database.Persist.Class.PersistEntity.Key Model.Livro
@@ -8286,54 +8168,46 @@ d47dede4355b388464f8c9fbc024e18f
      Unfolding: InlineRule (1, True, False)
                 (\ (ds :: Model.Funcionario) ->
                  case ds of wild { Model.Funcionario ds1 ds2 -> ds2 }) -}
-b9fde7e41aada167d0036123dbead590
+e45ceb80ec724d60d917ec1f46601ca3
   livroAssunto :: Model.Livro -> Data.Text.Internal.Text
   RecSel Left Model.Livro
   {- Arity: 1, HasNoCafRefs,
-     Strictness: <S(LLLLSL),1*U(A,A,A,A,U(U,U,U),A)>m,
+     Strictness: <S(LLLLS),1*U(A,A,A,A,U(U,U,U))>m,
      Unfolding: InlineRule (1, True, False)
                 (\ (ds :: Model.Livro) ->
-                 case ds of wild { Model.Livro ds1 ds2 ds3 ds4 ds5 ds6 -> ds5 }) -}
-7861c3a967822856ccd33292c91d5da4
+                 case ds of wild { Model.Livro ds1 ds2 ds3 ds4 ds5 -> ds5 }) -}
+1709c43ac7faa7c93cecaeb0ca4e2506
   livroAutor :: Model.Livro -> Data.Text.Internal.Text
   RecSel Left Model.Livro
   {- Arity: 1, HasNoCafRefs,
-     Strictness: <S(LSLLLL),1*U(A,U(U,U,U),A,A,A,A)>m,
+     Strictness: <S(LSLLL),1*U(A,U(U,U,U),A,A,A)>m,
      Unfolding: InlineRule (1, True, False)
                 (\ (ds :: Model.Livro) ->
-                 case ds of wild { Model.Livro ds1 ds2 ds3 ds4 ds5 ds6 -> ds2 }) -}
-f4b5c163dfc7552439c98bec0f04e7b8
+                 case ds of wild { Model.Livro ds1 ds2 ds3 ds4 ds5 -> ds2 }) -}
+48eac9c02a25d9d992d00be0bf5ce55d
   livroDescricao :: Model.Livro -> Data.Text.Internal.Text
   RecSel Left Model.Livro
   {- Arity: 1, HasNoCafRefs,
-     Strictness: <S(LLLSLL),1*U(A,A,A,U(U,U,U),A,A)>m,
+     Strictness: <S(LLLSL),1*U(A,A,A,U(U,U,U),A)>m,
      Unfolding: InlineRule (1, True, False)
                 (\ (ds :: Model.Livro) ->
-                 case ds of wild { Model.Livro ds1 ds2 ds3 ds4 ds5 ds6 -> ds4 }) -}
-fd11c660a1e5d41291919aca007362a9
-  livroEmprestado :: Model.Livro -> GHC.Types.Bool
-  RecSel Left Model.Livro
-  {- Arity: 1, HasNoCafRefs,
-     Strictness: <S(LLLLLS),1*U(A,A,A,A,A,U)>,
-     Unfolding: InlineRule (1, True, False)
-                (\ (ds :: Model.Livro) ->
-                 case ds of wild { Model.Livro ds1 ds2 ds3 ds4 ds5 ds6 -> ds6 }) -}
-2e5899293e2767a9cab55a1d000c8089
+                 case ds of wild { Model.Livro ds1 ds2 ds3 ds4 ds5 -> ds4 }) -}
+640e51029245a1a24196a0368c29489b
   livroPublicacao :: Model.Livro -> Data.Text.Internal.Text
   RecSel Left Model.Livro
   {- Arity: 1, HasNoCafRefs,
-     Strictness: <S(LLSLLL),1*U(A,A,U(U,U,U),A,A,A)>m,
+     Strictness: <S(LLSLL),1*U(A,A,U(U,U,U),A,A)>m,
      Unfolding: InlineRule (1, True, False)
                 (\ (ds :: Model.Livro) ->
-                 case ds of wild { Model.Livro ds1 ds2 ds3 ds4 ds5 ds6 -> ds3 }) -}
-9033a9940862d0604b8932b47a5e63e5
+                 case ds of wild { Model.Livro ds1 ds2 ds3 ds4 ds5 -> ds3 }) -}
+e77ab55e2dbacd7990ee3cba930ea365
   livroTitulo :: Model.Livro -> Data.Text.Internal.Text
   RecSel Left Model.Livro
   {- Arity: 1, HasNoCafRefs,
-     Strictness: <S(SLLLLL),1*U(U(U,U,U),A,A,A,A,A)>m,
+     Strictness: <S(SLLLL),1*U(U(U,U,U),A,A,A,A)>m,
      Unfolding: InlineRule (1, True, False)
                 (\ (ds :: Model.Livro) ->
-                 case ds of wild { Model.Livro ds1 ds2 ds3 ds4 ds5 ds6 -> ds1 }) -}
+                 case ds of wild { Model.Livro ds1 ds2 ds3 ds4 ds5 -> ds1 }) -}
 b09d2378cf411109bc2d296142c07272
   migrateAll :: Database.Persist.Sql.Types.Migration
   {- Arity: 2,
@@ -8404,7 +8278,7 @@ b09d2378cf411109bc2d296142c07272
                 (\ (ds :: Database.Persist.Class.PersistEntity.Key
                             Model.Cliente) ->
                  ds) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   unEmprestimoKey ::
     Database.Persist.Class.PersistEntity.Key Model.Emprestimo
     -> Database.Persist.Class.PersistStore.BackendKey
@@ -8417,7 +8291,7 @@ b16349aef463ea38e3bc2bc521613eba
                 (<Database.Persist.Class.PersistEntity.Key Model.Emprestimo>_R
                  ->_R Trans
                           (Model.D:R:KeyEmprestimo0[0]) (Model.N:R:KeyEmprestimo[0])) -}
-b16349aef463ea38e3bc2bc521613eba
+58276e9429454230fe42cfc41d049957
   unEmprestimoKey1 ::
     Database.Persist.Class.PersistEntity.Key Model.Emprestimo
     -> Database.Persist.Class.PersistEntity.Key Model.Emprestimo
@@ -8448,7 +8322,7 @@ b16349aef463ea38e3bc2bc521613eba
                 (\ (ds :: Database.Persist.Class.PersistEntity.Key
                             Model.Funcionario) ->
                  ds) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   unLivroKey ::
     Database.Persist.Class.PersistEntity.Key Model.Livro
     -> Database.Persist.Class.PersistStore.BackendKey
@@ -8460,7 +8334,7 @@ ab4c18d07126571b6c67f9d650d46f2e
                   `cast`
                 (<Database.Persist.Class.PersistEntity.Key Model.Livro>_R
                  ->_R Trans (Model.D:R:KeyLivro0[0]) (Model.N:R:KeyLivro[0])) -}
-ab4c18d07126571b6c67f9d650d46f2e
+c3e262a0882d221615712cc438926620
   unLivroKey1 ::
     Database.Persist.Class.PersistEntity.Key Model.Livro
     -> Database.Persist.Class.PersistEntity.Key Model.Livro

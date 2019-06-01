@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2019-06-01 18:21:01.957533 UTC
+2019-06-01 18:30:47.340728 UTC
 
 interface aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX:Handler.Emprestimo 8002
-  interface hash: 6f404e9c2c437721ee2905de3adda337
-  ABI hash: 08f37ec1be6754c67f907da0a5fbbac8
+  interface hash: 1109d1f6972afe335ecc9751050a816e
+  ABI hash: 455ebcd6947cc9c02d4f2d8b26a0d781
   export-list hash: 13c035d573c7adf94ccb3520efc00c38
   orphan hash: 24c61ac5da22b5a825bdd6a08ea0fd6e
   flag hash: f123df0d0ff34442f243f0943d78ec4c
@@ -1526,7 +1526,7 @@ e32d28ba4b4d9348a05cd110ace83d8e
   getEmprestarClienteR ::
     Model.LivroId -> Foundation.Handler Text.Blaze.Html.Html
   {- Arity: 1, Strictness: <L,U(U)> -}
-0294912462d38899a1829a5978b8daae
+82b7075eef7e18f9ad88150731440cc6
   getTodosEmprestimoR :: Foundation.Handler Text.Blaze.Html.Html
   {- Arity: 2, Strictness: <L,U><S,U>,
      Unfolding: InlineRule (0, True, True)
@@ -1538,7 +1538,7 @@ e32d28ba4b4d9348a05cd110ace83d8e
                       ->_R Sym (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R))
                      (Sym (Yesod.Core.Types.N:HandlerT[0]
                                <Foundation.App>_N <GHC.Types.IO>_N <Text.Blaze.Html.Html>_N))) -}
-1617e26214f233ad4c107fb52df32ae4
+33edd163c009f360d8857163f126f2d4
   getTodosEmprestimoR1 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -1987,7 +1987,7 @@ e32d28ba4b4d9348a05cd110ace83d8e
   {- Unfolding: (Data.Text.Show.unpackCString#
                    "\" role=\"button\" aria-pressed=\"true\">Principal</a>\n\
                    \<br><br>"#) -}
-3b41daa9018597dcea7101600ddc5500
+d3685a3534af76182b6770312a278436
   getTodosEmprestimoR17 ::
     ()
     -> Yesod.Core.Types.HandlerData
@@ -2005,7 +2005,7 @@ e32d28ba4b4d9348a05cd110ace83d8e
                                Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))[OneShot]
                    (eta41 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
                  (# eta41, Handler.Emprestimo.getTodosEmprestimoR18 #)) -}
-6003eb6858bf7942b59b1c438e03da63
+ae4ed6bc3326b32189f1cc26a79ea8bd
   getTodosEmprestimoR18 ::
     ((),
      Yesod.Core.Types.GWData
@@ -2019,7 +2019,7 @@ e32d28ba4b4d9348a05cd110ace83d8e
                      (Yesod.Routes.Class.Route
                         (Sym (Yesod.Core.Class.Handler.D:R:HandlerSiteWidgetT[0]
                                   <GHC.Types.IO>_N <Foundation.App>_N)))_R)_R)) -}
-94436d853e3ee50d5933712d46f75e59
+dcde6544576d3df0b5ed3210204fdb7b
   getTodosEmprestimoR19 ::
     Yesod.Core.Types.GWData (Yesod.Routes.Class.Route Foundation.App)
   {- Unfolding: (Yesod.Core.Types.GWData
@@ -2078,7 +2078,7 @@ d2e703c1d2d3977ed277e5195e95e378
                                Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
                    (eta41 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
                  Handler.Emprestimo.getTodosEmprestimoR3 eta41) -}
-f4308ee2c9e2dca42a53701dffd5d62d
+d4c47d1109e210169418836b89e10198
   getTodosEmprestimoR20 ::
     (Yesod.Routes.Class.Route Foundation.App
      -> [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
@@ -2089,17 +2089,17 @@ f4308ee2c9e2dca42a53701dffd5d62d
                           -> [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
                           -> Data.Text.Internal.Text) ->
                  Handler.Emprestimo.getTodosEmprestimoR_eta2) -}
-e70781232eb2bcd8fb8a322b8f18867c
+fb42add3f54ed3faff1291c9373fe453
   getTodosEmprestimoR21 :: Text.Blaze.Internal.ChoiceString
   {- Strictness: m5,
      Unfolding: (Text.Blaze.Internal.PreEscaped
                    Handler.Emprestimo.getTodosEmprestimoR22) -}
-bbea8b538e7bcf23ee53daa3215565d9
+2777b0c67f62dabfc1d67d6e72cc3642
   getTodosEmprestimoR22 :: Text.Blaze.Internal.ChoiceString
   {- Strictness: m3,
      Unfolding: (Text.Blaze.Internal.Text
                    Handler.Emprestimo.getTodosEmprestimoR23) -}
-ec41db0f672d8fc05191d2348e7df105
+3e9372407441b4ec5c3a1b64cece1f68
   getTodosEmprestimoR23 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    "</br>\n\
@@ -2107,10 +2107,11 @@ ec41db0f672d8fc05191d2348e7df105
                    \</div>\n\
                    \</tbody>\n\
                    \</table>\n\
-                   \<div><br><br><div class=\"row\"><div class=\"container col-12\" style-\"background-color:silver\"><center><h4><strong>Fim</center>\n\
+                   \<div><br><br></br>\n\
+                   \</div>\n\
+                   \<div><div class=\"row\"><div class=\"container col-12\" style-\"background-color:silver\"><center><h4><strong>Fim</center>\n\
                    \</div>\n\
                    \</div>\n\
-                   \</br>\n\
                    \</div>\n"#) -}
 700270c94e6d19a28184cc7d3fb04807
   getTodosEmprestimoR24 ::
@@ -2380,7 +2381,7 @@ c1a9f22068e7afed767e94fac52d9575
                    @ ()
                    Handler.Emprestimo.getTodosEmprestimoR14
                    GHC.Tuple.()) -}
-fcad98178913a9053a1544e061b15b59
+635a85ff5cf1017f7cfe0d98c5a65518
   getTodosEmprestimoR_eta2 :: Text.Blaze.Html.Html
   {- Strictness: m5,
      Unfolding: (Text.Blaze.Internal.Content

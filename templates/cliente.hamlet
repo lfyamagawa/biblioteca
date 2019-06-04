@@ -1,39 +1,60 @@
-<table class="container table-striped table-hover thead-dark">
-    <thead style="background-color:silver">
+<div class="container text-center" style="background-color:black">
+    <table>
+           <tr>
+               <td class="col col-md-4">
+                   <img width="250" height="125"src=@{StaticR imgs_logo_jpg}>
+        
+               <td class="col col-md-5">
+                   <h1><strong><font color="white">Lista de Clientes
+
+     <table>                
+           <tr>         
+               <td>
+                   <a href=@{HomeR} class="btn btn-light btn-lg">Página Principal
+               <td>
+                   <a href=@{ClienteR} class="btn btn-light btn-lg">Incluir Cliente
+               <td>
+                   <a href=@{TodosFuncionariosR} class="btn btn-light btn-lg">Funcionarios
+               <td>
+                   <a href=@{TodosLivrosR} class="btn btn-light btn-lg">Livros                  
+                   
+
+
+<table class="container table-striped table-hover">
+    <thead style="background-color:black">
+    
             <tr>
                 <th>
-                    <h4><strong>Id
+                    <font color="black">X
                 <th>
-                    <h4><strong>Nome
+                    <h4><strong><font color="white">Id
                 <th>
-                    <h4><strong>RG
+                    <font color="black">X
                 <th>
-                    <h4><strong>CPF
+                    <h4><strong><font color="white">Nome
                 <th>
-                    <h4><strong>Endereco
+                    <h4><strong><font color="white">RG
+                <th>
+                    <h4><strong><font color="white">CPF
+                <th>
+                    <h4><strong><font color="white">Endereco
                 <th>    
-                    <h4><strong>Telefone
+                    <h4><strong><font color="white">Telefone
                 <th>
-            
+                    <h4><strong><font color="white">Editar Dados
                 <th>
-                
-                
+                    <h4><strong><font color="white">Deletar
        <tbody>
-            <div class="container" style="background-color:silver">
-                <center><h2><strong>Lista de Clientes<br>
-                              
-                <center>
-                    <a href=@{HomeR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Principal
-                    <a href=@{ClienteR} class="btn btn-primary btn-sm active" role"button" aria-pressed="true">Incluir
-                    <br><br>
-
+                <br>
                                 
                       $forall (Entity cliid cliente) <- clientes
                       
                         <tr>
                             <td>
+                            <td>
                                 <a href=@{ClientePerfilR cliid}>
                                     #{show $ fromSqlKey cliid}
+                            <td>
                             <td>
                                 #{clienteNome cliente}
                             <td>
@@ -49,12 +70,11 @@
                             <td>
                                 <form action=@{ClienteApagarR cliid} method=post>
                                         <input type="submit" value="X">
-                            
-                                      
+
 <div>
    <br><br>
-<div>
-        <div class="row">                 
-           <div class="container col-12" style="background-color:silver">
-                <center><h4><strong>Fim 
+<div class="container text-center" style="background-color:black">
+        <a href=@{HomeR}>
+         <img width="123" height="85"src=@{StaticR imgs_home_jpg}>
+
 

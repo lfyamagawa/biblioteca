@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2019-06-04 01:37:32.234652 UTC
+2019-06-04 01:56:46.80685 UTC
 
 interface aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX:Handler.Devolucao 8002
-  interface hash: d72d07ab8602cd424f8aa486d13b2dc8
+  interface hash: 4c3563a88d7517430557eb510f038525
   ABI hash: 2614fc2c11df192d25658c01c821556c
   export-list hash: ee979002d028b546bc908ab0c2af2a41
   orphan hash: d4ce7d30c2152b68cb4e67dc0f298e73
@@ -343,15 +343,15 @@ import  -/  Foundation 4fed6a6ce02d868e609fda2d87290d7d
   HomeR a1ca682e39bdcf9db803a327759c7c35
   StaticR b61a74d95189608c16720a9298017193
   TodosDevolucaoR bf6c6992dbc45ae53a6a456b43f84fd6
-import  -/  Import 3c12d840e4536e2e1bedd3687372c77c
-  exports: bf77b56e5e0ff2b65a820e08bfa63c14
+import  -/  Import 485754856595a0fa8dc15167ee3722bf
+  exports: e604eced420c4095d1137aa9ac91f355
 import  -/  Model 0322a236513b611476018acb9209b978
   EmprestimoId fe166303cba5652833a759be78375951
   emprestimoCliid b901883d64bab2fd88a1892e05e3df89
   emprestimoData_dev 2e2d9070fdfe0d1b5019f415138c2042
   emprestimoData_emp 7da99546e8ec9d9b0eedc473a23f1e24
   emprestimoLivid 0f2911897e9703046079dccc8546b1e6
-import  -/  Settings.StaticFiles 3ad9e40099153eabf23a2de0893be5c8
+import  -/  Settings.StaticFiles 848de2b9bd1285ccaf86b6b48daf4347
   css_bootstrap_css 7fb70e8cf207ea213dca2425cf051440
 import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
 import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1

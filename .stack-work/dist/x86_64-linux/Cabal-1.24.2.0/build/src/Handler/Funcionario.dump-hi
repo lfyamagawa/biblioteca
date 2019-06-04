@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2019-06-04 01:37:33.79163 UTC
+2019-06-04 01:56:48.240947 UTC
 
 interface aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX:Handler.Funcionario 8002
-  interface hash: beaa20d9598b30c4973c23f9710ea842
+  interface hash: 8bce3570d545c48ba08b4a48c615a7d8
   ABI hash: aedf0bdf5759f7fe16ae8edf2156b227
   export-list hash: b9ff3f3f1f68b6dbc2033fbca5fab8bc
   orphan hash: 2678be28f61274d3c9ecc1f7eeb92b57
@@ -354,8 +354,8 @@ import  -/  Foundation 4fed6a6ce02d868e609fda2d87290d7d
   HomeR a1ca682e39bdcf9db803a327759c7c35
   StaticR b61a74d95189608c16720a9298017193
   TodosFuncionariosR 0720807c96234aaad6dc8bf8ad2582b1
-import  -/  Import 3c12d840e4536e2e1bedd3687372c77c
-  exports: bf77b56e5e0ff2b65a820e08bfa63c14
+import  -/  Import 485754856595a0fa8dc15167ee3722bf
+  exports: e604eced420c4095d1137aa9ac91f355
 import  -/  Model 0322a236513b611476018acb9209b978
   Funcionario 7118cd502933ff6ca690202794694aff
   Funcionario 784411d46fe997e0aed3471a9cf9611a
@@ -363,7 +363,7 @@ import  -/  Model 0322a236513b611476018acb9209b978
   FuncionarioId 438cc7778c47cd631a17e7ac095de822
   funcionarioEmail 090829eac49efc5459fdfed1d4907f8d
   funcionarioSenha d47dede4355b388464f8c9fbc024e18f
-import  -/  Settings.StaticFiles 3ad9e40099153eabf23a2de0893be5c8
+import  -/  Settings.StaticFiles 848de2b9bd1285ccaf86b6b48daf4347
   css_bootstrap_css 7fb70e8cf207ea213dca2425cf051440
 import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
 import  -/  base-4.9.1.0:Data.Functor 5ab1dc703df5b482e77efb697833ca3c

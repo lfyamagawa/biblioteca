@@ -103,8 +103,7 @@ getHomeR = do
         
         <br>                  
 
-
-        <section class="title-content container" style="background-image: url(https://live.staticflickr.com/65535/47993113741_f9a1f150c8_h.jpg")">
+        <section class="title-content container" style="background-image: @{StaticR imgs_biblio_jpg}"> 
                         <br>
                         <center><font color="navy"><strong><h1 class="title-text">Biblioteca Virtual
                         <br>

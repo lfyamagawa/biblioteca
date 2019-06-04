@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2019-06-04 01:37:35.452803 UTC
+2019-06-04 01:56:49.788329 UTC
 
 interface aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX:Handler.Livro 8002
-  interface hash: d3119aad36c1c6a0f27aaf7bb323345e
+  interface hash: 2ed9403ecf95f211c9ed179a7e7fb43b
   ABI hash: fc1ffd2d505baab7070c1232b40229b3
   export-list hash: 83547732e7f528cc34108bcaa98eb201
   orphan hash: 0e76984b0ecbf58ebd02ad315b132afa
@@ -353,8 +353,8 @@ import  -/  Foundation 4fed6a6ce02d868e609fda2d87290d7d
   LivroR 79491e62594c78b875527e5b4aba7731
   StaticR b61a74d95189608c16720a9298017193
   TodosLivrosR 52b2ab1f4bf0f41d12677f9ff39da61c
-import  -/  Import 3c12d840e4536e2e1bedd3687372c77c
-  exports: bf77b56e5e0ff2b65a820e08bfa63c14
+import  -/  Import 485754856595a0fa8dc15167ee3722bf
+  exports: e604eced420c4095d1137aa9ac91f355
 import  -/  Model 0322a236513b611476018acb9209b978
   Livro e70c541da5b587a79266fc2b0a4260dd
   Livro c3e262a0882d221615712cc438926620
@@ -365,7 +365,7 @@ import  -/  Model 0322a236513b611476018acb9209b978
   livroDescricao 48eac9c02a25d9d992d00be0bf5ce55d
   livroPublicacao 640e51029245a1a24196a0368c29489b
   livroTitulo e77ab55e2dbacd7990ee3cba930ea365
-import  -/  Settings.StaticFiles 3ad9e40099153eabf23a2de0893be5c8
+import  -/  Settings.StaticFiles 848de2b9bd1285ccaf86b6b48daf4347
   css_bootstrap_css 7fb70e8cf207ea213dca2425cf051440
 import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
 import  -/  base-4.9.1.0:Data.Functor 5ab1dc703df5b482e77efb697833ca3c

@@ -1,26 +1,54 @@
-<table class="container table-striped table-hover thead-dark">
-    <thead style="background-color:silver">
+<div class="container" style="background-color:black">
+    <table>
+           <tr>
+               <td class="col col-md-1">
+                   <img width="250" height="125"src=@{StaticR imgs_logo_jpg}>
+        
+               <td class="col col-md-4">
+                   <h1><strong><font color="white">Devolução dos Livros
+    <table>                
+           <tr>         
+               <td>
+                   <a href=@{HomeR} class="btn btn-light btn-lg">Página Principal
+               <td>
+                   <a href=@{TodosEmprestimoR} class="btn btn-light btn-lg">Emprestar Livros
+               <td>
+                   <a href=@{TodosFuncionariosR} class="btn btn-light btn-lg">Funcionarios
+               <td>
+                   <a href=@{TodosClientesR} class="btn btn-light btn-lg">Clientes
+               <td>
+                   <a href=@{TodosLivrosR} class="btn btn-light btn-lg">Livros       
+                   
+
+
+<table class="container table-striped table-hover">
+    <thead style="background-color:black">
         <tr>
             <th>
-                <h4><strong>Emprestimo ID:
+                <font color="black">X
             <th>
-                <h4><strong>Cliente ID:
+                <h4><strong><font color="white">Emprestimo ID:
             <th>
-                <h4><strong>Livro ID:
+                <font color="black">X
             <th>
-                <h4><strong>Data Emprestimo:
+                <h4><strong><font color="white">Cliente ID:
             <th>
-                <h4><strong>Data Devolucao:
+                <h4><strong><font color="white">Livro ID:
+            <th>
+                <h4><strong><font color="white">Data Emprestimo:
+            <th>
+                <h4><strong><font color="white">Data Devolucao:
             <th>
     <tbody>
-        <div class="container" style="background-color:silver">
-            <center><h2><strong>Relacao para devolucoes
-            <center>
-                <a href=@{HomeR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Principal
+            <br>
                     $forall (Entity devid emprestimo) <- devolucoes
                         <tr>
                             <td>
+                            
+                            <td>
                                 #{show $ fromSqlKey devid}
+                            <td>
+                            
                             <td>
                                 #{show $ fromSqlKey (emprestimoCliid emprestimo)}
                             <td>
@@ -32,9 +60,10 @@
                             <td>
                                 <form action=@{DevolverApagarR devid} method=post>
                                     <input type="submit" value="Devolver">
+
 <div>
-    <br><br>
-<div>
-        <div class="row">
-            <div class="container col-12" style="background-color:silver">
-                <center><h4><strong>Fim
+   <br><br>
+<div class="container text-center" style="background-color:black">
+        <a href=@{HomeR}>
+         <img width="123" height="85"src=@{StaticR imgs_home_jpg}>
+

@@ -1,55 +1,83 @@
-<table class="container table-striped table-hover thead-dark">
-    <thead style="blackground-color:silver">
+<div class="container text-center" style="background-color:black">
+    <table>
+           <tr>
+               <td class="col col-md-4">
+                   <img width="250" height="125"src=@{StaticR imgs_logo_jpg}>
+        
+               <td class="col col-md-5">
+                   <h1><strong><font color="white">Lista dos Livros
+    <table>                
+           <tr>         
+               <td>
+                   <a href=@{HomeR} class="btn btn-light btn-lg">Página Principal
+               <td>
+                   <a href=@{LivroR} class="btn btn-light btn-lg">Incluir Livro
+               <td>
+                   <a href=@{TodosFuncionariosR} class="btn btn-light btn-lg">Funcionarios
+               <td>
+                   <a href=@{TodosClientesR} class="btn btn-light btn-lg">Clientes
+               <td>       
+                   <a href=@{TodosEmprestimoR} class="btn btn-light btn-lg">Emprestar Livros
+               <td> 
+                   <a href=@{TodosDevolucaoR} class="btn btn-light btn-lg">Devolver Livros
+               
+                   
+
+<table class="container table-striped table-hover">
+    <thead style="background-color:black">
+    
         <tr>
             <th>
-                <h4><strong>Id
+                <font color="black">X
             <th>
-                <h4><strong>Titulo
+                <h4><strong><font color="white">Id
             <th>
-                <h4><strong>Autor
+                <font color="black">X
             <th>
-                <h4><strong>Publicacao
+                <h4><strong><font color="white">Título
             <th>
-                <h4><strong>Descricao
+                <h4><strong><font color="white">Autor
+            <th>
+                <h4><strong><font color="white">Publicação
+            <th>
+                <h4><strong><font color="white">Descrição
             <th>    
-                <h4><strong>Assunto
+                <h4><strong><font color="white">Assunto
             <th>
-            
+                <h4><strong><font color="white">Editar Dados
             <th>
+                <h4><strong><font color="white">Deletar
     <tbody>
-        <div class="container" style="background-color:silver">
-            <center><h2><strong>Lista de Livros<br>
+            <br>
 
-            <center>
-                <a href=@{HomeR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Principal
-                <a href=@{LivroR} class="btn btn-primary btn-sm active" role"button" aria-pressed="true">Incluir
-        <br><br>
-        
-            $forall (Entity livid livro) <- livros
-                <tr>
-                    <td>
-                        <a href=@{LivroPerfilR livid}>
-                            #{show $ fromSqlKey livid}
-                    <td>
-                        #{livroTitulo livro}
-                    <td>
-                        #{livroAutor livro}
-                    <td>
-                        #{livroPublicacao livro}
-                    <td>
-                        #{livroDescricao livro}
-                    <td>
-                        #{livroAssunto livro}
-                    <td>
-    
-                    <td>
-                        <a href=@{LivroAlteraR livid} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Editar
-                    <td> 
-                        <form action=@{LivroApagarR livid} method=post>
-                            <input type="submit" value="X">
+                   $forall (Entity livid livro) <- livros
+                      <tr>
+                           <td>
+                    
+                           <td>
+                                <a href=@{LivroPerfilR livid}>
+                                  #{show $ fromSqlKey livid}
+                           <td>
+                    
+                           <td>
+                                #{livroTitulo livro}
+                           <td>
+                                #{livroAutor livro}
+                           <td>
+                                #{livroPublicacao livro}
+                           <td>
+                                #{livroDescricao livro}
+                           <td style="white-space: initial">
+                                #{livroAssunto livro}
+                           <td>
+                                <a href=@{LivroAlteraR livid} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Editar
+                           <td> 
+                                <form action=@{LivroApagarR livid} method=post>
+                                   <input type="submit" value="X">
+
 <div>
-    <br><br>
-<div>
-        <div class="row">
-            <div class="container col-12" style="background-color:silver">
-                <center><h4><strong>Fim
+   <br><br>
+<div class="container text-center" style="background-color:black">
+        <a href=@{HomeR}>
+         <img width="123" height="85"src=@{StaticR imgs_home_jpg}>
+

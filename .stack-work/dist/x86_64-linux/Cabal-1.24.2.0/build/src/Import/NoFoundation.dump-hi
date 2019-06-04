@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2019-06-04 02:00:17.238901 UTC
+2019-06-04 12:55:24.256 UTC
 
 interface aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX:Import.NoFoundation 8002
-  interface hash: 2c2abe799b846daa5e77e1ba5eb752ef
-  ABI hash: 7f5f9ea61ed9fac1569a4c770875dbb2
-  export-list hash: dd08a17e03516e75412b04744a5dd257
+  interface hash: 4bc578d786eadaa67962fd51d30e8efe
+  ABI hash: 7321c6ef8d9278de5c240240b8362728
+  export-list hash: 04bd564e979b0edee6fa521c48ac762a
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 5e6e116e79fd7c2679f3688e577f5394
   sig of: Nothing
@@ -33,6 +33,8 @@ exports:
   Settings.StaticFiles.fonts_glyphicons_halflings_regular_woff
   Settings.StaticFiles.imgs_biblio_jpg
   Settings.StaticFiles.imgs_cobol_jpg
+  Settings.StaticFiles.imgs_home_jpg
+  Settings.StaticFiles.imgs_logo_jpg
   Control.Applicative.optional
   Control.Concurrent.rtsSupportsBoundThreads
   Control.Monad.<=<
@@ -2299,8 +2301,8 @@ import  -/  Settings 0f8bbb6df9df8001dfa1e9ea64b738dc
   configSettingsYmlValue bb6fa2acf0dca9d1336676935f486e56
   widgetFile 80be945e3653fbfc455d43530fd13e75
   widgetFileSettings 4156fd87835e41be43453f23a8c9a481
-import  -/  Settings.StaticFiles 848de2b9bd1285ccaf86b6b48daf4347
-  exports: 36d9711a7a26e4703adceb8a28cb1fed
+import  -/  Settings.StaticFiles ba857885acefa3f6ae102de35ea4472b
+  exports: 8ca9819b6af23aba0d9909b52aa94859
   css_bootstrap_css 7fb70e8cf207ea213dca2425cf051440
   fonts_glyphicons_halflings_regular_eot dcef9b5de0302536938fa1f7d31d345a
   fonts_glyphicons_halflings_regular_svg 5c584c9a455c37beb9f38bd228b3c926
@@ -2308,6 +2310,8 @@ import  -/  Settings.StaticFiles 848de2b9bd1285ccaf86b6b48daf4347
   fonts_glyphicons_halflings_regular_woff fa9a672187a03cac5d949d506e0ee538
   imgs_biblio_jpg c92477d25f20f701c171e9cdd7d6ef20
   imgs_cobol_jpg 7d2f34794a0061a971c8ebf185348cea
+  imgs_home_jpg 3e334f73a99470f5be333756556e3e87
+  imgs_logo_jpg a1a6d00aa7a541a1981338fef80d2a60
 import  -/  base-4.9.1.0:Control.Applicative 32430a90492e727f4bd80db71c28600c
 import  -/  base-4.9.1.0:Control.Category 74288f70105bf6db5ff51d18c3e2c349
 import  -/  base-4.9.1.0:Control.Monad a6784c5dab0d75c63dabec5a37843f98

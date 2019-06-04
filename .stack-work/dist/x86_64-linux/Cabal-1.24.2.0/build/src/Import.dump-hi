@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2019-06-04 02:00:19.844858 UTC
+2019-06-04 12:55:29.017422 UTC
 
 interface aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX:Import 8002
-  interface hash: 31fdc8dbef8b9949cb2da066212a8014
-  ABI hash: 485754856595a0fa8dc15167ee3722bf
-  export-list hash: e604eced420c4095d1137aa9ac91f355
+  interface hash: edc2a7c564ac5316e44fe35bc2c74df1
+  ABI hash: c98a4a731d94a27b5f1d6b6dacf53e4b
+  export-list hash: 7b93a3b0fd0c75d48fe876be57f09075
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: ab396f11155bd696ab63895436e6f1df
   sig of: Nothing
@@ -36,6 +36,8 @@ exports:
   Settings.StaticFiles.fonts_glyphicons_halflings_regular_woff
   Settings.StaticFiles.imgs_biblio_jpg
   Settings.StaticFiles.imgs_cobol_jpg
+  Settings.StaticFiles.imgs_home_jpg
+  Settings.StaticFiles.imgs_logo_jpg
   Control.Applicative.optional
   Control.Concurrent.rtsSupportsBoundThreads
   Control.Monad.<=<
@@ -2263,8 +2265,8 @@ import  -/  Foundation 4fed6a6ce02d868e609fda2d87290d7d
   isAdmin 740a5fa92c3328bd1710908085190591
   isUser f86125d51c932c3a45dee4ab6202533b
   resourcesApp d201639308ba56a084764ccf129bcfaf
-import  -/  Import.NoFoundation 7f5f9ea61ed9fac1569a4c770875dbb2
-  exports: dd08a17e03516e75412b04744a5dd257
+import  -/  Import.NoFoundation 7321c6ef8d9278de5c240240b8362728
+  exports: 04bd564e979b0edee6fa521c48ac762a
 import  -/  Model 0322a236513b611476018acb9209b978
   Cliente 67af65f0c1143d64e580f793afe4d95d
   Cliente 9adaac9ce26d1fabc444a2184096ae06
@@ -2349,7 +2351,7 @@ import  -/  Settings 0f8bbb6df9df8001dfa1e9ea64b738dc
   configSettingsYmlValue bb6fa2acf0dca9d1336676935f486e56
   widgetFile 80be945e3653fbfc455d43530fd13e75
   widgetFileSettings 4156fd87835e41be43453f23a8c9a481
-import  -/  Settings.StaticFiles 848de2b9bd1285ccaf86b6b48daf4347
+import  -/  Settings.StaticFiles ba857885acefa3f6ae102de35ea4472b
   css_bootstrap_css 7fb70e8cf207ea213dca2425cf051440
   fonts_glyphicons_halflings_regular_eot dcef9b5de0302536938fa1f7d31d345a
   fonts_glyphicons_halflings_regular_svg 5c584c9a455c37beb9f38bd228b3c926
@@ -2357,6 +2359,8 @@ import  -/  Settings.StaticFiles 848de2b9bd1285ccaf86b6b48daf4347
   fonts_glyphicons_halflings_regular_woff fa9a672187a03cac5d949d506e0ee538
   imgs_biblio_jpg c92477d25f20f701c171e9cdd7d6ef20
   imgs_cobol_jpg 7d2f34794a0061a971c8ebf185348cea
+  imgs_home_jpg 3e334f73a99470f5be333756556e3e87
+  imgs_logo_jpg a1a6d00aa7a541a1981338fef80d2a60
 import  -/  base-4.9.1.0:Control.Applicative 32430a90492e727f4bd80db71c28600c
 import  -/  base-4.9.1.0:Control.Arrow 70754b538e7d75521cd68162917b6946
 import  -/  base-4.9.1.0:Control.Category 74288f70105bf6db5ff51d18c3e2c349

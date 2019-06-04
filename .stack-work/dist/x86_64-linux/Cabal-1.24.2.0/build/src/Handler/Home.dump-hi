@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2019-06-04 02:00:23.519153 UTC
+2019-06-04 12:55:34.555296 UTC
 
 interface aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX:Handler.Home 8002
-  interface hash: e4be76210f72673ab9634116c0b55e61
+  interface hash: 8e0c87b2e9e9ce7101f0d5cf9588bcab
   ABI hash: 53c4ac429140f6bc2ea2a1830ac96ba8
   export-list hash: ccf1fd5d13d8ee912cac09a6c456f703
   orphan hash: c615116cd212abc4390675378980b9b9
@@ -349,9 +349,9 @@ import  -/  Foundation 4fed6a6ce02d868e609fda2d87290d7d
   TodosEmprestimoR d1cdb97dc03be608521aa1dea036b299
   TodosFuncionariosR 0720807c96234aaad6dc8bf8ad2582b1
   TodosLivrosR 52b2ab1f4bf0f41d12677f9ff39da61c
-import  -/  Import 485754856595a0fa8dc15167ee3722bf
-  exports: e604eced420c4095d1137aa9ac91f355
-import  -/  Settings.StaticFiles 848de2b9bd1285ccaf86b6b48daf4347
+import  -/  Import c98a4a731d94a27b5f1d6b6dacf53e4b
+  exports: 7b93a3b0fd0c75d48fe876be57f09075
+import  -/  Settings.StaticFiles ba857885acefa3f6ae102de35ea4472b
   css_bootstrap_css 7fb70e8cf207ea213dca2425cf051440
   imgs_biblio_jpg c92477d25f20f701c171e9cdd7d6ef20
 import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1

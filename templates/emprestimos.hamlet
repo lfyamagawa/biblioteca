@@ -1,33 +1,61 @@
-<table class="container table-striped table-hover thead-dark">
-    <thead style="background-color:silver">
+<div class="container" style="background-color:black">
+    <table>
+           <tr>
+               <td class="col col-md-1">
+                   <img width="250" height="125"src=@{StaticR imgs_logo_jpg}>
+        
+               <td class="col col-md-4">
+                   <h1><strong><font color="white">Empréstimo de Livros
+    <table>                
+           <tr>         
+               <td>
+                   <a href=@{HomeR} class="btn btn-light btn-lg">Página Principal
+               <td>
+                   <a href=@{TodosDevolucaoR} class="btn btn-light btn-lg">Devolver Livros
+               <td>
+                   <a href=@{TodosFuncionariosR} class="btn btn-light btn-lg">Funcionarios
+               <td>
+                   <a href=@{TodosClientesR} class="btn btn-light btn-lg">Clientes
+               <td>
+                   <a href=@{TodosLivrosR} class="btn btn-light btn-lg">Livros  
+
+
+
+<table class="container table-striped table-hover">
+    <thead style="background-color:black">
+    
         <tr>
             <th>
-                <h4><strong>Id
+                <font color="black">X        
             <th>
-                <h4><strong>Titulo
+                <h4><strong><font color="white">Id
             <th>
-                <h4><strong>Autor
+                <font color="black">X                
             <th>
-                <h4><strong>Publicacao
+                <h4><strong><font color="white">Título
             <th>
-                <h4><strong>Descricao
+                <h4><strong><font color="white">Autor
+            <th>
+                <h4><strong><font color="white">Publicação
+            <th>
+                <h4><strong><font color="white">Descrição
             <th>    
-                <h4><strong>Assunto
+                <h4><strong><font color="white">Assunto
             <th>
             
             <th>
 
     <tbody>
-        <div class="container" style="background-color:silver">
-            <center><h2>Lista de Livros para Emprestimo<br>
-
-            <center>
-                <a href=@{HomeR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Principal
-                <br><br>
+            <br>
+            
                     $forall (Entity livid livro) <- livros
                         <tr>
                             <td>
+                            
+                            <td>
                                 #{show $ fromSqlKey livid}
+                            <td>
+                            
                             <td>
                                 #{livroTitulo livro}
                             <td>
@@ -39,12 +67,11 @@
                             <td>
                                 #{livroAssunto livro}
                             <td>
-                    
                                 <form action=@{EmprestarClienteR livid} method=get>
                                     <input type="submit" value="Emprestar">
+
 <div>
-    <br><br>
-<div>
-        <div class="row">
-            <div class="container col-12" style="background-color:silver">
-                <center><h4><strong>Fim
+   <br><br>
+<div class="container text-center" style="background-color:black">
+        <a href=@{HomeR}>
+         <img width="123" height="85"src=@{StaticR imgs_home_jpg}>

@@ -1,30 +1,58 @@
-<table class="container table-striped table-hove thead-dark">
-    <thead style="background-color:silver">
-        <tr>
-            <th>
-                <h4><strong>Id
-            <th>
-                <h4><strong>Nome
-            <th>
-                <h4><strong>Senha
-            <th>
-            
-            <th>
+<div class="container" style="background-color:black">
+    <table>
+           <tr>
+               <td class="col col-md-1">
+                   <img width="250" height="125"src=@{StaticR imgs_logo_jpg}>
+        
+               <td class="col col-md-4">
+                   <h1><strong><font color="white">Lista de Funcionários
+               
+     
+     <table>                
+           <tr>         
+               <td>
+                   <a href=@{HomeR} class="btn btn-light btn-lg">Página Principal
+               <td>
+                   <a href=@{FuncionarioR} class="btn btn-light btn-lg">Incluir Funcionário
+               <td>
+                   <a href=@{TodosClientesR} class="btn btn-light btn-lg">Clientes
+                <td>
+                   <a href=@{TodosLivrosR} class="btn btn-light btn-lg">Livros                  
+                   
+
+
+<table class="container table-striped table-hover">
+    <thead style="background-color:black">
+
+            <tr>
+                <th>
+                    <font color="black">X
+                <th>
+                    <h4><strong><font color="white">Id
+                <th>
+                    <font color="black">X
+                <th>
+                    <h4><strong><font color="white">E-mail
+                <th>
+                    <h4><strong><font color="white">Senha
+                <th>
+                    <h4><strong><font color="white">Editar Dados
+                <th>
+                    <h4><strong><font color="white">Deletar
+
                 
     <tbody>
-        <div class="container" style="background-color:silver">
-            <center><h2><strong>Lista de funcionarios<br>
+            <br>
 
-            <center>
-               <a href=@{HomeR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Principal
-               <a href=@{FuncionarioR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Incluir</a>
-                <br><br>
-                
                   $forall (Entity funcid funcionario) <- funcionarios
                     <tr>
                         <td>
+                        
+                        <td>
                             <a href=@{FuncionarioPerfilR funcid}>
                                 #{show $ fromSqlKey funcid}
+                        <td>
+                        
                         <td>
                             #{funcionarioEmail funcionario}
                         <td>
@@ -34,8 +62,14 @@
                         <td>
                             <form action=@{FuncionarioApagarR funcid} method=post>
                                 <input type="submit" value="X">
+
 <div>
-    <br><br>
-<div>
-    <div class="container col-12" style="background-color:silver">
-        <center><h4><strong>Fim
+   <br><br>
+<div class="container text-center" style="background-color:black">
+        <a href=@{HomeR}>
+         <img width="123" height="85"src=@{StaticR imgs_home_jpg}>
+
+
+
+
+

@@ -1,23 +1,26 @@
-<div class="container" style="background-color:black">
-    <table>
+<div class="container table-responsive" style="background-color:black">
+    <table class="table" style="background-color:black">
            <tr>
-               <td class="col col-md-1">
-                   <img width="250" height="125"src=@{StaticR imgs_logo_jpg}>
+               <td width="160px"  height="80px">
+                   <img width="160" height="80"src=@{StaticR imgs_logo_jpg}>
         
-               <td class="col col-md-4">
-                   <h1><strong><font color="white">Empréstimo de Livros
-    <table>                
+               <td  align="center">
+                   <h1><strong><font color="white">Empréstimo de Livro
+               <td  width="160px">
+                       
+                   
+    <table class="table text-center">                  
            <tr>         
                <td>
-                   <a href=@{HomeR} class="btn btn-light btn-lg">Página Principal
+                   <a href=@{HomeR} class="btn btn-light btn-md">Página Principal
                <td>
-                   <a href=@{TodosDevolucaoR} class="btn btn-light btn-lg">Devolver Livros
+                   <a href=@{TodosDevolucaoR} class="btn btn-light btn-md">Devolver Livros
                <td>
-                   <a href=@{TodosFuncionariosR} class="btn btn-light btn-lg">Funcionarios
+                   <a href=@{TodosFuncionariosR} class="btn btn-light btn-md">Funcionarios
                <td>
-                   <a href=@{TodosClientesR} class="btn btn-light btn-lg">Clientes
+                   <a href=@{TodosClientesR} class="btn btn-light btn-md">Clientes
                <td>
-                   <a href=@{TodosLivrosR} class="btn btn-light btn-lg">Livros  
+                   <a href=@{TodosLivrosR} class="btn btn-light btn-md">Livros  
 
 
 

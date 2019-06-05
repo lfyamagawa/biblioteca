@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2019-06-04 13:20:43.420196 UTC
+2019-06-05 15:40:12.931643 UTC
 
 interface aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX:Handler.Emprestimo 8002
-  interface hash: b27af1a64dce578f98e7cb941edea5cd
+  interface hash: 4c9183e011d2db1cf73e4d498132277b
   ABI hash: de0924ec9471e00bc572f7b459482b9a
   export-list hash: 9afc1c03d997c83220bd017fd9f696af
   orphan hash: 2c87ae68cc6011f423671e5888f2bcfc
@@ -350,8 +350,8 @@ import  -/  Foundation 4fed6a6ce02d868e609fda2d87290d7d
   TodosDevolucaoR bf6c6992dbc45ae53a6a456b43f84fd6
   TodosFuncionariosR 0720807c96234aaad6dc8bf8ad2582b1
   TodosLivrosR 52b2ab1f4bf0f41d12677f9ff39da61c
-import  -/  Import c98a4a731d94a27b5f1d6b6dacf53e4b
-  exports: 7b93a3b0fd0c75d48fe876be57f09075
+import  -/  Import 1dc9d700c067377c646acfea905bbaed
+  exports: 08a15086ad7a1c22eaaacc9b36c5311a
 import  -/  Model 0322a236513b611476018acb9209b978
   ClienteNome 1a5dc5e17ed6d66d59b968fef905eb31
   Emprestimo c5663d1460cb0b038434d433fd5ca240
@@ -363,10 +363,10 @@ import  -/  Model 0322a236513b611476018acb9209b978
   livroDescricao 48eac9c02a25d9d992d00be0bf5ce55d
   livroPublicacao 640e51029245a1a24196a0368c29489b
   livroTitulo e77ab55e2dbacd7990ee3cba930ea365
-import  -/  Settings.StaticFiles ba857885acefa3f6ae102de35ea4472b
+import  -/  Settings.StaticFiles 3f5e8ea8489e6f5a088e6862852e4611
   css_bootstrap_css 7fb70e8cf207ea213dca2425cf051440
-  imgs_home_jpg 3e334f73a99470f5be333756556e3e87
-  imgs_logo_jpg a1a6d00aa7a541a1981338fef80d2a60
+  imgs_home_jpg c482baefd9eb3ec93036e897aa040dc9
+  imgs_logo_jpg bedde684325d6b5a1a29083a7fa9b1e1
 import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
 import  -/  base-4.9.1.0:Data.Functor 5ab1dc703df5b482e77efb697833ca3c
 import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1

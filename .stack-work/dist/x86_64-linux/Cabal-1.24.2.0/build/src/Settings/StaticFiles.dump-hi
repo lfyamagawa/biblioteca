@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2019-06-04 13:20:32.027507 UTC
+2019-06-05 15:39:46.161891 UTC
 
 interface aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX:Settings.StaticFiles 8002
-  interface hash: 49fb4881485b521fc824a86d320e1c78
-  ABI hash: ba857885acefa3f6ae102de35ea4472b
-  export-list hash: 8ca9819b6af23aba0d9909b52aa94859
+  interface hash: f7454a5234bc9ebfcec8748f4bf68d21
+  ABI hash: 3f5e8ea8489e6f5a088e6862852e4611
+  export-list hash: 0913b986b04814e0f04cec28dd90e7db
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: f91110660b9761c227295575e91cd3f7
   sig of: Nothing
@@ -19,6 +19,7 @@ exports:
   Settings.StaticFiles.fonts_glyphicons_halflings_regular_woff
   Settings.StaticFiles.imgs_biblio_jpg
   Settings.StaticFiles.imgs_cobol_jpg
+  Settings.StaticFiles.imgs_fundo_jpg
   Settings.StaticFiles.imgs_home_jpg
   Settings.StaticFiles.imgs_logo_jpg
 module dependencies: Settings
@@ -464,6 +465,28 @@ b2ae5efa76f5af93ed02597e21e14d0d
      Inline: [0] -}
 62bddc8f472dd027dbce246253ed6a97
   $wouter17 ::
+    GHC.Prim.MutableByteArray# GHC.Prim.RealWorld
+    -> GHC.Prim.Int#
+    -> [GHC.Types.Char]
+    -> GHC.Prim.Int#
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 5, Strictness: <L,U><L,U><S,1*U><S,U><S,U>,
+     Inline: [0] -}
+cb065389f2240c6c9a7e8e6aebb0de54
+  $wouter18 ::
+    GHC.Prim.MutableByteArray# GHC.Prim.RealWorld
+    -> GHC.Prim.Int#
+    -> [GHC.Types.Char]
+    -> GHC.Prim.Int#
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 5, Strictness: <L,U><L,U><S,1*U><S,U><S,U>,
+     Inline: [0] -}
+9030688701043b522c00f411c541f109
+  $wouter19 ::
     GHC.Prim.MutableByteArray# GHC.Prim.RealWorld
     -> GHC.Prim.Int#
     -> [GHC.Types.Char]
@@ -1276,28 +1299,28 @@ d55e1345026551af277b2c848bd3c481
 6fd5ca40913db5b9ab83b54776918fc3
   imgs_cobol_jpg9 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "cobol.jpg"#) -}
-3e334f73a99470f5be333756556e3e87
-  imgs_home_jpg :: Yesod.Static.StaticRoute
+3ec67fb680ea8695791a638aae2142d9
+  imgs_fundo_jpg :: Yesod.Static.StaticRoute
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
-                Settings.StaticFiles.imgs_home_jpg1
+                Settings.StaticFiles.imgs_fundo_jpg1
                   `cast`
                 (Sym (Yesod.Static.D:R:RouteStatic0[0])) -}
-80a8649d54e4eb742f2f8652273d8c9e
-  imgs_home_jpg1 :: Yesod.Static.R:RouteStatic
+87fe9371051c62a982aac1f8d736afaa
+  imgs_fundo_jpg1 :: Yesod.Static.R:RouteStatic
   {- Strictness: m,
      Unfolding: (Yesod.Static.StaticRoute
-                   Settings.StaticFiles.imgs_home_jpg5
-                   Settings.StaticFiles.imgs_home_jpg2) -}
-61b8f57c7e6dccafe7fb3efaed6cad79
-  imgs_home_jpg10 :: Data.Text.Internal.Text
+                   Settings.StaticFiles.imgs_fundo_jpg5
+                   Settings.StaticFiles.imgs_fundo_jpg2) -}
+a039ed6d91cf91fffc9c04c562b8777d
+  imgs_fundo_jpg10 :: Data.Text.Internal.Text
   {- Unfolding: (case GHC.Magic.runRW#
                         @ 'GHC.Types.PtrRepLifted
                         @ Data.Text.Internal.Text
-                        Settings.StaticFiles.imgs_home_jpg11 of ds1 { (#,#) ipv ipv1 ->
+                        Settings.StaticFiles.imgs_fundo_jpg11 of ds1 { (#,#) ipv ipv1 ->
                  ipv1 }) -}
-daa5d4f055f73c1e820cf8bd146105f9
-  imgs_home_jpg11 ::
+055aeac94cd27b8f655719804bc678de
+  imgs_fundo_jpg11 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
           Data.Text.Internal.Text #)
@@ -1309,6 +1332,104 @@ daa5d4f055f73c1e820cf8bd146105f9
                         10#
                         s1 of ds1 { (#,#) ipv ipv1 ->
                  Settings.StaticFiles.$wouter15
+                   ipv1
+                   4#
+                   Settings.StaticFiles.imgs_biblio_jpg12
+                   0#
+                   ipv }) -}
+e5eb2c3475fee58b98de86e34d242469
+  imgs_fundo_jpg2 ::
+    [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Data.Text.Internal.Text, Data.Text.Internal.Text)
+                   Settings.StaticFiles.imgs_fundo_jpg3
+                   (GHC.Types.[]
+                      @ (Data.Text.Internal.Text, Data.Text.Internal.Text))) -}
+f500a4cf6c1ebcd288221048574550f7
+  imgs_fundo_jpg3 ::
+    (Data.Text.Internal.Text, Data.Text.Internal.Text)
+  {- Strictness: m,
+     Unfolding: ((Settings.StaticFiles.css_bootstrap_css5,
+                  Settings.StaticFiles.imgs_fundo_jpg4)) -}
+ba5c37bd7415fcc9c93128e6fdf5d6be
+  imgs_fundo_jpg4 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "Oz1CpO9i"#) -}
+e5daa473bab4c70635b050d739fc6d84
+  imgs_fundo_jpg5 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Settings.StaticFiles.imgs_fundo_jpg10
+                   Settings.StaticFiles.imgs_fundo_jpg6) -}
+f6c7c6b516ea4f3796cde61439183d7f
+  imgs_fundo_jpg6 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Settings.StaticFiles.imgs_fundo_jpg7
+                   (GHC.Types.[] @ Data.Text.Internal.Text)) -}
+66f81214799e7a9c90ff8842850a1057
+  imgs_fundo_jpg7 :: Data.Text.Internal.Text
+  {- Unfolding: (case GHC.Magic.runRW#
+                        @ 'GHC.Types.PtrRepLifted
+                        @ Data.Text.Internal.Text
+                        Settings.StaticFiles.imgs_fundo_jpg8 of ds1 { (#,#) ipv ipv1 ->
+                 ipv1 }) -}
+46be4a2f784559eea0a810441651fc2f
+  imgs_fundo_jpg8 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 1,
+     Unfolding: (\ (s1 :: GHC.Prim.State#
+                            GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.newByteArray#
+                        @ GHC.Prim.RealWorld
+                        10#
+                        s1 of ds1 { (#,#) ipv ipv1 ->
+                 Settings.StaticFiles.$wouter14
+                   ipv1
+                   4#
+                   Settings.StaticFiles.imgs_fundo_jpg9
+                   0#
+                   ipv }) -}
+67565385eaf2548fa09f19dfafca9422
+  imgs_fundo_jpg9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "fundo.jpg"#) -}
+c482baefd9eb3ec93036e897aa040dc9
+  imgs_home_jpg :: Yesod.Static.StaticRoute
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                Settings.StaticFiles.imgs_home_jpg1
+                  `cast`
+                (Sym (Yesod.Static.D:R:RouteStatic0[0])) -}
+e3a6ff77f562d984a365b29a3baad1f8
+  imgs_home_jpg1 :: Yesod.Static.R:RouteStatic
+  {- Strictness: m,
+     Unfolding: (Yesod.Static.StaticRoute
+                   Settings.StaticFiles.imgs_home_jpg5
+                   Settings.StaticFiles.imgs_home_jpg2) -}
+482965f56bc96db489b30da7e7081001
+  imgs_home_jpg10 :: Data.Text.Internal.Text
+  {- Unfolding: (case GHC.Magic.runRW#
+                        @ 'GHC.Types.PtrRepLifted
+                        @ Data.Text.Internal.Text
+                        Settings.StaticFiles.imgs_home_jpg11 of ds1 { (#,#) ipv ipv1 ->
+                 ipv1 }) -}
+438f2a66c1527081e26b0dbbd9469259
+  imgs_home_jpg11 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 1,
+     Unfolding: (\ (s1 :: GHC.Prim.State#
+                            GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.newByteArray#
+                        @ GHC.Prim.RealWorld
+                        10#
+                        s1 of ds1 { (#,#) ipv ipv1 ->
+                 Settings.StaticFiles.$wouter17
                    ipv1
                    4#
                    Settings.StaticFiles.imgs_biblio_jpg12
@@ -1332,28 +1453,28 @@ c72664052ab72b2ff6be3d0930e2d352
 e8fc80500e9121b141ae6288b80fe64f
   imgs_home_jpg4 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString# "EstL3w3b"#) -}
-34bf504d9497767f19c5350350f3ff78
+87cc4a6110dc53ab49445d85a52eb776
   imgs_home_jpg5 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Settings.StaticFiles.imgs_home_jpg10
                    Settings.StaticFiles.imgs_home_jpg6) -}
-88ed3314777b70d04fc9a754641076d3
+89c5927ee8d7d7838a41d4ebe318bc8c
   imgs_home_jpg6 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Settings.StaticFiles.imgs_home_jpg7
                    (GHC.Types.[] @ Data.Text.Internal.Text)) -}
-2abaa6cd6b8e8913847280d2edbff693
+ae963358fd2955f97fdcab17bccf9f5e
   imgs_home_jpg7 :: Data.Text.Internal.Text
   {- Unfolding: (case GHC.Magic.runRW#
                         @ 'GHC.Types.PtrRepLifted
                         @ Data.Text.Internal.Text
                         Settings.StaticFiles.imgs_home_jpg8 of ds1 { (#,#) ipv ipv1 ->
                  ipv1 }) -}
-161685a72bb7e97666e2d768bac745b1
+b047981f9ece2a40942e7117b40d78c1
   imgs_home_jpg8 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -1365,7 +1486,7 @@ e8fc80500e9121b141ae6288b80fe64f
                         @ GHC.Prim.RealWorld
                         10#
                         s1 of ds1 { (#,#) ipv ipv1 ->
-                 Settings.StaticFiles.$wouter14
+                 Settings.StaticFiles.$wouter16
                    ipv1
                    4#
                    Settings.StaticFiles.imgs_home_jpg9
@@ -1374,27 +1495,27 @@ e8fc80500e9121b141ae6288b80fe64f
 2b8213725ab86fc392a20c0766146fe7
   imgs_home_jpg9 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "home.jpg"#) -}
-a1a6d00aa7a541a1981338fef80d2a60
+bedde684325d6b5a1a29083a7fa9b1e1
   imgs_logo_jpg :: Yesod.Static.StaticRoute
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 Settings.StaticFiles.imgs_logo_jpg1
                   `cast`
                 (Sym (Yesod.Static.D:R:RouteStatic0[0])) -}
-8caf2e0e3902eccf28497699441d0dc3
+cf46e5ab12751a67f98af4b4cc38d31b
   imgs_logo_jpg1 :: Yesod.Static.R:RouteStatic
   {- Strictness: m,
      Unfolding: (Yesod.Static.StaticRoute
                    Settings.StaticFiles.imgs_logo_jpg5
                    Settings.StaticFiles.imgs_logo_jpg2) -}
-4697064a3d53cddc2e02ddb8915e7f2f
+bfc03efc3de90270c3e5861aa7f0f8fb
   imgs_logo_jpg10 :: Data.Text.Internal.Text
   {- Unfolding: (case GHC.Magic.runRW#
                         @ 'GHC.Types.PtrRepLifted
                         @ Data.Text.Internal.Text
                         Settings.StaticFiles.imgs_logo_jpg11 of ds1 { (#,#) ipv ipv1 ->
                  ipv1 }) -}
-4583810d207a159e2b7fa001efce0640
+21986b26e67f50b49a843e37e8bf86bb
   imgs_logo_jpg11 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -1406,7 +1527,7 @@ a1a6d00aa7a541a1981338fef80d2a60
                         @ GHC.Prim.RealWorld
                         10#
                         s1 of ds1 { (#,#) ipv ipv1 ->
-                 Settings.StaticFiles.$wouter17
+                 Settings.StaticFiles.$wouter19
                    ipv1
                    4#
                    Settings.StaticFiles.imgs_biblio_jpg12
@@ -1430,28 +1551,28 @@ ce735ab17f1672112c32e68d15029778
 466a9f48d3a0976fdf5fc2cb647cfdcc
   imgs_logo_jpg4 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString# "V5ZVmYVx"#) -}
-9687548b0a6a79e6ed3a5f28b0f606ab
+b8d55d22f2bb68da60f83722522eba5e
   imgs_logo_jpg5 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Settings.StaticFiles.imgs_logo_jpg10
                    Settings.StaticFiles.imgs_logo_jpg6) -}
-186d27e2cc8d517c4279328ffa6c7d8f
+8a8e00760ceabd51d4513f241e0d0348
   imgs_logo_jpg6 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Settings.StaticFiles.imgs_logo_jpg7
                    (GHC.Types.[] @ Data.Text.Internal.Text)) -}
-d0d7316629df6ef197f453b40d2cb75c
+d0b8c81d2ae6bdcd05d15d507bf2c112
   imgs_logo_jpg7 :: Data.Text.Internal.Text
   {- Unfolding: (case GHC.Magic.runRW#
                         @ 'GHC.Types.PtrRepLifted
                         @ Data.Text.Internal.Text
                         Settings.StaticFiles.imgs_logo_jpg8 of ds1 { (#,#) ipv ipv1 ->
                  ipv1 }) -}
-e8ef1d7b1fefc1c14a279b357a0ef283
+17fee964aa136b0f104c8847c237ff67
   imgs_logo_jpg8 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -1463,7 +1584,7 @@ e8ef1d7b1fefc1c14a279b357a0ef283
                         @ GHC.Prim.RealWorld
                         10#
                         s1 of ds1 { (#,#) ipv ipv1 ->
-                 Settings.StaticFiles.$wouter16
+                 Settings.StaticFiles.$wouter18
                    ipv1
                    4#
                    Settings.StaticFiles.imgs_logo_jpg9

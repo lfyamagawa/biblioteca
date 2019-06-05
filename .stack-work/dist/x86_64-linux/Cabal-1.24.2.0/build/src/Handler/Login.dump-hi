@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2019-06-04 13:20:47.842189 UTC
+2019-06-05 15:40:21.086757 UTC
 
 interface aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX:Handler.Login 8002
-  interface hash: 1d576fc5ce5963aabc54d3584ecaa131
+  interface hash: 28fbe88dd24d12e2239a534bc71916e6
   ABI hash: e1a7b12349eaed458716fe20deb28916
   export-list hash: 062839076225c0949cdadaa71c63f7ad
   orphan hash: 7a8d01da01f2a44e3d1dbd6e43da3b06
@@ -347,15 +347,15 @@ import  -/  Foundation 4fed6a6ce02d868e609fda2d87290d7d
   HomeR a1ca682e39bdcf9db803a327759c7c35
   LoginR dddf038ca878adbb3f192ad51d5fe87f
   StaticR b61a74d95189608c16720a9298017193
-import  -/  Import c98a4a731d94a27b5f1d6b6dacf53e4b
-  exports: 7b93a3b0fd0c75d48fe876be57f09075
+import  -/  Import 1dc9d700c067377c646acfea905bbaed
+  exports: 08a15086ad7a1c22eaaacc9b36c5311a
 import  -/  Model 0322a236513b611476018acb9209b978
   Funcionario 7118cd502933ff6ca690202794694aff
   Funcionario 784411d46fe997e0aed3471a9cf9611a
   UniqueRestEmail 24a8dee1abf52efcb45f7f7010d65d23
   funcionarioEmail 090829eac49efc5459fdfed1d4907f8d
   funcionarioSenha d47dede4355b388464f8c9fbc024e18f
-import  -/  Settings.StaticFiles ba857885acefa3f6ae102de35ea4472b
+import  -/  Settings.StaticFiles 3f5e8ea8489e6f5a088e6862852e4611
   css_bootstrap_css 7fb70e8cf207ea213dca2425cf051440
 import  -/  base-4.9.1.0:Data.Functor 5ab1dc703df5b482e77efb697833ca3c
 import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1

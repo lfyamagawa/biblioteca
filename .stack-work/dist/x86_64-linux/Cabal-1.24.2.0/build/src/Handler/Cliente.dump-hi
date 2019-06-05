@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2019-06-04 13:20:41.193982 UTC
+2019-06-05 15:40:09.083459 UTC
 
 interface aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX:Handler.Cliente 8002
-  interface hash: 5859132600bd3d5e09ee509c47f46397
+  interface hash: b22166d3dab298cfe12ba5d2f3201a00
   ABI hash: 1a531395cc51089a29aff752a4ba28b3
   export-list hash: dfed1e7142b5d09e12e3170a1ef30ea2
   orphan hash: 2fdfe3ea8d030a26f4db8fbe8bdf2b83
@@ -355,8 +355,8 @@ import  -/  Foundation 4fed6a6ce02d868e609fda2d87290d7d
   TodosClientesR 880bea89c0b33a6ed90b1ebbd96f657c
   TodosFuncionariosR 0720807c96234aaad6dc8bf8ad2582b1
   TodosLivrosR 52b2ab1f4bf0f41d12677f9ff39da61c
-import  -/  Import c98a4a731d94a27b5f1d6b6dacf53e4b
-  exports: 7b93a3b0fd0c75d48fe876be57f09075
+import  -/  Import 1dc9d700c067377c646acfea905bbaed
+  exports: 08a15086ad7a1c22eaaacc9b36c5311a
 import  -/  Model 0322a236513b611476018acb9209b978
   Cliente 67af65f0c1143d64e580f793afe4d95d
   Cliente 9adaac9ce26d1fabc444a2184096ae06
@@ -367,10 +367,10 @@ import  -/  Model 0322a236513b611476018acb9209b978
   clienteNome 3bea657df4638380cf71e84a4bc2e0ee
   clienteRg c1be0e19520b3a6cff89efbaa7311a7e
   clienteTelefone 590b450330547df4d00ff5d24b7440a9
-import  -/  Settings.StaticFiles ba857885acefa3f6ae102de35ea4472b
+import  -/  Settings.StaticFiles 3f5e8ea8489e6f5a088e6862852e4611
   css_bootstrap_css 7fb70e8cf207ea213dca2425cf051440
-  imgs_home_jpg 3e334f73a99470f5be333756556e3e87
-  imgs_logo_jpg a1a6d00aa7a541a1981338fef80d2a60
+  imgs_home_jpg c482baefd9eb3ec93036e897aa040dc9
+  imgs_logo_jpg bedde684325d6b5a1a29083a7fa9b1e1
 import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
 import  -/  base-4.9.1.0:Data.Functor 5ab1dc703df5b482e77efb697833ca3c
 import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1

@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2019-06-04 13:20:50.727821 UTC
+2019-06-05 15:40:30.369872 UTC
 
 interface aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX:Application [orphan module] 8002
-  interface hash: 50d13bf7c3dfb4cfe4c44986efa69fea
+  interface hash: 6379270fde2ee72d0043af3a9a724b23
   ABI hash: 9eb9395b021f895e9e602dbd2dfab6ff
   export-list hash: 88760f1f9acb48ffaaf15dca9d22339d
   orphan hash: 69fb11262dae83ffce14fbd96767d29f
@@ -428,8 +428,8 @@ import  -/  Handler.Login e1a7b12349eaed458716fe20deb28916
   getLoginR 719c2ea7cb9d73c2625fbfa2106d4a2a
   postLoginR 5db99ecca1f994a127a8788f3613fd9d
   postLogoutR 0ff054144ed107969a54b32170aa1b44
-import  -/  Import c98a4a731d94a27b5f1d6b6dacf53e4b
-  exports: 7b93a3b0fd0c75d48fe876be57f09075
+import  -/  Import 1dc9d700c067377c646acfea905bbaed
+  exports: 08a15086ad7a1c22eaaacc9b36c5311a
 import  -/  Model 0322a236513b611476018acb9209b978
   migrateAll b09d2378cf411109bc2d296142c07272
 import  -/  Settings 0f8bbb6df9df8001dfa1e9ea64b738dc

@@ -1,23 +1,24 @@
-<div class="container" style="background-color:black">
-    <table>
+<div class="container table-responsive" style="background-color:black">
+    <table class="table" style="background-color:black">
            <tr>
-               <td class="col col-md-1">
-                   <img width="250" height="125"src=@{StaticR imgs_logo_jpg}>
+               <td width="160px"  height="80px">
+                   <img width="160" height="80"src=@{StaticR imgs_logo_jpg}>
         
-               <td class="col col-md-4">
+               <td  align="center">
                    <h1><strong><font color="white">Lista de Funcionários
+               <td  width="160px">
                
      
-     <table>                
+     <table class="table text-center">                
            <tr>         
                <td>
-                   <a href=@{HomeR} class="btn btn-light btn-lg">Página Principal
+                   <a href=@{HomeR} class="btn btn-light btn-md">Página Principal
                <td>
-                   <a href=@{FuncionarioR} class="btn btn-light btn-lg">Incluir Funcionário
+                   <a href=@{FuncionarioR} class="btn btn-light btn-md">Incluir Funcionário
                <td>
-                   <a href=@{TodosClientesR} class="btn btn-light btn-lg">Clientes
+                   <a href=@{TodosClientesR} class="btn btn-light btn-md">Clientes
                 <td>
-                   <a href=@{TodosLivrosR} class="btn btn-light btn-lg">Livros                  
+                   <a href=@{TodosLivrosR} class="btn btn-light btn-md">Livros                  
                    
 
 
@@ -68,8 +69,5 @@
 <div class="container text-center" style="background-color:black">
         <a href=@{HomeR}>
          <img width="123" height="85"src=@{StaticR imgs_home_jpg}>
-
-
-
 
 

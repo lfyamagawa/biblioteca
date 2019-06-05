@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2019-06-05 21:28:48.021772 UTC
+2019-06-05 22:23:27.864531 UTC
 
 interface aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX:Import 8002
-  interface hash: a96c33858e331de1c65cadb42c2a3bcf
-  ABI hash: 1dc9d700c067377c646acfea905bbaed
-  export-list hash: 08a15086ad7a1c22eaaacc9b36c5311a
+  interface hash: 5d9e65cd9127703728ae942852ff5079
+  ABI hash: 111f3036b077109f08dedea6b6106d4d
+  export-list hash: 9ae2287b43e56bc2b5d41732316e3b89
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: ab396f11155bd696ab63895436e6f1df
   sig of: Nothing
@@ -35,10 +35,14 @@ exports:
   Settings.StaticFiles.fonts_glyphicons_halflings_regular_ttf
   Settings.StaticFiles.fonts_glyphicons_halflings_regular_woff
   Settings.StaticFiles.imgs_biblio_jpg
+  Settings.StaticFiles.imgs_book_png
   Settings.StaticFiles.imgs_cobol_jpg
+  Settings.StaticFiles.imgs_emprestar_png
   Settings.StaticFiles.imgs_fundo_jpg
   Settings.StaticFiles.imgs_home_jpg
+  Settings.StaticFiles.imgs_login_jpg
   Settings.StaticFiles.imgs_logo_jpg
+  Settings.StaticFiles.imgs_user_jpg
   Control.Applicative.optional
   Control.Concurrent.rtsSupportsBoundThreads
   Control.Monad.<=<
@@ -2266,8 +2270,8 @@ import  -/  Foundation 4fed6a6ce02d868e609fda2d87290d7d
   isAdmin 740a5fa92c3328bd1710908085190591
   isUser f86125d51c932c3a45dee4ab6202533b
   resourcesApp d201639308ba56a084764ccf129bcfaf
-import  -/  Import.NoFoundation fb95eb64b7a80416b7b5056f624e4849
-  exports: 2e494bb9b274e4ba433030bb20c1ca43
+import  -/  Import.NoFoundation 62663429fff01deabadf63d967c95d16
+  exports: 2566fa08a2226e51395877636583b744
 import  -/  Model 0322a236513b611476018acb9209b978
   Cliente 67af65f0c1143d64e580f793afe4d95d
   Cliente 9adaac9ce26d1fabc444a2184096ae06
@@ -2352,17 +2356,21 @@ import  -/  Settings 0f8bbb6df9df8001dfa1e9ea64b738dc
   configSettingsYmlValue bb6fa2acf0dca9d1336676935f486e56
   widgetFile 80be945e3653fbfc455d43530fd13e75
   widgetFileSettings 4156fd87835e41be43453f23a8c9a481
-import  -/  Settings.StaticFiles 3f5e8ea8489e6f5a088e6862852e4611
+import  -/  Settings.StaticFiles 7600c75cbda3de0f6011d876b1fa10e9
   css_bootstrap_css 7fb70e8cf207ea213dca2425cf051440
   fonts_glyphicons_halflings_regular_eot dcef9b5de0302536938fa1f7d31d345a
   fonts_glyphicons_halflings_regular_svg 5c584c9a455c37beb9f38bd228b3c926
   fonts_glyphicons_halflings_regular_ttf 8fec47cfdb54d82dce5ebd6c1cc060fe
   fonts_glyphicons_halflings_regular_woff fa9a672187a03cac5d949d506e0ee538
   imgs_biblio_jpg c92477d25f20f701c171e9cdd7d6ef20
-  imgs_cobol_jpg 7d2f34794a0061a971c8ebf185348cea
-  imgs_fundo_jpg 3ec67fb680ea8695791a638aae2142d9
-  imgs_home_jpg c482baefd9eb3ec93036e897aa040dc9
-  imgs_logo_jpg bedde684325d6b5a1a29083a7fa9b1e1
+  imgs_book_png 9ce0c1a056bfecf354035e207f3c1e4f
+  imgs_cobol_jpg 27e7cdbb8c38e12ae61b2cd079a05863
+  imgs_emprestar_png 223f71804449b27e20672ad2a6023afa
+  imgs_fundo_jpg 0b036d978115addc53e5ddf7d5bf9d9a
+  imgs_home_jpg 0eafc31a9bddd7c7506fa4c3b8de6d9c
+  imgs_login_jpg 93676c7c76ee8a410e20e427d2b869bb
+  imgs_logo_jpg f49632d1d75cbbe26beec6fff264606d
+  imgs_user_jpg c95ea671a64f790a88e56a8aacafe8dc
 import  -/  base-4.9.1.0:Control.Applicative 32430a90492e727f4bd80db71c28600c
 import  -/  base-4.9.1.0:Control.Arrow 70754b538e7d75521cd68162917b6946
 import  -/  base-4.9.1.0:Control.Category 74288f70105bf6db5ff51d18c3e2c349

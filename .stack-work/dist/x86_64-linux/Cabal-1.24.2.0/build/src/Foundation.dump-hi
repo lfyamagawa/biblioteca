@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2019-06-05 21:28:46.922902 UTC
+2019-06-05 22:23:26.637126 UTC
 
 interface aulahaskell-0.0.0-XMpds6OjaGCGlrWg68CUX:Foundation [family instance module] 8002
-  interface hash: c949aefe70cb378749ac9f8b52faffdb
+  interface hash: 27ee3f2128f5cd786cce5a8c2b986ab4
   ABI hash: 4fed6a6ce02d868e609fda2d87290d7d
   export-list hash: 6d6df3f748c49f2839c0febc2f9a7248
   orphan hash: f1015f16c878df6461b5107a918116ff
@@ -342,8 +342,8 @@ family instance modules: adjunctions-4.3@adjunctions-4.3-A5jfd1yrmaY4DRMJuiquBp:
                          yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Types
                          yesod-static-1.5.3.1@yesod-static-1.5.3.1-3fPHfGwGXLD6UjosrxUpf7:Yesod.Static
                          zlib-0.6.1.2@zlib-0.6.1.2-7negTfm2ujt1gW4wr40MUp:Codec.Compression.Zlib.Stream
-import  -/  Import.NoFoundation fb95eb64b7a80416b7b5056f624e4849
-  exports: 2e494bb9b274e4ba433030bb20c1ca43
+import  -/  Import.NoFoundation 62663429fff01deabadf63d967c95d16
+  exports: 2566fa08a2226e51395877636583b744
 import  -/  Model 0322a236513b611476018acb9209b978
   ClienteId 9820ecf0d273e7d131872679a26ea3d8
   EmprestimoId fe166303cba5652833a759be78375951

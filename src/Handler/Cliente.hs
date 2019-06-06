@@ -23,13 +23,43 @@ getClienteR = do
     defaultLayout $ do
         addStylesheet $ StaticR css_bootstrap_css
         [whamlet|
-            <form action=@{ClienteR} method=post>
-                <center>
-                    <h3>Cadastro de Cliente</h3>
-                    ^{widget}
-                    <input type="submit" value="cadastrar">
-                    <a href=@{HomeR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Principal
-                    <a href=@{TodosClientesR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Lista Todos
+        
+        
+         <div class="container table-responsive">
+          <table class="table">
+           <tr>
+               <td height="50px">
+           <tr>
+               <td width="395px"  height="80px">
+        
+               <td align="center" style="background-color:skyblue">
+                   <img width="100" height="100"src=@{StaticR imgs_user_jpg}>
+
+               <td width="395px">
+               
+          <table class="table">       
+           <tr>
+               <td width="2500px"  height="80px">
+               
+               <td class="container text-center" style="background-color:skyblue">
+
+                <br>
+                
+                    <form action=@{ClienteR} method=post>
+                         ^{widget}
+                          &nbsp;&nbsp;
+                             <button type="submit button" class="btn btn-primary btn-block">
+                               CADASTRAR CLIENTE
+                          &nbsp;&nbsp;
+                          
+                    <a href=@{TodosClientesR} type="button" class="btn btn-primary btn-block">
+                               LISTAR CLIENTES                       
+                    &nbsp;&nbsp;      
+                    <a href=@{HomeR} type="button" class="btn btn-primary btn-block">
+                               VOLTAR
+                     
+              <td width="2500px">      
+                        
         |]
 
 postClienteR :: Handler Html

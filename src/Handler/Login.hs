@@ -7,7 +7,7 @@
 module Handler.Login where
 
 import Import
--- import Database.Persist.Postgresql
+import Database.Persist.Postgresql
 
 formLogin :: Form Funcionario
 formLogin = renderBootstrap $ Funcionario 
@@ -21,12 +21,43 @@ getLoginR = do
     defaultLayout $ do
         addStylesheet $ StaticR css_bootstrap_css
         [whamlet|
-            $maybe mensagem <- msg
-                ^{mensagem}
-            <form action=@{LoginR} method=post>
-                ^{widget}
-                <input type="submit" value="entrar">
+        
+        <div class="container table-responsive">
+          <table class="table">
+           <tr>
+               <td height="50px">
+           <tr>
+               <td width="400px"  height="80px">
+        
+               <td align="center" style="background-color:steelblue">
+                   <img width="100" height="100"src=@{StaticR imgs_login_jpg}>
+                   
+               <td width="400px">
+               
+          <table class="table">       
+           <tr>
+               <td width="2500px"  height="80px">
+               
+               <td class="container text-center" style="background-color:skyblue">
+                   $maybe mensagem <- msg
+                      ^{mensagem}
+                <br>
+    
+                    <form action=@{LoginR} method=post>
+                         ^{widget}
+                          &nbsp;&nbsp;
+                             <button type="submit button" class="btn btn-primary btn-block">
+                               ENTRAR
+                          &nbsp;&nbsp;       
+                
+                    <a href=@{HomeR} type="button" class="btn btn-primary btn-block">
+                               VOLTAR
+                     
+              <td width="2500px">      
+                        
         |]
+
+
 
 postLoginR :: Handler Html
 postLoginR = do

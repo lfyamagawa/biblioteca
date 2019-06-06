@@ -28,7 +28,7 @@ getHomeR = do
                        
                        <td>
                            <form action=@{LogoutR} method=post>
-                               <button class="btn btn-sm active" type="submit"  role="button" aria-pressed="true">
+                               <button class="btn btn-xs active" type="submit"  role="button" aria-pressed="true">
                                   <font color="black">Sair                         
             $nothing
                 <h1><strong><font color="white">GESTÃO DE BIBLIOTECAS
@@ -39,7 +39,7 @@ getHomeR = do
                        <td class="col col-sm-12">
                            <strong><font color="white"><p class="text-right">Login:  
                        <td>
-                           <a href=@{LoginR} class="btn btn-danger btn-sm active" type="submit"  role="button" aria-pressed="true">
+                           <a href=@{LoginR} class="btn btn-danger btn-xs active" type="submit"  role="button" aria-pressed="true">
                               <strong><font color="white">Entrar 
             <br>          
 
@@ -103,10 +103,36 @@ getHomeR = do
         
         <br>                  
 
-        <section class="title-content container" style="background-image: url(@{StaticR imgs_biblio_jpg})"> 
+        <div class="container text-center" style="background-color:black">
+           <center><h4><strong><font color="white">DESTAQUE DO MÊS
+        <br>   
+        
+        <div class="container" align="center">
+            <section class="contaiber" style="background-image: url(@{StaticR imgs_fundo_jpg})">
+           
+               <iframe width="500" height="275" src="https://www.youtube.com/embed/JLiEm5N40pA">
+           
+           <center><h4><strong><font color="black">CURSO ADS
+           
+        <br>
+     
+        <br>
+        <section class="title-content container" style="background-image: url(https://live.staticflickr.com/65535/47993113741_f9a1f150c8_h.jpg)">
                         <br>
-                        <center><font color="navy"><strong><h1 class="title-text">Biblioteca Virtual
+                        <center><font color="yellow"><strong><h1 class="title-text">Biblioteca Virtual
                         <br>
+                        <table class="table text-center container table-responsive">                
+                         <tr>         
+                           <td>
+                               <a href=@{TodosLivrosR} class="btn btn-light btn-lg">
+                                 <strong><font color="yellow">Livros
+                           <td>
+                               <a href=@{TodosFuncionariosR} class="btn btn-light btn-lg">
+                                 <strong><font color="yellow">Funcionarios
+                           <td>
+                               <a href=@{TodosClientesR} class="btn btn-light btn-lg">
+                                 <strong><font color="yellow">Clientes
+                                    
         <br>                
                                   
         |] 

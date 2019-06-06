@@ -40,14 +40,48 @@ getEmprestarClienteR livid = do
     defaultLayout $ do
         addStylesheet $ StaticR css_bootstrap_css
         [whamlet|
-            $maybe mensagem <- msg
-                ^{mensagem}
-            <form action=@{EmprestarClienteR livid} method=post enctype=#{enctype}>
-                <h2>#{show $ fromSqlKey livid}
-                ^{widget}
-                <input type="submit" value="Cadastrar">
-                <a href=@{HomeR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Principal
+        
+        <div class="container table-responsive">
+          <table class="table">
+           <tr>
+               <td height="50px">
+           <tr>
+               <td width="350px"  height="80px">
+        
+               <td align="center" style="background-color:steelblue">
+                   <img width="100" height="100"src=@{StaticR imgs_emprestar_png}>
+                   
+               <td width="350px">
+               
+          <table class="table">       
+           <tr>
+               <td width="2500px"  height="80px">
+               
+               <td class="container text-center" style="background-color:skyblue">
+                   $maybe mensagem <- msg
+                        ^{mensagem}
+                <br>
+                     <form action=@{EmprestarClienteR livid} method=post enctype=#{enctype}>
+                        <h2>#{show $ fromSqlKey livid}
+                            ^{widget}
+                              &nbsp;&nbsp;
+                                 <button type="submit button" class="btn btn-primary btn-block">
+                                   EMPRESTAR
+                              &nbsp;&nbsp;       
+                    
+                     <a href=@{HomeR} type="button" class="btn btn-primary btn-block">
+                                   VOLTAR
+                     
+              <td width="2500px">      
+                        
         |]
+        
+        
+        
+        
+        
+        
+
 
 postEmprestarClienteR :: LivroId -> Handler Html
 postEmprestarClienteR livid = do
@@ -60,5 +94,4 @@ postEmprestarClienteR livid = do
             |]
             redirect (EmprestarClienteR livid)
         _ -> redirect HomeR
-
 

@@ -23,13 +23,43 @@ getLivroR = do
     defaultLayout $ do
         addStylesheet $ StaticR css_bootstrap_css
         [whamlet|
-            <form action=@{LivroR} method=post>
-                <h3>Cadastro de Livro</h3><br>
-                ^{widget}
-                <input type="submit" value="cadastrar">
-                <a href=@{HomeR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Principal
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                <a href=@{TodosLivrosR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Lista Todos
+        
+         <div class="container table-responsive">
+          <table class="table">
+           <tr>
+               <td height="50px">
+           <tr>
+               <td width="395px"  height="80px">
+        
+               <td align="center" style="background-color:skyblue">
+                   <img width="100" height="100"src=@{StaticR imgs_book_png}>
+
+               <td width="395px">
+               
+          <table class="table">       
+           <tr>
+               <td width="2500px"  height="80px">
+               
+               <td class="container text-center" style="background-color:skyblue">
+
+                <br>
+                
+                    <form action=@{LivroR} method=post>
+                         ^{widget}
+                          &nbsp;&nbsp;
+                             <button type="submit button" class="btn btn-primary btn-block">
+                               CADASTRAR LIVRO
+                          &nbsp;&nbsp;
+                          
+                    <a href=@{TodosLivrosR} type="button" class="btn btn-primary btn-block">
+                               LISTAR LIVROS                       
+                    &nbsp;&nbsp;      
+                    <a href=@{HomeR} type="button" class="btn btn-primary btn-block">
+                               VOLTAR
+                     
+              <td width="2500px">      
+                        
+ 
         |]
 
 postLivroR :: Handler Html

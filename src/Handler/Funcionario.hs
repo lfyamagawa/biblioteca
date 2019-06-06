@@ -7,7 +7,7 @@
 module Handler.Funcionario where
 
 import Import
-import Database.Persist.Sql
+import Database.Persist.Postgresql
 
 
 
@@ -32,16 +32,46 @@ getFuncionarioR = do
     defaultLayout $ do
         addStylesheet $ StaticR css_bootstrap_css
         [whamlet|
-            $maybe mensagem <- msg
-                ^{mensagem}
-            <form action=@{FuncionarioR} method=post>
-                ^{widget}
-                <input type="submit" value="cadastrar">
-               <br><br>
-               <a href=@{HomeR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Principal
-               &nbsp;&nbsp;&nbsp;&nbsp;
-               <a href=@{TodosFuncionariosR} class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Lista Todos
+        
+        <div class="container table-responsive">
+          <table class="table">
+           <tr>
+               <td height="50px">
+           <tr>
+               <td width="380px"  height="80px">
+        
+               <td align="center" style="background-color:skyblue">
+                   <img width="100" height="100"src=@{StaticR imgs_user_jpg}>
+
+                   
+               <td width="380px">
+               
+          <table class="table">       
+           <tr>
+               <td width="2500px"  height="80px">
+               
+               <td class="container text-center" style="background-color:skyblue">
+                   $maybe mensagem <- msg
+                      ^{mensagem}
+                <br>
+                
+                    <form action=@{FuncionarioR} method=post>
+                         ^{widget}
+                          &nbsp;&nbsp;
+                             <button type="submit button" class="btn btn-primary btn-block">
+                               CADASTRAR FUNCUINÁRIO
+                          &nbsp;&nbsp;
+                          
+                    <a href=@{TodosFuncionariosR} type="button" class="btn btn-primary btn-block">
+                               LISTAR FUNCIONÁRIOS                       
+                    &nbsp;&nbsp;      
+                    <a href=@{HomeR} type="button" class="btn btn-primary btn-block">
+                               VOLTAR
+                     
+              <td width="2500px">      
+                        
         |]
+        
 
 postFuncionarioR :: Handler Html
 postFuncionarioR = do
@@ -110,4 +140,3 @@ postFuncionarioAlteraR funcid = do
             _ <- ($) runDB $ replace funcid funcionarioNovo
             redirect TodosFuncionariosR
         _ -> redirect HomeR
-
